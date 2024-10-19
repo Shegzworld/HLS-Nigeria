@@ -1,0 +1,35 @@
+{% block podcasts%}
+    <div class="podcast-section display_content">
+        <div class="podcast-banner">
+            <img src="/static/home_images/podcastimg (1).jpg" alt="">
+        </div>
+        <div class="podcast-selector">
+            <div class="tab-link active">Free Podcasts</div>
+            <div class="tab-link">HLS Specials</div>
+            <div class="tab-link">Your Doctors</div>
+        </div>
+        {% for podcast in podcast_pages %}
+        <div class="podcast-display-cards">
+            <div class="podcast-card">
+                <div class="podcast-card-detail">
+                    <div class="podcast-card-pic">
+                        <img src="{{podcast.image.url}}" alt=""></div>
+                    <div class="written-details">
+                        <h3>{{ podcast.title }}</h3>
+                        <span><i class="fas fa-microphone"></i> {{ podcast.podcaster.name}}</span>
+                        <span><i class="fas fa-compact-disc"></i> {{ podcast.episode_count }} episodes</span>
+                    </div>
+                </div>
+                <div class="podcast-action-call">
+                    <span ><i class="fas fa-play"></i> Play Now</span>
+                    <audio src="{{podcast.episodes.first.audio_file.url }}" type="audio/mpeg" style="display:none;">
+                    </audio>
+                    <span class="download-icon"><i class="fas fa-download"></i></span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="selected_podcast_screen">
+    </div>
+{% endblock %}

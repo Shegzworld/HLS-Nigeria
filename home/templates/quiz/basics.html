@@ -1,0 +1,105 @@
+{% block basics %}
+{% load static %}
+    <form id="basics_display_screen" class="display_screen" action="" method="POST" >
+        <input type="hidden" name="form_type" value="basics">
+        {% csrf_token %}
+        <div class="personal-data" id="basic_data">
+            <div class="formarea" id="basic_nickname">
+                <div class="form" id="nickname">
+                    <div class="title">
+                        <h2>What's your Nickname?</h2>
+                        <p>"For your privacy"</p>
+                    </div>
+                    <div class="field">
+                        {{basics_form.nickname}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="next" class="next">Next</button>
+                    </div>
+                    <span class="remaining">4 questions left</span>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="formarea" id="basic_gender">
+                <div class="form" id="gender">
+                    <div class="title">
+                        <h2>Are you Male or Female?</h2>
+                        <p>"Your Gender influences your hormones"</p>
+                    </div>
+                    <div class="field">
+                        {{basics_form.gender}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="button" name="next" class="next">Next</button>
+                    </div>
+                    <span class="remaining">3 forms left</span>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="formarea" id="basic_age">
+                <div class="form" id="age">
+                    <div class="title">
+                        <h2>How old are you?</h2>
+                        <p>"Get help to stay young"</p>
+                    </div>
+                    <div class="field">
+                        {{basics_form.age}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="button" name="next" class="next">Next</button>
+                    </div>
+                    <span class="remaining">2 forms left</span>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="formarea" id="basic_weight">
+                <div class="form" id="weight">
+                    <div class="title">
+                        <h2>What do you weigh?</h2>
+                        <p>"It helps us tell your BMI"</p>
+                    </div>
+                    <div class="field">
+                        {{basics_form.weight}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="button" name="next" class="next">Next</button>
+                    </div>
+                    <span class="remaining">1 form left</span>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            <div class="formarea" id="basic_height">
+                <div action="" class="form" id="height">
+                    <div class="title">
+                        <h2>How tall are you?</h2>
+                        <p>"It helps us tell your BMI"</p>
+                    </div>
+                    <div class="field">
+                        {{basics_form.height}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="button" name="next" class="next">Next</button>
+                    </div>
+                    <span class="remaining">0 forms left</span>
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+    
+            <div class="basic_data_complete">
+                <div class="luigi_congrats">
+                    <img src="{% static 'home_images/luigi_congrat.jpeg' %}" alt="">
+                    <h2>Congratulations!</h2>
+                    <h2>50gz points earned</h2>
+                </div>
+                <div class="progress_buttons">
+                    <button name="continue_quiz">Continue Quiz</button>
+                    <button type="submit" name="request_dashboard">Request Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

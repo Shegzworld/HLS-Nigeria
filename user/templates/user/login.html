@@ -1,0 +1,30 @@
+{% extends "user/auth_base.html" %}
+
+{% block login%}
+{{ registration_form.non_field_errors }}
+<div class="log_container">
+    <fieldset>
+        <legend>login to your dashboard</legend>
+        <fieldset class="inner_fieldset">
+            <div class="form-group">
+                {{ form.username }}
+                <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="form-group">
+                {{ form.password }}
+                <i class="fa fa-lock" aria-hidden="true"></i>
+            </div>
+            <input type="submit" value="submit">
+            <a href="#" class="forgot-password">Forgot Password?</a>
+        </fieldset>
+    </fieldset>
+    <p class="alt_login">or login with:</p>
+    <div class="social-login-options">
+        <a href="#" class="social-login facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+        <a href="#" class="social-login twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" class="social-login linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <!-- WhatsApp login is not directly supported, using a generic chat icon instead -->
+        <a href="#" class="social-login whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+    </div>
+</div>
+{% endblock %}

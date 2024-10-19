@@ -1,0 +1,119 @@
+{% block lifestyle %}
+{% load static %}
+    <form id="lifestyle_display_screen" class="display_screen" action="" method="POST">
+        <input type="hidden" name="form_type" value="lifestyle">
+        {% csrf_token %}
+        <div class="lifestyle-data">
+            <div class="formarea">
+                <div class="form" id="habits">
+                    <div class="title">
+                        <h2>Habits?</h2>
+                        <p>"nutrients can your health from habits"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            <div class="habittype">
+                                <p>Smoking</p>
+                            </div>
+                            <div class="habittype">
+                                <p>Drinking</p>
+                            </div>
+                            <div class="habittype">
+                                <p>Sexing</p>
+                            </div>
+                        </div>
+                        {{lifestyle_form.habits}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="formarea">
+                <div class="form" id="recreation">
+                    <div class="title">
+                        <h2>How do you catch fun?</h2>
+                        <p>"let's cultivate your energy for recreation"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            <div class="recreationtype">
+                                <p>Sport</p>
+                            </div>
+                            <div class="recreationtype">
+                                <p>Board/Mind
+                                    Games</p>
+                            </div>
+                            <div class="recreationtype">
+                                <p>Sexual
+                                    Exercise</p>
+                            </div>
+                            <div class="recreationtype">
+                                <p>Fasting</p>
+                            </div>
+                            <div class="recreationtype">
+                                <p>Clubbing</p>
+                            </div>
+                            <div class="recreationtype">
+                                <p>Dancing</p>
+                            </div>
+                        </div>
+                        {{lifestyle_form.recreation}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="formarea">
+                <div class="form" id="lifestyles">
+                    <div class="title">
+                        <h2>Lifestyle?</h2>
+                        <p>"Your future dreams are based on Vitality!"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            <div class="lifestyletype">
+                                <p>Skin Care</p>
+                            </div>
+                            <div class="lifestyletype">
+                                <p>Weight
+                                    Management</p>
+                            </div>
+                            <div class="lifestyletype">
+                                <p>Energy
+                                    cultivation</p>
+                            </div>
+                            <div class="lifestyletype">
+                                <p>Sleep
+                                    Management</p>
+                            </div>
+                            <div class="lifestyletype">
+                                <p>Sex
+                                    Enhancement</p>
+                            </div>
+                        </div>
+                        {{lifestyle_form.lifestyle}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="lifestyle_data_complete">
+                <div class="luigi_congrats">
+                    <img src="{% static 'home_images/luigi_congrat.jpeg' %}" alt="">
+                    <h2>Congratulations!</h2>
+                    <h2>50gz points earned</h2>
+                </div>
+                <div class="progress_buttons">
+                    <button name="continue_quiz">Continue Quiz</button>
+                    <button type="submit" name="request_dashboard">Request Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,639 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    background-image: url("{% static 'home_images/background.webp' %}");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 50px;
+    /* border: solid; */
+}
+
+header {
+    /* background-color: #181818d2; */
+    background: linear-gradient(#181818d2, rgba(41, 40, 40, 0.847));
+    text-align: center;
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 0px;
+    height: 100px;
+    color: rgb(209, 203, 203);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    /* border: solid; */
+}
+
+header p {
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 1.3;
+    padding: 5px;
+    padding-top: 0;
+    /* background-color: rgba(24, 24, 24, 0.847); */
+}
+
+.quizClasses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    gap: 20px;
+    /* display: none; */
+}
+
+.quizClass_dropdown {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.quizClass {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00000075;
+    max-width: 100%;
+    height: 50px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: whitesmoke;
+    padding: 0 5px;
+    margin-bottom: 2px;
+}
+
+.quizClass span {
+    align-self: center;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 18px;
+}
+
+.dropdown {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: height 0.3s ease;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: black;
+}
+
+.dropdown_img_and_text {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.dropdown_img {
+    width: 40%;
+    height: 100%;
+}
+
+.dropdown_txt {
+    align-self: center;
+    font-size: 13px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.dropdown_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.dropdown button {
+    border: none;
+    color: whitesmoke;
+    background-color: #0e2d04;
+    height: 35%;
+}
+
+.coins_quiz_class {
+    flex-basis: 20%;
+    height: 100%;
+}
+
+.coins_quiz_class img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.submit {
+    background-color: #4CAF50;
+
+    height: 25px;
+    color: #fff;
+    padding: 0 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+@media(max-width: 480px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        max-width: 100vw;
+        /* border: solid; */
+    }
+
+    .background {
+        background-image: url("{% static 'home_images/background.webp' %}");
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        gap: 50px;
+    }
+
+    header {
+        /* background-color: #181818d2; */
+        background: linear-gradient(#181818d2, rgba(41, 40, 40, 0.847));
+        text-align: center;
+        width: 90%;
+        margin: 20px auto;
+        margin-bottom: 0px;
+        height: 100px;
+        color: rgb(209, 203, 203);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 5px;
+        /* border: solid; */
+    }
+
+    header p {
+        font-size: 13px;
+        margin-top: 5px;
+        line-height: 1.3;
+        padding: 5px;
+        padding-top: 0;
+        /* background-color: rgba(24, 24, 24, 0.847); */
+    }
+
+    .quizClasses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        gap: 20px;
+        /* border: solid; */
+    }
+
+    .quizClass_dropdown {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quizClass {
+        display: flex;
+        justify-content: space-between;
+        background-color: #00000075;
+        max-width: 100%;
+        height: 50px;
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        color: whitesmoke;
+        padding: 0 5px;
+        margin-bottom: 2px;
+    }
+
+    .quizClass span {
+        align-self: center;
+        flex-grow: 1;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .dropdown {
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: height 0.3s ease;
+        height: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* overflow: hidden; */
+        color: black;
+    }
+
+    .dropdown_img_and_text {
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .dropdown_img {
+        min-width: 40%;
+        height: 100%;
+    }
+
+    .dropdown_txt {
+        align-self: center;
+        font-size: 15px;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .dropdown_img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .dropdown button {
+        border: none;
+        color: whitesmoke;
+        background-color: #0e2d04;
+        height: 35%;
+    }
+
+    .coins_quiz_class {
+        flex-basis: 20%;
+        height: 100%;
+    }
+
+    .coins_quiz_class img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .submit {
+        background-color: #4CAF50;
+        height: 25px;
+        color: #fff;
+        padding: 0 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin: auto;
+    }
+
+
+    .quiz_display_screen {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        transform: translateX(100%);
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .quiz_header {
+        height: 60px;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        font-family: 'poppins', sans-serif;
+        padding-bottom: 0;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+        border-bottom: solid burlywood 0.1px;
+    }
+
+    .quiz_header h3 {
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .quiz_header a {
+        display: flex;
+        align-items: end;
+        height: 100%;
+        font-size: 15px;
+        text-decoration: none;
+        cursor: pointer;
+        color: #05637F;
+    }
+
+    .quiz_header .logo {
+        width: 100px;
+        height: 50px;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 50%;
+        object-fit: contain;
+    }
+
+
+    .form_container_screen {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+
+
+    #basics_display_screen {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        /* border: solid; */
+    }
+
+
+    .personal-data {
+        background-color: #f0d0bc;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+    .basic_data_complete {
+        display: block;
+        background-color: #124209ba;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateX(100%);
+    }
+
+
+    .lifestyle_data_complete {
+        display: block;
+        background-color: #124209ba;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateX(100%);
+    }
+
+    .health_condition_data_complete {
+        display: block;
+        background-color: #124209ba;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateX(100%);
+    }
+
+    .preference_data_complete {
+        display: block;
+        background-color: #124209ba;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        transform: translateX(100%);
+    }
+    .formarea {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #lifestyle_display_screen {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+    }
+
+    .lifestyle-data {
+        background-color: rgb(157, 173, 119);
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+
+    #health_condition_display_screen {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+    }
+
+
+    .medical-data {
+        background-color: rgb(213, 163, 127);
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+
+    #preference_display_screen {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        right: 0;
+    }
+
+
+    .preference-data {
+        background-color: rgb(202, 139, 151);
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+
+
+    #basic_nickname {
+        transform: translateX(0);
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        margin-top: -150px;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+
+    .title h2 {
+        font-family: 'martel';
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .title p {
+        text-align: center;
+        color: #05637F;
+        margin-bottom: 20px;
+        font-family: 'poppins';
+    }
+
+    .field {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form input {
+        width: 95vw;
+        height: 35px;
+        border: solid 2px #05637F;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+
+    .field ::placeholder {
+        text-align: center;
+    }
+
+    .form button {
+        width: 100px;
+        height: 30px;
+    }
+
+    .selector {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+
+    .recreationtype,
+    .habittype,
+    .lifestyletype,
+    .allergytype,
+    .drugformtype {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .luigi_congrats {
+        width: 100%;
+        position: relative;
+    }
+
+    .luigi_congrats img {
+        width: 100%;
+        height: 70%;
+        object-fit: contain;
+        object-position: top;
+        margin-top: 18%;
+    }
+
+    .luigi_congrats h2:nth-child(2) {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.573);
+        color: whitesmoke;
+        top: 0px;
+        padding: 5px;
+        width: 100%;
+        height: 60px;
+        padding-top: 10px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .luigi_congrats h2:nth-child(3) {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.573);
+        color: whitesmoke;
+        top: 90%;
+        padding: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .progress_buttons {
+        display: flex;
+        justify-content: space-around;
+        height: 80px;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .progress_buttons button {
+        font-size: 25px;
+        padding: 0 10px;
+        font-weight: 700;
+        height: 80px;
+        width: 45%;
+        border-radius: 5px;
+        border: none;
+        background-color: #f3c50fe2;
+        color: black;
+    }
+
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-<YOUR-INTEGRITY-CODE-HERE>" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
+</head>
+
+<body>
+    <div class="benfek_wrapper">
+
+        <!-- Sticky Nav bar-->
+        <section class="top_sticky_bar">
+            <div class="primary-nav">
+                <div id="menu_icon">
+                    <a href="#"><i class="fas fa-bars"></i></a>
+                    <div class="hamburger_menu" id="menu_dropdown_menu">
+                        <a href="{% url 'home:homepage' %}">Home</a>
+                        <a href="#">Market</a>
+                        <a href="#">Media</a>
+                        <a href="#">Find Doctor</a>
+                        <a href="#">About Us</a>
+                        <form id="logout-form" action="{% url 'user:logout' %}" method="post">
+                            {% csrf_token %}
+                        </form>
+                        <a href="#" onclick="document.getElementById('logout-form').submit()">Logout</a>
+                        <span id="close_icon">&times;</span>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="#"><img src="/static/home_images/HLS logo with serenity 2.png" alt="Logo"></a>
+                </div>
+                <i class="fas fa-search"></i>
+                <div class="user_icon">
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <div class="dropdown_menu" id="user_dropdown_menu">
+                        <a href="#">Update Profile</a>
+                        <a href="#">Transaction History</a>
+                        <a href="#">Subscribe</a>
+                        <a href="#">Log Out</a>
+                    </div>
+                </div>
+            </div>
+            <div id="search_container">
+                <input type="text" id="searchForm" placeholder="supplement, doctor, podcast, blog">
+                <i class="fas fa-search"></i>
+            </div>
+            <h3 class="service-header">Sponsored Services</h3>
+            <div class="benfek-services" id="benfek-services">
+                <div class="benfek-service" id="NT-gallery">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>My Gallery</span>
+                </div>
+                <div class="benfek-service" id="Its-a-News">
+                    <i class="fas fa-laugh"></i>
+                    <span>Good News</span>
+                </div>
+                <div class="benfek-service" id="Podcast">
+                    <i class="fas fa-podcast"></i>
+                    <span>premium Podcast</span>
+                </div>
+                <div class="benfek-service" id="Doctors-Note">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Doctor's Note</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Display body -->
+        <div class="display_body">
+            {% block NT_gallery_section %}
+            {% endblock %}
+
+            {% block good_news_section %}
+            {% endblock %}
+
+            {% block podcasts_section%}
+            {% endblock %}
+        </div>
+
+        <section class="bottom_sticky_bar">
+            <div class="bottom_menu" id="support_icon">
+                <a href="#"><i class="fas fa-hands-helping"></i></a>
+                <span>Support</span>
+                <div class="pull_up_menu">
+                    <a href="#">Make Complaint</a>
+                    <a href="#"><i class="fab fa-whatsapp"></i> Inquiry</a>
+                    <a href="#">Request a Call</a>
+                </div>
+            </div>
+            <div class="bottom_menu" id="testimonials_icon">
+                <a href="#"><i class="fas fa-comments"></i></a>
+                <span>Testimonials</span>
+                <div class="pull_up_menu">
+                    <a href="#">Write Testimonial</a>
+                    <a href="#">Search Testimonial</a>
+                </div>
+            </div>
+            <div class="bottom_menu" id="inbox_icon">
+                <a href="#"><i class="fas fa-envelope"></i><span class="unread_count">5</span></a>
+                <span>Inbox</span>
+            </div>
+            <div class="bottom_menu" id="earn_icon">
+                <a href="#"><i class="fas fa-coins"></i><span class="unread_count">3</span></a>
+                <span>Earn</span>
+            </div>
+            <div class="bottom_menu" id="purchases_icon">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <span>Orders</span>
+                <div class="pull_up_menu">
+                    <a href="#">Add More</a>
+                    <a href="#">Review List</a>
+                    <a href="#">Check Out</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="{% static 'js/benfek_responsive.js' %}"></script>
+</body>
+
+</html>

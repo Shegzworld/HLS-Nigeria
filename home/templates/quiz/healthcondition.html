@@ -1,0 +1,220 @@
+{% block health_condition %}
+    {% load static %}
+    <form id="health_condition_display_screen" class="display_screen" method="POST">
+        <input type="hidden" name="form_type" value="health_condition">
+        {% csrf_token %}
+        <div class="medical-data">
+            <div class="formarea">
+                <div class="form" id="healthcomplaints">
+                    <div class="title">
+                        <h2>Do you have any current health complaint?</h2>
+                        <p>"Lets help you find solutions with dietary supplements"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            <div class="healthcomplaintype">
+                                <p>Alzheimer</p>
+                            </div>
+                            <!-- <div class="healthcomplaintype">
+                                                    <p>Arthritis</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Parkinsonâ€™s Disorder</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Hair Infections</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Respiratory Disorder</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Skin Disorder</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Eye Disorder</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Scaly Skin</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Glaucoma</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Cataract</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Alzheimer</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Arthritis</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Parkinsonâ€™s Disorder</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Hair Infections</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Respiratory Disorder</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Skin Disorder</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Eye Disorder</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Scaly Skin</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Glaucoma</p>
+                                                </div>
+                                                <div class="healthcomplaintype">
+                                                    <p>Cataract</p>
+                                                </div> -->
+                        </div>
+                        {{health_condition_form.health_complaints}}
+                    </div>
+                    <div class="confirm">
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="formarea">
+                <div class="form" id="currentmedications">
+                    <div class="title">
+                        <h2>Current medication in Use?</h2>
+                        <p>"Nutrients may enhance good results"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            <div class="currentmedicationtype">currentmedicationtype 1</div>
+                            <!-- <div class="currentmedicationtype">currentmedicationtype 2</div>
+                            <div class="currentmedicationtype">currentmedicationtype 3</div>
+                            <div class="currentmedicationtype">currentmedicationtype 4</div>
+                            <div class="currentmedicationtype">currentmedicationtype 5</div>
+                            <div class="currentmedicationtype">currentmedicationtype 6</div>
+                            <div class="currentmedicationtype">currentmedicationtype 7</div>
+                            <div class="currentmedicationtype">currentmedicationtype 8</div>
+                            <div class="currentmedicationtype">currentmedicationtype 9</div>
+                            <div class="currentmedicationtype">currentmedicationtype 10</div>
+                            <div class="currentmedicationtype">currentmedicationtype 11</div>
+                            <div class="currentmedicationtype">currentmedicationtype 12</div>
+                            <div class="currentmedicationtype">currentmedicationtype 13</div>
+                            <div class="currentmedicationtype">currentmedicationtype 14</div>
+                            <div class="currentmedicationtype">currentmedicationtype 15</div>
+                            <div class="currentmedicationtype">currentmedicationtype 16</div> -->
+    
+                        </div>
+                        {{health_condition_form.current_medications}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="formarea">
+                <div class="form" id="genetichistory">
+                    <div class="title">
+                        <h2>Family's notable health condition?</h2>
+                        <p>"Taking note will help suggest preventative measures"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            <div class="genetichistorytype">genetichistorytype 1</div>
+                            <!-- <div class="genetichistorytype">genetichistorytype 2</div>
+                            <div class="genetichistorytype">genetichistorytype 3</div>
+                            <div class="genetichistorytype">genetichistorytype 4</div>
+                            <div class="genetichistorytype">genetichistorytype 5</div>
+                            <div class="genetichistorytype">genetichistorytype 6</div>
+                            <div class="genetichistorytype">genetichistorytype 7</div>
+                            <div class="genetichistorytype">genetichistorytype 8</div>
+                            <div class="genetichistorytype">genetichistorytype 9</div>
+                            <div class="genetichistorytype">genetichistorytype 10</div>
+                            <div class="genetichistorytype">genetichistorytype 11</div>
+                            <div class="genetichistorytype">genetichistorytype 12</div>
+                            <div class="genetichistorytype">genetichistorytype 13</div>
+                            <div class="genetichistorytype">genetichistorytype 14</div>
+                            <div class="genetichistorytype">genetichistorytype 15</div>
+                            <div class="genetichistorytype">genetichistorytype 16</div>
+                            <div class="genetichistorytype">genetichistorytype 17</div>
+                            <div class="genetichistorytype">genetichistorytype 18</div> -->
+                        </div>
+                        {{health_condition_form.genetic_history}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="formarea">
+                <div class="form" id="allergies">
+                    <div class="title">
+                        <h2>Allergies?</h2>
+                        <p>"Lets know what to exclude"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            <div class="allergytype">
+                                <p>Drug
+                                    Allergies</p>
+                            </div>
+                            <div class="allergytype">
+                                <p>Skin
+                                    Allergies</p>
+                            </div>
+                            <div class="allergytype">
+                                <p>Food
+                                    Allergies</p>
+                            </div>
+                            <div class="allergytype">
+                                <p>Pet
+                                    Allergies</p>
+                            </div>
+                            <div class="allergytype">
+                                <p>Dust
+                                    Allergies</p>
+                            </div>
+                        </div>
+                        {{health_condition_form.allergies}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="formarea">
+                <div class="form" id="healthfears">
+                    <div class="title">
+                        <h2>What health issue scares you the most?</h2>
+                        <p>"Be sincere and lets conquer your fears"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            {{health_condition_form.health_fears}}
+                        </div>
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="health_condition_data_complete">
+                <div class="luigi_congrats">
+                    <img src="{% static 'home_images/luigi_congrat.jpeg' %}" alt="">
+                    <h2>Congratulations!</h2>
+                    <h2>50gz points earned</h2>
+                </div>
+                <div class="progress_buttons">
+                    <button name="continue_quiz">Continue Quiz</button>
+                    <button type="submit" name="request_dashboard">Request Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

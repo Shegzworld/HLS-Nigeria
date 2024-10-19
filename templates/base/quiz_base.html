@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care Quiz</title>
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <header>
+                <h2>Nutrient Type Quiz</h2>
+                <p>Each quiz helps to reveal your nutrient type. The more quiz you take, the more you earn. After taking
+                    your desired quiz, click submit to get your profile.</p>
+            </header>
+            <div class="quizClasses">
+                <div class="quizClass_dropdown">
+                    <div class="quizClass" style="font-family: Playfair Display;">
+                        <span>Basics</span>
+                        <div class="coins_quiz_class">
+                            <img src= "{% static 'home_images/mario_coin.png'%}"  alt="Golden Coin">
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown_img_and_text">
+                            <div class="dropdown_img">
+                                <img src="{% static 'home_images/basics_quiz_image.png' %}" alt="">
+                            </div>
+                            <p class="dropdown_txt">Learn how your daily habits impact your health and earn 50gz coins
+                            </p>
+                        </div>
+                        <button id="basic_btn">Take Quiz</button>
+                    </div>
+                </div>
+
+                <div class="quizClass_dropdown">
+                    <div class="quizClass" style="font-family: Montserrat;">
+                        <span>Lifestyle</span>
+                        <div class="coins_quiz_class">
+                            <img src="{% static 'home_images/coin_shell.png'%}" alt="Golden Coin">
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown_img_and_text">
+                            <div class="dropdown_img">
+                                <img src="{% static 'home_images/lifestyle_quiz_image.png'%}" alt="">
+                            </div>
+                            <p class="dropdown_txt">Discover how your lifestyle choices affect your well-being and earn
+                                50gz coins</p>
+                        </div>
+                        <button id="lifestyle_btn">Take Quiz</button>
+                    </div>
+                </div>
+
+                <div class="quizClass_dropdown">
+                    <div class="quizClass" style="font-family: Merriweather;">
+                        <span>Health Condition</span>
+                        <div class="coins_quiz_class">
+                            <img src="{% static 'home_images/coin_wallet.png'%}" alt="Golden Coin">
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown_img_and_text">
+                            <div class="dropdown_img">
+                                <img src="{% static 'home_images/health_condition_quiz_image.png'%}" alt="">
+                            </div>
+                            <p class="dropdown_txt">Understand how your health conditions relate to nutrition and earn
+                                50gz coins</p>
+                        </div>
+                        <button id="health_condition_btn">Take Quiz</button>
+                    </div>
+                </div>
+
+                <div class="quizClass_dropdown">
+                    <div class="quizClass" style="font-family: Bodoni;">
+                        <span>Preferences</span>
+                        <div class="coins_quiz_class">
+                            <img src="{% static 'home_images/coin_box.png'%}" alt="Golden Coin">
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown_img_and_text">
+                            <div class="dropdown_img">
+                                <img src="{% static 'home_images/preferences_quiz_image.png'%}" alt="preference img">
+                            </div>
+                            <p class="dropdown_txt">Explore how your food preferences impact your health and earn 50gz
+                                coins</p>
+                        </div>
+                        <button id="preference_btn">Take Quiz</button>
+                    </div>
+                </div>
+
+                <button class="submit">Submit</button>
+
+            </div>
+
+            <div class="quiz_display_screen">
+                <div class="quiz_header">
+                    <div class="logo">
+                        <a href="../home/index.html"><img src="{% static 'home_images/hls logo.jpg' %}" alt="HLS Logo"></a>
+                    </div>
+                    <h3 style="color: #05637F;">Quiz</h3>
+                    <a href="#">Continue later</a>
+                </div>
+                <div class="form_container_screen">
+
+                    <!-- Block for basics -->
+                    {% block basics %}
+                    {% endblock %}
+
+                    <!-- Block for lifestyle -->
+                    {% block lifestyle %}
+                    {% endblock %}
+
+                    <!-- Block for health_condition -->
+                    {% block health_condition %}
+                    {% endblock %}
+
+                    <!-- Block for health_condition -->
+                    {% block preference %}
+                    {% endblock %}
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="{% static 'js/quiz.js' %}"></script>
+</body>
+
+</html>

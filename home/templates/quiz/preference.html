@@ -1,0 +1,81 @@
+{% block preference %}
+    {% load static %}
+    <form id="preference_display_screen" class="display_screen" method="POST">
+        <input type="hidden" name="form_type" value="preference">
+        {% csrf_token %}
+        <div class="preference-data">
+            <div class="formarea">
+                <div class="form" id="drugforms">
+                    <div class="title">
+                        <h2>Preferred Drug Form?</h2>
+                        <p>"lets find you something convenient"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            <div class="drugformtype">
+                                <p>Tablets</p>
+                            </div>
+                            <div class="drugformtype">
+                                <p>Capsules</p>
+                            </div>
+                            <div class="drugformtype">
+                                <p>Gummies</p>
+                            </div>
+                            <div class="drugformtype">
+                                <p>Powdered</p>
+                            </div>
+                            <div class="drugformtype">
+                                <p>Liquid</p>
+                            </div>
+                        </div>
+                        {{preference_form.drug_form}}
+                    </div>
+                    <div class="confirm">
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="formarea">
+                <div class="form" id="healthbudget">
+                    <div class="title">
+                        <h2>What can you conveniently spend on your health Monthly?</h2>
+                        <p>"Budget equals consistency, Consistency equals Permanent result"</p>
+                    </div>
+                    <div class="field">
+                        <div class="selector">
+                            <input type="radio" class="healthbudgetfield" name="healthbudget">
+                            <label for="healthbudget">NGN1000 - NGN8000</label>
+                            <!-- <input type="radio" class="healthbudgetfield" name="healthbudget">
+                            <label for="healthbudget">NGN8000-NGN15000</label>
+                            <input type="radio" class="healthbudgetfield" name="healthbudget">
+                            <label for="healthbudget">NGN15000 - NGN25000</label>
+                            <input type="radio" class="healthbudgetfield" name="healthbudget">
+                            <label for="healthbudget">NGN25000 - NGN50000</label>
+                            <input type="radio" class="healthbudgetfield" name="healthbudget">
+                            <label for="healthbudget">NGN50000 - NGN500000</label> -->
+                        </div>
+                        <div>
+                            <h3>Not in range above?</h3>
+                        </div>
+                        {{preference_form.health_budget}}
+                    </div>
+                    <div class="confirm">
+                        <button type="button" name="back" class="back">Back</button>
+                        <button type="submit" name="next" class="next">Next</button>
+                    </div>
+                </div>
+            </div>
+            <div class="preference_data_complete">
+                <div class="luigi_congrats">
+                    <img src="{% static 'home_images/luigi_congrat.jpeg' %}" alt="">
+                    <h2>Congratulations!</h2>
+                    <h2>50gz points earned</h2>
+                </div>
+                <div class="progress_buttons">
+                    <button name="continue_quiz">Continue Quiz</button>
+                    <button type="submit" name="request_dashboard">Request Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

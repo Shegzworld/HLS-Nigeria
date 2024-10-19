@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT Welcome to the HLS Network</title>
+    <link rel="stylesheet" href="{% static 'css/homestyles.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+
+<body>
+    <div class="landing_page_container">
+        <section class="nav_section">
+            <div class="nav_logo">
+                <img src="/static/home_images/hls%20logo.jpg" alt="HLS Logo">
+            </div>
+            <div class="nav_menu">
+                <ul>
+                    <li><a href="../market/index.html">Nutrient Shop</a></li>
+                    <li><a href="../doctors note/index.html">Doctor's Note</a></li>
+                    <li class="dropdown">
+                        <a href="../about/index.html" class="dropbtn">About Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav_authbuttons">
+                {%if user.is_authenticated%}
+                <form action="{% url 'user:logout' %}" method="post">
+                    {% csrf_token %}
+                    <button id ="logout"><a>logout</a></button>
+                </form>
+                <button><a href="{% url 'dashboard:dashboard' %}">Dashboard</a></button>
+                
+                {%else%}
+                <button><a href="{% url 'user:login' %}" id="login">login</a></button>
+                <button><a href="{% url 'user:register' %}" id="Reg">Register</a></button>
+                {%endif%}
+
+                <div class="login-dropdown">
+                    <a class="login-option" data-type="benfek">Benfek</a>
+                    <a class="login-option" data-type="principals">Principals</a>
+                </div>
+                <div class="Reg-dropdown">
+                    <a class="Reg-option" data-type="benfek" href="../NTQ/benfeksignup.html">Benfek</a>
+                    <a class="Reg-option" data-type="principals"
+                        href="../sign in/sign up for principals/principalsignup.html">Principals</a>
+                </div>
+            </div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </section>
+
+        <section class="banner_section">
+            <div class="banner_caption">
+                <span>Food Extracts</span> <span>Nutrients</span> <span>Supplements</span>
+            </div>
+            <h1 class="caption_pitch"><span>Personalized Just For YOU.</span></h1>
+            <a href="{% url 'home:quiz' %}" class="quiz-button">Take Quiz</a>
+            <div class="banner_doctor">
+                <img src="/static/home_images/bannerdoctor.png" alt="Banner Image">
+            </div>
+            <div id="outerbox">
+                <div class="outerbox_imgs">
+                    <div class="caps1">
+                        <img src="/static/home_images/kisspng-dietary-supplement-herbalism-alternative-health-se-cherish-life-away-from-drugs-5af34204754f19%202.png"
+                            alt="">
+                    </div>
+                    <div class="caps2">
+                        <img src="/static/home_images/kisspng-dietary-supplement-herbalism-alternative-health-se-cherish-life-away-from-drugs-5af34204754f19%201.png"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits_section">
+            <!-- Section with reasons to take the quiz -->
+            <h2>Why take the quiz?</h2>
+            <div class="benefitwrapper">
+                <div class="pattern_1">
+                    <img src="/static/home_images/../images/Pattern (1).png" alt="">
+                </div>
+                <div class="pattern_2">
+                    <img src="/static/home_images/../images/Pattern (2).png" alt="">
+                </div>
+                <div class="benefits">
+                    <div class="benefit">
+                        <div class="icon"><i class="fas fa-dna"></i></div>
+                        <p>Know your nutrient type for Free</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="icon"><i class="fas fa-money-bill-wave"></i></div>
+                        <p>Get paid for using your Nutrients</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="icon"><i class="fas fa-shipping-fast"></i></div>
+                        <p>Free monthly Delivery for Beneficiaries</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="icon"><i class="fas fa-stethoscope"></i></div>
+                        <p>Get news on medical breakthroughs and innovations</p>
+                    </div>
+                    <div class="benefit">
+                        <div class="icon"><i class="fas fa-gift"></i></div>
+                        <p>Occasional freebies on national holidays and special days</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {%block products_section%}
+        {%endblock%}
+
+        {%block blog_section%}
+        {%endblock%}
+        
+        {%block testimonial-stat-section%}
+        {%endblock%}
+
+
+        <section class="footer_section">
+            <div class="partners">
+                <div class="partner-logo">
+                    <img src="/static/home_images/goli%20logo.jpg" alt="Partner Logo 1">
+                </div>
+                <div class="partner-logo">
+                    <img src="/static/home_images/NF%20logo.jpg" alt="Partner Logo 2">
+                </div>
+                <div class="partner-logo">
+                    <img src="/static/home_images/vitabiotic%20logo.jpg" alt="Partner Logo 3">
+                </div>
+                <div class="partner-logo">
+                    <img src="/static/home_images/seven%20seas%20logo.jpg" alt="Partner Logo 4">
+                </div>
+                <div class="partner-logo">
+                    <img src="/static/home_images/centrum%20logo.jpg" alt="Partner Logo 5">
+                </div>
+            </div>
+            <div class="footer_logo"><img src="/static/home_images/HLS%20logo%20png%201.png" alt="HLS Logo"></div>
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">careers</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="#">partners</a></li>
+                    <li><a href="#">privacy policies</a></li>
+                    <li><a href="#">terms and conditions</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_divider"></div>
+            <p>&copy; 2023 HLS Nigeria. All rights reserved.</p>
+        </section> 
+    </div>
+    <script src="{%static 'home_js/home_script.js%''}"></script>
+</body>
+
+</html>
