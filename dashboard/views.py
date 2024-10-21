@@ -17,9 +17,10 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # fetch user and and instantiate userprofiles and subprofiles
         user = self.request.user
         user_profile = UserProfile.objects.get(user=user)
-        basic = Basic.objects.get(user_profile=user_profile)
-        lifestyle = Lifestyle.objects.get(user_profile=user_profile)
-        preference = Preference.objects.get(user_profile=user_profile)
+        basic=Basic.objects.filter(user_profile=user_profile)
+        # basic = Basic.objects.get(user_profile=user_profile)
+        # lifestyle = Lifestyle.objects.get(user_profile=user_profile)
+        # preference = Preference.objects.get(user_profile=user_profile)
 
 
 
@@ -37,28 +38,31 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         )
 
     # Product filtering by Lifestyle(habits, recreation,lifestyle)
-        products_by_lifestyle = Product.objects.filter(
-            Q(lifestyle__icontains=lifestyle.habits) | 
-            Q(lifestyle__icontains=lifestyle.recreation) | 
-            Q(lifestyle__icontains=lifestyle.lifestyle)
-        ).distinct()
+        # products_by_lifestyle = Product.objects.filter(
+        #     Q(lifestyle__icontains=lifestyle.habits) | 
+        #     Q(lifestyle__icontains=lifestyle.recreation) | 
+        #     Q(lifestyle__icontains=lifestyle.lifestyle)
+        # ).distinct()
 
 
 
         # Product filtering by Preferences(drug form, and budget)
-        preferred_dosage_forms = preference.drug_form.split(',')
-        preferred_dosage_forms = [drug_form.strip() for drug_form in preferred_dosage_forms]
-        products_by_drugForm = Product.objects.filter(
-        Q(dosage_form__in=preferred_dosage_forms)
-        )
+        # preferred_dosage_forms = preference.drug_form.split(',')
+        # preferred_dosage_forms = [drug_form.strip() for drug_form in preferred_dosage_forms]
+        # products_by_drugForm = Product.objects.filter(
+        # Q(dosage_form__in=preferred_dosage_forms)
+        # )
 
-        products_by_budget = Product.objects.filter(
-        Q(price__lte=preference.health_budget)
-        )
+        # products_by_budget = Product.objects.filter(
+        # Q(price__lte=preference.health_budget)
+        # )
 
         
         # Combining all filtered products
-        products = products_by_age & products_by_gender & products_by_drugForm & products_by_budget & products_by_lifestyle
+        products = products_by_age & products_by_gender 
+        # & products_by_drugForm 
+        # & products_by_budget 
+        # & products_by_lifestyle
 
         paginator = Paginator(products, 9) 
         page_number = self.request.GET.get('page')

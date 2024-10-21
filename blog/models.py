@@ -31,8 +31,8 @@ class Blog(models.Model):
     category = models.ManyToManyField(Category)
 
 
-    def save(self):
-        super().save()
+    def save(self,*args, **kwargs):
+        super().save(*args, **kwargs)
         img = Image.open(self.image.path)
         if img.height > 150 or img.width > 150:
             output_size = (150, 150)

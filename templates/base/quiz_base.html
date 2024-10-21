@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="background">
+    <div class="background" style="background-image: url('{% static 'home_images/quiz_background.webp' %}')">
         <div class="container">
             <header>
                 <h2>Nutrient Type Quiz</h2>
@@ -19,7 +19,7 @@
             </header>
             <div class="quizClasses">
                 <div class="quizClass_dropdown">
-                    <div class="quizClass" style="font-family: Playfair Display;">
+                    <div class="quizClass" style="font-family: Merriweather;">
                         <span>Basics</span>
                         <div class="coins_quiz_class">
                             <img src= "{% static 'home_images/mario_coin.png'%}"  alt="Golden Coin">
@@ -85,7 +85,7 @@
                     <div class="dropdown">
                         <div class="dropdown_img_and_text">
                             <div class="dropdown_img">
-                                <img src="{% static 'home_images/preferences_quiz_image.png'%}" alt="preference img">
+                                <img src="{% static 'home_images/preferences.png' %}">
                             </div>
                             <p class="dropdown_txt">Explore how your food preferences impact your health and earn 50gz
                                 coins</p>
@@ -93,9 +93,11 @@
                         <button id="preference_btn">Take Quiz</button>
                     </div>
                 </div>
-
-                <button class="submit">Submit</button>
-
+                <form method="post">
+                    {% csrf_token %}
+                    <!-- Form content -->
+                    <button type="submit" class="submit" name="quiz_submit">Submit</button>
+                </form>
             </div>
 
             <div class="quiz_display_screen">

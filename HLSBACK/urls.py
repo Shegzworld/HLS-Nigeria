@@ -5,7 +5,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('sakamanje/', admin.site.urls),
     path('', include('home.urls')),
     path('user/', include('user.urls')),
     path('dashboard/', include('dashboard.urls'), name ="dashboard"),
@@ -13,4 +13,4 @@ urlpatterns = [
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
-    urlpatterns += static(settings.STATIC_URL,document_root = settings.STATICFILES_DIRS)
+    urlpatterns += static(settings.STATIC_URL,document_root = settings.STATIC_ROOT)

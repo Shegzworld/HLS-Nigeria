@@ -94,23 +94,23 @@ class BasicsForm(forms.ModelForm):
     class Meta:
         model = Basic
         fields = ('nickname', 'gender', 'age', 'weight', 'height')
-        widgets = {
-            'nickname': forms.TextInput(attrs={'placeholder': 'Enter nickname'}),
-            'gender': forms.Select(choices=GENDER_CHOICES, attrs={'placeholder': 'Select gender'}),
-            'age': forms.Select(choices=AGE_CHOICES, attrs={'placeholder': 'Select age group'}),
-            'weight': forms.NumberInput(attrs={'placeholder': 'Enter weight (kg)', 'min': 20, 'max': 200, 'step': 0.1}),
-            'height': forms.NumberInput(attrs={'placeholder': 'Enter height (cm)', 'min': 120, 'max': 210, 'step': 0.1}),
-        }
+        # widgets = {
+        #     'nickname': forms.TextInput(attrs={'placeholder': 'Enter nickname'}),
+        #     'gender': forms.Select(choices=GENDER_CHOICES, attrs={'placeholder': 'Select gender'}),
+        #     'age': forms.Select(choices=AGE_CHOICES, attrs={'placeholder': 'Select age group'}),
+        #     'weight': forms.NumberInput(attrs={'placeholder': 'Enter weight (kg)', 'min': 20, 'max': 200, 'step': 0.1}),
+        #     'height': forms.NumberInput(attrs={'placeholder': 'Enter height (cm)', 'min': 12, 'max': 210, 'step': 0.1})
+        # }
 
 class LifestyleForm(forms.ModelForm):
+    habits = forms.MultipleChoiceField(choices=HABIT_CHOICES,widget=forms.Select)
+    recreation = forms.MultipleChoiceField(choices=RECREATION_CHOICES,widget=forms.Select)
+    lifestyle = forms.MultipleChoiceField(choices=LIFESTYLE_CHOICES, widget=forms.CheckboxSelectMultiple)
+
     class Meta:
         model = Lifestyle
         fields = ('habits', 'recreation', 'lifestyle')
-        widgets = {
-            'habits': forms.SelectMultiple(attrs={'choices': HABIT_CHOICES}),
-            'recreation': forms.SelectMultiple(attrs={'choices': RECREATION_CHOICES}),
-            'lifestyle': forms.CheckboxSelectMultiple(attrs={'choices': LIFESTYLE_CHOICES}),
-        }
+        
 
 class HealthConditionForm(forms.ModelForm):
     class Meta:
@@ -136,15 +136,15 @@ class PreferenceForm(forms.ModelForm):
     class Meta:
         model = Preference
         fields = ('drug_form', 'health_budget')
-        widgets = {
-            'drug_form': forms.CheckboxSelectMultiple(attrs={'choices': DRUG_FORM_CHOICES}),
-            'health_budget': forms.RadioSelect(attrs={'choices': HEALTH_BUDGET_CHOICES}),
-        }
+        # widgets = {
+        #     'drug_form': forms.CheckboxSelectMultiple(attrs={'choices': DRUG_FORM_CHOICES}),
+        #     'health_budget': forms.RadioSelect(attrs={'choices': HEALTH_BUDGET_CHOICES}),
+        # }
 
 class UserRegistrationForm(UserCreationForm):
     email = forms.EmailField()
 
-    class meta:
+    class Meta:
         model = User
         fields =['username','email','password1','password2',]
         

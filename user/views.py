@@ -16,7 +16,7 @@ def register_view(request):
         if registration_form.is_valid():
             user = registration_form.save()
             UserProfile.objects.create(user=user)
-            messages.success(request, "Account created, you now have a dashboard")
+            # messages.success(request, "Account created, you now have a dashboard")
 
             # Save form data to corresponding models
             if basics:

@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         
         takeQuizButton.addEventListener('click', ()=>{
+            quizDisplayScreen.style.display = 'flex';
             mainQuizContainer.style.transform = 'translateX(-100%)';
             if (takeQuizButton.id === "basic_btn"){
                     basicsDisplayScreen.style.display = 'flex';
