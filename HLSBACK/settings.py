@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_bootstrap4',
     'widget_tweaks',
+    'cart'
 ]
 
 MIDDLEWARE = [
@@ -98,7 +99,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+PAYSTACK_SECRET_KEY = 'sk_test_4584ffc623d2a9ff5e843233f3b8e25ba04cf82d'
+# PAYSTACK_PUBLIC_KEY = 'pk_test_fb2d35578b6fcae564ba8818d40f17a442b9317d'
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
