@@ -1,0 +1,85 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.sqlite3
+db.sqlite3
+.env
+*.env
+
+# Local environment settings
+.env.local
+.env.*.local
+.local
+*.local
+
+# Django migrations
+**/migrations/*
+
+# Ignore specific virtual environment directories
+venv/
+env/
+ENV/
+*.venv
+
+# Node modules (if using front-end tools like npm/yarn)
+node_modules/
+
+# Static files
+staticfiles/
+static/
+*.static
+
+# Media files (user-uploaded content)
+media/
+
+# Cache files
+*.cache
+*.bak
+*.swp
+*.swo
+
+# VSCode configuration files
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+
+# Pycharm/IDEA specific files
+.idea/
+*.iml
+
+# Backup files
+*~
+*.bak
+
+# macOS system files
+.DS_Store
+
+# Coverage reports
+.coverage
+htmlcov/
+.tox/
+
+# Pipenv
+Pipfile.lock
+
+# Build directories
+build/
+dist/
+
+# Other system files
+Thumbs.db
+desktop.ini
+
+# Ignore any compiled code or temp files
+*.dll
+*.so
+*.dylib
+
+# MySQL database dumps
+*.sql
