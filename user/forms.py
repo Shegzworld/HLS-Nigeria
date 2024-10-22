@@ -2,7 +2,7 @@ from django import forms
 from django.forms import Textarea
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
-from .models import Basic, Lifestyle, HealthCondition, Preference
+from .models import BasicInfo as Basic,LifestyleInfo as Lifestyle,PreferenceInfo as Preference, HealthConditionInfo as HealthCondition
 
 
 # choices for all quiz classes

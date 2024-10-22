@@ -1,5 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
+from user.models import CustomUser as User
+
 from django.utils import timezone
 
 # 1. Pharmacy Grouping

@@ -98,7 +98,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+AUTH_USER_MODEL = 'user.CustomUser'
 PAYSTACK_SECRET_KEY = 'sk_test_4584ffc623d2a9ff5e843233f3b8e25ba04cf82d'
 # PAYSTACK_PUBLIC_KEY = 'pk_test_fb2d35578b6fcae564ba8818d40f17a442b9317d'
 # Internationalization

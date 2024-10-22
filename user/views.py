@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login,logout
 from django.contrib import messages
-from .models import UserProfile
+from .models import CustomUser as UserProfile
 from .forms import UserRegistrationForm, BasicsForm, LifestyleForm, HealthConditionForm, PreferenceForm, CustomLoginForm
 
 
