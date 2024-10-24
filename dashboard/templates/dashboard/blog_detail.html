@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Detail</title>
+    <link rel="stylesheet" href="{% static 'css/blog_detail.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="author-info">
+            <img src="{{post.image.url}}" alt="Author Profile Picture" class="author-profile-picture">
+            <span class="author-name">{{ post.author }}</span>
+            <div class="post-metadata">
+                <span>February 22, 2022</span>
+                <span>500 words</span>
+                <span>10 sentences</span>
+                <span>10 min read</span>
+            </div>
+        </div>
+        <h1 class="post-title">{{post.title}}</h1>
+        <img src="image1.jpg" alt="Image 1" class="post-image">
+        <div class="post-metadata-section">
+            <div class="metadata-icon-section">
+                <i class="fab fa-heart"></i>
+                <span>250</span>
+                <span>Likes</span>
+            </div>
+            <div class="metadata-icon-section">
+                <i class="fab fa-comment"></i>
+                <span>50</span>
+                <span>Comments</span>
+            </div>
+            <div class="metadata-icon-section">
+                <i class="fab fa-shopping-bag"></i>
+                <span>20</span>
+                <span>Related Products</span>
+            </div>
+        </div>
+        <p class="post-content">{{post.content}}</p>
+        <img src="image2.jpg" alt="Image 2" class="post-image">
+        <p class="post-content">{{post.content}}.</p>
+        <div class="action-buttons">
+            <button class="like-button"><i class="fas fa-heart"></i> Like</button>
+            <button class="comment-button"><i class="fas fa-comment"></i> Comment</button>
+            <button class="share-button"><i class="fas fa-share"></i> Share</button>
+        </div>
+    </div>
+    <!-- <script src="{% static 'js/blog_detail.js' %}"></script> -->
+</body>
+</html>

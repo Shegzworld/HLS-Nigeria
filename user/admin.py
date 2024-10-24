@@ -33,7 +33,3 @@ class UserProfileAdmin(admin.ModelAdmin):
 
 UserAdmin.inlines = [UserProfileInline]
 admin.site.register(UserProfile,UserProfileAdmin)
-# admin.site.register(Basic)
-# admin.site.register(Lifestyle)
-# admin.site.register(Preference)
-# admin.site.register(HealthCondition)

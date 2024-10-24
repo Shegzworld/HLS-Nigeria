@@ -17,7 +17,7 @@
                         </div>
                         <div class="article-info">
                             <h3>{{post.title}}</h3>
-                            <p class="article-content">{{ post.content }}<a href="#" class="read-more">Read More</a></p>
+                            <p class="article-content">{{ post.content }}<a href="{% url 'dashboard:blog_detail' post.id %}" class="read-more">Read More</a></p>
                             <span class="uploader_name">{{ post.author }}</span>
                         </div>
                     </div>

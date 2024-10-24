@@ -1,19 +1,15 @@
 from django.contrib import admin
-from .models import Product,PharmacyGrouping, Brand, AgeGroup, Gender,Lifestyle, DosageForm, LifestyleRating
+from .models import Product,PharmacyGrouping,AgeRange, Brand, Gender,Lifestyle, DosageForm, LifestyleRating,Health_Benefits,Health_support,Side_effects,Fortify
 
 
 # Register your models here.
 
-models = [Product, PharmacyGrouping, Brand, AgeGroup, Gender,Lifestyle, DosageForm, LifestyleRating]
+models = [Product, PharmacyGrouping, Brand,AgeRange, Gender,Lifestyle, DosageForm, LifestyleRating,Health_Benefits, Health_support, Side_effects, Fortify]
+
+class Product(admin.ModelAdmin):
+    inlines = [Product,PharmacyGrouping, Brand, AgeRange, Gender,Lifestyle, DosageForm, LifestyleRating,Health_Benefits, Health_support, Side_effects, Fortify]
 
 for model in models:
     admin.site.register(model)
-# admin.site.register(Product)
-# admin.site.register(PharmacyGrouping)
-# admin.site.register(Brand)
-# admin.site.register(AgeGroup)
-# admin.site.register(Gender)
-# admin.site.register(Lifestyle)
-# admin.site.register(DosageForm)
-# admin.site.register(LifestyleRating)
+
 

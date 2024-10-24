@@ -8,7 +8,7 @@ urlpatterns = [
     path('sakamanje/', admin.site.urls),
     path('', include('home.urls')),
     path('user/', include('user.urls')),
-    path('dashboard/', include('dashboard.urls'), name ="dashboard"),
+    path('dashboard/', include('dashboard.urls')),
 ]
 
 if settings.DEBUG:

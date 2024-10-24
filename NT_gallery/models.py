@@ -4,175 +4,97 @@ from django.utils import timezone
 
 # 1. Pharmacy Grouping
 class PharmacyGrouping(models.Model):
-    NAME_CHOICES = [
-        ('Single Vitamins', 'Single Vitamins'),
-        ('Multi Vitamins', 'Multi Vitamins'),
-        ('Multi Minerals', 'Multi Minerals'),
-        ('Herbal Supplements', 'Herbal Supplements'),
-        ('Essential Fatty Acids', 'Essential Fatty Acids'),
-        ('Amino Acids', 'Amino Acids'),
-        ('Tonics', 'Tonics'),
-        ('Nature Made', 'Nature Made'),
-        ('Enzymes', 'Enzymes'),
-        ('Probiotics', 'Probiotics'),
-        ('Adaptogens', 'Adaptogens'),
-        ('Antioxidants', 'Antioxidants'),
-    ]
-    PharmacyGrouping = models.CharField(max_length=255, choices=NAME_CHOICES, unique=True)
+    PharmacyGrouping = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.PharmacyGrouping
 
 
 # 2. Brands
 class Brand(models.Model):
-    NAME_CHOICES = [
-        ('Nature\'s Field', 'Nature\'s Field'),
-        ('Puritan\'s Pride', 'Puritan\'s Pride'),
-        ('Vitabiotics', 'Vitabiotics'),
-        ('Centrum', 'Centrum'),
-        ('Seven Seas', 'Seven Seas'),
-        ('Reload', 'Reload'),
-        ('Goli', 'Goli'),
-        ('Olly', 'Olly'),
-        ('Earth\'s Creation', 'Earth\'s Creation'),
-        ('Piping Rock', 'Piping Rock'),
-        ('Solgar', 'Solgar'),
-        ('Country Life', 'Country Life'),
-        ('Mason\'s Natural', 'Mason\'s Natural'),
-        ('Garden of Life', 'Garden of Life'),
-        ('Nature\'s Truth', 'Nature\'s Truth'),
-        ('Swanson', 'Swanson'),
-        ('Emzor', 'Emzor'),
-        ('M&B', 'M&B'),
-        ('Force Factor', 'Force Factor'),
-        ('Renew Life', 'Renew Life'),
-        ('Elbe', 'Elbe'),
-        ('Relumins', 'Relumins'),
-        ('Nutrify', 'Nutrify'),
-        ('Mega We Care', 'Mega We Care'),
-        ('Winstown', 'Winstown'),
-        ('Optibac', 'Optibac'),
-        ('Holand & Barett', 'Holand & Barett'),
-        ('Horbach', 'Horbach'),
-        ('Himalaya', 'Himalaya'),
-        ('Nature\'s Bounty', 'Nature\'s Bounty'),
-        ('Now', 'Now'),
-        ('Organic Health', 'Organic Health'),
-        ('Imedeen', 'Imedeen'),
-        ('Renzo', 'Renzo'),
-        ('Kirkland', 'Kirkland'),
-        ('Haliborange', 'Haliborange'),
-        ('Wholesome Foods', 'Wholesome Foods'),
-        ('Max World', 'Max World'),
-        ('Fafor Life', 'Fafor Life'),
-        ('Super Life', 'Super Life'),
-        ('Bayer', 'Bayer'),
-        ('Dr. Meyer', 'Dr. Meyer'),
-        ('Live Pure', 'Live Pure'),
-        ('Gain World', 'Gain World'),
-        ('21st Century', '21st Century'),
-        ('Gaia', 'Gaia'),
-        ('Doctor\'s Best', 'Doctor\'s Best'),
-    ]
-    Brand_Name = models.CharField(max_length=255, choices=NAME_CHOICES, unique=True)
+    Brand_Name = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.Brand_Name
 
 
-# 3. Age
-class AgeGroup(models.Model):
-    NAME_CHOICES = [
-        ('70+', '60'),
-        ('60+', '60+'),
-        ('50+', '50+'),
-        ('40+', '40+'),
-        ('general','general'),
-        ('Young Adults', 'Young Adults'),
-        ('Adults', 'Adults'),
-        ('Teens', 'Teens'),
-        ('Children (General)', 'Children (General)'),
-        ('Toddlers', 'Toddlers'),
-        ('Infant', 'Infant')
-    ]
-    Age = models.CharField(max_length=255, choices=NAME_CHOICES, unique=True)
-
-    def __str__(self):
-        return self.name
     
 class AgeRange(models.Model):
-        name = models.CharField(max_length=255)
-        min_age = models.IntegerField()
-        max_age = models.IntegerField()
+    name = models.CharField(max_length=255, default = 0)
+    min_age = models.IntegerField()
+    max_age = models.IntegerField()
+
+    def __str__(self):
+        return self.name
 
 
 
 # 4. Gender
 class Gender(models.Model):
-    NAME_CHOICES = [
-        ('Male', 'Male'),
-        ('Female', 'Female'),
-        ('For Teen Girls', 'For Teen Girls'),
-        ('For Teen Boys', 'For Teen Boys'),
-        ('For Women', 'For Women'),
-        ('For Men', 'For Men'),
-    ]
-    Gender = models.CharField(max_length=255, choices=NAME_CHOICES, unique=True)
+    Gender = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.Gender
 
 
 # 8. Lifestyle
 class Lifestyle(models.Model):
-    NAME_CHOICES = [
-        ('For Sex Enthusiasts', 'For Sex Enthusiasts'),
-        ('For Clubbers', 'For Clubbers'),
-        ('For Smokers', 'For Smokers'),
-        ('For Drinkers', 'For Drinkers'),
-        ('Gym Enthusiasts', 'Gym Enthusiasts'),
-        ('Skin and Fashion Lovers', 'Skin and Fashion Lovers'),
-        ('Prayers and Spiritual Exercises (Meditation, Fasting, Yoga)', 'Prayers and Spiritual Exercises (Meditation, Fasting, Yoga)'),
-    ]
-    LifestyleType = models.CharField(max_length=255, choices=NAME_CHOICES, unique=True)
+    LifestyleType = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.LifestyleType
 
 
 # 10. Dosage Forms
 class DosageForm(models.Model):
-    NAME_CHOICES = [
-        ('Creams', 'Creams'),
-        ('Gummies', 'Gummies'),
-        ('Inhalers', 'Inhalers'),
-        ('Patches', 'Patches'),
-        ('Liquid', 'Liquid'),
-        ('Powders', 'Powders'),
-        ('Capsules', 'Capsules'),
-        ('Tablets', 'Tablets'),
-    ]
-    DosageForm = models.CharField(max_length=255, choices=NAME_CHOICES, unique=True)
+    DosageForm = models.CharField(max_length=255)
 
     def __str__(self):
-        return self.name
+        return self.DosageForm
 
 
 # 11. Lifestyle Rating
 class LifestyleRating(models.Model):
-    NAME_CHOICES = [
-        ('Vitality', 'Vitality'),
-        ('Immunity', 'Immunity'),
-        ('Quick Recovery', 'Quick Recovery'),
-        ('Brain Power (Wealth Creation)', 'Brain Power (Wealth Creation)'),
-        ('Skin, Beauty, Graceful Ageing', 'Skin, Beauty, Graceful Ageing'),
-        ('Longevity', 'Longevity'),
-    ]
-    LifestyleRating = models.CharField(max_length=255, choices=NAME_CHOICES, unique=True)
+    LifestyleRating = models.CharField(max_length=255)
 
     def __str__(self):
+        return self.LifestyleRating
+    
+
+class Health_support(models.Model):
+    name = models.CharField(max_length=255)
+    clinical_file = models.FileField(upload_to='documents/', blank=True, null=True)
+    summary_file = models.FileField(upload_to='documents/', blank=True, null=True)
+    
+    def __str__(self):
         return self.name
+
+class Side_effects(models.Model):
+    name = models.CharField(max_length=255)
+    clinical_file = models.FileField(upload_to='documents/', blank=True, null=True)
+    summary_file = models.FileField(upload_to='documents/', blank=True, null=True)
+    
+    def __str__(self):
+        return self.name
+
+class Fortify(models.Model):
+    name = models.CharField( max_length=255 )
+    clinical_file = models.FileField(upload_to='documents/', blank=True, null=True)
+    summary_file = models.FileField(upload_to='documents/', blank=True, null=True)
+    
+    def __str__(self):
+        return self.name
+
+
+class Health_Benefits(models.Model):
+    product_name = models.CharField(max_length=255,null = True)
+    health_support = models.ManyToManyField(Health_support)
+    Side_effects = models.ManyToManyField(Side_effects)
+    Fortify = models.ManyToManyField(Fortify)
+
+    def __str__(self):
+        return self.product_name
+
 
 
 # Product model to relate categories
@@ -187,28 +109,29 @@ class Product(models.Model):
     lifestyle = models.ManyToManyField(Lifestyle)
     dosage_form = models.ManyToManyField(DosageForm)
     lifestyle_rating = models.ManyToManyField(LifestyleRating)
+    health_benefits = models.ManyToManyField(Health_Benefits)
     description = models.TextField()
-    main_image = models.ImageField(upload_to='product_images/main')
-    image_1 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
-    image_2 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
-    image_3 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    main_image = models.ImageField(upload_to='product_images/main',null=True)
+    side_image_1 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
+    side_image_2 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
+    side_image_3 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True)
+    updated_at = models.DateTimeField(auto_now=True,null=True)
 
     def _str_(self):
         return self.name
 
 
 class ProductReview(models.Model):
-    product = models.ForeignKey(Product, on_delete=models.CASCADE)
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    writer = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name = 'product_review')
     # rating = models.IntegerField(choices=[1, 2, 3, 4, 5])
     comment = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.product.name} - {self.user.username}"
+        return f"{self.product}{' reviews by'} - {self.user.username}"
 
 
 # class Prof_Pack:
