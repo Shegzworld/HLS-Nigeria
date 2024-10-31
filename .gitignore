@@ -19,7 +19,7 @@ db.sqlite3
 *.local
 
 # Django migrations
-**/migrations/*
+# **/migrations/*
 
 # Ignore specific virtual environment directories
 venv/
@@ -31,9 +31,9 @@ ENV/
 node_modules/
 
 # Static files
-staticfiles/
-static/
-*.static
+# staticfiles/
+# static/
+# *.static
 
 # Media files (user-uploaded content)
 media/

@@ -2,22 +2,45 @@
     <div class="podcast-section display_content">
         <div class="podcast-banner">
             <img src="/static/home_images/podcastimg (1).jpg" alt="">
+            <div class="play-button">
+                <div class="play-icon"></div>
+            </div>
         </div>
-        <div class="podcast-selector">
+        <div class="playing-podcast_info">
+            <div class="podcast_title_author">
+                <h3>The gospel of Proper Nutrition</h3>
+                <p>By Pharm Segun Opaleye</p>
+            </div>
+            <div class="view_details">
+                <span class="total_views"><i class="fas fa-solid fa-eye"></i> 1.2k views</span>
+                <span class="total-followers"><i class="fas fa-user"></i> 5h followers</span>
+                <button class="subscribe_button">Subscribe</button>
+            </div>
+            <div class="comments">
+                <span>comments</span>
+            </div>
+        </div>
+        <!-- <div class="podcast-selector">
             <div class="tab-link active">Free Podcasts</div>
             <div class="tab-link">HLS Specials</div>
             <div class="tab-link">Your Doctors</div>
-        </div>
-        {% for podcast in podcast_pages %}
+        </div> -->
+        {% for podcast in podcast_list %}
         <div class="podcast-display-cards">
             <div class="podcast-card">
                 <div class="podcast-card-detail">
                     <div class="podcast-card-pic">
                         <img src="{{podcast.image.url}}" alt=""></div>
-                    <div class="written-details">
+                    <div class="podcast-title">
                         <h3>{{ podcast.title }}</h3>
-                        <span><i class="fas fa-microphone"></i> {{ podcast.podcaster.name}}</span>
-                        <span><i class="fas fa-compact-disc"></i> {{ podcast.episode_count }} episodes</span>
+                        <div class="podcast_name_count">
+                            <i class="fas fa-microphone"></i> 
+                            <span>{{ podcast.podcaster.name}}</span>
+                        </div>
+                        <div class="podcast_name_count">
+                            <i class="fas fa-compact-disc"></i>
+                            <span>{{ podcast.episode_count }} episodes</span> 
+                        </div>
                     </div>
                 </div>
                 <div class="podcast-action-call">

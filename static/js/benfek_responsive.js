@@ -1,7 +1,12 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
+    
+    
     // Variable Declaration
-
     const benfekWrapper = document.querySelector('.benfek_wrapper')
+
+
+    // Top section (top sticky bar)
+    
     const topStickyBar = document.querySelector('.top_sticky_bar')
     const menuIcon = document.getElementById("menu_icon");
     const hamburger_menu = document.querySelector (".hamburger_menu")
@@ -13,53 +18,48 @@ document.addEventListener('DOMContentLoaded', function(){
     const searchForm = document.getElementById('searchForm');
     const serviceHeader = document.querySelector('.service-header');
     const services = document.querySelectorAll('.benfek-service');
-
-    const NtGallery = document.querySelector('#NT-gallery')
-
     const benfekServicesContainer = document.querySelector('.benfek-services')
     const benfekServiceIconText = document.querySelectorAll('.benfek-services span')
+
+    // Mid section(body)
     const displayBody = document.querySelector('.display_body')
     const display_contents = document.querySelectorAll('.display_content')
+    
 
+    // NT_gallery
+    const NtGallery = document.querySelector('#NT-gallery')
     const menuItems = document.querySelectorAll('.menu-item');
-    const  Nutrient_type= document.querySelector('#Nutrient_type');
-    const  Breakthroughs= document.querySelector('#Breakthroughs');
-
-
+    const Nutrient_type= document.querySelector('#Nutrient_type');
     const nutrientTypeGallery = document.querySelector('.nutrient_type_gallery');
     const nutrientGalleryContainer = document.querySelectorAll('.nutrient_gallery_container');
     const nutrient_type_glass_pack = document.querySelector('.nutrient_type_glass_pack');
     const nutrient_type_container = document.querySelector('#nutrient_type_container');
     const nutrient_gallery = document.querySelector('.nutrient_gallery');
     const nutrient_type_pack= document.querySelector('.Nutrient_type_pack');
-    // const nutrientTypeRevealButton = document.querySelector('.Nutrient_type_glass button');
-    // const nutrientTypeParagraph = document.querySelector('#nutrient_type_pack_best p');
-    
     const NutrientTypeGlassCover = document.querySelectorAll('.Nutrient_type_glass');
     const NutrientTypeHighlightButtons = document.querySelectorAll('.label-bg');
     const selected_nutrient_screen = document.querySelector('.selected_nutrient_screen')
-    
-    
-    
+    const viewInfoBtns = document.querySelectorAll('.view_info_btn');
+    const tooltips = document.querySelectorAll('.tooltip');
     const specifics_container = document.querySelector('#specifics_container');
     const dr_pick_container = document.querySelector('#dr_pick_container');
-
-
+    
+    // Nutrient Pack details
+    const pic = document.querySelector(".nutrient-pack-item-pic");
+    const rational = document.querySelector(".nutrient-pack-rational");
+    const researchSummaryItems = document.querySelectorAll('.research_summary_intro');
+    
+    // Good_news section
+    const Breakthroughs= document.querySelector('#Breakthroughs');
     const benfekSelectedArticles = document.querySelector('.benfek_selected_articles');
     const articleClassesContainer = document.querySelectorAll('.article_class_container');
     const articleCardsContainer = document.querySelector('#article-cards');
     const aboutYouContainer = document.querySelector('#about_you');
     
-    
+    // Podcast section
     const podcastSection = document.querySelector('.podcast-section');
 
-    const viewInfoBtns = document.querySelectorAll('.view_info_btn');
-    const tooltips = document.querySelectorAll('.tooltip');
 
-
-    const pic = document.querySelector(".nutrient-pack-item-pic");
-    const rational = document.querySelector(".nutrient-pack-rational");
-    const researchSummaryItems = document.querySelectorAll('.research_summary_intro');
 
     // Codes for declaring Actives and event listeners for services to display contents
 
@@ -78,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function(){
         }
 
     });
-
 
     let isDisplayed = false
     searchIcon.addEventListener('click', ()=>{  
@@ -113,9 +112,9 @@ document.addEventListener('DOMContentLoaded', function(){
             display_contents.forEach(display_content=>{
                 display_content.style.display='none'
             })
+            console.log('clicked')
             serviceHeader.style.display = 'block';
-            topStickyBar.style.height = '190px';
-            benfekWrapper.style.paddingTop= '180px';
+            topStickyBar.style.height = '250px';
             searchContainer.style.display = 'none';
             benfekServiceIconText.forEach(text=>{
             text.style.display = 'block'
@@ -131,14 +130,14 @@ document.addEventListener('DOMContentLoaded', function(){
                 else
                 {   searchContainer.style.display = 'block';
                     topStickyBar.style.height = '240px';
-                    benfekWrapper.style.paddingTop= '240px'
+                    // benfekWrapper.style.paddingTop= '240px'
                     isDisplayed = true}
             })
             nutrientGalleryContainer.forEach(galleryContainer=>{
                 galleryContainer.style.display='none'
             })
             menuItems.forEach(i => i.classList.remove('active'));
-            // this.classList.add('active');
+            this.classList.add('active');
             Nutrient_type.classList.add('active')
             nutrientTypeGallery.style.display = 'flex';
             nutrient_type_container.style.display = 'flex';
@@ -172,8 +171,6 @@ document.addEventListener('DOMContentLoaded', function(){
             menuItems.forEach(i => i.classList.remove('active'));
             Breakthroughs.classList.add('active');
             topStickyBar.style.height = '120px';
-            benfekServicesContainer.style.marginTop = '10px';
-            benfekWrapper.style.paddingTop = '120px';
             articleClassesContainer.forEach(articleContainer=>{
                 articleContainer.style.display='none'
             })
@@ -198,27 +195,26 @@ document.addEventListener('DOMContentLoaded', function(){
                 benfekWrapper.style.paddingTop= '146.4px';
                 isDisplayed = false}
                 else
-                {   searchContainer.style.display = 'block';
-                    topStickyBar.style.height = '200px';
-                    benfekWrapper.style.paddingTop= '200px';
-                    isDisplayed = true}
+                {   
+                searchContainer.style.display = 'block';
+                topStickyBar.style.height = '200px';
+                benfekWrapper.style.paddingTop= '200px';
+                isDisplayed = true}
             })
             benfekServiceIconText.forEach(text=>{
             text.style.display = 'none'
             })
             topStickyBar.style.height = '120px';
-            benfekServicesContainer.style.marginTop = '10px';
-            benfekWrapper.style.paddingTop = '120px';
         }
-        if (target.closest('#Doctors-Note')){
-        serviceHeader.style.display = 'none';
-        searchContainer.style.display = 'none';
-        benfekServiceIconText.forEach(text=>{
-            text.style.display = 'none'
-            })
-        topStickyBar.style.height = 'auto'
-        benfekWrapper.style.paddingTop = '95px'
-        }
+        // if (target.closest('#Doctors-Note')){
+        // serviceHeader.style.display = 'none';
+        // searchContainer.style.display = 'none';
+        // benfekServiceIconText.forEach(text=>{
+        //     text.style.display = 'none'
+        //     })
+        // topStickyBar.style.height = 'auto'
+        // benfekWrapper.style.paddingTop = '95px'
+        // }
     })
 
     menuItems.forEach(item => {
@@ -267,17 +263,51 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     });
 
+    const my_nutrient_picture = document.querySelectorAll(".my_nutrient_picture")
+    const nextBtnNutrient_type = document.querySelector(".Nutrient_type_pack .slide_left")
+    const prevBtnNutrient_type = document.querySelector(".Nutrient_type_pack .slide_right")
+    let currentNutrientPictureView = 0
+
+    const updateNutrient_typeVisibility = () => {
+        my_nutrient_picture.forEach((nutrientPic, index) => {
+        nutrientPic.style.left = `${(index - currentNutrientPictureView) *180}px`
+        })
+    }
+    nextBtnNutrient_type.addEventListener('click', () => {
+        if (currentNutrientPictureView >= 1) {
+        currentNutrientPictureView--
+        updateNutrient_typeVisibility()
+        } else {
+        nextBtnNutrient_type.style.color = 'grey'
+        }
+    })
+    prevBtnNutrient_type.addEventListener('click', () => {
+        if (currentNutrientPictureView < my_nutrient_picture.length - 1) {
+        currentNutrientPictureView++
+        updateNutrient_typeVisibility()
+        } else {
+        prevBtnNutrient_type.style.color = 'grey'
+        }
+    })
+  
+
     NutrientTypeGlassCover.forEach(glassCover=>{
         const revealButton = glassCover.querySelector('button');
         const glassCoverText = glassCover.querySelector('p');
+        const packRating = glassCover.querySelector('.nutrient_pack_rating');
+        console.log('clicked')
         supplementInfoButton = glassCover.parentElement.querySelectorAll('.view_info_btn')
             supplementInfoButton.forEach(infoButton=>{
                 infoButton.style.display = 'none'
             })
             const labelBg = glassCover.previousElementSibling;
-            
             revealButton.addEventListener('click', ()=>
-            {glassCover.style.height = '0%';
+            {
+            packRating.style.display = 'none';
+            prevBtnNutrient_type.style.display = 'block'
+            nextBtnNutrient_type.style.display = 'block'
+            updateNutrient_typeVisibility()
+            glassCover.style.height = '0%';
             glassCover.style.border = '0px';
             glassCoverText.style.opacity = '0';
             revealButton.style.opacity = '0';
@@ -285,32 +315,29 @@ document.addEventListener('DOMContentLoaded', function(){
         })
     })
 
+
     NutrientTypeHighlightButtons.forEach(NutrientTypeHighlightButton => {
         NutrientTypeHighlightButton.addEventListener('click', () =>{
-                topStickyBar.style.transform = 'translateX(101%)'
-            console.log('closest')
-            topStickyBar.style.transition = 'transform 0.3s';
-            
-            benfekWrapper.style.paddingBottom= '0px';
-            benfekWrapper.style.paddingTop = '0px';
+            topStickyBar.style.display = 'none'
+            nutrientTypeGallery.style.display = 'none';
+            selected_nutrient_screen.style.display = 'block'
+            selected_nutrient_screen.style.transition = 'transform 1s';
             selected_nutrient_screen.style.transform = 'translateX(0%)';
-            // selected_nutrient_screen.style.top = '0';
-            nutrientTypeGallery.style.transform = 'translateX(100%)';
-            nutrientTypeGallery.style.transition = 'transform 0.3s';
-            selected_nutrient_screen.style.transition = 'transform 0.3s';
             
         backToNutrientPack = selected_nutrient_screen.querySelector('.fa-arrow-left');
         backToNutrientPack.addEventListener('click', ()=>{
             selected_nutrient_screen.style.transform = 'translateX(100%)';
+            selected_nutrient_screen.style.display = 'none'
+            topStickyBar.style.display = 'flex'
             topStickyBar.style.transform = 'translateX(0%)';
             nutrientTypeGallery.style.transform = 'translateX(0%)';
+            nutrientTypeGallery.style.display = 'flex'
             nutrientTypeGallery.style.transition = 'transform 0.3s';
             topStickyBar.style.transition = 'transform 0.3s';
             benfekWrapper.style.paddingBottom= '60px';
-            benfekWrapper.style.paddingTop = '180px';
             })
         })
-        })
+    })
 
     rational.addEventListener('click', () => {
     pic.style.animation = 'shuffle_up 0.5s forwards';
@@ -408,8 +435,6 @@ document.addEventListener('DOMContentLoaded', function(){
         }
   });
 });
-
-
 });
 
 

@@ -5,46 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-<YOUR-INTEGRITY-CODE-HERE>" crossorigin="anonymous" />
     <link rel="stylesheet" href="{% static 'css/blog_detail.css' %}">
 </head>
 <body>
     <div class="container">
-        <div class="author-info">
-            <img src="{{post.image.url}}" alt="Author Profile Picture" class="author-profile-picture">
-            <span class="author-name">{{ post.author }}</span>
+        <div class="blog_intro">
+            <div class="head_title">
+                <img src="/static/home_images/HLS logo with serenity 2.png" alt="hls-logo">
+                <div class="related_podcast">
+                    <span class="play_icon"><i class="fas fa-solid fa-play"></i></span>
+                    <h3>related podcast</h3>
+                </div>
+            </div>
+            <div class="post_title">
+                <h4 class="blog_tag">Diabetes, tiredness</h4>
+                <h1 class="post_title">{{post.title}}</h1>
+                <h3 class="blog_key_point">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officia aut pariatur
+                    debitis ipsa est.</h3>
+            </div>
+            <div class="post_image-1">
+                <img src="/static/home_images/blog_1 (1).jpeg" alt="Image 1">
+            </div>
+        </div>
+        
+        <div class="post-metadata-section">
             <div class="post-metadata">
-                <span>February 22, 2022</span>
                 <span>500 words</span>
                 <span>10 sentences</span>
-                <span>10 min read</span>
             </div>
-        </div>
-        <h1 class="post-title">{{post.title}}</h1>
-        <img src="image1.jpg" alt="Image 1" class="post-image">
-        <div class="post-metadata-section">
             <div class="metadata-icon-section">
-                <i class="fab fa-heart"></i>
+                <i class="fas fa-clock"></i>
+                <span>10</span>
+            </div>
+            <div class="metadata-icon-section">
+                <i class="fas fa-heart"></i>
                 <span>250</span>
-                <span>Likes</span>
             </div>
             <div class="metadata-icon-section">
-                <i class="fab fa-comment"></i>
+                <i class="fas fa-comment"></i>
                 <span>50</span>
-                <span>Comments</span>
             </div>
             <div class="metadata-icon-section">
-                <i class="fab fa-shopping-bag"></i>
+                <i class="fas fa-shopping-cart"></i>
                 <span>20</span>
-                <span>Related Products</span>
+            </div>
+            
+        </div>
+        <p class="published_date"></p>
+        <h3 class="author-name">By Ayomide Ogunlusi</h3>
+
+        <div class="blog_body">
+            <p class="post-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi enim voluptas porro
+                necessitatibus perspiciatis iste odit voluptatem, nisi aspernatur a ratione esse? Nisi corporis tempora, nemo ex
+                eaque nostrum perspiciatis?</p>
+            <img src="/static/home_images/blog_2.jpeg" alt="Image 2" class="post-image">
+            <h5>image comment</h5>
+            <p class="post-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptates aliquam, est vero quasi
+                molestias eius aspernatur laudantium eos, rerum mollitia quae soluta sequi dolores cum dolorum obcaecati nam quas!
+            </p>
+            <div class="action-buttons">
+                <button class="like-button"><i class="fas fa-heart"></i></button>
+                <button class="comment-button"><i class="fas fa-comment"></i></button>
+                <button class="share-button"><i class="fas fa-share"></i></button>
             </div>
         </div>
-        <p class="post-content">{{post.content}}</p>
-        <img src="image2.jpg" alt="Image 2" class="post-image">
-        <p class="post-content">{{post.content}}.</p>
-        <div class="action-buttons">
-            <button class="like-button"><i class="fas fa-heart"></i> Like</button>
-            <button class="comment-button"><i class="fas fa-comment"></i> Comment</button>
-            <button class="share-button"><i class="fas fa-share"></i> Share</button>
+
+        
+        <div class="author-info">
+            <img src="{{post.image.url}}" alt="Author Profile Picture" class="author-profile-picture">
+            <p class="author-bio">Ayomide Ogunlusi is a practising pharmacologist currently working in bita betterpahrmaceuticals in ireland great britain she graduated from lagos state university and has a passion to bring medical breakthroughs to all hopefuls in healthcare and medicine</p>
         </div>
     </div>
     <!-- <script src="{% static 'js/blog_detail.js' %}"></script> -->

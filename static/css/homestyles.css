@@ -634,12 +634,17 @@ input[type="checkbox"] {
 }
 
 
-.product-slides {
+/* .product-slides {
     display: flex;
     justify-content: space-between;
     padding: 30px;
     gap: 30px;
     position: relative;
+} */
+
+.product-slides {
+    position: relative;
+    overflow-x: hidden;
 }
 
 .product-slides .slide_left {
@@ -648,7 +653,8 @@ input[type="checkbox"] {
     height: 15px;
     border-radius: 0;
     background-color: none;
-    border: solid rgba(106, 108, 106, 0.738);
+    border: solid rgba(0, 0, 0, 0.738);
+    border-width: 5px;
     /* border-left: none; */
     border-top: none;
     border-right: none;
@@ -656,31 +662,34 @@ input[type="checkbox"] {
     left: 5px;
     top: 40%;
 }
-
 .product-slides .slide_right {
-    display: none;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     width: 15px;
     height: 15px;
     border-radius: 0;
     background-color: none;
-    border: solid rgb(33, 35, 33);
+    border: solid rgba(0, 0, 0, 0.738);
     border-left: none;
     border-top: none;
     position: absolute;
+    border-width: 5px;
     right: 0;
     top: 40%;
 }
 
+
 .product-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+    border: #05637f5d solid 0.5px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    border: #05637f5d solid 0.5px;
-    flex-basis: 300px;
     height: 260px;
     padding: auto;
-    position: relative;
+    margin-left: 30px;
 }
 
 .product-box span {
@@ -722,10 +731,9 @@ h3 {
     border: none;
     align-self: flex-start;
     margin-right: 3px;
+    margin-top: -5px;
     padding: 0;
 }
-
-
 
 /* Blog styles */
 .blog_section {
@@ -804,7 +812,8 @@ h3 {
 /* .testimonial-fact-section styles */
 
 .testimonial-stat-section {
-    z-index: 900000000;
+    position: relative;
+    height: auto;
 }
 
 .testimonials {
@@ -822,20 +831,28 @@ h3 {
     margin-bottom: 15px;
 }
 
-.testimonialwrapper {
+/* .testimonialwrapper {
     display: flex;
     justify-content: space-around;
+} */
+
+.testimonialwrapper {
+    position: relative;
+    overflow-x: hidden;
 }
 
 .testimonial-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+    width: 250px;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    flex-basis: calc(33.33% - 20px);
-    padding-left: 10px;
-    text-align: center;
-    height: 250px;
-    transition: 0.5s;
-    position: relative;
+    height: 260px;
+    padding: auto;
+    margin-left: 30px;
 }
 
 
@@ -860,7 +877,7 @@ h3 {
     left: 0;
 }
 
-.testimonial-box .slide_left {
+.testimonials .slide_left {
     transform: rotate(45deg);
     width: 15px;
     height: 15px;
@@ -875,7 +892,7 @@ h3 {
     top: 140px;
 }
 
-.testimonial-box .slide_right {
+.testimonials .slide_right {
     transform: rotate(45deg);
     width: 15px;
     height: 15px;
@@ -1143,7 +1160,7 @@ h3 {
     }
 
     .blogwrapper {
-        height: 300px;
+        height: 280px;
         width: 100%;
     }
 
@@ -1208,19 +1225,52 @@ h3 {
         background-color: #E7FAFF;
     }
 
+    .testimonials .slide_left {
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+    background-color: none;
+    border: solid rgba(106, 108, 106, 0.738);
+    /* border-left: none; */
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    left: 5px;
+    top: 140px;
+    }
+
+.testimonials .slide_right {
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+    background-color: none;
+    border: solid rgba(106, 108, 106, 0.738);
+    /* border-left: none; */
+    border-bottom: none;
+    border-left: none;
+    position: absolute;
+    right: 5px;
+    top: 140px;
+    }
 
     .testimonialwrapper {
-        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+        height: 250px;
     }
 
     .testimonial-box {
         width: 100%;
         display: flex;
         flex-direction: column;
-        flex-basis: 100%;
+        width: 100%;
         padding-left: 10px;
         text-align: center;
         padding-left: 0;
+        height: 100%;
+        margin-left: 0;
     }
 
     .commentbox {

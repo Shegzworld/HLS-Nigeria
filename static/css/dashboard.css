@@ -15,22 +15,53 @@ body {
     height: 100vh;
 }
 
-.benfek_wrapper {
+/* .benfek_wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     padding-top: 180px;
     padding-bottom: 60px;
+    border: solid; */
+    /* position: relative;
+} */
+
+
+.benfek_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+    /* padding-top: 180px; */
     /* border: solid; */
     /* position: relative; */
 }
 
 /* Navigation section */
 
-.top_sticky_bar {
+/* .top_sticky_bar {
     position: fixed;
     height: 180px;
+    max-width: 100vw;
+    box-shadow: 0 2px 5px rgb(81, 77, 77);
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #312C51;
+    padding: 0px 20px;
+    padding-top: 10px;
+    border-radius: 0px 0px 8px 8px;
+    z-index: 90009900090;
+    border: solid white;
+} */
+
+.top_sticky_bar {
+    /* position: fixed; */
+    height: 250px;
     max-width: 100vw;
     box-shadow: 0 2px 5px rgb(81, 77, 77);
     top: 0;
@@ -51,6 +82,8 @@ body {
     color: rgb(219, 215, 215);
 }
 
+
+/* .benfek-services */
 .primary-nav,
 .benfek-services {
     justify-content: space-between;
@@ -58,7 +91,53 @@ body {
     /* border: solid white; */
 }
 
-/* .benfek-services */
+.service-header {
+    color: #e8cfa2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* border: solid; */
+}
+
+.benfek-service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #423c64;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.benfek-service:hover,
+.benfek-service.active {
+    transform: scale(1.1);
+    background-color: #514a78;
+}
+
+.benfek-service i {
+    font-size: 24px;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.benfek-service.active i {
+    color: #f3d39a;
+}
+
+.benfek-service:hover i {
+    color: #ffd691;
+}
+
+.benfek-service span {
+    position: absolute;
+    top: 100%;
+    margin-top: 3px;
+    color: whitesmoke;
+    font-size: 12px;
+}
 
 .primary-nav {
     margin-top: 5px;
@@ -165,6 +244,8 @@ body {
     background-color: #f0f0f0;
 }
 
+
+/* Top sticky bar- search */
 #search_container {
     display: none;
     position: relative;
@@ -195,59 +276,7 @@ body {
     color: #ccc;
 }
 
-.service-header {
-    color: #e8cfa2;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    /* border: solid; */
-}
-
-.benfek-service {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    background-color: #423c64;
-    border-radius: 6px;
-    margin-bottom: 5px;
-    text-align: center;
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-.benfek-service:hover,
-.benfek-service.active {
-    transform: scale(1.1);
-    background-color: #514a78;
-}
-
-.benfek-service i {
-    font-size: 24px;
-    margin-bottom: 5px;
-    transition: color 0.3s ease;
-}
-
-.benfek-service.active i {
-    color: #f3d39a;
-}
-
-.benfek-service:hover i {
-    color: #ffd691;
-}
-
-.benfek-service span {
-    position: absolute;
-    top: 100%;
-    margin-top: 3px;
-    color: whitesmoke;
-    font-size: 12px;
-}
-
-
-/* For Nutrient Gallery Styling */
-
-/* font-family(poppins, lato, roboto,monteserat,raleway,ubuntu) */
-
+/* Mid_section */
 .display_body {
     display: flex;
     justify-content: flex-start;
@@ -257,27 +286,15 @@ body {
     overflow-x: hidden;
 }
 
-.nutrient_type_gallery {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-top: 20px;
-    padding-bottom: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    /* border: solid; */
-}
-
+/* selector menu */
 .selected_nutrient_screen {
-    display: flex;
+    display: none;
     width: 100%;
     min-height: 100%;
     /* border: solid; */
     position: absolute;
     transform: translateX(100%);
 }
-
 
 .selector_menu {
     height: 30px;
@@ -327,6 +344,21 @@ body {
     left: 0;
 }
 
+/* For Nutrient Gallery Styling */
+/* font-family(poppins, lato, roboto,monteserat,raleway,ubuntu) */
+
+.nutrient_type_gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-bottom: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* border: solid; */
+}
+
 .nutrient_gallery {
     display: flex;
     width: 100%;
@@ -350,27 +382,6 @@ body {
     padding-bottom: 10px;
 }
 
-#specifics_container {
-    min-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
-    height: 100%;
-    position: absolute;
-    padding-bottom: 0px;
-    transform: translateX(101%);
-}
-
-#dr_pick_container {
-    display: flex;
-    height: 100%;
-    background-color: #0fe186;
-    min-width: 100%;
-    position: absolute;
-    transform: translateX(101%);
-}
-
 .nutrient_type_glass_pack {
     width: 100%;
     height: 250px;
@@ -382,19 +393,49 @@ body {
 
 .Nutrient_type_pack {
     display: flex;
-    /* padding-top: 5px; */
     position: relative;
     justify-content: center;
     gap: 50px;
-    border: solid 0.1px rgba(128, 128, 128, 0.353);
     margin: 0 auto;
     width: 90%;
-    border-radius: 5px;
+    height: 220px;
+}
+
+.Nutrient_type_pack .slide_left {
+    display: none;
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+    background-color: none;
+    border: solid rgba(106, 108, 106, 0.738);
+    /* border-left: none; */
+    border-top: none;
+    border-right: none;
+    position: absolute;
+    left: 5px;
+    top: 85px;
+}
+
+.Nutrient_type_pack .slide_right {
+    display: none;
+    transform: rotate(45deg);
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+    background-color: none;
+    border: solid rgba(106, 108, 106, 0.738);
+    /* border-left: none; */
+    border-bottom: none;
+    border-left: none;
+    position: absolute;
+    right: 5px;
+    top: 85px;
 }
 
 .Nutrient_type_glass {
     width: 100%;
-    height: 100%;
+    height: 190px;
     position: absolute;
     background-color: rgba(10, 10, 10, 0.158);
     display: flex;
@@ -404,6 +445,8 @@ body {
     border-radius: 10px;
     border: 2px solid rgb(10, 10, 10, 0.258);
     transition: all 0.5s 0.1s;
+    top: 0;
+    left: 0;
 }
 
 .Nutrient_type_glass span {
@@ -430,7 +473,7 @@ body {
 .Nutrient_type_glass button {
     width: 100px;
     align-self: center;
-    margin-top: 85px;
+    margin-top: 65px;
     margin-bottom: 5px;
     font-size: 1.2rem;
     padding: .4rem .8rem;
@@ -441,69 +484,26 @@ body {
 
 #nutrient_type_pack_best p {
     color: #312C51;
-    font-size: 1.2rem;
     font-weight: 700;
     align-self: center;
     text-align: center;
     transition: all 0.5s;
 }
 
-.label-bg {
+
+/* Specifics */
+#specifics_container {
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    height: 100%;
     position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    bottom: 0;
-    opacity: 0;
-    min-width: 205px;
-    min-height: 50px;
-    background-color: rgba(239, 6, 6, 0.538);
-    cursor: pointer;
-    z-index: 1000;
+    padding-bottom: 0px;
+    transform: translateX(101%);
 }
 
-.label {
-    display: flex;
-    align-items: center;
-    min-width: 150px;
-    min-height: 30px;
-    background-color: rgba(255, 255, 255, 0.835);
-    border: 2.5px #ffffff;
-    border-style: dotted;
-}
-
-.label-text {
-    border: 3px solid rgba(219, 12, 12, 0.881);
-    border-radius: 3px;
-    width: 100%;
-    background-color: whitesmoke;
-    box-shadow: 0 2px 3px grey;
-    height: 84%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    /* Ensure cursor is a pointer to indicate it's clickable */
-}
-
-.label-text p {
-    font-weight: 500;
-    font-size: 16px;
-    padding: 5px;
-}
-
-.label-text span i {
-    color: rgb(97, 97, 96);
-    font-size: 16px;
-    color: #ffaa00;
-    position: absolute;
-    top: -10px;
-    z-index: 1;
-    /* Reduced z-index */
-}
-
-.my_nutrient_picture,
 .my_specifics_picture {
     display: flex;
     position: relative;
@@ -517,11 +517,59 @@ body {
     flex-grow: 1;
 }
 
-.my_nutrient_picture {
-    border: none;
+.label-bg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    opacity: 0;
+    width: 205px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 1000;
 }
 
-.my_nutrient_picture>i,
+.label-text {
+    border-radius: 3px;
+    width: 65%;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 3px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.label-text p {
+    font-weight: 500;
+    font-size: 14px;
+    /* padding: 5px; */
+}
+
+
+/* Drs pick */
+#dr_pick_container {
+    display: flex;
+    height: 100%;
+    background-color: #0fe186;
+    min-width: 100%;
+    position: absolute;
+    transform: translateX(101%);
+}
+
+
+.my_nutrient_picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: left 0.5s ease-in-out;
+    height: 160px;
+    width: 160px;
+    padding: auto;
+    margin-top: 5px;
+}
+
 .my_specifics_picture>i {
     position: absolute;
     top: 90%;
@@ -530,7 +578,6 @@ body {
     font-size: 18px;
 }
 
-.my_nutrient_picture .fa-shopping-cart,
 .my_specifics_picture .fa-shopping-cart {
     display: none;
 }
@@ -1108,7 +1155,7 @@ body {
     flex-direction: column;
     min-width: 100%;
     height: 100%;
-    background-color: #02190f;
+    /* background-color: #02190f; */
     gap: 5px;
     position: absolute;
     transform: translateX(101%);
@@ -1117,21 +1164,45 @@ body {
 
 .podcast-banner {
     width: 100%;
+    height: 30%;
     overflow: hidden;
+}
+
+.play-button {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.play-icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent #666;
 }
 
 .podcast-banner img {
     width: 100%;
-    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }
 
-.podcast-selector {
+/* .podcast-selector {
     height: 5%;
-    display: flex;
+    display: none;
     justify-content: space-around;
     background-color: #efe9e1;
     margin-bottom: 5px;
-}
+} */
 
 .tab-link {
     flex: 1;
@@ -1139,6 +1210,91 @@ body {
     padding: 10px 0;
     cursor: pointer;
     background-color: #efe9e1;
+}
+
+/* Info for podcast in play*/
+.playing-podcast_info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 135px;
+    background-color: #e7e5e5;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.podcast_title_author {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.podcast_title_author h3 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #333;
+}
+
+.podcast_title_author p {
+    font-size: 14px;
+    color: #666;
+}
+
+.view_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.view_details .fas{
+    font-size: 1rem;
+}
+
+.total_views,
+.total-followers {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #5e5757;
+    margin-right: 24px;
+}
+
+.total_views i,
+.total-followers i {
+    margin-right: 8px;
+}
+
+.subscribe_button {
+    background-color: #312C51;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.subscribe_button:hover {
+    background-color: #0a2a4d;
+}
+
+.comments {
+    font-size: 14px;
+    color: #666;
+    width: 70%;
+    height: 30px;
+    border: solid 0.5px #424040;
+    border-radius: 15px;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comments .span{
+    color: #5e5757;
+    font-size: 18px;
 }
 
 .tab-link.active {
@@ -1150,13 +1306,13 @@ body {
     flex: 1;
     overflow-y: auto;
     padding: 10px;
-    background-color: #3d211ac5;
+    background-color: #f3f2f2c5;
 }
 
 .podcast-card {
     display: flex;
     flex-direction: column;
-    background-color: #f5f5d0;
+    background-color: #fafafa;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
@@ -1182,12 +1338,21 @@ body {
     height: 100%;
 }
 
-.written-details {
+.podcast-title {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 10px;
+}
+
+.podcast_name_count{
+    display: flex;
+    gap: 5px;
+}
+
+.podcast_name_count .fas{
+    font-size: 20px;
 }
 
 .podcast-action-call {
@@ -1200,10 +1365,12 @@ body {
 
 .podcast-action-call .fa-play {
     color: #312C51;
+    font-size: 18px;
 }
 
 .podcast-action-call .fa-download {
-    color: #c76916;
+    color: #276116;
+    font-size: 18px;
 }
 
 .play-now {
