@@ -194,10 +194,49 @@ footer p {
 }
 
 .bar {
+    position: relative;
     width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 6px 0;
+    height: 30px;
+    /* background-color: #333; */
+    margin: 6px 6px;
+}
+
+.bar .fas{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    font-size: 30px;
+}
+
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100000000;
+}
+
+.menu-list li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.menu-list li a:hover {
+    color: #23527c;
+}
+
+.show-menu {
+    display: block;
 }
 
 .dashboard {

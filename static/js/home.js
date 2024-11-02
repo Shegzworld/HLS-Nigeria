@@ -2,6 +2,24 @@ document.addEventListener('DOMContentLoaded', () => {
   const testimonialBox = document.querySelectorAll(".testimonial-box")
   const nextBtnTestimonial = document.querySelector(".testimonials .slide_left")
   const prevBtnTestimonial = document.querySelector(".testimonials .slide_right")
+
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuList = document.getElementById('menu-list');
+const bar = document.querySelector('.bar');
+
+bar.addEventListener('click', (e) => {
+  e.stopPropagation();
+  menuList.classList.toggle('show-menu');
+});
+
+document.addEventListener('click', function(e) {
+  if (e.target !== bar && !menuList.contains(e.target)) {
+    menuList.classList.remove('show-menu');
+  }
+});
+
+
+
   let currentTestimonialView = 0
 
   const updateTestimonialVisibility = () => {
