@@ -148,4 +148,6 @@ LOGIN_REDIRECT_URL = 'home:home'
 LOGIN_URL = 'user:login'
 
 # dont forget admin honeypot
-ACCOUNT_USERNAME_BLACKLIST = ['admin', 'sakamanje']
+# ACCOUNT_USERNAME_BLACKLIST = ['admin', 'sakamanje']
+
+django_heroku.settings(locals())
