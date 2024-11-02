@@ -5,7 +5,7 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('sakamanje/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('user/', include('user.urls')),
     path('dashboard/', include('dashboard.urls')),
