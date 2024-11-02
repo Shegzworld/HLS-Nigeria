@@ -1,1 +1,1 @@
-web:gunicorn HLSBACK.wsgi
+web: gunicorn HLSBACK.wsgi
