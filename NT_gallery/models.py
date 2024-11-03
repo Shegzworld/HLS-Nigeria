@@ -55,9 +55,9 @@ class DosageForm(models.Model):
 # 11. Lifestyle Rating
 class LifestyleRating(models.Model):
     LifestyleRating = models.CharField(max_length=255, null=True)
-
-    def __str__(self):
-        return self.LifestyleRating
+        
+    def _str_(self):
+            return self.LifestyleRating
     
 class Product(models.Model):
     name = models.CharField(max_length=255)

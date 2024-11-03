@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
+    
     // Variable Declaration
     const benfekWrapper = document.querySelector('.benfek_wrapper')
+
+
     // Top section (top sticky bar)
     
     const topStickyBar = document.querySelector('.top_sticky_bar')
@@ -60,6 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Codes for declaring Actives and event listeners for services to display contents
 
     document.addEventListener('click', function(event) {
+
         if (menuIcon.contains(event.target)){
             menuDropdown.style.display = 'block';
         }
@@ -285,6 +290,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
   
+
     NutrientTypeGlassCover.forEach(glassCover=>{
         const revealButton = glassCover.querySelector('button');
         const glassCoverText = glassCover.querySelector('p');
@@ -308,6 +314,7 @@ document.addEventListener('DOMContentLoaded', function() {
             labelBg.style.opacity = '1';
         })
     })
+
 
     NutrientTypeHighlightButtons.forEach(NutrientTypeHighlightButton => {
         NutrientTypeHighlightButton.addEventListener('click', () =>{
