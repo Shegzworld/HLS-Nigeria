@@ -1,5 +1,5 @@
 from django.db import models
-from NT_gallery.models import Product
+# from NT_gallery.models import Product
 
 
 
