@@ -3,11 +3,11 @@ from django.contrib.auth.models import User
 from django.utils import timezone
 
 # 1. Pharmacy Grouping
-class PharmacyGrouping(models.Model):
-    PharmacyGrouping = models.CharField(max_length=255)
+# class PharmacyGrouping(models.Model):
+#     PharmacyGrouping = models.CharField(max_length=255)
 
-    def __str__(self):
-        return self.PharmacyGrouping
+#     def __str__(self):
+#         return self.PharmacyGrouping
 
 
 # 2. Brands

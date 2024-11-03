@@ -3,7 +3,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import TemplateView, ListView,DetailView
 from blog.models import Blog
 from user.models import UserProfile,Basic, Lifestyle, Preference
-from NT_gallery.models import Product
+# from NT_gallery.models import Product
 from podcasts.models import Podcast,Episode
 from django.core.paginator import Paginator
 from django.db.models import Count,Subquery,OuterRef,Q
