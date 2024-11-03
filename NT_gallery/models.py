@@ -53,11 +53,11 @@ class DosageForm(models.Model):
         return self.DosageForm
 
 # 11. Lifestyle Rating
-class LifestyleRating(models.Model):
-    LifestyleRating = models.CharField(max_length=255, null=True)
+# class LifestyleRating(models.Model):
+#     LifestyleRating = models.CharField(max_length=255, null=True)
         
-    def _str_(self):
-            return self.LifestyleRating
+#     def _str_(self):
+#             return self.LifestyleRating
     
 class Product(models.Model):
     name = models.CharField(max_length=255)
@@ -70,7 +70,7 @@ class Product(models.Model):
     gender = models.ManyToManyField(Gender)
     lifestyle = models.ManyToManyField(Lifestyle)
     dosage_form = models.ManyToManyField(DosageForm)
-    lifestyle_rating = models.ManyToManyField(LifestyleRating)
+    # lifestyle_rating = models.ManyToManyField(LifestyleRating)
     description = models.TextField(null = True)
     main_image = models.ImageField(upload_to='product_images/main',null=True)
     side_image_1 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
