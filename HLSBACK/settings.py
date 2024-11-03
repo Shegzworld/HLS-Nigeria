@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'dashboard',
     'blog',
     'podcasts',
-    'NT_gallery',
+    # 'NT_gallery',
     'crispy_forms',
     'crispy_bootstrap4',
     'widget_tweaks',
