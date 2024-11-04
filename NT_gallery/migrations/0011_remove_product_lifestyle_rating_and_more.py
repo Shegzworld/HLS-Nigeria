@@ -10,11 +10,11 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='product',
-            name='lifestyle_rating',
-        ),
-        migrations.DeleteModel(
-            name='LifestyleRating',
-        ),
+        # migrations.RemoveField(
+        #     model_name='product',
+        #     name='lifestyle_rating',
+        # ),
+        # migrations.DeleteModel(
+        #     name='LifestyleRating',
+        # ),
     ]
