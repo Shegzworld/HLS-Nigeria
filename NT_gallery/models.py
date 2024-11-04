@@ -53,7 +53,7 @@ class DosageForm(models.Model):
         return self.DosageForm
 
 # 11. Lifestyle Rating
-class LifestyleRating(models.Model):
+class Lifestylerating(models.Model):
     LifestyleRating = models.CharField(max_length=255, null=True)
         
     def _str_(self):
