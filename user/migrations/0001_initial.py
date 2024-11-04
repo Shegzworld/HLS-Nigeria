@@ -22,7 +22,6 @@ class Migration(migrations.Migration):
                 ('gender', models.CharField(max_length=10)),
                 ('age', models.IntegerField()),
                 ('budget', models.DecimalField(decimal_places=2, max_digits=10)),
-                ('health_goals', models.ManyToManyField(to='NT_gallery.healthgoal')),
                 ('lifestyle', models.ManyToManyField(to='NT_gallery.lifestyle')),
                 ('medical_conditions', models.ManyToManyField(to='NT_gallery.medicalcondition')),
                 ('medications', models.ManyToManyField(to='NT_gallery.medication')),
