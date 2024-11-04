@@ -70,7 +70,7 @@ class Product(models.Model):
     gender = models.ManyToManyField(Gender)
     lifestyle = models.ManyToManyField(Lifestyle)
     dosage_form = models.ManyToManyField(DosageForm)
-    lifestyle_rating = models.ManyToManyField(LifestyleRating)
+    lifestyle_rating = models.ManyToManyField(Lifestylerating)
     description = models.TextField(null = True)
     main_image = models.ImageField(upload_to='product_images/main',null=True)
     side_image_1 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
