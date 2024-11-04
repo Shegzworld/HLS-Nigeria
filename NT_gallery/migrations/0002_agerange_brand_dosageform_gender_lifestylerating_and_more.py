@@ -141,11 +141,6 @@ class Migration(migrations.Migration):
         ),
         migrations.AddField(
             model_name='product',
-            name='lifestyle_rating',
-            field=models.ManyToManyField(to='NT_gallery.lifestylerating'),
-        ),
-        migrations.AddField(
-            model_name='product',
             name='pharmacy_grouping',
             field=models.ManyToManyField(to='NT_gallery.pharmacygrouping'),
         ),
