@@ -10,9 +10,9 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
-            model_name='product',
-            name='lifestyle_rating',
-            field=models.ManyToManyField(to='NT_gallery.lifestylerating'),
-        ),
+        # migrations.AddField(
+        #     model_name='product',
+        #     name='lifestyle_rating',
+        #     field=models.ManyToManyField(to='NT_gallery.lifestylerating'),
+        # ),
     ]
