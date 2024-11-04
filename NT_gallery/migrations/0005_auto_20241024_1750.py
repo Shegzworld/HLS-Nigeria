@@ -10,9 +10,4 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
-            model_name='Product',
-            name='age_range',
-            field= models.ForeignKey(on_delete= models.CASCADE, related_name='product', to='NT_gallery.agerange')
-        )
     ]

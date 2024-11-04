@@ -20,7 +20,7 @@ class Brand(models.Model):
 
     
 class AgeRange(models.Model):
-    name = models.CharField(max_length=255, default = 0)
+    name = models.CharField(max_length=255, default = 0, null = True)
     min_age = models.IntegerField()
     max_age = models.IntegerField()
 
