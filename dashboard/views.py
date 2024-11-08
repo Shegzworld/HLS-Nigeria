@@ -9,66 +9,56 @@ from django.core.paginator import Paginator
 from django.db.models import Count,Subquery,OuterRef,Q
 from django.core.paginator import Paginator
 from django.contrib.auth.models import User
+from NT_gallery.models import Product
 
 class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard/dashboard.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        # fetch user and and instantiate userprofiles and subprofiles
         user = self.request.user
-        user_profile = UserProfile(user=user)
-        # user_profile.save()
-        # user_profile = user_profile.objects.get(user=user)
-        
-        
-        # basic=Basic.objects.filter(user_profile=user_profile)
-    #     basic.age = 25
-    #     lifestyle = Lifestyle.objects.filter(user_profile=user_profile)
-    #     preference = Preference.objects.filter(user_profile=user_profile)
+        user_profile = UserProfile.objects.get(user=user)  # Use get() instead of creating a new instance
 
+        # Define pack price tag ranges based on user's budget
+        budget = user_profile.budget
+        packs = [
+            {'name': 'Pro Pack', 'min_price': budget, 'max_price': budget * 1.4},
+            {'name': 'Dr Pack', 'min_price': budget, 'max_price': budget * 1.2},
+            {'name': 'Economy Pack', 'min_price': budget, 'max_price': budget * 1.05},
+            {'name': 'Everyperson Pack', 'min_price': budget * 0.9, 'max_price': budget}
+        ]
 
+        # Filter products based on user's profile data
+        products = Product.objects.filter(
+            Q(health_condition=user_profile.health_condition) |
+            Q(fortify=user_profile.lifestyle) |
+            Q(basics__age=user_profile.age, basics__gender=user_profile.gender)
+        )
 
-        # Product filtering by Basics(age and gender)
-        # products_by_age = Product.objects.filter(
-        #     Q(age_range__min_age__lte = basic.age, age_range__max_age__gte = basic.age) | 
-        #     Q(age_range__name=basic.age) | 
-        #     Q(age_range__name='General')
-        # )
+        # Group products by attribute
+        products_by_attribute = {}
+        for product in products:
+            attribute = product.health_condition or product.fortify or product.basics.age or product.basics.gender
+            if attribute not in products_by_attribute:
+                products_by_attribute[attribute] = []
+            products_by_attribute[attribute].append(product)
 
-    #     products_by_gender = Product.objects.filter(
-    #         Q(gender__exact=basic.gender) | 
-    #         Q(gender__exact='Unisex') | 
-    #         Q(gender__isnull=True)
-    #     )
+        # Initialize packs with empty product lists
+        packs = [{**pack, 'products': []} for pack in packs]
 
-    # # Product filtering by Lifestyle(habits, recreation,lifestyle)
-    #     products_by_lifestyle = Product.objects.filter(
-    #         Q(lifestyle__icontains=lifestyle.habits) | 
-    #         Q(lifestyle__icontains=lifestyle.recreation) | 
-    #         Q(lifestyle__icontains=lifestyle.lifestyle)
-    #     ).distinct()
+        # Assign products to packs
+        for attribute, products in products_by_attribute.items():
+            for pack in packs:
+                if len(pack['products']) < 3:
+                    for product in products:
+                        if pack['min_price'] <= product.price <= pack['max_price']:
+                            pack['products'].append(product)
+                            pack['total_price'] = sum(p.price for p in pack['products'])
+                            break
+                    break
 
+        context['packs'] = packs
 
-
-    #     # Product filtering by Preferences(drug form, and budget)
-    #     preferred_dosage_forms = preference.drug_form.split(',')
-    #     preferred_dosage_forms = [drug_form.strip() for drug_form in preferred_dosage_forms]
-    #     products_by_drugForm = Product.objects.filter(
-    #     Q(dosage_form__in=preferred_dosage_forms)
-    #     )
-
-    #     products_by_budget = Product.objects.filter(
-    #     Q(price__lte=preference.health_budget)
-    #     )
-
-        
-    #     # Combining all filtered products
-    #     products = products_by_age & products_by_gender & products_by_drugForm & products_by_budget & products_by_lifestyle
-
-        # paginator = Paginator(products, 9) 
-        # page_number = self.request.GET.get('page')
-        # products = paginator.get_page(page_number)
 
 
         blog_list = Blog.objects.all()

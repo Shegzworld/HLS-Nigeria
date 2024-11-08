@@ -175,6 +175,7 @@ header p {
         background-size: cover;
         background-position: center;
         width: 100%;
+        background-image: url('/static/home_images/quiz_background.webp')
     }
 
     .container {

@@ -1,37 +1,45 @@
-{% extends "user/auth_base.html" %}
+{% extends "base/auth_base.html" %}
 
 {% block register%}
     {{ registration_form.non_field_errors }}
-    <div class="reg_container">
-        <fieldset>
-            <legend>Complete Form For customize Dashboard</legend>
-            <fieldset class="inner_fieldset">
-                <div class="form-group">
-                    {{ registration_form.username }}
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
-                
-                <div class="form-group">
-                    {{ registration_form.email }}
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </div>
-                
-                <div class="form-group">
-                    {{ registration_form.password1 }}
-                    <i class="fa fa-lock" aria-hidden="true"></i>
-                </div>
-                
-                <div class="form-group">
-                    {{ registration_form.password2 }}
-                    <i class="fa fa-lock" ></i>
-                </div>
-                <p class="terms-notice">By submitting, I agree to the <a href=" url 'terms_and_conditions' " target="_blank">Terms and
-                Conditions</a> of the health and life serenity network.</p>
-            <input type="submit" value="submit">
-            </fieldset>
-            
-        </fieldset>
+
+<div class="reg_bg">
+    <div class="form_container">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="reg_container">
+                <fieldset>
+                    <legend>Complete Form For customize Dashboard</legend>
+                    <fieldset class="inner_fieldset">
+                        <div class="form-group">
+                            {{ registration_form.username }}
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
         
+                        <div class="form-group">
+                            {{ registration_form.email }}
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+        
+                        <div class="form-group">
+                            {{ registration_form.password1 }}
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+        
+                        <div class="form-group">
+                            {{ registration_form.password2 }}
+                            <i class="fa fa-lock"></i>
+                        </div>
+                        <p class="terms-notice">By submitting, I agree to the <a href=" url 'terms_and_conditions' "
+                                target="_blank">Terms and
+                                Conditions</a> of the health and life serenity network.</p>
+                        <input type="submit" value="submit">
+                    </fieldset>
+                </fieldset>
+            </div>
+        </form>
     </div>
+</div>
+    
 {% endblock %}
        
