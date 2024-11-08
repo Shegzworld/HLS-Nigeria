@@ -25,7 +25,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
             {'name': 'Pro Pack', 'min_price': budget, 'max_price': budget * 1.4},
             {'name': 'Dr Pack', 'min_price': budget, 'max_price': budget * 1.2},
             {'name': 'Economy Pack', 'min_price': budget, 'max_price': budget * 1.05},
-            {'name': 'Everyperson Pack', 'min_price': budget * 0.9, 'max_price': budget}
+            {'name': 'Welfare Pack', 'min_price': budget * 0.9, 'max_price': budget}
         ]
 
         # Filter products based on user's profile data
