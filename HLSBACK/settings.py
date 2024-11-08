@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
     'home',
     'user',
     'dashboard',
@@ -86,6 +87,28 @@ WSGI_APPLICATION = 'HLSBACK.wsgi.application'
 #     }
 # }
 
+# AWS S3 configuration for media storage
+AWS_ACCESS_KEY_ID = 'AKIATFBMO53EJVJCJBH2'  # From IAM User
+AWS_SECRET_ACCESS_KEY = '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'  # From IAM User
+AWS_STORAGE_BUCKET_NAME = 'hlsnigeriabucket'  
+AWS_S3_REGION_NAME = 'eu-north-1'  
+AWS_S3_SIGNATURE_VERSION = 's3v4'  # Optional, use s3v4 for newer regions (default)
+
+# The default file storage backend will now use S3 to store files
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# Optional: Public access to media files (e.g., images)
+AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/'
+
+# Optional: Set default ACL to public-read if you want to make media publicly accessible
+AWS_DEFAULT_ACL = 'public-read'
+
+
+# Optional: Configure cache control headers (for caching media files)
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
 
 DATABASES = {
     'default': {
@@ -140,8 +163,8 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
-MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = 'media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
