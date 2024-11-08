@@ -9,7 +9,7 @@ from django.core.paginator import Paginator
 from django.db.models import Count,Subquery,OuterRef,Q
 from django.core.paginator import Paginator
 from django.contrib.auth.models import User
-from NT_gallery.models import Product
+from NT_gallery.models import Products
 
 class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard/dashboard.html'
@@ -29,7 +29,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         ]
 
         # Filter products based on user's profile data
-        products = Product.objects.filter(
+        products = Products.objects.filter(
             Q(health_condition=user_profile.health_condition) |
             Q(fortify=user_profile.lifestyle) |
             Q(basics__age=user_profile.age, basics__gender=user_profile.gender)
