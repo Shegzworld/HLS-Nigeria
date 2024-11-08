@@ -12,20 +12,12 @@
 </head>
 
 <body>
-    <div class="form_container">
-        <form method="POST">
-            {% csrf_token %}
-                {% block register%}
-                {% endblock%}
 
-                {% block login%}
-                {% endblock%}
+    {% block register%}
+    {% endblock%}
 
-        </form>
-        {% for message in messages%}
-        {{messages}}
-        {% endfor %}
-    </div>
+    {% block login%}
+    {% endblock%}
 </body>
 
 </html>

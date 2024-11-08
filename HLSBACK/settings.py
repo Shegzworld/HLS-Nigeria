@@ -20,7 +20,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['hlsnigeria-e0c4b5df87f5.herokuapp.com']
+ALLOWED_HOSTS = ['hlsnigeria-e0c4b5df87f5.herokuapp.com','127.0.0.1:8000']
 # ALLOWED_HOSTS = ['127.0.0.1:8000']
 
 
@@ -80,46 +80,24 @@ WSGI_APPLICATION = 'HLSBACK.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR/'db.sqlite3',
-#     }
-# }
-
-# AWS S3 configuration for media storage
-AWS_ACCESS_KEY_ID = 'AKIATFBMO53EJVJCJBH2'  # From IAM User
-AWS_SECRET_ACCESS_KEY = '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'  # From IAM User
-AWS_STORAGE_BUCKET_NAME = 'hlsnigeriabucket'  
-AWS_S3_REGION_NAME = 'eu-north-1'  
-AWS_S3_SIGNATURE_VERSION = 's3v4'  # Optional, use s3v4 for newer regions (default)
-
-# The default file storage backend will now use S3 to store files
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-
-# Optional: Public access to media files (e.g., images)
-AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/'
-
-# Optional: Set default ACL to public-read if you want to make media publicly accessible
-AWS_DEFAULT_ACL = 'public-read'
-
-
-# Optional: Configure cache control headers (for caching media files)
-AWS_S3_OBJECT_PARAMETERS = {
-    'CacheControl': 'max-age=86400',
-}
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbuap6sb6d2e99',
-        'User': 'udrt2vnk83cb27',
-        'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
-        'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR/'db.sqlite3',
     }
 }
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'dbuap6sb6d2e99',
+#         'User': 'udrt2vnk83cb27',
+#         'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
+#         'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+#         'PORT': '5432'
+#     }
+# }
 
 
 # Password validation

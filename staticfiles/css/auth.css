@@ -7,11 +7,27 @@
 body {
     font-family: Arial, sans-serif;
     height: 100vh;
+}
+
+.login_bg{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f4c2c284;
+    background-image: url('/static/home_images/loginround_bg.jpeg');
+    background-size: contain;
 }
+
+.reg_bg{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/static/home_images/reg_image.jpeg');
+    background-size: contain;
+}
+
+
 
 .form_container{
     height: 80%;
@@ -19,7 +35,7 @@ body {
 }
 
 form {
-    background-color: #e8f0fa87;
+    background-color: #d0d2d6;
     padding: 20px;
     border-radius: 10px;
     height: 100%;
