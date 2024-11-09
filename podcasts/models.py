@@ -5,6 +5,9 @@ from django.utils import timezone
 
 class Podcaster(models.Model):
     name = models.CharField(max_length=255)
+    def __str__(self):
+        return self.name  # Return the title of the blog post for display in admin
+
 
 class Podcast(models.Model):
     title = models.CharField(max_length=255)
