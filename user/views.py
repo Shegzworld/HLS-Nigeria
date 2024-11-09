@@ -16,11 +16,11 @@ def register_view(request):
         lifestyle = request.session.get('lifestyle')
         health_condition = request.session.get('health_condition')
         preference = request.session.get('preference')
-        print(request.session)
+        # print(basics)
         if registration_form.is_valid():
             user = registration_form.save()
             UserProfile.objects.create(user=user)
-
+            # print(user.profile)
             # Save form data to corresponding models
             if basics:
                 basics = BasicsForm(basics).save(commit=False)

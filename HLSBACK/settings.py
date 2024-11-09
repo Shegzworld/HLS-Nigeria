@@ -165,7 +165,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # AWS S3 Storage settings
 AWS_ACCESS_KEY_ID = 'AKIATFBMO53EKIXSNNUY'  # Replace with your AWS access key ID
 AWS_SECRET_ACCESS_KEY = 'vf+xxthS0G7T4l37rtvmYdzhiR4yEZQS3yXHIfsz'  # Replace with your AWS secret access key
-AWS_STORAGE_BUCKET_NAME = 'hlsbucketnigeria'  # Replace with your S3 bucket name
+AWS_STORAGE_BUCKET_NAME = 'hlsnigeriabucket'  # Replace with your S3 bucket name
 
 # Use AWS S3 for storing media files
 AWS_S3_REGION_NAME = 'us-east-1'  

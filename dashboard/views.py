@@ -5,6 +5,7 @@ from blog.models import Blog
 from user.models import UserProfile
 # from NT_gallery.models import Product
 from podcasts.models import Podcast,Episode
+from decimal import Decimal
 from django.core.paginator import Paginator
 from django.db.models import Count,Subquery,OuterRef,Q
 from django.core.paginator import Paginator
@@ -30,11 +31,11 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # Define pack price tag ranges based on user's budget
         budget = user_profile.budget if user_profile.budget else 0  # Ensure budget is defined
         packs = [
-            {'name': 'Pro Pack', 'min_price': budget, 'max_price': budget * 1.4},
-            {'name': 'Dr Pack', 'min_price': budget, 'max_price': budget * 1.2},
-            {'name': 'Economy Pack', 'min_price': budget, 'max_price': budget * 1.05},
-            {'name': 'Welfare Pack', 'min_price': budget * 0.9, 'max_price': budget}
-        ]
+    {'name': 'Pro Pack', 'min_price': budget, 'max_price': budget * Decimal('1.4')},  # Convert 1.4 to Decimal
+    {'name': 'Dr Pack', 'min_price': budget, 'max_price': budget * Decimal('1.2')},   # Convert 1.2 to Decimal
+    {'name': 'Economy Pack', 'min_price': budget, 'max_price': budget * Decimal('1.05')},  # Convert 1.05 to Decimal
+    {'name': 'Welfare Pack', 'min_price': budget * Decimal('0.9'), 'max_price': budget}  # Convert 0.9 to Decimal
+]
 
         # Filter  based on user's profile data
         products = Product.objects.filter(
@@ -68,14 +69,14 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         context['packs'] = packs
 
         # Blog and Podcast data
-        # blog_list = Blog.objects.all()
-        # podcast_list = Podcast.objects.annotate(episode_count=Count('episodes'))
-        # paginator = Paginator(podcast_list, 5)
-        # page_number = self.request.GET.get('page')
-        # podcast_page = paginator.get_page(page_number)
+        blog_list = Blog.objects.all()
+        podcast_list = Podcast.objects.annotate(episode_count=Count('episodes'))
+        paginator = Paginator(podcast_list, 5)
+        page_number = self.request.GET.get('page')
+        podcast_page = paginator.get_page(page_number)
         
-        # context['blog_list'] = blog_list
-        # context['podcast_list'] = podcast_page
+        context['blog_list'] = blog_list
+        context['podcast_list'] = podcast_page
         
         return context
         

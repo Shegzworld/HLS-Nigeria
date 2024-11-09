@@ -13,10 +13,10 @@ class UserProfile(models.Model):
 class Basic(models.Model):
     user_profile = models.OneToOneField(UserProfile, on_delete=models.CASCADE, related_name='basics')
     nickname = models.CharField(max_length=255)
-    age = models.PositiveIntegerField(null=True, blank=True)  # New field for age
+    age = models.CharField(max_length=255,null=True, blank=True)  # New field for age
     gender = models.CharField(max_length=255,null=True, blank=True)
-    weight = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
-    height = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
+    weight =models.CharField(max_length=255,null=True, blank=True) 
+    height =models.CharField(max_length=255,null=True, blank=True) 
 
     def __str__(self):
         return f"{self.user_profile.user.username}'s Basic info"
