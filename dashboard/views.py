@@ -2,14 +2,15 @@ from django.shortcuts import render
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import TemplateView, ListView,DetailView
 from blog.models import Blog
-from user.models import UserProfile,Basic, Lifestyle, Preference
+from user.models import UserProfile
 # from NT_gallery.models import Product
 from podcasts.models import Podcast,Episode
 from django.core.paginator import Paginator
 from django.db.models import Count,Subquery,OuterRef,Q
 from django.core.paginator import Paginator
 from django.contrib.auth.models import User
-from NT_gallery.models import Product
+from NT_gallery.models import Products
+from django.contrib import messages
 
 class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard/dashboard.html'
@@ -17,10 +18,17 @@ class Dashboard(LoginRequiredMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         user = self.request.user
-        user_profile = UserProfile.objects.get(user=user)  # Use get() instead of creating a new instance
+        
+        # Use get_or_create to avoid DoesNotExist error
+        user_profile, created = UserProfile.objects.get_or_create(user=user)
+
+        # If the profile was just created, handle this case (optional)
+        if created:
+            # You can add a message or perform any other action
+            messages.info(self.request, "Your user profile was automatically created.")
 
         # Define pack price tag ranges based on user's budget
-        budget = user_profile.budget
+        budget = user_profile.budget if user_profile.budget else 0  # Ensure budget is defined
         packs = [
             {'name': 'Pro Pack', 'min_price': budget, 'max_price': budget * 1.4},
             {'name': 'Dr Pack', 'min_price': budget, 'max_price': budget * 1.2},
@@ -29,10 +37,10 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         ]
 
         # Filter products based on user's profile data
-        products = Product.objects.filter(
-            Q(health_condition=user_profile.health_condition) |
-            Q(fortify=user_profile.lifestyle) |
-            Q(basics__age=user_profile.age, basics__gender=user_profile.gender)
+        products = Products.objects.filter(
+            # Q(health_condition=user_profile.health_condition) |
+            # Q(fortify=user_profile.lifestyle) |
+            # Q(basics__age=user_profile.age, basics__gender=user_profile.gender)
         )
 
         # Group products by attribute
@@ -59,19 +67,15 @@ class Dashboard(LoginRequiredMixin, TemplateView):
 
         context['packs'] = packs
 
-
-
-        blog_list = Blog.objects.all()
+        # Blog and Podcast data
+        # blog_list = Blog.objects.all()
+        # podcast_list = Podcast.objects.annotate(episode_count=Count('episodes'))
+        # paginator = Paginator(podcast_list, 5)
+        # page_number = self.request.GET.get('page')
+        # podcast_page = paginator.get_page(page_number)
         
-        podcast_list = Podcast.objects.annotate(episode_count=Count('episodes'))
-        podcast_list = Podcast.objects.all()
-        paginator = Paginator(podcast_list, 5)
-        page_number = self.request.GET.get('page')
-        podcast_page = paginator.get_page(page_number)
-        
-        context ['blog_list'] = blog_list
-        # context['product_list'] = products
-        context['podcast_list'] = podcast_page
+        # context['blog_list'] = blog_list
+        # context['podcast_list'] = podcast_page
         
         return context
         

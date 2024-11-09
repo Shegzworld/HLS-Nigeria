@@ -20,28 +20,9 @@ SECRET_KEY = env('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-if DEBUG == True:
-    ALLOWED_HOSTS = ['127.0.0.1:8000']
-    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR/'db.sqlite3',
-    }
-}
-else:
-    DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbuap6sb6d2e99',
-        'User': 'udrt2vnk83cb27',
-        'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
-        'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
-        'PORT': '5432'
-    }
-}
-
-    ALLOWED_HOSTS = ['hlsnigeria-e0c4b5df87f5.herokuapp.com']
+DEBUG = False
+ALLOWED_HOSTS = ['hlsnigeria-e0c4b5df87f5.herokuapp.com','127.0.0.1:8000']
+# ALLOWED_HOSTS = ['127.0.0.1:8000']
 
 
 # Application definition
@@ -53,6 +34,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
     'home',
     'user',
     'dashboard',
@@ -141,8 +123,28 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
-MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+# MEDIA_URL = 'media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# AWS S3 Storage settings
+AWS_ACCESS_KEY_ID = 'AKIATFBMO53EKIXSNNUY'  # Replace with your AWS access key ID
+AWS_SECRET_ACCESS_KEY = 'vf+xxthS0G7T4l37rtvmYdzhiR4yEZQS3yXHIfsz'  # Replace with your AWS secret access key
+AWS_STORAGE_BUCKET_NAME = 'hlsbucketnigeria'  # Replace with your S3 bucket name
+
+# Use AWS S3 for storing media files
+AWS_S3_REGION_NAME = 'us-north-1'  
+AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
+
+# Django-Storages settings
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+# URL to use for media files (pointing to S3)
+MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/"
+
+# Optional settings for caching and other S3 optimizations
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',  # Cache the file for a day
+}
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -154,6 +156,16 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'home:home'
 
 LOGIN_URL = 'user:login'
+
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.hls.com.ng'  # Replace with the SMTP server for your Webmail
+EMAIL_PORT = 587  # Port for TLS
+EMAIL_USE_TLS = True  # Use TLS for encryption
+EMAIL_HOST_USER = 'admin@hls.com.ng'  # Your email address
+EMAIL_HOST_PASSWORD = 'your-email-password'  # Your email password
+DEFAULT_FROM_EMAIL = 'admin@hls.com.ng'  # This should be the same as EMAIL_
 
 # dont forget admin honeypot
 # ACCOUNT_USERNAME_BLACKLIST = ['admin', 'sakamanje']

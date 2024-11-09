@@ -1,13 +1,13 @@
 from django.contrib import admin
-from .models import Product, PharmacyGrouping, Brand, AgeRange, Gender, Lifestyle, DosageForm, Health_Benefits, Health_support, Side_effects, Fortify, ProductReview
+from .models import Products, Health_Benefits,Category,SubCategory,MainCategory,DetoxOption,HealthSupportOption,FortifyOption,ProductReview
 
 # Define admin interface for Product model
 
 class HealthSupportInline(admin.TabularInline):
-    model = Health_support
+    model = Health_Benefits
     extra = 1 
 
-@admin.register(Product)
+@admin.register(Products)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'get_health_conditions')
     inlines = [HealthSupportInline]
@@ -17,6 +17,6 @@ class ProductAdmin(admin.ModelAdmin):
         return ", ".join(conditions)
 
 # Register other models with default admin interface
-models = [PharmacyGrouping, Brand, AgeRange, Gender, Lifestyle, DosageForm, Health_Benefits, Health_support, Side_effects, Fortify, ProductReview]
+models = [Category, SubCategory, MainCategory, DetoxOption, HealthSupportOption, FortifyOption, Health_Benefits, ProductReview]
 for model in models:
     admin.site.register(model)
