@@ -94,13 +94,13 @@ class BasicsForm(forms.ModelForm):
     class Meta:
         model = Basic
         fields = ('nickname', 'gender', 'age', 'weight', 'height')
-        # widgets = {
-        #     'nickname': forms.TextInput(attrs={'placeholder': 'Enter nickname'}),
-        #     'gender': forms.Select(choices=GENDER_CHOICES, attrs={'placeholder': 'Select gender'}),
-        #     'age': forms.Select(choices=AGE_CHOICES, attrs={'placeholder': 'Select age group'}),
-        #     'weight': forms.NumberInput(attrs={'placeholder': 'Enter weight (kg)', 'min': 20, 'max': 200, 'step': 0.1}),
-        #     'height': forms.NumberInput(attrs={'placeholder': 'Enter height (cm)', 'min': 12, 'max': 210, 'step': 0.1})
-        # }
+        widgets = {
+            'nickname': forms.TextInput(attrs={'placeholder': 'Enter nickname'}),
+            'gender': forms.Select(choices=GENDER_CHOICES, attrs={'placeholder': 'Select gender'}),
+            'age': forms.Select(choices=AGE_CHOICES, attrs={'placeholder': 'Select age group'}),
+            'weight': forms.NumberInput(attrs={'placeholder': 'Enter weight (kg)', 'min': 20, 'max': 200, 'step': 0.1}),
+            'height': forms.NumberInput(attrs={'placeholder': 'Enter height (cm)', 'min': 12, 'max': 210, 'step': 0.1})
+        }
 
 class LifestyleForm(forms.ModelForm):
     habits = forms.MultipleChoiceField(choices=HABIT_CHOICES,widget=forms.Select)
