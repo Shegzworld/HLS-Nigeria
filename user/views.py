@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout
 from django.contrib import messages
 from .models import UserProfile
-from .forms import UserRegistrationForm,CustomLoginForm
+from .forms import UserRegistrationForm,CustomLoginForm,BasicsForm,HealthConditionForm,PreferenceForm,LifestyleForm
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.core.mail import send_mail
@@ -22,25 +22,25 @@ def register_view(request):
             UserProfile.objects.create(user=user)
 
             # Save form data to corresponding models
-            # if basics:
-            #     basics = BasicsForm(basics).save(commit=False)
-            #     basics.user_profile = user.profile
-            #     basics.save()
+            if basics:
+                basics = BasicsForm(basics).save(commit=False)
+                basics.user_profile = user.profile
+                basics.save()
 
-            # if lifestyle:
-            #     lifestyle = LifestyleForm(lifestyle).save(commit=False)
-            #     lifestyle.user_profile = user.profile
-            #     lifestyle.save()
+            if lifestyle:
+                lifestyle = LifestyleForm(lifestyle).save(commit=False)
+                lifestyle.user_profile = user.profile
+                lifestyle.save()
 
-            # if health_condition:
-            #     health_condition = HealthConditionForm(health_condition).save(commit=False)
-            #     health_condition.user_profile = user.profile
-            #     health_condition.save()
+            if health_condition:
+                health_condition = HealthConditionForm(health_condition).save(commit=False)
+                health_condition.user_profile = user.profile
+                health_condition.save()
 
-            # if preference:
-            #     preference = PreferenceForm(preference).save(commit=False)
-            #     preference.user_profile = user.profile
-            #     preference.save()
+            if preference:
+                preference = PreferenceForm(preference).save(commit=False)
+                preference.user_profile = user.profile
+                preference.save()
 
             # Add a success message to notify the user
             messages.success(request, "Your account has been created successfully! You can now log in.")
