@@ -7,6 +7,7 @@ def homepage(request):
 
 def handle_continue_quiz(request):
     form_type = request.POST.get('form_type')
+    print(form_type)
     
     if form_type == 'basics':
         request.session['basics'] = request.POST

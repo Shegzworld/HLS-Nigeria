@@ -9,7 +9,7 @@ from django.core.paginator import Paginator
 from django.db.models import Count,Subquery,OuterRef,Q
 from django.core.paginator import Paginator
 from django.contrib.auth.models import User
-from NT_gallery.models import Products
+from NT_gallery.models import Product
 from django.contrib import messages
 
 class Dashboard(LoginRequiredMixin, TemplateView):
@@ -24,7 +24,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
 
         # If the profile was just created, handle this case (optional)
         if created:
-            # You can add a message or perform any other action
+            
             messages.info(self.request, "Your user profile was automatically created.")
 
         # Define pack price tag ranges based on user's budget
@@ -36,8 +36,8 @@ class Dashboard(LoginRequiredMixin, TemplateView):
             {'name': 'Welfare Pack', 'min_price': budget * 0.9, 'max_price': budget}
         ]
 
-        # Filter products based on user's profile data
-        products = Products.objects.filter(
+        # Filter  based on user's profile data
+        products = Product.objects.filter(
             # Q(health_condition=user_profile.health_condition) |
             # Q(fortify=user_profile.lifestyle) |
             # Q(basics__age=user_profile.age, basics__gender=user_profile.gender)

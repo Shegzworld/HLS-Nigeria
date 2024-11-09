@@ -6,18 +6,15 @@ class UserProfile(models.Model):
     profile_picture = models.ImageField(upload_to='profile_pictures', null=True, blank=True)
     bio = models.TextField(null=True, blank=True)
     budget = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)  # New field for budget
-    health_condition = models.CharField(max_length=255, null=True, blank=True)  # Add health_condition field
-    lifestyle = models.CharField(max_length=255, null=True, blank=True)  # Add lifestyle field
-    age = models.PositiveIntegerField(null=True, blank=True)  # New field for age
-
+    
     def __str__(self):
         return f"{self.user.username}"
 
 class Basic(models.Model):
     user_profile = models.OneToOneField(UserProfile, on_delete=models.CASCADE, related_name='basics')
     nickname = models.CharField(max_length=255)
-    gender = models.CharField(max_length=10)
-    age = models.IntegerField(null=True, blank=True)
+    age = models.PositiveIntegerField(null=True, blank=True)  # New field for age
+    gender = models.CharField(max_length=255,null=True, blank=True)
     weight = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
     height = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
 

@@ -273,13 +273,13 @@ class Health_Benefits(models.Model):
     health_support = models.OneToOneField(HealthSupportOption, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
     side_effect = models.OneToOneField(DetoxOption, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
     fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-    products = models.OneToOneField('Products', on_delete=models.CASCADE, related_name='health_benefits', null=True) 
+    products = models.OneToOneField('Product', on_delete=models.CASCADE, related_name='health_benefits', null=True) 
 
     def __str__(self):
         return str(self.products) if self.products else 'No products specified'
   
 
-class Products(models.Model):
+class Product(models.Model):
     name = models.CharField(max_length=255)
     category = models.CharField(max_length=255, blank=True)
     sub_categories = models.JSONField(default=list)  # A flexible array-like field for subcategories
@@ -297,7 +297,7 @@ class Products(models.Model):
     
 class ProductReview(models.Model):
     writer = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
-    product = models.ForeignKey(Products, on_delete=models.CASCADE, related_name = 'product_review')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name = 'product_review')
     # rating = models.IntegerField(choices=[1, 2, 3, 4, 5])
     comment = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
@@ -309,7 +309,7 @@ class ProductReview(models.Model):
 
 class ProductSubscription(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    product = models.ForeignKey(Products, on_delete=models.CASCADE, related_name='subscribers')
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='subscribers')
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
