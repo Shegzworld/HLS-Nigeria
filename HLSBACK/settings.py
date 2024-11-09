@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['hlsnigeria-e0c4b5df87f5.herokuapp.com','127.0.0.1:8000']
 # ALLOWED_HOSTS = ['127.0.0.1:8000']
 
@@ -147,10 +147,10 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # AWS S3 Storage settings
 AWS_ACCESS_KEY_ID = 'AKIATFBMO53EKIXSNNUY'  # Replace with your AWS access key ID
 AWS_SECRET_ACCESS_KEY = 'vf+xxthS0G7T4l37rtvmYdzhiR4yEZQS3yXHIfsz'  # Replace with your AWS secret access key
-AWS_STORAGE_BUCKET_NAME = 'hlsnigeriabucket'  # Replace with your S3 bucket name
+AWS_STORAGE_BUCKET_NAME = 'hlsbucketnigeria'  # Replace with your S3 bucket name
 
 # Use AWS S3 for storing media files
-AWS_S3_REGION_NAME = 'us-east-1'  
+AWS_S3_REGION_NAME = 'us-north-1'  
 AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
 
 # Django-Storages settings
@@ -174,6 +174,16 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'home:home'
 
 LOGIN_URL = 'user:login'
+
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'mail.hls.com.ng'  # Replace with the SMTP server for your Webmail
+EMAIL_PORT = 587  # Port for TLS
+EMAIL_USE_TLS = True  # Use TLS for encryption
+EMAIL_HOST_USER = 'admin@hls.com.ng'  # Your email address
+EMAIL_HOST_PASSWORD = 'your-email-password'  # Your email password
+DEFAULT_FROM_EMAIL = 'admin@hls.com.ng'  # This should be the same as EMAIL_
 
 # dont forget admin honeypot
 # ACCOUNT_USERNAME_BLACKLIST = ['admin', 'sakamanje']

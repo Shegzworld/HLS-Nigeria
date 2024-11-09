@@ -2,7 +2,7 @@ from django import forms
 from django.forms import Textarea
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
-from .models import Basic, Lifestyle, HealthCondition, Preference
+# from .models import Basic, Lifestyle, HealthCondition, Preference
 
 
 # choices for all quiz classes
@@ -90,56 +90,56 @@ HEALTH_BUDGET_CHOICES = [
 
 
 # various quiz-classes and definition
-class BasicsForm(forms.ModelForm):
-    class Meta:
-        model = Basic
-        fields = ('nickname', 'gender', 'age', 'weight', 'height')
-        # widgets = {
-        #     'nickname': forms.TextInput(attrs={'placeholder': 'Enter nickname'}),
-        #     'gender': forms.Select(choices=GENDER_CHOICES, attrs={'placeholder': 'Select gender'}),
-        #     'age': forms.Select(choices=AGE_CHOICES, attrs={'placeholder': 'Select age group'}),
-        #     'weight': forms.NumberInput(attrs={'placeholder': 'Enter weight (kg)', 'min': 20, 'max': 200, 'step': 0.1}),
-        #     'height': forms.NumberInput(attrs={'placeholder': 'Enter height (cm)', 'min': 12, 'max': 210, 'step': 0.1})
-        # }
+# class BasicsForm(forms.ModelForm):
+#     class Meta:
+#         model = Basic
+#         fields = ('nickname', 'gender', 'age', 'weight', 'height')
+#         # widgets = {
+#         #     'nickname': forms.TextInput(attrs={'placeholder': 'Enter nickname'}),
+#         #     'gender': forms.Select(choices=GENDER_CHOICES, attrs={'placeholder': 'Select gender'}),
+#         #     'age': forms.Select(choices=AGE_CHOICES, attrs={'placeholder': 'Select age group'}),
+#         #     'weight': forms.NumberInput(attrs={'placeholder': 'Enter weight (kg)', 'min': 20, 'max': 200, 'step': 0.1}),
+#         #     'height': forms.NumberInput(attrs={'placeholder': 'Enter height (cm)', 'min': 12, 'max': 210, 'step': 0.1})
+#         # }
 
-class LifestyleForm(forms.ModelForm):
-    habits = forms.MultipleChoiceField(choices=HABIT_CHOICES,widget=forms.Select)
-    recreation = forms.MultipleChoiceField(choices=RECREATION_CHOICES,widget=forms.Select)
-    lifestyle = forms.MultipleChoiceField(choices=LIFESTYLE_CHOICES, widget=forms.CheckboxSelectMultiple)
+# class LifestyleForm(forms.ModelForm):
+#     habits = forms.MultipleChoiceField(choices=HABIT_CHOICES,widget=forms.Select)
+#     recreation = forms.MultipleChoiceField(choices=RECREATION_CHOICES,widget=forms.Select)
+#     lifestyle = forms.MultipleChoiceField(choices=LIFESTYLE_CHOICES, widget=forms.CheckboxSelectMultiple)
 
-    class Meta:
-        model = Lifestyle
-        fields = ('habits', 'recreation', 'lifestyle')
+#     class Meta:
+#         model = Lifestyle
+#         fields = ('habits', 'recreation', 'lifestyle')
         
 
-class HealthConditionForm(forms.ModelForm):
-    class Meta:
-        model = HealthCondition
-        fields = ('health_complaints', 'current_medications', 'genetic_history', 'allergies', 'health_fears')
-        widgets = {
-            'health_complaints': forms.CheckboxSelectMultiple(attrs={'choices':HEALTH_COMPLAINT_CHOICES}),
-            'current_medications': forms.Textarea,'genetic_history': forms.CheckboxSelectMultiple(attrs={'choices': GENETIC_HISTORY_CHOICES}),
-            'allergies': forms.CheckboxSelectMultiple(attrs={'choices': ALLERGY_CHOICES}),
-            'health_fears': Textarea(
-                attrs={
-                    'rows': 5,
-                    'cols': 30,
-                    'maxlength': 200,
-                    'placeholder': 'describe all your health fear as best as you can',
-                    'style': 'font-size: 14px;',
-                    'class': 'health-fears-textarea'
-        }
-    ),
-}
+# class HealthConditionForm(forms.ModelForm):
+#     class Meta:
+#         model = HealthCondition
+#         fields = ('health_complaints', 'current_medications', 'genetic_history', 'allergies', 'health_fears')
+#         widgets = {
+#             'health_complaints': forms.CheckboxSelectMultiple(attrs={'choices':HEALTH_COMPLAINT_CHOICES}),
+#             'current_medications': forms.Textarea,'genetic_history': forms.CheckboxSelectMultiple(attrs={'choices': GENETIC_HISTORY_CHOICES}),
+#             'allergies': forms.CheckboxSelectMultiple(attrs={'choices': ALLERGY_CHOICES}),
+#             'health_fears': Textarea(
+#                 attrs={
+#                     'rows': 5,
+#                     'cols': 30,
+#                     'maxlength': 200,
+#                     'placeholder': 'describe all your health fear as best as you can',
+#                     'style': 'font-size: 14px;',
+#                     'class': 'health-fears-textarea'
+#         }
+#     ),
+# }
 
-class PreferenceForm(forms.ModelForm):
-    class Meta:
-        model = Preference
-        fields = ('drug_form', 'health_budget')
-        # widgets = {
-        #     'drug_form': forms.CheckboxSelectMultiple(attrs={'choices': DRUG_FORM_CHOICES}),
-        #     'health_budget': forms.RadioSelect(attrs={'choices': HEALTH_BUDGET_CHOICES}),
-        # }
+# class PreferenceForm(forms.ModelForm):
+#     class Meta:
+#         model = Preference
+#         fields = ('drug_form', 'health_budget')
+#         # widgets = {
+#         #     'drug_form': forms.CheckboxSelectMultiple(attrs={'choices': DRUG_FORM_CHOICES}),
+#         #     'health_budget': forms.RadioSelect(attrs={'choices': HEALTH_BUDGET_CHOICES}),
+#         # }
 
 class UserRegistrationForm(UserCreationForm):
     email = forms.EmailField()
