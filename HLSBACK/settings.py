@@ -92,13 +92,13 @@ if DEBUG:
 else: 
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.mysql',#'django.db.backends.postgresql_psycopg2',
-            'NAME': 'hlscomng_newdb',#'dbuap6sb6d2e99',
-            'USER': 'hlscomng_newuser',#'udrt2vnk83cb27',
-            'PASSWORD':'f5wnOWJ$HGna', #'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
-            'HOST': 'nc-ph-4339.globalhosting247.com',#'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
-            'PORT': 3306,
-            'SSL_MODE':"DISABLED",
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            # 'NAME': 'hlscomng_newdb',#'dbuap6sb6d2e99',
+            # 'USER': 'hlscomng_newuser',#'udrt2vnk83cb27',
+            # 'PASSWORD':'f5wnOWJ$HGna', #'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
+            # 'HOST': 'nc-ph-4339.globalhosting247.com',#'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+            # 'PORT': 3306,
+            # 'SSL_MODE':"DISABLED",
         
         }
     }
