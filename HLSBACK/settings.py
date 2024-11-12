@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'HLSBACK.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DEBUG = False
+DEBUG = True
 
 if DEBUG:
         DATABASES = {
@@ -133,7 +133,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
     {
-        'NAME': 'HLSBACK.validators.CustomPasswordValidator',
+        # 'NAME': 'HLSBACK.validators.CustomPasswordValidator',
     },
 ]
 
