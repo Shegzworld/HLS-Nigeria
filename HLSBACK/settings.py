@@ -134,9 +134,9 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
-    {
-        'NAME': 'HLSBACK.validators.CustomPasswordValidator',
-    },
+    # {
+    #     'NAME': 'HLSBACK.validators.CustomPasswordValidator',
+    # },
 ]
 
 
