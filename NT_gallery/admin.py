@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Health_Benefits,Category,SubCategory,MainCategory,DetoxOption,HealthSupportOption,FortifyOption,ProductReview
+from .models import Product, Health_Benefits,Health_support,Fortify,Side_effects
 
 # Define admin interface for Product model
 
@@ -17,6 +17,6 @@ class ProductAdmin(admin.ModelAdmin):
         return ", ".join(conditions)
 
 # Register other models with default admin interface
-models = [Category, SubCategory, MainCategory, DetoxOption, HealthSupportOption, FortifyOption, Health_Benefits, ProductReview]
+models = [ Health_support, Fortify, Side_effects, Health_Benefits]
 for model in models:
     admin.site.register(model)

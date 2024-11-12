@@ -1,260 +1,141 @@
-# from django.db import models
-# from django.contrib.auth.models import User
-# from django.utils import timezone
-
-# # 1. Pharmacy Grouping
-# class PharmacyGrouping(models.Model):
-#     PharmacyGrouping = models.CharField(max_length=255)
-
-#     def __str__(self):
-#         return self.PharmacyGrouping
-
-
-# # 2. Brands
-# class Brand(models.Model):
-#     Brand_Name = models.CharField(max_length=255)
-
-#     def __str__(self):
-#         return self.Brand_Name
-
-
-    
-# class AgeRange(models.Model):
-#     name = models.CharField(max_length=255, default = 0, null = True)
-#     min_age = models.IntegerField()
-#     max_age = models.IntegerField()
-
-#     def __str__(self):
-#         return self.name
-
-
-
-# # 4. Gender
-# class Gender(models.Model):
-#     Gender = models.CharField(max_length=255)
-
-#     def __str__(self):
-#         return self.Gender
-
-
-# # 8. Lifestyle
-# class Lifestyle(models.Model):
-#     LifestyleType = models.CharField(max_length=255)
-
-#     def __str__(self):
-#         return self.LifestyleType
-
-
-# # 10. Dosage Forms
-# class DosageForm(models.Model):
-#     DosageForm = models.CharField(max_length=255)
-
-#     def __str__(self):
-#         return self.DosageForm
-
-# # 11. Lifestyle Rating
-# # class Lifestylerating(models.Model):
-# #     LifestyleRating = models.CharField(max_length=255, null=True)
-        
-# #     def _str_(self):
-# #             return self.LifestyleRating
-    
-# class Product(models.Model):
-#     name = models.CharField(max_length=255)
-#     Generic_name = models.CharField(max_length=255, null = True)
-#     price = models.DecimalField(max_digits=10, decimal_places=2, null = True)
-#     strength = models.IntegerField(blank =True,null = True)
-#     pharmacy_grouping = models.ManyToManyField(PharmacyGrouping)
-#     brand = models.ManyToManyField(Brand)
-#     age_range = models.ForeignKey(AgeRange, on_delete=models.CASCADE, null = True)
-#     gender = models.ManyToManyField(Gender)
-#     lifestyle = models.ManyToManyField(Lifestyle)
-#     dosage_form = models.ManyToManyField(DosageForm)
-#     # lifestyle_rating = models.ManyToManyField(Lifestylerating)
-#     description = models.TextField(null = True)
-#     main_image = models.ImageField(upload_to='product_images/main',null=True)
-#     side_image_1 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
-#     side_image_2 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
-#     side_image_3 = models.ImageField(upload_to='product_images/secondary', blank=True, null=True)
-#     created_at = models.DateTimeField(auto_now_add=True, null=True)
-#     updated_at = models.DateTimeField(auto_now=True,null=True)
-#     def __str__(self):
-#         return self.name 
-
-# class Health_support(models.Model):
-#     nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
-#     health_condition = models.CharField(max_length=255)
-#     strength = models.CharField(max_length=255,null = True)
-#     times_per_day = models.IntegerField(null = True)
-#     length_of_use = models.CharField(max_length=255,null = True)
-#     clinical_file = models.FileField(upload_to='documents/', blank=True, null=True)
-#     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
-    
-#     def __str__(self):
-#         return f"{self.nutrient.name} - {self.health_condition}" if self.nutrient else 'No nutrient specified'
-    
-# class Side_effects(models.Model):
-#     nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
-#     medication = models.CharField(max_length=255)
-#     strength = models.CharField(max_length=255,null = True)
-#     tabs = models.IntegerField(null = True)
-#     times_per_day = models.IntegerField(null = True)
-#     length_of_use = models.CharField(max_length=255,null = True)
-#     clinical_file = models.FileField(upload_to='documents/', blank=True, null=True)
-#     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
-    
-#     def __str__(self):
-#         return self.medication
-
-# class Fortify(models.Model):
-#     nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
-#     organ = models.CharField( max_length=255, null=True )
-#     strength = models.CharField(max_length=255, null = True)
-#     tabs = models.IntegerField(null = True)
-#     times_per_day = models.IntegerField(null = True)
-#     length_of_use = models.CharField(max_length=255,null = True)
-#     clinical_file = models.FileField(upload_to='documents/', blank=True, null=True)
-#     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
-    
-#     def __str__(self):
-#         return str(self.nutrient) if self.nutrient else 'No nutrient specified'
-    
-# class Health_Benefits(models.Model):
-#     name = models.CharField( max_length=255, null = True)
-#     nutrient = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='health_benefits', null = True)
-#     health_support = models.OneToOneField(Health_support, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-#     Side_effects = models.OneToOneField(Side_effects, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-#     Fortify = models.OneToOneField(Fortify, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-
-#     def __str__(self):
-#         return str(self.nutrient) if self.nutrient else 'No nutrient specified'
-  
-# class ProductReview(models.Model):
-#     writer = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
-#     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name = 'product_review')
-#     # rating = models.IntegerField(choices=[1, 2, 3, 4, 5])
-#     comment = models.TextField()
-#     created_at = models.DateTimeField(auto_now_add=True)
-#     updated_at = models.DateTimeField(auto_now=True)
-
-#     def __str__(self):
-#         return f"{self.product}{' reviews by'} - {self.user.username}"
-
-
-# # class Prof_Pack:
-# #     image_1 = models.ImageField()
-# #     image_2 = models.ImageField()
-
-# # class Doctor_Pack:
-# #     pass
-
-# # class HLS_Pack:
-# #     pass
-
-# # class ECO_Pack:
-# #     pass
-
-# # class Everyman_Pack:
-# #     pass
-
-
 from django.db import models
-from django.utils.text import slugify
 from django.contrib.auth.models import User
+from django.utils import timezone
+import requests
+
+# 1. Pharmacy Grouping
+class PharmacyGrouping(models.Model):
+    PharmacyGrouping = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.PharmacyGrouping
 
 
-# Main Category model
-class MainCategory(models.Model):
-    name = models.CharField(max_length=100)
-    class Meta:
-        verbose_name_plural= 'Main Categories'
+# 2. Brands
+class Brand(models.Model):
+    Brand_Name = models.CharField(max_length=255)
 
-    # def save(self, *args, **kwargs):
-    def __str__(self) -> str:
+    def __str__(self):
+        return self.Brand_Name
+
+
+    
+class AgeRange(models.Model):
+    name = models.CharField(max_length=255, default = 0, null = True)
+    min_age = models.IntegerField()
+    max_age = models.IntegerField()
+
+    def __str__(self):
         return self.name
-    
 
-# Category model
 
-class Category(models.Model):
-    main_category = models.ForeignKey(MainCategory, on_delete=models.CASCADE, related_name="categories")
-    name = models.CharField(max_length=100)
-    slug = models.SlugField(max_length=255, blank=True, editable=False)
 
-    class Meta:
-        verbose_name_plural = 'Categories'
-    
-    def __str__(self) -> str:
-        return self.name
-    
-    def save(self, *args, **kwargs):
-        # Generate the slug if it does not exist
-        if not self.slug:
-            # Generate the slug based on the main category name and this category's ID (which will be set after save)
-            slug = slugify(f"{self.main_category.name}-{self.name}")
-            self.slug = slug
+# 4. Gender
+class Gender(models.Model):
+    Gender = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.Gender
+
+
+# 8. Lifestyle
+class Lifestyle(models.Model):
+    LifestyleType = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.LifestyleType
+
+
+# 10. Dosage Forms
+class DosageForm(models.Model):
+    DosageForm = models.CharField(max_length=255)
+
+    def __str__(self):
+        return self.DosageForm
+
+# 11. Lifestyle Rating
+# class Lifestylerating(models.Model):
+#     LifestyleRating = models.CharField(max_length=255, null=True)
         
-        # Save the instance normally, which will generate an ID if it's a new instance
-        super().save(*args, **kwargs)
+#     def _str_(self):
+#             return self.LifestyleRating
+    
 
-        # Update the slug with the ID and save again if necessary
-        if not self.slug.endswith(f"-{self.id}"):
-            self.slug = f"{self.slug}-{self.id}"
-            super().save(update_fields=['slug'])
-            
-class SubCategory(models.Model):
-    # objects = None
+class Product(models.Model):
     name = models.CharField(max_length=255)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='subcategories')
-    slug = models.SlugField(max_length=255, blank=True, editable=False)
-
-    class Meta:
-        verbose_name_plural = 'Sub Categories'
+    category = models.CharField(max_length=255, blank=True)
+    sub_categories = models.JSONField(default=list)  # A flexible array-like field for subcategories
+    price = models.DecimalField(max_digits=10, decimal_places=2,null=True)
+    strength = models.CharField(max_length=255,null=True)
+    description = models.TextField(null=True, blank=True)
+    pictures = models.JSONField(default=dict)  # Store images paths in a JSON field
+    fortify = models.OneToOneField('Fortify', on_delete=models.CASCADE, related_name='product', null=True)
+    side_effect = models.OneToOneField('Side_effects', on_delete=models.CASCADE, related_name='product', null=True)
+    health_support = models.OneToOneField('Health_support', on_delete=models.CASCADE, related_name='product', null=True)
+    # fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='product', null=True)
+    # author = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
+    created_at = models.DateTimeField(auto_now_add=True, null=True)
+    updated_at = models.DateTimeField(auto_now=True,null=True)
 
     def __str__(self):
         return self.name
 
-    def save(self, *args, **kwargs):
-        # Generate the slug if it does not exist
-        if not self.slug:
-            # Generate the slug based on the main category name and this category's ID (which will be set after save)
-            slug = slugify(f"{self.category.name}-{self.name}")
-            self.slug = slug
+    @classmethod
+    def get_from_api(cls):
+        """
+        Fetch product data from an external API and return the product data as a dictionary.
+        """
+        response = requests.get("https://hls-vr1z.onrender.com/api/product")
+        if response.status_code == 200:
+            data = response.json()
+            return cls.process_product_data(data)
+        else:
+            return None  # Or handle errors as needed
+
+    @staticmethod
+    def process_product_data(data):
+        """
+        Process the API response and return the product data in a structured format.
+        """
+        # Here we return a dictionary of the data fetched
+        product_data = {
+            'name': data.get('name'),
+            'generic_name': data.get('generic_name'),
+            'price': data.get('price'),
+            'strength': data.get('strength'),
+            'description': data.get('description'),
+            'main_image': data.get('main_image'),
+            'side_image_1': data.get('side_image_1'),
+            'side_image_2': data.get('side_image_2'),
+            'side_image_3': data.get('side_image_3'),
+            'pharmacy_grouping': data.get('pharmacy_grouping', []),  # Example: list of IDs
+            'brand': data.get('brand', []),  # Example: list of IDs
+            'age_range': data.get('age_range'),
+            'gender': data.get('gender', []),  # Example: list of IDs
+            'lifestyle': data.get('lifestyle', []),  # Example: list of IDs
+            'dosage_form': data.get('dosage_form', []),  # Example: list of IDs
+        }
+        return product_data
+    
+    
         
-        # Save the instance normally, which will generate an ID if it's a new instance
-        super().save(*args, **kwargs)
 
-        # Update the slug with the ID and save again if necessary
-        if not self.slug.endswith(f"-{self.id}"):
-            self.slug = f"{self.slug}-{self.id}"
-            super().save(update_fields=['slug'])
-
-class FortifyOption(models.Model):
-    organ = models.CharField( max_length=255, null=True )
-    strength = models.CharField(max_length=255, null = True)
-    tabs = models.IntegerField(null = True)
-    times_per_day = models.IntegerField(null = True)
-    length_of_use = models.CharField(max_length=255,null = True)
-    clinical_file = models.FileField(upload_to='documents/', blank=True, null=True)
-    summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
-    
-    def __str__(self):
-        return self.organ
-    
-
-class HealthSupportOption(models.Model):
+class Health_support(models.Model):
+    name =  models.CharField(max_length=255, null = True)
+    # nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
     health_condition = models.CharField(max_length=255)
     strength = models.CharField(max_length=255,null = True)
     times_per_day = models.IntegerField(null = True)
     length_of_use = models.CharField(max_length=255,null = True)
     clinical_file = models.FileField(upload_to='documents/', blank=True, null=True)
     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
-
-    def __str__(self):
-        return self.health_condition
     
-
-class DetoxOption(models.Model):
+    def __str__(self):
+        return f"{self.nutrient.name} - {self.health_condition}" if self.nutrient else 'No nutrient specified'
+    
+class Side_effects(models.Model):
+    name =  models.CharField(max_length=255, null = True)
+    # nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
     medication = models.CharField(max_length=255)
     strength = models.CharField(max_length=255,null = True)
     tabs = models.IntegerField(null = True)
@@ -265,36 +146,49 @@ class DetoxOption(models.Model):
     
     def __str__(self):
         return self.medication
+
+class Fortify(models.Model):
+    # nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
+    name =  models.CharField(max_length=255, null = True)
+    organ = models.CharField( max_length=255, null=True )
+    strength = models.CharField(max_length=255, null = True)
+    tabs = models.IntegerField(null = True)
+    times_per_day = models.IntegerField(null = True)
+    length_of_use = models.CharField(max_length=255,null = True)
+    clinical_file = models.FileField(upload_to='documents/', blank=True, null=True)
+    summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
     
-
-
+    def __str__(self):
+        return str(self.nutrient) if self.nutrient else 'No nutrient specified'
+    
 class Health_Benefits(models.Model):
     name = models.CharField( max_length=255, null = True)
-    health_support = models.OneToOneField(HealthSupportOption, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-    side_effect = models.OneToOneField(DetoxOption, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-    fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-    products = models.OneToOneField('Product', on_delete=models.CASCADE, related_name='health_benefits', null=True) 
+    nutrient = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='health_benefits', null = True)
+    health_support = models.OneToOneField(Health_support, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
+    Side_effects = models.OneToOneField(Side_effects, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
+    Fortify = models.OneToOneField(Fortify, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
 
     def __str__(self):
-        return str(self.products) if self.products else 'No products specified'
+        return str(self.nutrient) if self.nutrient else 'No nutrient specified'
+
+    def save(self, *args, **kwargs):
+        # API call before saving
+        response = requests.post('https://example.com/api/health_support', data={
+            'name': self.name,
+            'health_condition': self.health_condition,
+            'strength': self.strength,
+            'times_per_day': self.times_per_day,
+            'length_of_use': self.length_of_use,
+        })
+        
+        # Check if the request was successful
+        if response.status_code == 200:
+            print("API call successful:", response.json())
+        else:
+            print("API call failed:", response.status_code, response.text)
+
+        super().save(*args, **kwargs) 
   
-
-class Product(models.Model):
-    name = models.CharField(max_length=255)
-    category = models.CharField(max_length=255, blank=True)
-    sub_categories = models.JSONField(default=list)  # A flexible array-like field for subcategories
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    strength = models.CharField(max_length=255)
-    description = models.TextField(null=True, blank=True)
-    pictures = models.JSONField(default=dict)  # Store images paths in a JSON field
-    benefits = models.OneToOneField(Health_Benefits, on_delete=models.CASCADE, related_name='product', null=True) 
-    author = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
-    created_at = models.DateTimeField(auto_now_add=True, null=True)
-    updated_at = models.DateTimeField(auto_now=True,null=True)
-    
-    def __str__(self):
-        return self.name
-    
 class ProductReview(models.Model):
     writer = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name = 'product_review')
@@ -307,10 +201,20 @@ class ProductReview(models.Model):
         return f"{self.product}{' reviews by'} - {self.user.username}"
 
 
-class ProductSubscription(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='subscribers')
-    created_at = models.DateTimeField(auto_now_add=True)
+# class Prof_Pack:
+#     image_1 = models.ImageField()
+#     image_2 = models.ImageField()
 
-    def __str__(self):
-        return f"{self.user.username} subscribed to {self.product.name}"
+# class Doctor_Pack:
+#     pass
+
+# class HLS_Pack:
+#     pass
+
+# class ECO_Pack:
+#     pass
+
+# class Everyman_Pack:
+#     pass
+
+

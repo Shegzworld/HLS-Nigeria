@@ -7,7 +7,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.core.mail import send_mail
 from django.conf import settings
-from NT_gallery.models import ProductReview, ProductSubscription
+# from NT_gallery.models import ProductReview, ProductSubscription
 
 def register_view(request):
     if request.method == 'POST':
@@ -76,24 +76,24 @@ def logout_view(request):
         return redirect("home:homepage")
     
 
-@receiver(post_save, sender=ProductReview)
-def send_review_notification(sender, instance, created, **kwargs):
-    if created:  # Only send notifications when a new review is created
-        product = instance.product  # Get the product being reviewed
-        subscriptions = ProductSubscription.objects.filter(product=product)  # Get all subscriptions for the product
+# @receiver(post_save, sender=ProductReview)
+# def send_review_notification(sender, instance, created, **kwargs):
+#     if created:  # Only send notifications when a new review is created
+#         product = instance.product  # Get the product being reviewed
+#         subscriptions = ProductSubscription.objects.filter(product=product)  # Get all subscriptions for the product
         
-        # Collect the email addresses of all users subscribed to this product
-        subscriber_emails = [sub.user.email for sub in subscriptions]
+#         # Collect the email addresses of all users subscribed to this product
+#         subscriber_emails = [sub.user.email for sub in subscriptions]
         
-        if subscriber_emails:
-            subject = f"New Review on {product.name}"
-            message = f"A new review has been posted for {product.name}:\n\n{instance.comment}\n\nCheck it out!"
+#         if subscriber_emails:
+#             subject = f"New Review on {product.name}"
+#             message = f"A new review has been posted for {product.name}:\n\n{instance.comment}\n\nCheck it out!"
             
-            # Send email to all subscribed users
-            send_mail(
-                subject,
-                message,
-                settings.DEFAULT_FROM_EMAIL,  
-                subscriber_emails,
-                fail_silently=False,
-            )
+#             # Send email to all subscribed users
+#             send_mail(
+#                 subject,
+#                 message,
+#                 settings.DEFAULT_FROM_EMAIL,  
+#                 subscriber_emails,
+#                 fail_silently=False,
+#             )
