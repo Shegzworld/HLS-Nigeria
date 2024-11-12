@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 ALLOWED_HOSTS = ['hlsnigeria-e0c4b5df87f5.herokuapp.com','127.0.0.1:8000']
 # ALLOWED_HOSTS = ['127.0.0.1:8000']
 
@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'HLSBACK.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-
+DEBUG = False
 
 if DEBUG:
         DATABASES = {
@@ -92,16 +92,14 @@ if DEBUG:
 else: 
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'dbuap6sb6d2e99',
-            'USER': 'udrt2vnk83cb27',
-            'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
-            'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
-            'PORT': '5432',
-            'OPTIONS': {
-                'autocommit': True,
-                'sslmode': 'require',
-            }
+            'ENGINE': 'django.db.backends.mysql',#'django.db.backends.postgresql_psycopg2',
+            'NAME': 'hlscomng_newdb',#'dbuap6sb6d2e99',
+            'USER': 'hlscomng_newuser',#'udrt2vnk83cb27',
+            'PASSWORD':'f5wnOWJ$HGna', #'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
+            'HOST': 'nc-ph-4339.globalhosting247.com',#'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+            'PORT': 3306,
+            'SSL_MODE':"DISABLED",
+        
         }
     }
 
@@ -133,6 +131,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
+    {
+        'NAME': 'HLSBACK.validators.CustomPasswordValidator',
     },
 ]
 

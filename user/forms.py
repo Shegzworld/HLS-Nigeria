@@ -147,6 +147,16 @@ class UserRegistrationForm(UserCreationForm):
     class Meta:
         model = User
         fields =['username','email','password1','password2',]
+
+    def clean(self):
+        cleaned_data = super().clean()
+        password = cleaned_data.get('password')
+        password_confirm = cleaned_data.get('password_confirm')
+
+        if password != password_confirm:
+            raise forms.ValidationError("Passwords do not match")
+
+        return cleaned_data
         
     username= forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Username'}))
     email= forms.CharField(widget=forms.EmailInput(attrs={'placeholder': 'Email Address'}))
