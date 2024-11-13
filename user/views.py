@@ -7,6 +7,7 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from django.core.mail import send_mail
 from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
 # from NT_gallery.models import ProductReview, ProductSubscription
 
 def register_view(request):
@@ -53,7 +54,7 @@ def register_view(request):
 
     return render(request, 'user/register.html', {'registration_form': registration_form})
 
-
+@csrf_exempt
 def login_view(request):
     if request.method == "POST":
         form = CustomLoginForm(data=request.POST)

@@ -43,6 +43,13 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
 ]
 # Application definition
+CSRF_TRUSTED_ORIGINS = [
+    "https://hls.com.ng",           # Your main domain
+    "https://hls-vr1z.onrender.com"  # Render deployment domain
+]
+
+CSRF_COOKIE_SECURE = True  # Ensures cookie is only sent over HTTPS
+CSRF_COOKIE_SAMESITE = 'None'  # Allows cross-site cookies; required for CORS
 
 INSTALLED_APPS = [
     'django.contrib.admin',
