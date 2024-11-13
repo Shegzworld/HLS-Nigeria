@@ -20,11 +20,27 @@ SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = [
-    'hlsnigeria-e0c4b5df87f5.herokuapp.com',  # Your Heroku deployment
-    '127.0.0.1',  # Localhost for testing on local development server
-    'hls.com.ng',  # Production or main domain if hosted here
-    'hls-vr1z.onrender.com'  # Render deployment domain
+CORS_ALLOWED_ORIGINS  = [
+    # 'hlsnigeria-e0c4b5df87f5.herokuapp.com',  # Your Heroku deployment
+    'http://127.0.0.1',  # Localhost for testing on local development server
+    'https://hls.com.ng',  # Production or main domain if hosted here
+    'https://www.hls.com.ng',
+    'https://hls-vr1z.onrender.com'  # Render deployment domain
+]
+
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+    'OPTIONS',
+]
+
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'authorization',
+    'x-csrftoken',
 ]
 # Application definition
 
