@@ -100,7 +100,7 @@ class Product(models.Model):
         # Here we return a dictionary of the data fetched
         product_data = {
             'name': data.get('name'),
-            'generic_name': data.get('generic_name'),
+            # 'generic_name': data.get('generic_name'),
             'price': data.get('price'),
             'strength': data.get('strength'),
             'description': data.get('description'),
@@ -108,12 +108,12 @@ class Product(models.Model):
             'side_image_1': data.get('side_image_1'),
             'side_image_2': data.get('side_image_2'),
             'side_image_3': data.get('side_image_3'),
-            'pharmacy_grouping': data.get('pharmacy_grouping', []),  # Example: list of IDs
-            'brand': data.get('brand', []),  # Example: list of IDs
-            'age_range': data.get('age_range'),
-            'gender': data.get('gender', []),  # Example: list of IDs
-            'lifestyle': data.get('lifestyle', []),  # Example: list of IDs
-            'dosage_form': data.get('dosage_form', []),  # Example: list of IDs
+            # 'pharmacy_grouping': data.get('pharmacy_grouping', []),  # Example: list of IDs
+            # 'brand': data.get('brand', []),  # Example: list of IDs
+            # 'age_range': data.get('age_range'),
+            # 'gender': data.get('gender', []),  # Example: list of IDs
+            # 'lifestyle': data.get('lifestyle', []),  # Example: list of IDs
+            # 'dosage_form': data.get('dosage_form', []),  # Example: list of IDs
         }
         return product_data
     
