@@ -128,7 +128,7 @@ class Health_support(models.Model):
     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
     
     def __str__(self):
-        return f"{self.nutrient.name} - {self.health_condition}" if self.nutrient else 'No nutrient specified'
+        return f"{self.name} - {self.health_condition}" 
     
 class Side_effects(models.Model):
     name =  models.CharField(max_length=255, null = True)
@@ -156,7 +156,7 @@ class Fortify(models.Model):
     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
     
     def __str__(self):
-        return str(self.nutrient) if self.nutrient else 'No nutrient specified'
+        return self.name
     
 class Health_Benefits(models.Model):
     name = models.CharField( max_length=255, null = True)
@@ -166,25 +166,25 @@ class Health_Benefits(models.Model):
     Fortify = models.OneToOneField(Fortify, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
 
     def __str__(self):
-        return str(self.nutrient) if self.nutrient else 'No nutrient specified'
+        return self.name
 
-    def save(self, *args, **kwargs):
-        # API call before saving
-        response = requests.post('https://example.com/api/health_support', data={
-            'name': self.name,
-            'health_condition': self.health_condition,
-            'strength': self.strength,
-            'times_per_day': self.times_per_day,
-            'length_of_use': self.length_of_use,
-        })
+    # def save(self, *args, **kwargs):
+    #     # API call before saving
+    #     response = requests.post('https://example.com/api/health_support', data={
+    #         'name': self.name,
+    #         'health_condition': self.health_condition,
+    #         'strength': self.strength,
+    #         'times_per_day': self.times_per_day,
+    #         'length_of_use': self.length_of_use,
+    #     })
         
-        # Check if the request was successful
-        if response.status_code == 200:
-            print("API call successful:", response.json())
-        else:
-            print("API call failed:", response.status_code, response.text)
+    #     # Check if the request was successful
+    #     if response.status_code == 200:
+    #         print("API call successful:", response.json())
+    #     else:
+    #         print("API call failed:", response.status_code, response.text)
 
-        super().save(*args, **kwargs) 
+    #     super().save(*args, **kwargs) 
   
 class ProductReview(models.Model):
     writer = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
