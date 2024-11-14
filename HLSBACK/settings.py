@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 CORS_ALLOWED_ORIGINS  = [
     # 'hlsnigeria-e0c4b5df87f5.herokuapp.com',  # Your Heroku deployment
     'http://127.0.0.1',  # Localhost for testing on local development server
@@ -108,7 +108,7 @@ WSGI_APPLICATION = 'HLSBACK.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-
+DEBUG = False
 
 if DEBUG:
         DATABASES = {

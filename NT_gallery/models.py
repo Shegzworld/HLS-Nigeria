@@ -108,12 +108,9 @@ class Product(models.Model):
             'side_image_1': data.get('side_image_1'),
             'side_image_2': data.get('side_image_2'),
             'side_image_3': data.get('side_image_3'),
-            # 'pharmacy_grouping': data.get('pharmacy_grouping', []),  # Example: list of IDs
-            # 'brand': data.get('brand', []),  # Example: list of IDs
-            # 'age_range': data.get('age_range'),
-            # 'gender': data.get('gender', []),  # Example: list of IDs
-            # 'lifestyle': data.get('lifestyle', []),  # Example: list of IDs
-            # 'dosage_form': data.get('dosage_form', []),  # Example: list of IDs
+            # 'fortify':data.get('fortify_id'),  # Assuming foreign key IDs are provided
+            # 'side_effect':data.get('side_effect_id'),
+            # 'health_support':data.get('health_support_id'),
         }
         return product_data
     

@@ -23,10 +23,10 @@ def create_product(request):
             strength=data.get('strength', ''),
             description=data.get('description', ''),
             pictures=data.get('pictures', {}),
-            fortify_id=data.get('fortify_id'),  # Assuming foreign key IDs are provided
-            side_effect_id=data.get('side_effect_id'),
-            health_support_id=data.get('health_support_id'),
-            author_id=data.get('author_id')  # Assuming the author ID is provided
+            # fortify=data.get('fortify_id'),  # Assuming foreign key IDs are provided
+            # side_effect=data.get('side_effect_id'),
+            # health_support=data.get('health_support_id'),
+            # author_id=data.get('author_id')  # Assuming the author ID is provided
         )
         
         # Save the product to the database
