@@ -64,14 +64,14 @@ class DosageForm(models.Model):
 class Product(models.Model):
     name = models.CharField(max_length=255)
     category = models.CharField(max_length=255, blank=True)
-    sub_categories = models.JSONField(default=list)  # A flexible array-like field for subcategories
-    price = models.DecimalField(max_digits=10, decimal_places=2,null=True)
+    sub_categories = models.JSONField(default=list,null=True)  # A flexible array-like field for subcategories
+    price = models.DecimalField(max_digits=10, decimal_places=2,null=True,blank=True)
     strength = models.CharField(max_length=255,null=True)
     description = models.TextField(null=True, blank=True)
     pictures = models.JSONField(default=dict)  # Store images paths in a JSON field
-    fortify = models.OneToOneField('Fortify', on_delete=models.CASCADE, related_name='product', null=True)
-    side_effect = models.OneToOneField('Side_effects', on_delete=models.CASCADE, related_name='product', null=True)
-    health_support = models.OneToOneField('Health_support', on_delete=models.CASCADE, related_name='product', null=True)
+    fortify = models.OneToOneField('Fortify', on_delete=models.CASCADE, related_name='product', null=True,blank=True)
+    side_effect = models.OneToOneField('Side_effects', on_delete=models.CASCADE, related_name='product', null=True,blank=True)
+    health_support = models.OneToOneField('Health_support', on_delete=models.CASCADE, related_name='product', null=True,blank=True)
     # fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='product', null=True)
     # author = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
