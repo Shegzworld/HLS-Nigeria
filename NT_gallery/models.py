@@ -128,7 +128,7 @@ class Health_support(models.Model):
     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
     
     def __str__(self):
-        return self.nutrient
+        return self.nutrient.name if self.nutrient else "No nutrient"
     
 class Side_effects(models.Model):
     nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
@@ -141,7 +141,7 @@ class Side_effects(models.Model):
     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
     
     def __str__(self):
-        return self.nutrient
+        return self.nutrient.name if self.nutrient else "No nutrient"
 
 class Fortify(models.Model):
     nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
@@ -155,7 +155,7 @@ class Fortify(models.Model):
     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
     
     def __str__(self):
-        return self.nutrient
+        return self.nutrient.name if self.nutrient else "No nutrient"
     
 class Health_Benefits(models.Model):
     nutrient = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='health_benefits', null = True)
@@ -193,7 +193,7 @@ class ProductReview(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.product}{' reviews by'} - {self.user.username}"
+        return f"{self.product}{' reviews by'} - {self.writer.username}"
 
 
 # class Prof_Pack:
