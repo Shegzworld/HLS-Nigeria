@@ -69,9 +69,9 @@ class Product(models.Model):
     strength = models.CharField(max_length=255,null=True)
     description = models.TextField(null=True, blank=True)
     pictures = models.JSONField(default=dict)  # Store images paths in a JSON field
-    fortify = models.OneToOneField('Fortify', on_delete=models.CASCADE, related_name='product', null=True,blank=True)
-    side_effect = models.OneToOneField('Side_effects', on_delete=models.CASCADE, related_name='product', null=True,blank=True)
-    health_support = models.OneToOneField('Health_support', on_delete=models.CASCADE, related_name='product', null=True,blank=True)
+    # fortify = models.ManyToManyField('Fortify', related_name='products', blank=True)
+    # side_effect = models.ManyToManyField('Side_effects', related_name='products', blank=True)
+    health_benefit = models.OneToOneField('Health_Benefits', related_name='products', blank=True)
     # fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='product', null=True)
     # author = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
@@ -118,8 +118,8 @@ class Product(models.Model):
         
 
 class Health_support(models.Model):
-    name =  models.CharField(max_length=255, null = True)
-    # nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
+    # name =  models.CharField(max_length=255, null = True)
+    nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
     health_condition = models.CharField(max_length=255)
     strength = models.CharField(max_length=255,null = True)
     times_per_day = models.IntegerField(null = True)
@@ -128,11 +128,10 @@ class Health_support(models.Model):
     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
     
     def __str__(self):
-        return f"{self.name} - {self.health_condition}" 
+        return self.nutrient
     
 class Side_effects(models.Model):
-    name =  models.CharField(max_length=255, null = True)
-    # nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
+    nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
     medication = models.CharField(max_length=255)
     strength = models.CharField(max_length=255,null = True)
     tabs = models.IntegerField(null = True)
@@ -142,11 +141,11 @@ class Side_effects(models.Model):
     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
     
     def __str__(self):
-        return self.medication
+        return self.nutrient
 
 class Fortify(models.Model):
-    # nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
-    name =  models.CharField(max_length=255, null = True)
+    nutrient = models.ForeignKey(Product, on_delete=models.CASCADE, null = True)
+    # name =  models.CharField(max_length=255, null = True)
     organ = models.CharField( max_length=255, null=True )
     strength = models.CharField(max_length=255, null = True)
     tabs = models.IntegerField(null = True)
@@ -156,17 +155,16 @@ class Fortify(models.Model):
     summary_file = models.FileField(upload_to='summary_doc/', blank=True, null=True)
     
     def __str__(self):
-        return self.name
+        return self.nutrient
     
 class Health_Benefits(models.Model):
-    name = models.CharField( max_length=255, null = True)
-    nutrient = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='health_benefits', null = True)
-    health_support = models.OneToOneField(Health_support, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-    Side_effects = models.OneToOneField(Side_effects, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-    Fortify = models.OneToOneField(Fortify, on_delete=models.CASCADE, related_name='health_benefits',blank=True, null = True)
-
+    # nutrient = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='health_benefits', null = True)
+    fortify = models.ManyToManyField('Fortify', related_name='products', blank=True)
+    side_effect = models.ManyToManyField('Side_effects', related_name='products', blank=True)
+    health_support = models.ManyToManyField('Health_support', related_name='products', blank=True)
+    
     def __str__(self):
-        return self.name
+        return f"Health Benefits (ID: {self.id})"
 
     # def save(self, *args, **kwargs):
     #     # API call before saving
