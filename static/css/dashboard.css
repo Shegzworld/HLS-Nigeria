@@ -1079,6 +1079,35 @@ body {
     color: #00b31b;
 }
 
+.paginator {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.paginator a {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #337ab7;
+    color: #fff;
+    text-decoration: none;
+}
+
+.paginator a:hover {
+    background-color: #23527c;
+}
+
+.paginator strong {
+    font-weight: bold;
+    font-size: 18px;
+    color: #337ab7;
+}
+
+.paginator .active {
+    background-color: #23527c;
+}
+
 
 /* About You */
 #about_you {
@@ -1510,4 +1539,10 @@ body {
 .bottom_menu:last-child .pull_up_menu {
     right: 0;
     transform: translateX(-70%);
+}
+
+@media (max-width: 600px) {
+    .paginator {
+        gap: 5px;
+    }
 }
