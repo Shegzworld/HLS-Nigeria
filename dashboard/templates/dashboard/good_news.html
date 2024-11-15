@@ -1,3 +1,60 @@
+<!-- {% block good_news_section %}
+    <div class="benfek_selected_articles display_content">
+        <div class="selector_menu">
+            <ul>
+                <li id="Breakthroughs" class="menu-item  active">Breakthroughs</li>
+                <li id="About_you" class="menu-item">About You</li>
+                <li id="Trending" class="menu-item">9ja health</li>
+            </ul>
+        </div>
+        <div class="article_classes">
+            <div id="article-cards" class="article_class_container">
+                {% for post in blog_list %}
+                    <div class="article-card">
+                        <div class="article_image">
+                            <!-- posts image -->
+                            <img src= "{{ post.image.url }}" alt="Article Image">
+                        </div>
+                        <div class="article-info">
+                            <h3>{{post.title}}</h3>
+                            <p class="article-content">{{ post.content }}<a href="{% url 'dashboard:blog_detail' post.id %}" class="read-more">Read More</a></p>
+                            <span class="uploader_name">{{ post.author }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div id="about_you" class="article_class_container">
+                <div class="msg-item">
+                    <img src="../images/olly logo.jpg" alt="Profile Picture">
+                    <div class="msg-info">
+                        <h2>John Doe
+                            <span class="timestamp">12:45 PM</span>
+                        </h2>
+                        <p>Last Message
+                            <span class="unread-messages">3</span>
+                        </p>
+
+                    </div>
+                </div>
+                <div class="msg-item">
+                    <img src="../images/vitabiotic logo.jpg" alt="Profile Picture">
+                    <div class="msg-info">
+                        <h2>Jane Smith
+                            <span class="timestamp">10:10 AM</span>
+                        </h2>
+                        <p>Last Message
+                            <span class="unread-messages">1</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="selected_article_screen">
+    </div>
+{% endblock %} -->
+
+
 {% block good_news_section %}
     <div class="benfek_selected_articles display_content">
         <div class="selector_menu">
@@ -22,6 +79,27 @@
                         </div>
                     </div>
                 {% endfor %}
+                <div class="paginator">
+                    {% if blog_list.has_previous %}
+                        <a href="?page = 1">First</a>
+                        <a href="?page={{ blog_list.previous_page_number }}">Previous</a>
+                    {% else %}
+                        <span>pages: </span>
+                    {% endif %}
+                
+                    {% for num in blog_list.paginator.page_range %}
+                        {% if blog_list.number == num %}
+                            <strong>{{ num }}</strong>
+                        {% elif num > blog_list.number|add:'-2' and num < blog_list.number|add:'2' %} 
+                            <a href="?page = {{ num }}">{{ num }}</a>
+                        {% endif %}
+                    {% endfor %}
+                
+                    {% if blog_list.has_next %}
+                        <a href="?page={{ blog_list.next_page_number }}">Next</a>
+                        <a href="?page = {{ blog_list.paginator.num_pages}}">last</a>
+                    {% endif %}
+                </div>
             </div>
             <div id="about_you" class="article_class_container">
                 <div class="msg-item">
