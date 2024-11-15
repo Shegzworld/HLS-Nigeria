@@ -71,7 +71,7 @@ class Product(models.Model):
     pictures = models.JSONField(default=dict)  # Store images paths in a JSON field
     # fortify = models.ManyToManyField('Fortify', related_name='products', blank=True)
     # side_effect = models.ManyToManyField('Side_effects', related_name='products', blank=True)
-    health_benefit = models.OneToOneField('Health_Benefits', related_name='products', blank=True)
+    health_benefit = models.OneToOneField('Health_Benefits', on_delete=models.CASCADE,related_name='products', blank=True,null=True)
     # fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='product', null=True)
     # author = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
@@ -158,10 +158,10 @@ class Fortify(models.Model):
         return self.nutrient
     
 class Health_Benefits(models.Model):
-    # nutrient = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='health_benefits', null = True)
-    fortify = models.ManyToManyField('Fortify', related_name='products', blank=True)
-    side_effect = models.ManyToManyField('Side_effects', related_name='products', blank=True)
-    health_support = models.ManyToManyField('Health_support', related_name='products', blank=True)
+    nutrient = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='health_benefits', null = True)
+    fortify = models.ManyToManyField(Fortify, related_name='products', blank=True)
+    side_effect = models.ManyToManyField(Side_effects, related_name='products', blank=True)
+    health_support = models.ManyToManyField(Health_support, related_name='products', blank=True)
     
     def __str__(self):
         return f"Health Benefits (ID: {self.id})"
