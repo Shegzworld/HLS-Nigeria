@@ -228,7 +228,7 @@ LOGIN_URL = 'user:login'
 
 CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_SAMESITE = None
-CSRF_COOKIE_DOMAIN = hls.com.ng'
+CSRF_COOKIE_DOMAIN = 'hls.com.ng'
 
 
 
