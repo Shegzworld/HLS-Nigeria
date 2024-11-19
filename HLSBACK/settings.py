@@ -237,8 +237,10 @@ EMAIL_HOST = 'mail.hls.com.ng'  # Replace with the SMTP server for your Webmail
 EMAIL_PORT = 587  # Port for TLS
 EMAIL_USE_TLS = True  # Use TLS for encryption
 EMAIL_HOST_USER = 'admin@hls.com.ng'  # Your email address
-EMAIL_HOST_PASSWORD = 'your-email-password'  # Your email password
-DEFAULT_FROM_EMAIL = 'admin@hls.com.ng'  # This should be the same as EMAIL_
+EMAIL_HOST_PASSWORD = 'Adshegz2024'  # Your email password
+DEFAULT_FROM_EMAIL = 'noreply@hls.com.ng'  # This should be the same as EMAIL_
+
+
 
 # dont forget admin honeypot
 # ACCOUNT_USERNAME_BLACKLIST = ['admin', 'sakamanje']

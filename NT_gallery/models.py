@@ -179,6 +179,13 @@ class ProductReview(models.Model):
     def __str__(self):
         return f"{self.product}{' reviews by'} - {self.writer.username}"
 
+class ProductSubscription(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name='subscribers')
+
+    def __str__(self):
+        return f"{self.user.username} subscribed to {self.product.name}"
+
 
 # class Prof_Pack:
 #     image_1 = models.ImageField()
