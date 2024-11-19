@@ -167,28 +167,11 @@ class Health_Benefits(models.Model):
     def __str__(self):
         return f"Health Benefits (ID: {self.id})"
 
-    # def save(self, *args, **kwargs):
-    #     # API call before saving
-    #     response = requests.post('https://example.com/api/health_support', data={
-    #         'name': self.name,
-    #         'health_condition': self.health_condition,
-    #         'strength': self.strength,
-    #         'times_per_day': self.times_per_day,
-    #         'length_of_use': self.length_of_use,
-    #     })
-        
-    #     # Check if the request was successful
-    #     if response.status_code == 200:
-    #         print("API call successful:", response.json())
-    #     else:
-    #         print("API call failed:", response.status_code, response.text)
-
-    #     super().save(*args, **kwargs) 
+    
   
 class ProductReview(models.Model):
     writer = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
     product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name = 'product_review')
-    # rating = models.IntegerField(choices=[1, 2, 3, 4, 5])
     comment = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
