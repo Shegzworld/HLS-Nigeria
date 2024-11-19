@@ -45,6 +45,7 @@ CORS_ALLOW_HEADERS = [
 # Application definition
 CSRF_TRUSTED_ORIGINS = [
     "https://hls.com.ng",           # Your main domain
+    "https://www.hls.com.ng",
     "https://hls-vr1z.onrender.com"  # Render deployment domain
 ]
 
@@ -223,13 +224,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 LOGIN_REDIRECT_URL = 'home:home'
 
 LOGIN_URL = 'user:login'
-
-#CSRF COOKIE SETTINGS
-
-CSRF_COOKIE_SECURE = True
-CSRF_COOKIE_SAMESITE = None
-CSRF_COOKIE_DOMAIN = 'hls.com.ng'
-
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
