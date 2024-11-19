@@ -224,6 +224,12 @@ LOGIN_REDIRECT_URL = 'home:home'
 
 LOGIN_URL = 'user:login'
 
+#CSRF COOKIE SETTINGS
+
+CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SAMESITE = None
+CSRF_COOKIE_DOMAIN = 'hls.com.ng'
+
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'

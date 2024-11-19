@@ -22,6 +22,27 @@
                         </div>
                     </div>
                 {% endfor %}
+                <div class="paginator">
+                    {% if blog_list.has_previous %}
+                        <a href="?page = 1">First</a>
+                        <a href="?page={{ blog_list.previous_page_number }}">Previous</a>
+                    {% else %}
+                        <span>pages: </span>
+                    {% endif %}
+                
+                    {% for num in blog_list.paginator.page_range %}
+                        {% if blog_list.number == num %}
+                            <strong>{{ num }}</strong>
+                        {% elif num > blog_list.number|add:'-2' and num < blog_list.number|add:'2' %} 
+                            <a href="?page = {{ num }}">{{ num }}</a>
+                        {% endif %}
+                    {% endfor %}
+                
+                    {% if blog_list.has_next %}
+                        <a href="?page={{ blog_list.next_page_number }}">Next</a>
+                        <a href="?page = {{ blog_list.paginator.num_pages}}">last</a>
+                    {% endif %}
+                </div>
             </div>
             <div id="about_you" class="article_class_container">
                 <div class="msg-item">
