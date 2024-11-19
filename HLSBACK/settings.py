@@ -233,14 +233,12 @@ CSRF_COOKIE_DOMAIN = 'hls.com.ng'
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.hls.com.ng'  # Replace with the SMTP server for your Webmail
+EMAIL_HOST = 'smtp.gmail.com'  # SMTP server for Gmail
 EMAIL_PORT = 587  # Port for TLS
-EMAIL_USE_TLS = True  # Use TLS for encryption
-EMAIL_HOST_USER = 'admin@hls.com.ng'  # Your email address
-EMAIL_HOST_PASSWORD = 'Adshegz2024'  # Your email password
-DEFAULT_FROM_EMAIL = 'noreply@hls.com.ng'  # This should be the same as EMAIL_
-
-
+EMAIL_USE_TLS = True  # Use TLS encryption for security
+EMAIL_HOST_USER = 'folajimiopeyemisax13@gmail.com'  # Your Gmail address
+EMAIL_HOST_PASSWORD = 'zzitfwiibuujeltz'  # Your Gmail app password (not the regular Gmail password)
+DEFAULT_FROM_EMAIL = 'folajimiopeyemisax13@gmail.com'  # Same email as EMAIL_HOST_USER
 
 # dont forget admin honeypot
 # ACCOUNT_USERNAME_BLACKLIST = ['admin', 'sakamanje']
