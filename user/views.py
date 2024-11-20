@@ -10,6 +10,7 @@ from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 # from NT_gallery.models import ProductReview, ProductSubscription
 
+@csrf_exempt
 def register_view(request):
     if request.method == 'POST':
         registration_form = UserRegistrationForm(request.POST)
