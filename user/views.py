@@ -10,7 +10,7 @@ from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 # from NT_gallery.models import ProductReview, ProductSubscription
 
-@csrf_exempt
+
 def register_view(request):
     if request.method == 'POST':
         registration_form = UserRegistrationForm(request.POST)
@@ -55,7 +55,7 @@ def register_view(request):
 
     return render(request, 'user/register.html', {'registration_form': registration_form})
 
-@csrf_exempt
+
 def login_view(request):
     if request.method == "POST":
         form = CustomLoginForm(data=request.POST)
@@ -70,7 +70,7 @@ def login_view(request):
 
     return render(request, "user/login.html", {"form": form})
 
-@csrf_exempt
+
 def logout_view(request):
     if request.method == "POST":
         logout(request)
