@@ -55,7 +55,7 @@ def register_view(request):
 
     return render(request, 'user/register.html', {'registration_form': registration_form})
 
-
+@csrf_exempt
 def login_view(request):
     if request.method == "POST":
         form = CustomLoginForm(data=request.POST)
