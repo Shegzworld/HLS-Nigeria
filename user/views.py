@@ -70,7 +70,7 @@ def login_view(request):
 
     return render(request, "user/login.html", {"form": form})
 
-
+@csrf_exempt
 def logout_view(request):
     if request.method == "POST":
         logout(request)
