@@ -43,6 +43,18 @@ CORS_ALLOW_HEADERS = [
     'x-csrftoken',
 ]
 # Application definition
+CSRF_ALLOWED_ORIGINS = [
+    "https://hls.com.ng",           # Your main domain
+    "https://www.hls.com.ng",
+    "https://hls-vr1z.onrender.com"  # Render deployment domain
+]
+
+CSRF_ORIGINS_WHITELIST = [
+    "https://hls.com.ng",           # Your main domain
+    "https://www.hls.com.ng",
+    "https://hls-vr1z.onrender.com"  # Render deployment domain
+]
+
 CSRF_TRUSTED_ORIGINS = [
     "https://hls.com.ng",           # Your main domain
     "https://www.hls.com.ng",
