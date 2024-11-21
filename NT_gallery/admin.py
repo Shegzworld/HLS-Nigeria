@@ -12,6 +12,19 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'category','price')
     inlines = [HealthSupportInline]
 
+class StoreAdminArea(admin.AdminSite):
+    site_header = 'HLS Store Portal'
+
+store_site = StoreAdminArea(name = 'Store portal')
+
+store_site.register(Product)
+store_site.register(Health_Benefits)
+store_site.register(Health_support)
+store_site.register(Fortify)
+store_site.register(Side_effects)
+store_site.register(ProductReview)
+store_site.register(ProductSubscription)
+
     # def get_health_conditions(self, obj):
     #     # Check if health_support is associated with this product
     #     if obj.health_support:
