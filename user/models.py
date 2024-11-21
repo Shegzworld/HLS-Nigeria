@@ -1,11 +1,24 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils.timezone import now
+
+
+class Notification(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='notifications')
+    message = models.TextField()
+    created_at = models.DateTimeField(default=now)
+    is_read = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"Notification for {self.user.username}: {self.message[:30]}"
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     profile_picture = models.ImageField(upload_to='profile_pictures', null=True, blank=True)
     bio = models.TextField(null=True, blank=True)
     budget = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)  # New field for budget
+    new_notifications_count = models.IntegerField(default=0)  # Tracks unread notifications
+
     
     def __str__(self):
         return f"{self.user.username}"

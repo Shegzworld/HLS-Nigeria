@@ -8,7 +8,8 @@ from django.dispatch import receiver
 from django.core.mail import send_mail
 from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
-# from NT_gallery.models import ProductReview, ProductSubscription
+from django.shortcuts import render
+from django.contrib.auth.decorators import login_required
 
 def register_view(request):
     if request.method == 'POST':
@@ -77,24 +78,17 @@ def logout_view(request):
         return redirect("home:homepage")
     
 
-# @receiver(post_save, sender=ProductReview)
-# def send_review_notification(sender, instance, created, **kwargs):
-#     if created:  # Only send notifications when a new review is created
-#         product = instance.product  # Get the product being reviewed
-#         subscriptions = ProductSubscription.objects.filter(product=product)  # Get all subscriptions for the product
-        
-#         # Collect the email addresses of all users subscribed to this product
-#         subscriber_emails = [sub.user.email for sub in subscriptions]
-        
-#         if subscriber_emails:
-#             subject = f"New Review on {product.name}"
-#             message = f"A new review has been posted for {product.name}:\n\n{instance.comment}\n\nCheck it out!"
-            
-#             # Send email to all subscribed users
-#             send_mail(
-#                 subject,
-#                 message,
-#                 settings.DEFAULT_FROM_EMAIL,  
-#                 subscriber_emails,
-#                 fail_silently=False,
-#             )
+@login_required
+def inbox_view(request):
+    # Get the user's notifications
+    notifications = request.user.notifications.order_by('-created_at')
+
+    # Reset the new notifications count
+    user_profile = request.user.profile
+    user_profile.new_notifications_count = 0
+    user_profile.save()
+
+    # Mark notifications as read
+    notifications.update(is_read=True)
+
+    return render(request, 'inbox.html', {'notifications': notifications})

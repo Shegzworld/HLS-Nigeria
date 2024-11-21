@@ -2,8 +2,12 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
 from user.models import UserProfile, Basic, Lifestyle, HealthCondition, Preference
+from .models import Notification
 
-# Inline models for UserProfile and other models
+@admin.register(Notification)
+class NotificationAdmin(admin.ModelAdmin):
+    list_display = ('user', 'message', 'created_at', 'is_read')
+
 class UserProfileInline(admin.StackedInline):
     model = UserProfile
     extra = 1

@@ -12,6 +12,7 @@ from django.core.paginator import Paginator
 from django.contrib.auth.models import User
 from NT_gallery.models import Product
 from django.contrib import messages
+from user.models import Notification
 
 # class Dashboard(LoginRequiredMixin, TemplateView):
 #     template_name = 'dashboard/dashboard.html'
@@ -104,6 +105,19 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         podcast_page_number = self.request.GET.get('page', 1)
         podcast_page = podcast_paginator.get_page(podcast_page_number)
         context['podcast_list'] = podcast_page
+
+         # Notification count for the logged-in user
+        user = self.request.user
+        notification_count = Notification.objects.filter(
+            user=user,
+            is_read=False  # Example condition, adjust based on your notification model
+        ).count()
+
+        # Add to context if the count > 0
+        if notification_count > 0:
+            context['notification_count'] = notification_count
+        else:
+            context['notification_count'] = None
         
         return context
 
