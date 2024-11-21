@@ -28,11 +28,11 @@ class Category(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=255) 
     category = models.ManyToManyField(Category)
-    highlight = models.TextField()
+    highlight = models.TextField(null=True, blank=True)
     image_1 = models.ImageField(upload_to='blog_images/')
-    content_1 = models.TextField()
+    content_1 = models.TextField(null=True, blank=True)
     image_2 = models.ImageField(upload_to='blog_images/')
-    content_2 = models.TextField()
+    content_2 = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     slug = models.SlugField(unique=True, blank=True)  # Make sure the slug is unique and can be empty initially
