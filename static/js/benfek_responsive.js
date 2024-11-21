@@ -222,34 +222,34 @@ document.addEventListener("DOMContentLoaded", function () {
 			topStickyBar.style.height = "120px";
 		}
 
-		if (target.closest("#inbox")) {
-			display_contents.forEach((display_content) => {
-				display_content.style.display = "none";
-			});
-			inboxSection.style.display = "flex"; // Show inbox content
-			inboxSection.style.transform = "translateX(0%)";
-			serviceHeader.style.display = "none";
-			searchContainer.style.display = "none";
-			let isDisplayed = false;
-			searchIcon.addEventListener("click", () => {
-				if (isDisplayed) {
-					searchContainer.style.display = "none";
-					topStickyBar.style.height = "120px";
-					benfekWrapper.style.paddingTop = "120px";
-					isDisplayed = false;
-				} else {
-					searchContainer.style.display = "block";
-					topStickyBar.style.height = "180px";
-					benfekWrapper.style.paddingTop = "180px";
-					isDisplayed = true;
-				}
-			});
-			benfekServiceIconText.forEach((text) => {
-				text.style.display = "none";
-			});
-			menuItems.forEach((i) => i.classList.remove("active"));
-			topStickyBar.style.height = "120px";
-		}
+		// if (target.closest("#inbox")) {
+		// 	display_contents.forEach((display_content) => {
+		// 		display_content.style.display = "none";
+		// 	});
+		// 	inboxSection.style.display = "flex"; // Show inbox content
+		// 	inboxSection.style.transform = "translateX(0%)";
+		// 	serviceHeader.style.display = "none";
+		// 	searchContainer.style.display = "none";
+		// 	let isDisplayed = false;
+		// 	searchIcon.addEventListener("click", () => {
+		// 		if (isDisplayed) {
+		// 			searchContainer.style.display = "none";
+		// 			topStickyBar.style.height = "120px";
+		// 			benfekWrapper.style.paddingTop = "120px";
+		// 			isDisplayed = false;
+		// 		} else {
+		// 			searchContainer.style.display = "block";
+		// 			topStickyBar.style.height = "180px";
+		// 			benfekWrapper.style.paddingTop = "180px";
+		// 			isDisplayed = true;
+		// 		}
+		// 	});
+		// 	benfekServiceIconText.forEach((text) => {
+		// 		text.style.display = "none";
+		// 	});
+		// 	menuItems.forEach((i) => i.classList.remove("active"));
+		// 	topStickyBar.style.height = "120px";
+		// }
 		// if (target.closest('#Doctors-Note')){
 		// serviceHeader.style.display = 'none';
 		// searchContainer.style.display = 'none';
