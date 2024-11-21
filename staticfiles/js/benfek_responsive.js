@@ -218,6 +218,42 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 			topStickyBar.style.height = "120px";
 		}
+
+		if (target.closest("#inbox")) {
+			const inboxSection = document.querySelector("#inbox"); // Ensure inbox section exists
+
+			display_contents.forEach((display_content) => {
+				display_content.style.display = "none";
+			});
+			inboxSection.style.display = "flex"; // Show inbox content
+			inboxSection.style.transform = "translateX(0%)";
+			serviceHeader.style.display = "none";
+			searchContainer.style.display = "none";
+			let isDisplayed = false;
+			searchIcon.addEventListener("click", () => {
+				if (isDisplayed) {
+					searchContainer.style.display = "none";
+					topStickyBar.style.height = "120px";
+					benfekWrapper.style.paddingTop = "120px";
+					isDisplayed = false;
+				} else {
+					searchContainer.style.display = "block";
+					topStickyBar.style.height = "180px";
+					benfekWrapper.style.paddingTop = "180px";
+					isDisplayed = true;
+				}
+			});
+			benfekServiceIconText.forEach((text) => {
+				text.style.display = "none";
+			});
+			menuItems.forEach((i) => i.classList.remove("active"));
+			Breakthroughs.classList.add("active");
+			topStickyBar.style.height = "120px";
+			articleClassesContainer.forEach((articleContainer) => {
+				articleContainer.style.display = "none";
+			});
+			articleCardsContainer.style.display = "flex";
+		}
 		// if (target.closest('#Doctors-Note')){
 		// serviceHeader.style.display = 'none';
 		// searchContainer.style.display = 'none';
@@ -272,18 +308,13 @@ document.addEventListener("DOMContentLoaded", function () {
 				aboutYouContainer.style.transform = "translateX(0%)";
 			}
 			// New condition for Inbox
-			if (item.id === "inbox") {
-				// Add custom behavior for the inbox section
-				display_contents.forEach((display_content) => {
-					display_content.style.display = "none"; // Hide all other contents
-				});
+			// if (item.id === "inbox") {
+			// 	// Add custom behavior for the inbox section
+			// 	display_contents.forEach((display_content) => {
+			// 		display_content.style.display = "none"; // Hide all other contents
+			// 	});
 
-				const inboxSection = document.querySelector("#inbox"); // Ensure inbox section exists
-				if (inboxSection) {
-					inboxSection.style.display = "block"; // Show inbox content
-					inboxSection.style.transform = "translateX(0%)";
-				}
-			}
+			// }
 		});
 	});
 
