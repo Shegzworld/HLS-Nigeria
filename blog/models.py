@@ -26,13 +26,19 @@ class Category(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=255) 
-    image = models.ImageField(upload_to='blog_images/') 
-    content = models.TextField()
+    category = models.ManyToManyField(Category)
+    highlight = models.TextField()
+    image_1 = models.ImageField(upload_to='blog_images/')
+    content_1 = models.TextField()
+    image_2 = models.ImageField(upload_to='blog_images/')
+    content_2 = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     slug = models.SlugField(unique=True, blank=True)  # Make sure the slug is unique and can be empty initially
     author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True, blank=True)
-    category = models.ManyToManyField(Category)
+    author_img = models.ImageField(upload_to='author_images/')
+    # author = models.OneToOneField(Author, on_delete=models.CASCADE, null=True, blank=True, related_name='blog')
+    # bio = models.OneToOneField(Author, on_delete=models.CASCADE, null=True, blank=True, related_name='blog')
 
     def save(self, *args, **kwargs):
         # Only regenerate the slug if the title has changed (during an update)
