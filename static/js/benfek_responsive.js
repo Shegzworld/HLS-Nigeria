@@ -314,6 +314,43 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 
+
+	const inboxIcon = document.getElementById('inbox_icon');
+    inboxIcon.addEventListener('click', () => {
+    
+    display_contents.forEach(display_content=>{
+    display_content.style.display='none';
+    })
+    benfekSelectedArticles.style.display = 'flex';
+        benfekSelectedArticles.style.transform = 'translateX(0%)';
+        serviceHeader.style.display = 'none';
+        searchContainer.style.display = 'none';
+        let isDisplayed = false
+        searchIcon.addEventListener('click', ()=>{  
+            if(isDisplayed)
+            {
+            searchContainer.style.display = 'none';
+            topStickyBar.style.height = '120px';
+            benfekWrapper.style.paddingTop= '120px'
+            isDisplayed = false}
+            else
+            {   searchContainer.style.display = 'block';
+                topStickyBar.style.height = '180px';
+                benfekWrapper.style.paddingTop= '180px';
+                isDisplayed = true}
+            })
+            benfekServiceIconText.forEach(text=>{
+            text.style.display = 'none'
+            })
+            menuItems.forEach(i => i.classList.remove('active'));
+            document.getElementById('About_you').classList.add('active');
+            topStickyBar.style.height = '120px';
+            articleClassesContainer.forEach(articleContainer=>{
+                articleContainer.style.display='none'
+            })
+            aboutYouContainer.style.display = 'flex';
+            aboutYouContainer.style.transform = 'translateX(0%)';
+
 	const my_nutrient_picture = document.querySelectorAll(".my_nutrient_picture");
 	const nextBtnNutrient_type = document.querySelector(
 		".Nutrient_type_pack .slide_left"
