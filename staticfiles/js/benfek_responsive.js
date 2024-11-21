@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// NT_gallery
 	const NtGallery = document.querySelector("#NT-gallery");
+	const Inbox = document.querySelector("#inbox");
 	const menuItems = document.querySelectorAll(".menu-item");
 	const Nutrient_type = document.querySelector("#Nutrient_type");
 	const nutrientTypeGallery = document.querySelector(".nutrient_type_gallery");
@@ -64,6 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	const benfekSelectedArticles = document.querySelector(
 		".benfek_selected_articles"
 	);
+
+	const inboxSection = document.querySelector(".inbox_section");
 	const articleClassesContainer = document.querySelectorAll(
 		".article_class_container"
 	);
@@ -220,8 +223,6 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 
 		if (target.closest("#inbox")) {
-			const inboxSection = document.querySelector("#inbox"); // Ensure inbox section exists
-
 			display_contents.forEach((display_content) => {
 				display_content.style.display = "none";
 			});
@@ -247,12 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				text.style.display = "none";
 			});
 			menuItems.forEach((i) => i.classList.remove("active"));
-			Breakthroughs.classList.add("active");
 			topStickyBar.style.height = "120px";
-			articleClassesContainer.forEach((articleContainer) => {
-				articleContainer.style.display = "none";
-			});
-			articleCardsContainer.style.display = "flex";
 		}
 		// if (target.closest('#Doctors-Note')){
 		// serviceHeader.style.display = 'none';

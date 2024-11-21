@@ -66,16 +66,18 @@
 		</style>
 	</head>
 	<body>
-		<h1>Inbox</h1>
-		<div class="notification-list">
-			{% for notification in notifications %}
-			<div class="notification-item">
-				<p>{{ notification.message }}</p>
-				<small>{{ notification.created_at }}</small>
+		<div class="inbox_section">
+			<h1>Inbox</h1>
+			<div class="notification-list">
+				{% for notification in notifications %}
+				<div class="notification-item">
+					<p>{{ notification.message }}</p>
+					<small>{{ notification.created_at }}</small>
+				</div>
+				{% empty %}
+				<p class="no-notifications">No notifications</p>
+				{% endfor %}
 			</div>
-			{% empty %}
-			<p class="no-notifications">No notifications</p>
-			{% endfor %}
 		</div>
 	</body>
 </html>
