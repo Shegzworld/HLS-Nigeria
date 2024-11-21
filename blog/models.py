@@ -9,6 +9,7 @@ from django.db import models
 # Create your models here.
 class Author(models.Model):
     name = models.CharField(max_length=255)
+    author_img = models.ImageField(upload_to='author_images/', null = True)
     bio = models.TextField()
 
     def __str__(self):
@@ -36,7 +37,6 @@ class Blog(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     slug = models.SlugField(unique=True, blank=True)  # Make sure the slug is unique and can be empty initially
     author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True, blank=True)
-    author_img = models.ImageField(upload_to='author_images/')
     # author = models.OneToOneField(Author, on_delete=models.CASCADE, null=True, blank=True, related_name='blog')
     # bio = models.OneToOneField(Author, on_delete=models.CASCADE, null=True, blank=True, related_name='blog')
 
