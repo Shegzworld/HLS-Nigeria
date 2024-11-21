@@ -316,7 +316,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 	const inboxIcon = document.getElementById('inbox_icon');
-    inboxIcon.addEventListener('click', () => {
+    	inboxIcon.addEventListener('click', () => {
     
     display_contents.forEach(display_content=>{
     display_content.style.display='none';
