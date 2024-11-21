@@ -350,6 +350,7 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             aboutYouContainer.style.display = 'flex';
             aboutYouContainer.style.transform = 'translateX(0%)';
+	    });
 
 	const my_nutrient_picture = document.querySelectorAll(".my_nutrient_picture");
 	const nextBtnNutrient_type = document.querySelector(
