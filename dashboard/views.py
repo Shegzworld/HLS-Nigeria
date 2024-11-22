@@ -97,7 +97,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         blog_paginator = Paginator(blog_list, 5)
         blog_page_number = self.request.GET.get('page', 1)
         blog_page = blog_paginator.get_page(blog_page_number)
-        # context['blog_list'] = blog_page
+        context['blog_list'] = blog_page
         
         
         podcast_list = Podcast.objects.annotate(episode_count=Count('episodes'))
