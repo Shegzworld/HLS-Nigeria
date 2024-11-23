@@ -130,11 +130,11 @@ class Dashboard(LoginRequiredMixin, TemplateView):
 
     def filter_products(self, user_profile):
         user_health = HealthCondition.objects.filter(
-            user_profile=self.request.user)
+            user_profile=user_profile)
         user_basic = Basic.objects.filter(
-            user_profile=self.request.user)
+            user_profile=user_profile)
         user_lifestyle = Lifestyle.objects.filter(
-            user_profile=self.request.user)
+            user_profile=user_profile)
         return Product.objects.filter(
             Q(health_condition=user_health) |
             Q(fortify=user_lifestyle) |
