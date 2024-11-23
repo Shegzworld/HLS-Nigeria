@@ -87,8 +87,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         user_profile = self.get_user_profile()
-        print(user_profile)
-        # products = self.filter_products(user_profile)
+        products = self.filter_products(user_profile)
         # products_by_attribute = self.group_products(products)
         # packs = self.assign_products_to_packs(products_by_attribute)
         # context['specifics'] = products_by_attribute
@@ -130,6 +129,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         return user_profile
 
     def filter_products(self, user_profile):
+        print(Product.objects.all)
         return Product.objects.filter(
             Q(health_condition=user_profile.health_condition) |
             Q(fortify=user_profile.lifestyle) |
