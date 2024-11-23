@@ -70,7 +70,7 @@ class Product(models.Model):
     strength = models.CharField(max_length=255,null=True)
     description = models.TextField(null=True, blank=True)
     pictures = models.JSONField(default=dict)  # Store images paths in a JSON field
-    # fortify = models.ManyToManyField('Fortify', related_name='products', blank=True)
+    #fortify = models.OneToOneField('Fortify', related_name='products', blank=True)
     # side_effect = models.ManyToManyField('Side_effects', related_name='products', blank=True)
     health_benefit = models.OneToOneField('Health_Benefits', on_delete=models.CASCADE,related_name='products', blank=True,null=True)
     # fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='product', null=True)
