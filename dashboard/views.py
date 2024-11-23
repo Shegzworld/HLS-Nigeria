@@ -129,7 +129,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         return user_profile
 
     def filter_products(self, user_profile):
-        user_health = HealthCondtion.objects.filter(
+        user_health = HealthCondition.objects.filter(
             user=user)
         user_basic = Basic.objects.filter(
             user=user)
