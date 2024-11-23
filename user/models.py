@@ -19,7 +19,6 @@ class UserProfile(models.Model):
     budget = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)  # New field for budget
     new_notifications_count = models.IntegerField(default=0)  # Tracks unread notifications
     health_condition = models.ForeignKey("HealthCondition", on_delete=models.CASCADE, related_name='health_condition')
-    gender = models.OneToOneField("HealthCondition", on_delete=models.CASCADE, related_name='gender')
     lifestyle = models.OneToOneField("Lifestyle", on_delete=models.CASCADE, related_name='lifestyle')
     basic = models.OneToOneField("Basic", on_delete=models.CASCADE, related_name='basic')
     
