@@ -12,7 +12,7 @@ from django.core.paginator import Paginator
 from django.contrib.auth.models import User
 from NT_gallery.models import Product
 from django.contrib import messages
-from user.models import Notification
+from user.models import Notification,HealthCondition,Lifestyle,Basic
 
 # class Dashboard(LoginRequiredMixin, TemplateView):
 #     template_name = 'dashboard/dashboard.html'
@@ -129,11 +129,16 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         return user_profile
 
     def filter_products(self, user_profile):
-        print(Product.objects.all)
+        user_health = HealthCondtion.objects.filter(
+            user=user)
+        user_basic = Basic.objects.filter(
+            user=user)
+        user_lifestyle = Lifestyle.objects.filter(
+            user=user)
         return Product.objects.filter(
-            Q(health_condition=user_profile.health_condition) |
-            Q(fortify=user_profile.lifestyle) |
-            Q(basics__age=user_profile.basics.age, basics__gender=user_profile.basics.gender)
+            Q(health_condition=user_health) |
+            Q(fortify=user_lifestyle) |
+            Q(basics__age=user_basic.age, basics__gender=user_basic.gender)
         ).select_related('health_condition', 'fortify', 'basics')
 
     def group_products(self, products):
