@@ -133,7 +133,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         return Product.objects.filter(
             Q(health_condition=user_profile.health_condition) |
             Q(fortify=user_profile.lifestyle) |
-            Q(basics__age=user_profile.age, basics__gender=user_profile.gender)
+            Q(basics__age=user_profile.basics.age, basics__gender=user_profile.basics.gender)
         ).select_related('health_condition', 'fortify', 'basics')
 
     def group_products(self, products):
