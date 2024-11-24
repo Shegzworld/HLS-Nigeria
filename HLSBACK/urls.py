@@ -9,6 +9,7 @@ from NT_gallery.admin import store_site
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blogadmin/', blog_site.urls),
+    path('product/', include('NT_gallery.urls')),
     path('store/', store_site.urls),
     path('', include('home.urls')),
     path('user/', include('user.urls')),
