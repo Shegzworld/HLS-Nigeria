@@ -12,7 +12,7 @@ from django.core.paginator import Paginator
 from django.contrib.auth.models import User
 from NT_gallery.models import Product
 from django.contrib import messages
-from user.models import Notification
+from user.models import Notification,HealthCondition,Lifestyle,Basic
 
 # class Dashboard(LoginRequiredMixin, TemplateView):
 #     template_name = 'dashboard/dashboard.html'
@@ -86,8 +86,8 @@ class Dashboard(LoginRequiredMixin, TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        # user_profile = self.get_user_profile()
-        # products = self.filter_products(user_profile)
+        user_profile = self.get_user_profile()
+        products = self.filter_products(user_profile)
         # products_by_attribute = self.group_products(products)
         # packs = self.assign_products_to_packs(products_by_attribute)
         # context['specifics'] = products_by_attribute
@@ -129,10 +129,16 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         return user_profile
 
     def filter_products(self, user_profile):
+        user_health = HealthCondition.objects.filter(
+            user_profile=user_profile)
+        user_basic = Basic.objects.filter(
+            user_profile=user_profile)
+        user_lifestyle = Lifestyle.objects.filter(
+            user_profile=user_profile)
         return Product.objects.filter(
-            Q(health_condition=user_profile.health_condition) |
-            Q(fortify=user_profile.lifestyle) |
-            Q(basics__age=user_profile.age, basics__gender=user_profile.gender)
+            Q(health_condition=user_health) |
+            Q(fortify=user_lifestyle) 
+            # Q(basics__age=user_basic.age, basics__gender=user_basic.gender)
         ).select_related('health_condition', 'fortify', 'basics')
 
     def group_products(self, products):
