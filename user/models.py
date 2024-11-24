@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils.timezone import now
-from NT_gallery import Product
+from NT_gallery.models import Product
 
 
 class Notification(models.Model):
