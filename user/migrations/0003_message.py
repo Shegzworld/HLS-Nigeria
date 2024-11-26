@@ -9,7 +9,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('NT_gallery', '0001_initial'),
+        ('NT_gallery', '00001_initial'),
         ('user', '0002_userprofile_new_notifications_count_notification'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
