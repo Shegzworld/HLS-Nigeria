@@ -28,7 +28,7 @@ class UserProfile(models.Model):
     
 class Message(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='messages')
-    product = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='profile')
+    # product = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='profile')
     content = models.TextField()
     title = models.CharField(max_length=255,null=True, blank=True)
     is_read = models.BooleanField(default=False)
