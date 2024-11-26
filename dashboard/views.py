@@ -14,73 +14,6 @@ from NT_gallery.models import Product
 from django.contrib import messages
 from user.models import Notification,HealthCondition,Lifestyle,Basic
 
-# class Dashboard(LoginRequiredMixin, TemplateView):
-#     template_name = 'dashboard/dashboard.html'
-
-#     def get_context_data(self, **kwargs):
-#         context = super().get_context_data(**kwargs)
-#         user = self.request.user
-        
-#         # Use get_or_create to avoid DoesNotExist error
-#         user_profile, created = UserProfile.objects.get_or_create(user=user)
-
-#         # If the profile was just created, handle this case (optional)
-#         if created:
-            
-#             messages.info(self.request, "Your user profile was automatically created.")
-
-#         # Define pack price tag ranges based on user's budget
-#         budget = user_profile.budget if user_profile.budget else 0  # Ensure budget is defined
-#         packs = [
-#     {'name': 'Pro Pack', 'min_price': budget, 'max_price': budget * Decimal('1.4')},  # Convert 1.4 to Decimal
-#     {'name': 'Dr Pack', 'min_price': budget, 'max_price': budget * Decimal('1.2')},   # Convert 1.2 to Decimal
-#     {'name': 'Economy Pack', 'min_price': budget, 'max_price': budget * Decimal('1.05')},  # Convert 1.05 to Decimal
-#     {'name': 'Welfare Pack', 'min_price': budget * Decimal('0.9'), 'max_price': budget}  # Convert 0.9 to Decimal
-# ]
-
-#         # Filter  based on user's profile data
-#         products = Product.objects.filter(
-#             # Q(health_condition=user_profile.health_condition) |
-#             # Q(fortify=user_profile.lifestyle) |
-#             # Q(basics__age=user_profile.age, basics__gender=user_profile.gender)
-#         )
-
-#         # Group products by attribute
-#         products_by_attribute = {}
-#         for product in products:
-#             attribute = product.health_condition or product.fortify or product.basics.age or product.basics.gender
-#             if attribute not in products_by_attribute:
-#                 products_by_attribute[attribute] = []
-#             products_by_attribute[attribute].append(product)
-
-#         # Initialize packs with empty product lists
-#         packs = [{**pack, 'products': []} for pack in packs]
-
-#         # Assign products to packs
-#         for attribute, products in products_by_attribute.items():
-#             for pack in packs:
-#                 if len(pack['products']) < 3:
-#                     for product in products:
-#                         if pack['min_price'] <= product.price <= pack['max_price']:
-#                             pack['products'].append(product)
-#                             pack['total_price'] = sum(p.price for p in pack['products'])
-#                             break
-#                     break
-
-#         context['packs'] = packs
-
-#         # Blog and Podcast data
-#         blog_list = Blog.objects.all()
-#         podcast_list = Podcast.objects.annotate(episode_count=Count('episodes'))
-#         paginator = Paginator(podcast_list, 5)
-#         page_number = self.request.GET.get('page')
-#         podcast_page = paginator.get_page(page_number)
-        
-#         context['blog_list'] = blog_list
-#         context['podcast_list'] = podcast_page
-        
-#         return context
-
 class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard/dashboard.html'
 
@@ -88,6 +21,8 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         context = super().get_context_data(**kwargs)
         user_profile = self.get_user_profile()
         products = self.filter_products(user_profile)
+
+        print(products)
         # products_by_attribute = self.group_products(products)
         # packs = self.assign_products_to_packs(products_by_attribute)
         # context['specifics'] = products_by_attribute
@@ -135,11 +70,13 @@ class Dashboard(LoginRequiredMixin, TemplateView):
             user_profile=user_profile)
         user_lifestyle = Lifestyle.objects.filter(
             user_profile=user_profile)
-        return Product.objects.filter(
-            Q(health_condition=user_health) |
-            Q(fortify=user_lifestyle) 
-            # Q(basics__age=user_basic.age, basics__gender=user_basic.gender)
-        ).select_related('health_condition', 'fortify', 'basics')
+        products_with_health_benefits = Product.objects.filter(
+                # Q(health_benefit__fortify__in=[some_fortify_value]) |  
+                 Q(health_benefit__health_support__health_condition__in=user_health)
+         ).select_related('health_benefit').prefetch_related('health_benefit__fortify', 'health_benefit__health_support')
+        
+        return products_with_health_benefits
+
 
     def group_products(self, products):
         products_by_attribute = {}

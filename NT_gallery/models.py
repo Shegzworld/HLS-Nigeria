@@ -66,7 +66,7 @@ class Product(models.Model):
     category = models.CharField(max_length=255, blank=True)
     sub_categories = models.JSONField(default=list,null=True)  # A flexible array-like field for subcategories
     price = models.DecimalField(max_digits=10, decimal_places=2,null=True,blank=True)
-    mlv = models.CharField(max_length=255,null=True)
+    lsv = models.JSONField(default=list)
     strength = models.CharField(max_length=255,null=True)
     description = models.TextField(null=True, blank=True)
     pictures = models.JSONField(default=dict)  # Store images paths in a JSON field
