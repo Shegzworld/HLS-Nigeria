@@ -70,8 +70,9 @@ class Dashboard(LoginRequiredMixin, TemplateView):
             user_profile=user_profile)
         user_lifestyle = Lifestyle.objects.filter(
             user_profile=user_profile)
-        products_with_health_benefits = Product.objects.filter(
-                Q(health_benefit.fortify.organ=user_profile.lifestyle.habit)).select_related('health_benefit.fortify.organ')
+       # products_with_health_benefits = Product.objects.filter(
+              #  Q(health_benefit.fortify.organ==user_profile.lifestyle.habit))
+        #.select_related('health_benefit.fortify.organ')
                 #  Q(health_benefit__health_support__health_condition__in=user_health)
          #).select_related('health_benefit').prefetch_related('health_benefit__fortify', 'health_benefit__health_support')
         
