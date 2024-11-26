@@ -28,9 +28,9 @@ GENDER_CHOICES = [
 ]
 
 HABIT_CHOICES = [
-    ('Smoking', 'Smoking'),
-    ('Drinking', 'Drinking'),
-    ('Sexing', 'Sexing'),
+    ('Smoking', 'lungs'),
+    ('Drinking', 'liver'),
+    ('Sexing', 'Male Organ'),
 ]
 
 RECREATION_CHOICES = [
