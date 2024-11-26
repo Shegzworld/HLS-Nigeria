@@ -50,8 +50,8 @@ class Blog(models.Model):
                 self.slug = slugify(self.title)  # Update slug based on new title
 
         # Only resize image if it has been uploaded (i.e., not a default image)
-        if self.image and hasattr(self.image, 'name'):
-            img = Image.open(self.image)
+        if self.image_1 and hasattr(self.image_1, 'name'):
+            img = Image.open(self.image_1)
 
             # Check if resizing is needed (resize only if width or height > 150px)
             if img.height > 150 or img.width > 150:
@@ -64,7 +64,23 @@ class Blog(models.Model):
                 img_io.seek(0)
 
                 # Save the resized image to the ImageField (S3 backend will take care of uploading)
-                self.image.save(self.image.name, img_io, save=False)
+                self.image_1.save(self.image_1.name, img_io, save=False)
+
+        if self.image_2 and hasattr(self.image_2, 'name'):
+            img2 = Image.open(self.image_2)
+
+            # Check if resizing is needed (resize only if width or height > 150px)
+            if img2.height > 150 or img2.width > 150:
+                output_size = (150, 150)
+                img2.thumbnail(output_size)
+
+                # Save the resized image to an in-memory buffer
+                img_io = BytesIO()
+                img2.save(img_io, img2.format)
+                img_io.seek(0)
+
+                # Save the resized image to the ImageField (S3 backend will take care of uploading)
+                self.image_2.save(self.image_2.name, img_io, save=False)
 
         # Call the parent class's save method to save the model
         super().save(*args, **kwargs)
