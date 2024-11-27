@@ -41,11 +41,12 @@
             </div>
             <div id="specifics_container" class="nutrient_gallery_container">
                 <div class="my_specifics_picture">
-                    <img src="/static/home_images/supplement 1.jpg" alt="Nutrient Picture">
+<!--                     <img src="/static/home_images/supplement 1.jpg" alt="Nutrient Picture"> -->
+                    {{specifics.image}}
                     <div class="overlay">
                     </div>
                     <i class="fas fa-shopping-cart"></i>
-                    <button class="view_info_btn">Info</button>
+                    <button class="view_info_btn" onclick="location.href='{% url 'dashboard:product_info' product.id) %}'">Info</button>
                     <div class="info_menu">
                         <div class="tooltip">
                             <i class="fas fa-info-circle"></i>
@@ -65,7 +66,7 @@
                         </div>
                         <div class="tooltip">
                             <i class="fas fa-angle-double-right"></i>
-                            <span class="tooltip-text">More Details</span>
+                            <span class="tooltip-text" onclick="location.href='{% url 'dashboard:product_info' product.id) %}'">More Details</span>
                         </div>
                     </div>
                 </div>
@@ -74,7 +75,7 @@
                     <div class="overlay">
                     </div>
                     <i class="fas fa-shopping-cart"></i>
-                    <button class="view_info_btn">info</button>
+                    <button class="view_info_btn" href="{% url 'dashboard:product_info' product.pk %}">info</button>
                     <div class="info_menu">
                         <div class="tooltip">
                             <i class="fas fa-info-circle"></i>
