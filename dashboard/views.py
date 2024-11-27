@@ -76,7 +76,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
                 #  Q(health_benefit__health_support__health_condition__in=user_health)
          #).select_related('health_benefit').prefetch_related('health_benefit__fortify', 'health_benefit__health_support')
         
-        return products_with_health_benefits
+        # return products_with_health_benefits
 
 
     def group_products(self, products):
