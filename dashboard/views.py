@@ -142,4 +142,4 @@ class Blog_detail(DetailView):
 
 def product_detail(request, pk):
     product = Product.object.get(id=pk)
-    return render(request, 'product_info.html', {'product':product}
+    return render(request, 'product_info.html', {'product':product})
