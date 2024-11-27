@@ -40,6 +40,11 @@ class Blog(models.Model):
     # author = models.OneToOneField(Author, on_delete=models.CASCADE, null=True, blank=True, related_name='blog')
     # bio = models.OneToOneField(Author, on_delete=models.CASCADE, null=True, blank=True, related_name='blog')
 
+
+    class Meta:
+        ordering = ['-created_at']  # Default ordering by newest first
+
+        
     def save(self, *args, **kwargs):
         # Only regenerate the slug if the title has changed (during an update)
         if not self.slug:  # If slug doesn't exist (i.e., on create)
