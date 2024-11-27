@@ -62,7 +62,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,70 +80,118 @@
                 <img src="thumbnail4.jpg" alt="Thumbnail 4">
             </div>
         </div>
-        <div class="tab-menu">
-            <ul>
-                <li class="active" id="common-details-tab">Common Details</li>
-                <li id="benefits-tab">Benefits</li>
-                <li id="live-reviews-tab">Live Reviews</li>
-            </ul>
-        </div>
-        <div class="tab-content">
-            <div class="common-details active" id="common-details-content">
-                <h2>Product Name</h2>
-                <p>Price: $19.99</p>
-                <p>Strength Category: 100mg</p>
-                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <p>Ratings: 4.5/5</p>
+        <div class="info_section">
+            <div class="tab-menu">
+                <ul>
+                    <li class="active" id="common-details-tab">Common Details</li>
+                    <li id="benefits-tab">Benefits</li>
+                    <li id="live-reviews-tab">Live Reviews</li>
+                </ul>
             </div>
-            <div class="benefits" id="benefits-content">
-                <h2>Fortifies:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <h2>Heals:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <h2>Treats Side Effects Of:</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <h2>Clinical Studies:</h2>
-                <select id="clinical-studies-select">
-                    <option value="benefit1">Benefit 1</option>
-                    <option value="benefit2">Benefit 2</option>
-                    <option value="benefit3">Benefit 3</option>
-                </select>
-                <div class="clinical-study-container" id="clinical-study-container" style="display:none;">
-                    <h2>Research Summary</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <button id="close-clinical-study-btn">Close</button>
+            <div class="tab-content">
+                <div class="common-details active" id="common-details-content">
+                    <h2>Product Name</h2>
+                    <p>Price: $19.99</p>
+                    <p>Strength: 100mg</p>
+                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Ratings: 4.5/5</p>
                 </div>
-            </div>
-            <div class="live-reviews" id="live-reviews-content">
-                <h2>Audio Reviews</h2>
-                <ul>
-                    <li>Review 1</li>
-                    <li>Review 2</li>
-                    <li>Review 3</li>
-                </ul>
-                <h2>Written Reviews</h2>
-                <ul>
-                    <li>Review 1</li>
-                    <li>Review 2</li>
-                    <li>Review 3</li>
-                </ul>
-                <h2>Podcast Mentions</h2>
-                <ul>
-                    <li>Mention 1</li>
-                    <li>Mention 2</li>
-                    <li>Mention 3</li>
-                </ul>
-                <h2>Blog Mentions</h2>
-                <ul>
-                    <li>Mention 1</li>
-                    <li>Mention 2</li>
-                    <li>Mention 3</li>
-                </ul>
+                <div class="benefits" id="benefits-content">
+                    <div class="benefit-container" id="fortifies-benefit">
+                        <div class="benefit-header">Fortifies:</div>
+                        <div class="benefit-content">
+                            <span class="benefit-list">Benefit 1</span>
+                            <span class="benefit-list">Benefit 2</span>
+                            <span class="benefit-list">Benefit 3</span>
+                            <span class="benefit-list">Benefit 1</span>
+                            <span class="benefit-list">Benefit 2</span>
+                            <span class="benefit-list">Benefit 3</span>
+                        </div>
+                        <button class="clinical-studies-btn">Click to check Proofs and Research documents</button>
+                        <select class="benefit-select" style="display: none;">
+                            <option value="File 1.pdf">Benefit 1</option>
+                            <option value="File 2.pdf">Benefit 2</option>
+                            <option value="File 3.pdf">Benefit 3</option>
+                        </select>
+                        <div class="file-display" style="display: none;">
+                            <button class="close-btn">X</button>
+                            <iframe src="" frameborder="0" width="100%" height="500"></iframe>
+                        </div>
+                    </div>
+                    <div class="benefit-container" id="heals-benefit">
+                        <div class="benefit-header">Heals:</div>
+                        <div class="benefit-content">
+                            <span class="benefit-list">Benefit 4</span>
+                            <span class="benefit-list">Benefit 5</span>
+                            <span class="benefit-list">Benefit 6</span>
+                            <!-- Add more benefits here -->
+                        </div>
+                        <button class="clinical-studies-btn">Click to check Proofs and Research documents</button>
+                        <select class="benefit-select" style="display: none;">
+                            <option value="File 1.pdf">Benefit 1</option>
+                            <option value="File 2.pdf">Benefit 2</option>
+                            <option value="File 3.pdf">Benefit 3</option>
+                        </select>
+                        <div class="file-display" style="display: none;">
+                            <button class="close-btn">X</button>
+                            <iframe src="" frameborder="0" width="100%" height="500"></iframe>
+                        </div>
+                    </div>
+                    <div class="benefit-container" id="treats-benefit">
+                        <div class="benefit-header">Treats Side Effects Of:</div>
+                        <div class="benefit-content">
+                            <span class="benefit-list">Benefit 7</span>
+                            <span class="benefit-list">Benefit 8</span>
+                            <span class="benefit-list">Benefit 9</span>
+                            <!-- Add more benefits here -->
+                        </div>
+                        <button class="clinical-studies-btn">Click to check Proofs and Research documents</button>
+                        <select class="benefit-select" style="display: none;">
+                            <option value="File 1.pdf">Benefit 1</option>
+                            <option value="File 2.pdf">Benefit 2</option>
+                            <option value="File 3.pdf">Benefit 3</option>
+                        </select>
+                        <div class="file-display" style="display: none;">
+                            <button class="close-btn">X</button>
+                            <iframe src="" frameborder="0" width="100%" height="500"></iframe>
+                        </div>
+                    </div>
+                    <div class="overlay" style="display: none;"></div>
+                </div>
+                <div class="live-reviews" id="live-reviews-content">
+                    <h2 id="audio-reviews">Audio Reviews</h2>
+                    <ul id="audio-reviews-list" class="reviews-list">
+                        <li>Review 1</li>
+                        <li>Review 2</li>
+                        <li>Review 3</li>
+                    </ul>
+            
+                    <h2 id="written-reviews">Written Reviews</h2>
+                    <ul id="written-reviews-list" class="reviews-list">
+                        <li>Review 1</li>
+                        <li>Review 2</li>
+                        <li>Review 3</li>
+                    </ul>
+            
+                    <h2 id="podcast-mentions">Podcast Mentions</h2>
+                    <ul id="podcast-mentions-list" class="reviews-list">
+                        <li>Mention 1</li>
+                        <li>Mention 2</li>
+                        <li>Mention 3</li>
+                    </ul>
+            
+                    <h2 id="blog-mentions">Blog Mentions</h2>
+                    <ul id="blog-mentions-list" class="reviews-list">
+                        <li>Mention 1</li>
+                        <li>Mention 2</li>
+                        <li>Mention 3</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
-    <script src="{% static 'js/product_info.js'%}"></script>
+<script src="{% static 'js/product_info.js'%}"></script>
 </body>
 
 </html>

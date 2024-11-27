@@ -71,12 +71,13 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # print(user_health)
         user_lifestyle = Lifestyle.objects.filter(
             user_profile=user_profile)
-        products_with_health_benefits = Product.objects.filter(
-                # Q(health_benefit__fortify__in=[some_fortify_value]) |  
+       # products_with_health_benefits = Product.objects.filter(
+              #  Q(health_benefit.fortify.organ==user_profile.lifestyle.habit))
+        #.select_related('health_benefit.fortify.organ')
                 #  Q(health_benefit__health_support__health_condition__in=user_health)
-         ).select_related('health_benefit').prefetch_related('health_benefit__fortify', 'health_benefit__health_support')
+         #).select_related('health_benefit').prefetch_related('health_benefit__fortify', 'health_benefit__health_support')
         
-        return products_with_health_benefits
+        # return products_with_health_benefits
 
 
     def group_products(self, products):
@@ -139,3 +140,7 @@ class Blog_detail(DetailView):
     template_name = 'dashboard/blog_detail.html'
     context_object_name = 'post'
     
+
+def product_detail(request, pk):
+    product = Product.object.get(id=pk)
+    return render(request, 'dashboard/product_info.html', {'product':product})

@@ -40,41 +40,44 @@
                 </div>
             </div>
             <div id="specifics_container" class="nutrient_gallery_container">
+                {% for product in specifics %}
                 <div class="my_specifics_picture">
-                    <img src="/static/home_images/supplement 1.jpg" alt="Nutrient Picture">
+<!--                     <img src="/static/home_images/supplement 1.jpg" alt="Nutrient Picture"> -->
+                    <img src="{{product.image.url}}" alt="Nutrient Picture">
                     <div class="overlay">
                     </div>
                     <i class="fas fa-shopping-cart"></i>
-                    <button class="view_info_btn">Info</button>
+                    <a href="{% url 'dashboard:product_info' product.id %}" class="view_info_btn">Info</a>
                     <div class="info_menu">
                         <div class="tooltip">
                             <i class="fas fa-info-circle"></i>
-                            <span class="tooltip-text">Product Name: XYZ<br>Price: $20</span>
+                            <span class="tooltip-text">Product Name: {{product.name}}<br>Price: {{product.price}}</span>
                         </div>
                         <div class="tooltip">
                             <i class="fas fa-headphones"></i>
-                            <span class="tooltip-text">Podcast Reviews: 1000</span>
+                            <span class="tooltip-text">Podcast mentions: {{product.podcast.count}}</span>
                         </div>
                         <div class="tooltip">
                             <i class="fas fa-book"></i>
-                            <span class="tooltip-text">Research Journals: 50</span>
+                            <span class="tooltip-text">Research Journals: {{product.journals.count}}</span>
                         </div>
                         <div class="tooltip">
                             <i class="fas fa-comment-alt"></i>
-                            <span class="tooltip-text">User Reviews: 500</span>
+                            <span class="tooltip-text">User Reviews: {{product.review.count}}</span>
                         </div>
                         <div class="tooltip">
                             <i class="fas fa-angle-double-right"></i>
-                            <span class="tooltip-text">More Details</span>
+                            <span class="tooltip-text" onclick="location.href='{% url 'dashboard:product_info' product.id %}'">More Details</span>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
                 <div class="my_specifics_picture">
                     <img src="/static/home_images/supplement 2.jpg" alt="Nutrient Picture">
                     <div class="overlay">
                     </div>
                     <i class="fas fa-shopping-cart"></i>
-                    <button class="view_info_btn">info</button>
+                    <button class="view_info_btn" href="{% url 'dashboard:product_info' product.pk %}">info</button>
                     <div class="info_menu">
                         <div class="tooltip">
                             <i class="fas fa-info-circle"></i>
