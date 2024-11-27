@@ -4,6 +4,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 from blog.admin import blog_site
 from NT_gallery.admin import store_site
+from dashboard import views as dashboard_views
 
 
 urlpatterns = [
@@ -14,6 +15,7 @@ urlpatterns = [
     path('', include('home.urls')),
     path('user/', include('user.urls')),
     path('dashboard/', include('dashboard.urls')),
+    path('product/<int:pk>', dashboard_views.product_detail, name='product_info'),
 ]
 
 if settings.DEBUG:
