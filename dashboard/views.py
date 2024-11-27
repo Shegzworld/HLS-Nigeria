@@ -139,3 +139,7 @@ class Blog_detail(DetailView):
     template_name = 'dashboard/blog_detail.html'
     context_object_name = 'post'
     
+
+def product_detail(request, pk):
+    product = Product.object.get(id=pk)
+    return render(request, 'product_info.html', {'product':product}
