@@ -22,11 +22,12 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         user_profile = self.get_user_profile()
         products = self.filter_products(user_profile)
 
-        # print(products)
+        print(products)
         # products_by_attribute = self.group_products(products)
         # packs = self.assign_products_to_packs(products_by_attribute)
         # context['specifics'] = products_by_attribute
         # context['nutrient_gallery'] = packs
+        context['specifics'] = products
         
         blog_list = Blog.objects.all().order_by('-created_at') #Blog.objects.all()
         blog_paginator = Paginator(blog_list, 5)
@@ -71,6 +72,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # print(user_health)
         user_lifestyle = Lifestyle.objects.filter(
             user_profile=user_profile)
+        return Product.objects.all()
        # products_with_health_benefits = Product.objects.filter(
               #  Q(health_benefit.fortify.organ==user_profile.lifestyle.habit))
         #.select_related('health_benefit.fortify.organ')
@@ -142,5 +144,5 @@ class Blog_detail(DetailView):
     
 
 def product_detail(request, pk):
-    product = Product.object.get(id=pk)
+    product = Product.objects.get(id=pk)
     return render(request, 'dashboard/product_info.html', {'product':product})

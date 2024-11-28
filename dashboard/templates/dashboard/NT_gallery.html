@@ -1,414 +1,446 @@
-{% block NT_gallery %}
-    <div class="nutrient_type_gallery display_content">
-        <div class="selector_menu">
-            <ul>
-                <li id="Nutrient_type" class="menu-item active">Nutrient type</li>
-                <li id="specifics" class="menu-item">Specifics</li>
-                <li id="doctors_pick" class="menu-item">Dr Picks</li>
-            </ul>
-        </div>
-        <div class="nutrient_gallery">
-            <div id="nutrient_type_container" class="nutrient_gallery_container">
-                <div class="nutrient_type_glass_pack" id="nutrient_type_pack_best">
-                    <div class="Nutrient_type_pack">
-                        <div class="my_nutrient_picture">
-                            <img src="/static/home_images/supplement 1.jpg" alt="Nutrient Picture">
-                        </div>
-                        <div class="my_nutrient_picture">
-                            <img src="/static/home_images/supplement 2.jpg" alt="Nutrient Picture">
-                        </div>
-                        <div class="label-bg">
-                                <div class="label-text">
-                                    <p>View pack Highlights</p>
-                                </div>
-                        </div>
-                        <div class="Nutrient_type_glass">
-                            <span class="nutrient_pack_rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </span>
-                            <span class="nutrient_pack_price">N20,000</span>
-                            <button class="btn-reveal">Reveal</button>
-                            <p>Budget pack for your LifeStyle result Guaranteed.</p>
-                        </div>
-                        <div class="slide_left"></div>
-                        <div class="slide_right"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="specifics_container" class="nutrient_gallery_container">
-                {% for product in specifics %}
-                <div class="my_specifics_picture">
-<!--                     <img src="/static/home_images/supplement 1.jpg" alt="Nutrient Picture"> -->
-                    <img src="{{product.image.url}}" alt="Nutrient Picture">
-                    <div class="overlay">
-                    </div>
-                    <i class="fas fa-shopping-cart"></i>
-                    <a href="{% url 'dashboard:product_info' product.id %}" class="view_info_btn">Info</a>
-                    <div class="info_menu">
-                        <div class="tooltip">
-                            <i class="fas fa-info-circle"></i>
-                            <span class="tooltip-text">Product Name: {{product.name}}<br>Price: {{product.price}}</span>
-                        </div>
-                        <div class="tooltip">
-                            <i class="fas fa-headphones"></i>
-                            <span class="tooltip-text">Podcast mentions: {{product.podcast.count}}</span>
-                        </div>
-                        <div class="tooltip">
-                            <i class="fas fa-book"></i>
-                            <span class="tooltip-text">Research Journals: {{product.journals.count}}</span>
-                        </div>
-                        <div class="tooltip">
-                            <i class="fas fa-comment-alt"></i>
-                            <span class="tooltip-text">User Reviews: {{product.review.count}}</span>
-                        </div>
-                        <div class="tooltip">
-                            <i class="fas fa-angle-double-right"></i>
-                            <span class="tooltip-text" onclick="location.href='{% url 'dashboard:product_info' product.id %}'">More Details</span>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
-                <div class="my_specifics_picture">
-                    <img src="/static/home_images/supplement 2.jpg" alt="Nutrient Picture">
-                    <div class="overlay">
-                    </div>
-                    <i class="fas fa-shopping-cart"></i>
-                    <button class="view_info_btn" href="{% url 'dashboard:product_info' product.pk %}">info</button>
-                    <div class="info_menu">
-                        <div class="tooltip">
-                            <i class="fas fa-info-circle"></i>
-                            <span class="tooltip-text">Product Name: XYZ<br>Price: $20</span>
-                        </div>
-                        <div class="tooltip">
-                            <i class="fas fa-headphones"></i>
-                            <span class="tooltip-text">Podcast Reviews: 1000</span>
-                        </div>
-                        <div class="tooltip">
-                            <i class="fas fa-book"></i>
-                            <span class="tooltip-text">Research Journals: 50</span>
-                        </div>
-                        <div class="tooltip">
-                            <i class="fas fa-comment-alt"></i>
-                            <span class="tooltip-text">User Reviews: 500</span>
-                        </div>
-                        <div class="tooltip">
-                            <i class="fas fa-angle-double-right"></i>
-                            <span class="tooltip-text">More Details</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="dr_pick_container" class="nutrient_gallery_container">
-            </div>
-        </div>
-    </div>
-    <div class="selected_nutrient_screen">
-        <div class="highlighted-nutrient-type">
-            <div class="back_to_nutrient_type">
-                <i class="fas fa-arrow-left"></i>
-                <span>Profs Pack</span>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-    
-            <div class="pack-intro">
-                <h3>We recommend the Professors pack which contains a total of 6 supplements, all at
-                    N20,000 only, View detail of each supplement for better info.
-                </h3>
-                <button class="submit-btn">Buy pack</button>
-            </div>
-    
-            <div class="pack_item_rational_container">
-                <h3>Item 1</h3>
-                <div class="pack-item-and-rational">
-                    <div class="nutrient-pack-item-pic">
-                        <img src="/static/home_images/pack_pic.png" alt="Nutrient Picture">
-                    </div>
-                    <h3 class="research_summary">Authentic Clinical Findings</h3>
-                    <div class="nutrient-pack-rational">
-                        <div class="leadership research_summary_intro">
-                            <i class="fa fa-graduation-cap"></i>
-                            <p>This study was led by...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">
-                            <p>Dr. Jane Smith, Ph.D. in Nutrition, Professor at Harvard University's School of
-                                Public Health.
-                            </p>
-                        </div>
-    
-                        <div class="submission-presentation research_summary_intro">
-                            <i class="fa fa-chalkboard"></i>
-                            <p>The researchers showed how...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">
-                            <p>How vitamin C affects heart health and prevents heart disease.</p>
-                        </div>
-    
-                        <div class="research_subjects research_summary_intro">
-                            <i class="fas fa-users"></i>
-                            <p>The study included thousands of...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">
-                            <p>The study included thousands of people from different countries which include
-                                Germany, Nigeria,
-                                France.</p>
-                        </div>
-    
-                        <div class="research_procedure research_summary_intro">
-                            <i class="fas fa-chart-line"></i>
-                            <p>The procedure of the research was done with...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">
-                            <p>200 people who were given 3000mg of vitamin C daily for 90 days showed 50%
-                                healing rate, and had
-                                a
-                                stable Blood pressure of 120/80mmhg.</p>
-                        </div>
-    
-                        <div class="conclusion research_summary_intro">
-                            <i class="fas fa-gavel"></i>
-                            <p>According to the study, it can be said that...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">
-                            <p>Using vitamin C reduces blood thickness by breaking down the platelets found in
-                                the blood. This
-                                is
-                                because ascorbic acid prevents oxidation, and consequently keeps blood vessels
-                                healthy.</p>
-                        </div>
-    
-                        <div class="HLS_reward research_summary_intro">
-                            <i class="fas fa-handshake"></i>
-                            <p>HLS sponsorship on professor package...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">
-                            <p>Sponsors 70% confirmation fee of test result which shall review how well the plan
-                                worked for you.
-                                (contact support for more inquiries)</p>
-                        </div>
-    
-                        <div class="HlS_brand_rating research_summary_intro">
-                            <i class="fas fa-star"></i>
-                            <p>With this brand of vitamin C, HLS suggests a rating of...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">
-                            <p>(95% effectiveness) for Heart Health</p>
-                        </div>
-    
-                        <div class="other_benefits research_summary_intro">
-                            <i class="fas fa-lightbulb"></i>
-                            <p>Other studied benefits of vitamin C include...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">
-                            <p>Fast wound healing, vitality, immune boosting, good looking skin, graceful aging,
-                                longevity.</p>
-                        </div>
-                    </div>
-                    <div class="readmore_flasher">
-                        <div class="item"></div>
-                        <div class="item"></div>
-                        <div class="item"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pack_item_rational_container">
-                <h3>Item 1</h3>
-                <div class="pack-item-and-rational">
-                    <div class="nutrient-pack-item-pic">
-                        <img src="/static/home_images/pack_pic.png" alt="Nutrient Picture">
-                    </div>
-                    <h3 class="research_summary">Authentic Clinical Findings</h3>
-                    <div class="nutrient-pack-rational">
-                        <div class="leadership research_summary_intro">
-                            <i class="fa fa-graduation-cap"></i>
-                            <p>This study was led by...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">Dr. Jane Smith, Ph.D. in Nutrition, Professor at Harvard
-                            University's School
-                            of
-                            Public
-                            Health.</div>
-    
-                        <div class="submission-presentation research_summary_intro">
-                            <i class="fa fa-chalkboard"></i>
-                            <p>The researchers showed how...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">How vitamin C affects heart health and prevents heart
-                            disease.</div>
-    
-                        <div class="research_subjects research_summary_intro">
-                            <i class="fas fa-users"></i>
-                            <p>The study included thousands of...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">The study included thousands of people from different
-                            countries which include
-                            Germany,
-                            Nigeria, France.</div>
-    
-                        <div class="research_procedure research_summary_intro">
-                            <i class="fas fa-chart-line"></i>
-                            <p>The procedure of the research was...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">200 people who were given 3000mg of vitamin C daily for 90
-                            days showed 50%
-                            healing
-                            rate,
-                            and had a stable Blood pressure of 120/80mmhg.</div>
-    
-                        <div class="conclusion research_summary_intro">
-                            <i class="fas fa-gavel"></i>
-                            <p>According to the study, it can be said that...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">Using vitamin C reduces blood thickness by breaking down the
-                            platelets found
-                            in
-                            the
-                            blood. This is because ascorbic acid prevents oxidation, and consequently keeps
-                            blood vessels
-                            healthy.
-                        </div>
-    
-                        <div class="HLS_reward research_summary_intro">
-                            <i class="fas fa-handshake"></i>
-                            <p>HLS sponsorship on professor package...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">Sponsors 70% confirmation fee of test result which shall
-                            review how well the
-                            plan
-                            worked
-                            for you. (contact support for more inquiries)</div>
-    
-                        <div class="HlS_brand_rating research_summary_intro">
-                            <i class="fas fa-star"></i>
-                            <p>With this brand of vitamin C, HLS suggests a rating of...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">(95% effectiveness) for Heart Health</div>
-    
-                        <div class="other_benefits research_summary_intro">
-                            <i class="fas fa-lightbulb"></i>
-                            <p>Other studied benefits of vitamin C include...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">Fast wound healing, vitality, immune boosting, good looking
-                            skin, graceful
-                            aging,
-                            longevity.</div>
-                    </div>
-    
-                </div>
-            </div>
-            <div class="pack_item_rational_container">
-                <h3>Item 1</h3>
-                <div class="pack-item-and-rational">
-                    <div class="nutrient-pack-item-pic">
-                        <img src="/static/home_images/pack_pic.png" alt="Nutrient Picture">
-                    </div>
-                    <h3 class="research_summary">Authentic Clinical Findings</h3>
-                    <div class="nutrient-pack-rational">
-                        <div class="leadership research_summary_intro">
-                            <i class="fa fa-graduation-cap"></i>
-                            <p>This study was led by...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">Dr. Jane Smith, Ph.D. in Nutrition, Professor at Harvard
-                            University's School
-                            of
-                            Public
-                            Health.</div>
-    
-                        <div class="submission-presentation research_summary_intro">
-                            <i class="fa fa-chalkboard"></i>
-                            <p>The researchers showed how...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">How vitamin C affects heart health and prevents heart
-                            disease.</div>
-    
-                        <div class="research_subjects research_summary_intro">
-                            <i class="fas fa-users"></i>
-                            <p>The study included thousands of...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">The study included thousands of people from different
-                            countries which include
-                            Germany,
-                            Nigeria, France.</div>
-    
-                        <div class="research_procedure research_summary_intro">
-                            <i class="fas fa-chart-line"></i>
-                            <p>The procedure of the research was...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">200 people who were given 3000mg of vitamin C daily for 90
-                            days showed 50%
-                            healing
-                            rate,
-                            and had a stable Blood pressure of 120/80mmhg.</div>
-    
-                        <div class="conclusion research_summary_intro">
-                            <i class="fas fa-gavel"></i>
-                            <p>According to the study, it can be said that...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">Using vitamin C reduces blood thickness by breaking down the
-                            platelets found
-                            in
-                            the
-                            blood. This is because ascorbic acid prevents oxidation, and consequently keeps
-                            blood vessels
-                            healthy.
-                        </div>
-    
-                        <div class="HLS_reward research_summary_intro">
-                            <i class="fas fa-handshake"></i>
-                            <p>HLS sponsorship on professor package...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">Sponsors 70% confirmation fee of test result which shall
-                            review how well the
-                            plan
-                            worked
-                            for you. (contact support for more inquiries)</div>
-    
-                        <div class="HlS_brand_rating research_summary_intro">
-                            <i class="fas fa-star"></i>
-                            <p>With this brand of vitamin C, HLS suggests a rating of...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">(95% effectiveness) for Heart Health</div>
-    
-                        <div class="other_benefits research_summary_intro">
-                            <i class="fas fa-lightbulb"></i>
-                            <p>Other studied benefits of vitamin C include...</p>
-                            <span class="toggle-text"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="extra-content">Fast wound healing, vitality, immune boosting, good looking
-                            skin, graceful
-                            aging,
-                            longevity.</div>
-                    </div>
-    
-                </div>
-            </div>
-            <button class="submit-btn">Buy pack</button>
-        </div>
-    </div>
-{% endblock %}
+{% block NT_gallery %}<br />
+<div class="nutrient_type_gallery display_content">
+	<div class="selector_menu">
+		<ul>
+			<li id="Nutrient_type" class="menu-item active">Nutrient type</li>
+			<li id="specifics" class="menu-item">Specifics</li>
+			<li id="doctors_pick" class="menu-item">Dr Picks</li>
+		</ul>
+	</div>
+	<div class="nutrient_gallery">
+		<div id="nutrient_type_container" class="nutrient_gallery_container">
+			<div class="nutrient_type_glass_pack" id="nutrient_type_pack_best">
+				<div class="Nutrient_type_pack">
+					<div class="my_nutrient_picture">
+						<img
+							src="/static/home_images/supplement 1.jpg"
+							alt="Nutrient Picture"
+						/>
+					</div>
+					<div class="my_nutrient_picture">
+						<img
+							src="/static/home_images/supplement 2.jpg"
+							alt="Nutrient Picture"
+						/>
+					</div>
+					<div class="label-bg">
+						<div class="label-text">
+							<p>View pack Highlights</p>
+						</div>
+					</div>
+					<div class="Nutrient_type_glass">
+						<span class="nutrient_pack_rating">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+						</span>
+						<span class="nutrient_pack_price">N20,000</span>
+						<button class="btn-reveal">Reveal</button>
+						<p>Budget pack for your LifeStyle result Guaranteed.</p>
+					</div>
+					<div class="slide_left"></div>
+					<div class="slide_right"></div>
+				</div>
+			</div>
+		</div>
+		<div id="specifics_container" class="nutrient_gallery_container">
+			{% for product in specifics %}<br />
+			<div class="my_specifics_picture">
+				<!--                     <img src="/static/home_images/supplement 1.jpg" alt="Nutrient Picture"> -->
+				<img src="{{product.image.url}}" alt="Nutrient Picture" />
+				<div class="overlay"></div>
+				<i class="fas fa-shopping-cart"></i>
+				<a
+					href="{% url 'dashboard:product_info' product.id %}"
+					class="view_info_btn"
+					>Info</a
+				>
+				<div class="info_menu">
+					<div class="tooltip">
+						<i class="fas fa-info-circle"></i>
+						<span class="tooltip-text"
+							>Product Name: {{product.name}}<br />Price:
+							{{product.price}}</span
+						>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-headphones"></i>
+						<span class="tooltip-text"
+							>Podcast mentions: {{product.podcast.count}}</span
+						>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-book"></i>
+						<span class="tooltip-text"
+							>Research Journals: {{product.journals.count}}</span
+						>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-comment-alt"></i>
+						<span class="tooltip-text"
+							>User Reviews: {{product.review.count}}</span
+						>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-angle-double-right"></i>
+						{% if product.id %} <br />
+						<span
+							class="tooltip-text"
+							onclick="location.href='{% url 'dashboard:product_info' product.id %}'"
+							>More Details</span
+						>
+						{% else %}<br />
+						<span class="tooltip-text">Details Not Available</span>
+						{% endif %}<br />
+					</div>
+				</div>
+			</div>
+			{% endfor %}<br />
+			<div class="my_specifics_picture">
+				<img
+					src="/static/home_images/supplement 2.jpg"
+					alt="Nutrient Picture"
+				/>
+				<div class="overlay"></div>
+				<i class="fas fa-shopping-cart"></i>
+				<button
+					class="view_info_btn"
+					
+					info
+				</button>
+				<div class="info_menu">
+					<div class="tooltip">
+						<i class="fas fa-info-circle"></i>
+						<span class="tooltip-text">Product Name: XYZ<br />Price: $20</span>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-headphones"></i>
+						<span class="tooltip-text">Podcast Reviews: 1000</span>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-book"></i>
+						<span class="tooltip-text">Research Journals: 50</span>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-comment-alt"></i>
+						<span class="tooltip-text">User Reviews: 500</span>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-angle-double-right"></i>
+						<span class="tooltip-text">More Details</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="dr_pick_container" class="nutrient_gallery_container"></div>
+	</div>
+</div>
+<div class="selected_nutrient_screen">
+	<div class="highlighted-nutrient-type">
+		<div class="back_to_nutrient_type">
+			<i class="fas fa-arrow-left"></i>
+			<span>Profs Pack</span>
+			<i class="fas fa-shopping-cart"></i>
+		</div>
+
+		<div class="pack-intro">
+			<h3>
+				We recommend the Professors pack which contains a total of 6
+				supplements, all at N20,000 only, View detail of each supplement for
+				better info.
+			</h3>
+			<button class="submit-btn">Buy pack</button>
+		</div>
+
+		<div class="pack_item_rational_container">
+			<h3>Item 1</h3>
+			<div class="pack-item-and-rational">
+				<div class="nutrient-pack-item-pic">
+					<img src="/static/home_images/pack_pic.png" alt="Nutrient Picture" />
+				</div>
+				<h3 class="research_summary">Authentic Clinical Findings</h3>
+				<div class="nutrient-pack-rational">
+					<div class="leadership research_summary_intro">
+						<i class="fa fa-graduation-cap"></i>
+						<p>This study was led by...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						<p>
+							Dr. Jane Smith, Ph.D. in Nutrition, Professor at Harvard
+							University's School of Public Health.
+						</p>
+					</div>
+
+					<div class="submission-presentation research_summary_intro">
+						<i class="fa fa-chalkboard"></i>
+						<p>The researchers showed how...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						<p>
+							How vitamin C affects heart health and prevents heart disease.
+						</p>
+					</div>
+
+					<div class="research_subjects research_summary_intro">
+						<i class="fas fa-users"></i>
+						<p>The study included thousands of...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						<p>
+							The study included thousands of people from different countries
+							which include Germany, Nigeria, France.
+						</p>
+					</div>
+
+					<div class="research_procedure research_summary_intro">
+						<i class="fas fa-chart-line"></i>
+						<p>The procedure of the research was done with...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						<p>
+							200 people who were given 3000mg of vitamin C daily for 90 days
+							showed 50% healing rate, and had a stable Blood pressure of
+							120/80mmhg.
+						</p>
+					</div>
+
+					<div class="conclusion research_summary_intro">
+						<i class="fas fa-gavel"></i>
+						<p>According to the study, it can be said that...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						<p>
+							Using vitamin C reduces blood thickness by breaking down the
+							platelets found in the blood. This is because ascorbic acid
+							prevents oxidation, and consequently keeps blood vessels healthy.
+						</p>
+					</div>
+
+					<div class="HLS_reward research_summary_intro">
+						<i class="fas fa-handshake"></i>
+						<p>HLS sponsorship on professor package...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						<p>
+							Sponsors 70% confirmation fee of test result which shall review
+							how well the plan worked for you. (contact support for more
+							inquiries)
+						</p>
+					</div>
+
+					<div class="HlS_brand_rating research_summary_intro">
+						<i class="fas fa-star"></i>
+						<p>With this brand of vitamin C, HLS suggests a rating of...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						<p>(95% effectiveness) for Heart Health</p>
+					</div>
+
+					<div class="other_benefits research_summary_intro">
+						<i class="fas fa-lightbulb"></i>
+						<p>Other studied benefits of vitamin C include...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						<p>
+							Fast wound healing, vitality, immune boosting, good looking skin,
+							graceful aging, longevity.
+						</p>
+					</div>
+				</div>
+				<div class="readmore_flasher">
+					<div class="item"></div>
+					<div class="item"></div>
+					<div class="item"></div>
+				</div>
+			</div>
+		</div>
+		<div class="pack_item_rational_container">
+			<h3>Item 1</h3>
+			<div class="pack-item-and-rational">
+				<div class="nutrient-pack-item-pic">
+					<img src="/static/home_images/pack_pic.png" alt="Nutrient Picture" />
+				</div>
+				<h3 class="research_summary">Authentic Clinical Findings</h3>
+				<div class="nutrient-pack-rational">
+					<div class="leadership research_summary_intro">
+						<i class="fa fa-graduation-cap"></i>
+						<p>This study was led by...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						Dr. Jane Smith, Ph.D. in Nutrition, Professor at Harvard
+						University's School of Public Health.
+					</div>
+
+					<div class="submission-presentation research_summary_intro">
+						<i class="fa fa-chalkboard"></i>
+						<p>The researchers showed how...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						How vitamin C affects heart health and prevents heart disease.
+					</div>
+
+					<div class="research_subjects research_summary_intro">
+						<i class="fas fa-users"></i>
+						<p>The study included thousands of...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						The study included thousands of people from different countries
+						which include Germany, Nigeria, France.
+					</div>
+
+					<div class="research_procedure research_summary_intro">
+						<i class="fas fa-chart-line"></i>
+						<p>The procedure of the research was...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						200 people who were given 3000mg of vitamin C daily for 90 days
+						showed 50% healing rate, and had a stable Blood pressure of
+						120/80mmhg.
+					</div>
+
+					<div class="conclusion research_summary_intro">
+						<i class="fas fa-gavel"></i>
+						<p>According to the study, it can be said that...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						Using vitamin C reduces blood thickness by breaking down the
+						platelets found in the blood. This is because ascorbic acid prevents
+						oxidation, and consequently keeps blood vessels healthy.
+					</div>
+
+					<div class="HLS_reward research_summary_intro">
+						<i class="fas fa-handshake"></i>
+						<p>HLS sponsorship on professor package...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						Sponsors 70% confirmation fee of test result which shall review how
+						well the plan worked for you. (contact support for more inquiries)
+					</div>
+
+					<div class="HlS_brand_rating research_summary_intro">
+						<i class="fas fa-star"></i>
+						<p>With this brand of vitamin C, HLS suggests a rating of...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">(95% effectiveness) for Heart Health</div>
+
+					<div class="other_benefits research_summary_intro">
+						<i class="fas fa-lightbulb"></i>
+						<p>Other studied benefits of vitamin C include...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						Fast wound healing, vitality, immune boosting, good looking skin,
+						graceful aging, longevity.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pack_item_rational_container">
+			<h3>Item 1</h3>
+			<div class="pack-item-and-rational">
+				<div class="nutrient-pack-item-pic">
+					<img src="/static/home_images/pack_pic.png" alt="Nutrient Picture" />
+				</div>
+				<h3 class="research_summary">Authentic Clinical Findings</h3>
+				<div class="nutrient-pack-rational">
+					<div class="leadership research_summary_intro">
+						<i class="fa fa-graduation-cap"></i>
+						<p>This study was led by...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						Dr. Jane Smith, Ph.D. in Nutrition, Professor at Harvard
+						University's School of Public Health.
+					</div>
+
+					<div class="submission-presentation research_summary_intro">
+						<i class="fa fa-chalkboard"></i>
+						<p>The researchers showed how...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						How vitamin C affects heart health and prevents heart disease.
+					</div>
+
+					<div class="research_subjects research_summary_intro">
+						<i class="fas fa-users"></i>
+						<p>The study included thousands of...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						The study included thousands of people from different countries
+						which include Germany, Nigeria, France.
+					</div>
+
+					<div class="research_procedure research_summary_intro">
+						<i class="fas fa-chart-line"></i>
+						<p>The procedure of the research was...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						200 people who were given 3000mg of vitamin C daily for 90 days
+						showed 50% healing rate, and had a stable Blood pressure of
+						120/80mmhg.
+					</div>
+
+					<div class="conclusion research_summary_intro">
+						<i class="fas fa-gavel"></i>
+						<p>According to the study, it can be said that...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						Using vitamin C reduces blood thickness by breaking down the
+						platelets found in the blood. This is because ascorbic acid prevents
+						oxidation, and consequently keeps blood vessels healthy.
+					</div>
+
+					<div class="HLS_reward research_summary_intro">
+						<i class="fas fa-handshake"></i>
+						<p>HLS sponsorship on professor package...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						Sponsors 70% confirmation fee of test result which shall review how
+						well the plan worked for you. (contact support for more inquiries)
+					</div>
+
+					<div class="HlS_brand_rating research_summary_intro">
+						<i class="fas fa-star"></i>
+						<p>With this brand of vitamin C, HLS suggests a rating of...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">(95% effectiveness) for Heart Health</div>
+
+					<div class="other_benefits research_summary_intro">
+						<i class="fas fa-lightbulb"></i>
+						<p>Other studied benefits of vitamin C include...</p>
+						<span class="toggle-text"><i class="fas fa-plus"></i></span>
+					</div>
+					<div class="extra-content">
+						Fast wound healing, vitality, immune boosting, good looking skin,
+						graceful aging, longevity.
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="submit-btn">Buy pack</button>
+	</div>
+</div>
+{% endblock %}<br />
