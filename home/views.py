@@ -3,16 +3,18 @@ from django.contrib.sessions.models import Session
 from user.forms import BasicsForm, LifestyleForm, HealthConditionForm, PreferenceForm
 
 def homepage(request):
-    notifications = request.user.notifications.order_by('-created_at')
+    
+ #   notifications = request.user.notifications.order_by('-created_at')
 
     # Reset the new notifications count
-    user_profile = request.user.profile
-    user_profile.new_notifications_count = 0
-    user_profile.save()
+   # user_profile = request.user.profile
+    #user_profile.new_notifications_count = 0
+    #user_profile.save()
 
     # Mark notifications as read
-    notifications.update(is_read=True)
-    return render(request,'home/home.html',{'notifications': notifications})
+   # notifications.update(is_read=True)
+   # return render(request,'home/home.html',{'notifications': notifications})
+    return render(request,'home/home.html')
 
 def handle_continue_quiz(request):
     form_type = request.POST.get('form_type')
