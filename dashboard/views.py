@@ -43,16 +43,16 @@ class Dashboard(LoginRequiredMixin, TemplateView):
 
          # Notification count for the logged-in user
         user = self.request.user
-        notification_count = Notification.objects.filter(
-            user=user,
-            is_read=False  # Example condition, adjust based on your notification model
-        ).count()
+        # notification_count = Notification.objects.filter(
+        #     user=user,
+        #     is_read=False  # Example condition, adjust based on your notification model
+        # ).count()
 
-        # Add to context if the count > 0
-        if notification_count > 0:
-            context['notification_count'] = notification_count
-        else:
-            context['notification_count'] = None
+        # # Add to context if the count > 0
+        # if notification_count > 0:
+        #     context['notification_count'] = notification_count
+        # else:
+        #     context['notification_count'] = None
         
         return context
 
