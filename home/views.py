@@ -13,7 +13,7 @@ def homepage(request):
     x  = Notification.objects.get(user=request.user)
     # Reset the new notifications count
     user_profile = request.user.profile
-    print(x)
+    
 
     user_profile.new_notifications_count = 0
     user_profile.save()
@@ -21,7 +21,10 @@ def homepage(request):
     # Mark notifications as read
     notifications.update(is_read=True)
 
-    return render(request, 'home/home.html', {'notifications': notifications})
+    return render(request, 'home/home.html', )
+
+
+    # return render(request, 'home/home.html', {'notifications': notifications})
 def handle_continue_quiz(request):
     form_type = request.POST.get('form_type')
     print(form_type)
