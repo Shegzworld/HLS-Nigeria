@@ -9,7 +9,7 @@ def homepage(request):
         return render(request, 'home/home.html', )
 
     # If the user is logged in, proceed with the notifications logic
-    notifications = request.user.notifications.order_by('-created_at')
+    # notifications = request.user.notifications.order_by('-created_at')
     # x  = Notification.objects.get(user=request.user)
     # Reset the new notifications count
     user_profile = request.user.profile
@@ -19,7 +19,7 @@ def homepage(request):
     user_profile.save()
 
     # Mark notifications as read
-    notifications.update(is_read=True)
+    # notifications.update(is_read=True)
 
     return render(request, 'home/home.html', )
 
