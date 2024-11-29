@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.sessions.models import Session
 from user.forms import BasicsForm, LifestyleForm, HealthConditionForm, PreferenceForm
-from user.models import Notification
+# from user.models import Notification
 def homepage(request):
     # Check if the user is not logged in
     if not request.user.is_authenticated:
@@ -10,7 +10,7 @@ def homepage(request):
 
     # If the user is logged in, proceed with the notifications logic
     notifications = request.user.notifications.order_by('-created_at')
-    x  = Notification.objects.get(user=request.user)
+    # x  = Notification.objects.get(user=request.user)
     # Reset the new notifications count
     user_profile = request.user.profile
     
