@@ -59,20 +59,28 @@ class DosageForm(models.Model):
         
 #     def _str_(self):
 #             return self.LifestyleRating
-    
+
+class LSV(models.Model):
+    name = models.CharField(max_length=255)
+
+    class Meta:
+        verbose_name_plural= 'LSVs'
+
+    def __str__(self):
+        return self.name
+
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
     category = models.CharField(max_length=255, blank=True)
     sub_categories = models.JSONField(default=list,null=True)  # A flexible array-like field for subcategories
     price = models.DecimalField(max_digits=10, decimal_places=2,null=True,blank=True)
-    # lsv = models.JSONField(default=list)
     strength = models.CharField(max_length=255,null=True)
     description = models.TextField(null=True, blank=True)
+    lsvs = models.ManyToManyField(LSV, related_name='products') 
     pictures = models.JSONField(default=dict)  # Store images paths in a JSON field
     #fortify = models.OneToOneField('Fortify', related_name='products', blank=True)
     # side_effect = models.ManyToManyField('Side_effects', related_name='products', blank=True)
-    health_benefit = models.OneToOneField('Health_Benefits', on_delete=models.CASCADE,related_name='products', blank=True,null=True)
     # fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='product', null=True)
     # author = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)

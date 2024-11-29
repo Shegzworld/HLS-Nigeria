@@ -6,12 +6,12 @@ from NT_gallery.models import Product
 
 class Notification(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='notifications')
-    message = models.TextField()
+    message = models.ForeignKey("Message", on_delete=models.CASCADE, related_name='profile',blank=True,null=True)
     created_at = models.DateTimeField(default=now)
     is_read = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"Notification for {self.user.username}: {self.message[:30]}"
+        return f"Notification for {self.user.username}: {self.message.content[:30]}"
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
@@ -28,12 +28,16 @@ class UserProfile(models.Model):
     
 class Message(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='messages')
-    # product = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='profile')
+    product = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='messages',null=True)
     content = models.TextField()
     title = models.CharField(max_length=255,null=True, blank=True)
     is_read = models.BooleanField(default=False)
     created_at =  models.DateTimeField(default=now)
     updated_at = models.DateTimeField(default=now)
+
+    def __str__(self):
+        return f"New Message  for {self.user.username}: {self.content[:30]}"
+
 
 
 class Basic(models.Model):

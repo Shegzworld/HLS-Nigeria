@@ -1,21 +1,27 @@
 from django.shortcuts import render, redirect
 from django.contrib.sessions.models import Session
 from user.forms import BasicsForm, LifestyleForm, HealthConditionForm, PreferenceForm
-
+from user.models import Notification
 def homepage(request):
-    
- #   notifications = request.user.notifications.order_by('-created_at')
+    # Check if the user is not logged in
+    if not request.user.is_authenticated:
+   
+        return render(request, 'home/home.html', )
 
+    # If the user is logged in, proceed with the notifications logic
+    notifications = request.user.notifications.order_by('-created_at')
+    x  = Notification.objects.get(user=request.user)
     # Reset the new notifications count
-   # user_profile = request.user.profile
-    #user_profile.new_notifications_count = 0
-    #user_profile.save()
+    user_profile = request.user.profile
+    print(x)
+
+    user_profile.new_notifications_count = 0
+    user_profile.save()
 
     # Mark notifications as read
-   # notifications.update(is_read=True)
-   # return render(request,'home/home.html',{'notifications': notifications})
-    return render(request,'home/home.html')
+    notifications.update(is_read=True)
 
+    return render(request, 'home/home.html', {'notifications': notifications})
 def handle_continue_quiz(request):
     form_type = request.POST.get('form_type')
     print(form_type)

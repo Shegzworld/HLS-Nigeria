@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Health_Benefits, Health_support, Fortify, Side_effects,ProductReview,ProductSubscription
+from .models import Product, Health_Benefits, Health_support, Fortify, Side_effects,ProductReview,ProductSubscription,LSV
 
 # Define admin interface for Product model
 
@@ -7,10 +7,18 @@ class HealthSupportInline(admin.TabularInline):
     model = Health_Benefits
     extra = 1 
 
+
+
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'category','price')
     inlines = [HealthSupportInline]
+    filter_horizontal = ('lsvs',)  # Enable a multi-select widget for LSVs in the admin
+
+    def get_lsvs(self, obj):
+        return ", ".join([lsv.name for lsv in obj.lsvs.all()])
+
+    get_lsvs.short_description = 'LSVs'
 
 class StoreAdminArea(admin.AdminSite):
     site_header = 'HLS Store Portal'
@@ -51,4 +59,7 @@ store_site.register(ProductSubscription)
 models = [Health_support, Fortify, Side_effects, Health_Benefits,ProductReview,ProductSubscription]
 for model in models:
     admin.site.register(model)
+@admin.register(LSV)
+class LSVAdmin(admin.ModelAdmin):
+    list_display = ('name',)
 
