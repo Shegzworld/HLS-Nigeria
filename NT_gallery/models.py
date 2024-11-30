@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.utils import timezone
+from django.utils.text import slugify
 import requests
 
 # 1. Pharmacy Grouping
@@ -59,7 +60,70 @@ class DosageForm(models.Model):
         
 #     def _str_(self):
 #             return self.LifestyleRating
+class MainCategory(models.Model):
+    name = models.CharField(max_length=100)
+    class Meta:
+        verbose_name_plural= 'Main Categories'
 
+    # def save(self, *args, **kwargs):
+    def __str__(self) -> str:
+        return self.name
+    
+
+# Category model
+
+class Category(models.Model):
+    main_category = models.ForeignKey(MainCategory, on_delete=models.CASCADE, related_name="categories")
+    name = models.CharField(max_length=100)
+    slug = models.SlugField(max_length=255, blank=True, editable=False)
+
+    class Meta:
+        verbose_name_plural = 'Categories'
+    
+    def __str__(self) -> str:
+        return self.name
+    
+    def save(self, *args, **kwargs):
+        # Generate the slug if it does not exist
+        if not self.slug:
+            # Generate the slug based on the main category name and this category's ID (which will be set after save)
+            slug = slugify(f"{self.main_category.name}-{self.name}")
+            self.slug = slug
+        
+        # Save the instance normally, which will generate an ID if it's a new instance
+        super().save(*args, **kwargs)
+
+        # Update the slug with the ID and save again if necessary
+        if not self.slug.endswith(f"-{self.id}"):
+            self.slug = f"{self.slug}-{self.id}"
+            super().save(update_fields=['slug'])
+            
+class SubCategory(models.Model):
+    # objects = None
+    name = models.CharField(max_length=255)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='subcategories')
+    slug = models.SlugField(max_length=255, blank=True, editable=False)
+
+    class Meta:
+        verbose_name_plural = 'Sub Categories'
+
+    def __str__(self):
+        return self.name
+
+    def save(self, *args, **kwargs):
+        # Generate the slug if it does not exist
+        if not self.slug:
+            # Generate the slug based on the main category name and this category's ID (which will be set after save)
+            slug = slugify(f"{self.category.name}-{self.name}")
+            self.slug = slug
+        
+        # Save the instance normally, which will generate an ID if it's a new instance
+        super().save(*args, **kwargs)
+
+        # Update the slug with the ID and save again if necessary
+        if not self.slug.endswith(f"-{self.id}"):
+            self.slug = f"{self.slug}-{self.id}"
+            super().save(update_fields=['slug'])
 class LSV(models.Model):
     name = models.CharField(max_length=255)
 
