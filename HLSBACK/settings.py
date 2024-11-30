@@ -20,12 +20,50 @@ SECRET_KEY = env('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['hlsnigeria-e0c4b5df87f5.herokuapp.com','127.0.0.1:8000']
-# ALLOWED_HOSTS = ['127.0.0.1:8000']
 
+CORS_ALLOWED_ORIGINS  = [
+    'https://hlsnigeria-e0c4b5df87f5.herokuapp.com',  # Your Heroku deployment
+    'http://127.0.0.1:8000',  # Localhost for testing on local development server
+    'https://hls.com.ng',  # Production or main domain if hosted here
+    'https://www.hls.com.ng',
+    'https://hls-vr1z.onrender.com'  # Render deployment domain
+]
 
+CORS_ALLOW_METHODS = [
+    'GET',
+    'POST',
+    'PUT',
+    'PATCH',
+    'DELETE',
+    'OPTIONS',
+]
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = [
+    'content-type',
+    'authorization',
+    'x-csrftoken',
+]
 # Application definition
+CSRF_ALLOWED_ORIGINS = [
+    "https://hls.com.ng",           # Your main domain
+    "https://www.hls.com.ng",
+    "https://hls-vr1z.onrender.com"  # Render deployment domain
+]
+
+CORS_ORIGINS_WHITELIST = [
+    "https://hls.com.ng",           # Your main domain
+    "https://www.hls.com.ng",
+    "https://hls-vr1z.onrender.com"  # Render deployment domain
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://hls.com.ng",           # Your main domain
+    "https://www.hls.com.ng",
+    "https://hls-vr1z.onrender.com"  # Render deployment domain
+]
+
+CSRF_COOKIE_SECURE = True  # Ensures cookie is only sent over HTTPS
+CSRF_COOKIE_SAMESITE = 'None'  # Allows cross-site cookies; required for CORS
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -34,7 +72,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'storages',
+    'corsheaders',
     'home',
     'user',
     'dashboard',
@@ -47,6 +87,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -81,38 +122,42 @@ WSGI_APPLICATION = 'HLSBACK.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+DEBUG = True
 
-
-if DEBUG:
-        DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR/'db.sqlite3',
-        }
-    }
-else: 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'dbuap6sb6d2e99',
-            'User': 'udrt2vnk83cb27',
-            'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
-            'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
-            'PORT': '5432'
-        }
-    }
-
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'dbuap6sb6d2e99',
-#         'User': 'udrt2vnk83cb27',
-#         'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
-#         'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
-#         'PORT': '5432'
+# if DEBUG:
+#         DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR/'db.sqlite3',
+#         }
 #     }
-# }
+# else: 
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             # 'NAME': 'dbuap6sb6d2e99',
+#             # 'USER': 'udrt2vnk83cb27',
+#             # 'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
+#             # 'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+#             # 'PORT': '5432',
+#             # 'OPTIONS': {
+#             #     'autocommit': True,
+#             #     'sslmode': 'require',
+#             # }
+#         }
+#     }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # 'NAME': 'dbuap6sb6d2e99',
+        # 'User': 'udrt2vnk83cb27',
+        # 'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
+        # 'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+        # 'PORT': '5432'
+    }
+}
 
 
 # Password validation
@@ -131,6 +176,9 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
+    # {
+    #     'NAME': 'HLSBACK.validators.CustomPasswordValidator',
+    # },
 ]
 
 
@@ -162,10 +210,10 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # AWS S3 Storage settings
 AWS_ACCESS_KEY_ID = 'AKIATFBMO53EKIXSNNUY'  # Replace with your AWS access key ID
 AWS_SECRET_ACCESS_KEY = 'vf+xxthS0G7T4l37rtvmYdzhiR4yEZQS3yXHIfsz'  # Replace with your AWS secret access key
-AWS_STORAGE_BUCKET_NAME = 'hlsbucketnigeria'  # Replace with your S3 bucket name
+AWS_STORAGE_BUCKET_NAME = 'hlsnigeriabucket'  # Replace with your S3 bucket name
 
 # Use AWS S3 for storing media files
-AWS_S3_REGION_NAME = 'us-north-1'  
+AWS_S3_REGION_NAME = 'us-east-1'  
 AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
 
 # Django-Storages settings
@@ -191,14 +239,13 @@ LOGIN_REDIRECT_URL = 'home:home'
 LOGIN_URL = 'user:login'
 
 
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'mail.hls.com.ng'  # Replace with the SMTP server for your Webmail
+EMAIL_HOST = 'smtp.gmail.com'  # SMTP server for Gmail
 EMAIL_PORT = 587  # Port for TLS
-EMAIL_USE_TLS = True  # Use TLS for encryption
-EMAIL_HOST_USER = 'admin@hls.com.ng'  # Your email address
-EMAIL_HOST_PASSWORD = 'your-email-password'  # Your email password
-DEFAULT_FROM_EMAIL = 'admin@hls.com.ng'  # This should be the same as EMAIL_
+EMAIL_USE_TLS = True  # Use TLS encryption for security
+EMAIL_HOST_USER = 'folajimiopeyemisax13@gmail.com'  # Your Gmail address
+EMAIL_HOST_PASSWORD = 'zzitfwiibuujeltz'  # Your Gmail app password (not the regular Gmail password)
+DEFAULT_FROM_EMAIL = 'folajimiopeyemisax13@gmail.com'  # Same email as EMAIL_HOST_USER
 
 # dont forget admin honeypot
 # ACCOUNT_USERNAME_BLACKLIST = ['admin', 'sakamanje']
