@@ -8,8 +8,12 @@ import json
 from .models import Product
 
 @csrf_exempt  # Disable CSRF for this endpoint, optional for testing
-@require_POST
+# @require_POST
 def create_product(request):
+    print()
+    if(request.method == "GET"):
+         render(request, 'NT_gallery/dist/index.html')
+
     try:
         # Parse the JSON data from the request
         data = json.loads(request.body)
@@ -19,6 +23,7 @@ def create_product(request):
             name=data.get('name'),
             category=data.get('category', ''),
             sub_categories=data.get('sub_categories', []),
+            lsvs=data.get('lsvs', []),
             price=data.get('price'),
             strength=data.get('strength', ''),
             description=data.get('description', ''),
@@ -33,7 +38,7 @@ def create_product(request):
         product.save()
 
         # Return a success response
-        return JsonResponse({'message': 'Product created successfully', 'product_id': product.id}, status=201)
+        return render(request, 'dashboard/NT_gallery.html', {'products': relevant_products})
     
     except Exception as e:
         # Handle any errors and return an error response
