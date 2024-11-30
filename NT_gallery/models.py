@@ -136,13 +136,13 @@ class LSV(models.Model):
 
 class Product(models.Model):
     name = models.CharField(max_length=255)
-    category = models.CharField(max_length=255, blank=True)
-    sub_categories = models.JSONField(default=list,null=True)  # A flexible array-like field for subcategories
+    category = models.CharField(max_length=255, null=True,blank=True)
+    sub_categories = models.JSONField(default=list,null=True,blank=True)  # A flexible array-like field for subcategories
     price = models.DecimalField(max_digits=10, decimal_places=2,null=True,blank=True)
-    strength = models.CharField(max_length=255,null=True)
+    strength = models.CharField(max_length=255,null=True,blank=True)
     description = models.TextField(null=True, blank=True)
-    lsvs = models.ManyToManyField(LSV, related_name='products') 
-    pictures = models.JSONField(default=dict)  # Store images paths in a JSON field
+    lsvs = models.ManyToManyField(LSV, related_name='products',null=True,blank=True) 
+    pictures = models.JSONField(default=dict,null=True,blank=True)  # Store images paths in a JSON field
     #fortify = models.OneToOneField('Fortify', related_name='products', blank=True)
     # side_effect = models.ManyToManyField('Side_effects', related_name='products', blank=True)
     # fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='product', null=True)

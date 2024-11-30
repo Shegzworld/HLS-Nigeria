@@ -21,7 +21,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 CORS_ALLOWED_ORIGINS  = [
-    # 'hlsnigeria-e0c4b5df87f5.herokuapp.com',  # Your Heroku deployment
+    'https://hlsnigeria-e0c4b5df87f5.herokuapp.com',  # Your Heroku deployment
     'http://127.0.0.1:8000',  # Localhost for testing on local development server
     'https://hls.com.ng',  # Production or main domain if hosted here
     'https://www.hls.com.ng',
@@ -71,6 +71,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
     'storages',
     'corsheaders',
     'home',
@@ -85,7 +86,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
