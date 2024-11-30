@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.sessions.models import Session
-# from user.forms import BasicsForm, LifestyleForm, HealthConditionForm, PreferenceForm
+from user.forms import BasicsForm, LifestyleForm, HealthConditionForm, PreferenceForm
 
 def homepage(request):
     return render(request,'home/home.html')
@@ -49,8 +49,8 @@ def quiz_page(request):
     
     # Handle GET requests or render the quiz page
     return render(request, 'quiz/quiz.html', {
-        # 'basics_form': BasicsForm(),
-        # 'lifestyle_form': LifestyleForm(),
-        # 'health_condition_form': HealthConditionForm(),
-        # 'preference_form': PreferenceForm() 
+        'basics_form': BasicsForm(),
+        'lifestyle_form': LifestyleForm(),
+        'health_condition_form': HealthConditionForm(),
+        'preference_form': PreferenceForm() 
     })

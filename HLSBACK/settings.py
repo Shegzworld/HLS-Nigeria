@@ -1,11 +1,23 @@
 
+# from pathlib import Path
+# import os
+# import django_heroku
+# from environ import Env
+
+# env = Env()
+# Env.read_env()
+# ENVIRONMENT = env('ENVIRONMENT', default='production')
+
+
 from pathlib import Path
 import os
 import django_heroku
 from environ import Env
 
 env = Env()
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'HLSBACK.settings')
 Env.read_env()
+
 ENVIRONMENT = env('ENVIRONMENT', default='production')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -20,9 +32,14 @@ SECRET_KEY = env('SECRET_KEY')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['hlsnigeria-e0c4b5df87f5.herokuapp.com','127.0.0.1:8000']
-# ALLOWED_HOSTS = ['127.0.0.1:8000']
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR/'db.sqlite3',
+        }
+    }
 
 
 # Application definition
@@ -83,24 +100,24 @@ WSGI_APPLICATION = 'HLSBACK.wsgi.application'
 
 
 
-if DEBUG:
-        DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR/'db.sqlite3',
-        }
-    }
-else: 
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'dbuap6sb6d2e99',
-            'User': 'udrt2vnk83cb27',
-            'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
-            'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
-            'PORT': '5432'
-        }
-    }
+# if DEBUG:
+#         DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.sqlite3',
+#             'NAME': BASE_DIR/'db.sqlite3',
+#         }
+#     }
+# else: 
+#     DATABASES = {
+#         'default': {
+#             'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#             'NAME': 'dbuap6sb6d2e99',
+#             'User': 'udrt2vnk83cb27',
+#             'PASSWORD': 'p695d0b8f20d05a6899f36c244b7262ec9fc22d8417d98e5fa61a31a70ac1f80b',
+#             'HOST': 'c67okggoj39697.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com',
+#             'PORT': '5432'
+#         }
+#     }
 
 
 # DATABASES = {
@@ -162,10 +179,10 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 # AWS S3 Storage settings
 AWS_ACCESS_KEY_ID = 'AKIATFBMO53EKIXSNNUY'  # Replace with your AWS access key ID
 AWS_SECRET_ACCESS_KEY = 'vf+xxthS0G7T4l37rtvmYdzhiR4yEZQS3yXHIfsz'  # Replace with your AWS secret access key
-AWS_STORAGE_BUCKET_NAME = 'hlsbucketnigeria'  # Replace with your S3 bucket name
+AWS_STORAGE_BUCKET_NAME = 'hlsnigeriabucket'  # Replace with your S3 bucket name
 
 # Use AWS S3 for storing media files
-AWS_S3_REGION_NAME = 'us-north-1'  
+AWS_S3_REGION_NAME = 'us-east-1'  
 AWS_S3_CUSTOM_DOMAIN = f"{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com"
 
 # Django-Storages settings

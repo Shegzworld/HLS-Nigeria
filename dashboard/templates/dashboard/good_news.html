@@ -5,6 +5,7 @@
                 <li id="Breakthroughs" class="menu-item  active">Breakthroughs</li>
                 <li id="About_you" class="menu-item">About You</li>
                 <li id="Trending" class="menu-item">9ja health</li>
+                <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, deserunt consequatur id veniam rerum voluptate quisquam laborum? Deserunt id, earum excepturi, ipsam autem, aut quisquam nam animi odio modi tempore fugit incidunt atque nulla aliquid veniam quia? Expedita porro fuga nemo itaque. Aliquid, culpa? Iure consequuntur adipisci culpa explicabo laudantium.</div>
             </ul>
         </div>
         <div class="article_classes">
@@ -22,6 +23,27 @@
                         </div>
                     </div>
                 {% endfor %}
+                <div class="paginator">
+                    {% if blog_list.has_previous %}
+                        <a href="?page = 1">First</a>
+                        <a href="?page={{ blog_list.previous_page_number }}">Previous</a>
+                    {% else %}
+                        <span>pages: </span>
+                    {% endif %}
+                
+                    {% for num in blog_list.paginator.page_range %}
+                        {% if blog_list.number == num %}
+                            <strong>{{ num }}</strong>
+                        {% elif num > blog_list.number|add:'-2' and num < blog_list.number|add:'2' %} 
+                            <a href="?page = {{ num }}">{{ num }}</a>
+                        {% endif %}
+                    {% endfor %}
+                
+                    {% if blog_list.has_next %}
+                        <a href="?page={{ blog_list.next_page_number }}">Next</a>
+                        <a href="?page = {{ blog_list.paginator.num_pages}}">last</a>
+                    {% endif %}
+                </div>
             </div>
             <div id="about_you" class="article_class_container">
                 <div class="msg-item">

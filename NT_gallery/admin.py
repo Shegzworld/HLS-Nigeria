@@ -1,13 +1,18 @@
 from django.contrib import admin
-from .models import Products, Health_Benefits,Category,SubCategory,MainCategory,DetoxOption,HealthSupportOption,FortifyOption,ProductReview
+from .models import Product, Health_Benefits,Category,SubCategory,MainCategory,DetoxOption,HealthSupportOption,FortifyOption,ProductReview
 
 # Define admin interface for Product model
+
+class StoreAdminArea(admin.AdminSite):
+    site_header = 'HLS Store Portal'
+
+store_site = StoreAdminArea(name = 'Store portal')
 
 class HealthSupportInline(admin.TabularInline):
     model = Health_Benefits
     extra = 1 
 
-@admin.register(Products)
+@admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
     list_display = ('name', 'get_health_conditions')
     inlines = [HealthSupportInline]

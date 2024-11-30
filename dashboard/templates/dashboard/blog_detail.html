@@ -20,13 +20,13 @@
                 </div>
             </div>
             <div class="post_title">
-                <h4 class="blog_tag">Diabetes, tiredness</h4>
+                <h4 class="blog_tag">{{post.category}}</h4>
                 <h1 class="post_title">{{post.title}}</h1>
-                <h3 class="blog_key_point">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officia aut pariatur
+                <h3 class="blog_key_point">{{post.highlight}}
                     debitis ipsa est.</h3>
             </div>
             <div class="post_image-1">
-                <img src="/static/home_images/blog_1 (1).jpeg" alt="Image 1">
+                <img src="{{post.image_1.url}}" alt="Image 1">
             </div>
         </div>
         
@@ -54,16 +54,13 @@
             
         </div>
         <p class="published_date"></p>
-        <h3 class="author-name">By Ayomide Ogunlusi</h3>
+        <h3 class="author-name">{{post.author.name}}</h3>
 
         <div class="blog_body">
-            <p class="post-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi enim voluptas porro
-                necessitatibus perspiciatis iste odit voluptatem, nisi aspernatur a ratione esse? Nisi corporis tempora, nemo ex
-                eaque nostrum perspiciatis?</p>
-            <img src="/static/home_images/blog_2.jpeg" alt="Image 2" class="post-image">
+            <p class="post-content">{{post.content_1}}</p>
+            <img src="{{post.image_2.url}}" alt="Image 2" class="post-image">
             <h5>image comment</h5>
-            <p class="post-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptates aliquam, est vero quasi
-                molestias eius aspernatur laudantium eos, rerum mollitia quae soluta sequi dolores cum dolorum obcaecati nam quas!
+            <p class="post-content">{{post.content_2}}
             </p>
             <div class="action-buttons">
                 <button class="like-button"><i class="fas fa-heart"></i></button>
@@ -72,11 +69,6 @@
             </div>
         </div>
 
-        
-        <div class="author-info">
-            <img src="{{post.image.url}}" alt="Author Profile Picture" class="author-profile-picture">
-            <p class="author-bio">Ayomide Ogunlusi is a practising pharmacologist currently working in bita betterpahrmaceuticals in ireland great britain she graduated from lagos state university and has a passion to bring medical breakthroughs to all hopefuls in healthcare and medicine</p>
-        </div>
     </div>
     <!-- <script src="{% static 'js/blog_detail.js' %}"></script> -->
 </body>
