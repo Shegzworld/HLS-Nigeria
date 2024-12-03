@@ -19,14 +19,19 @@ class Dashboard(LoginRequiredMixin, TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        user_profile = self.get_user_profile()
-        products = self.filter_products(user_profile)
 
-        print(products)
+        # user_profile = self.get_user_profile()
+        # products = self.filter_products(user_profile)
+
+        # print(products)
         # products_by_attribute = self.group_products(products)
         # packs = self.assign_products_to_packs(products_by_attribute)
         # context['specifics'] = products_by_attribute
         # context['nutrient_gallery'] = packs
+
+        products = Product.objects.all()
+        context['dr_picks'] = products
+
         
         blog_list = Blog.objects.all().order_by('-created_at') #Blog.objects.all()
         blog_paginator = Paginator(blog_list, 5)
@@ -42,7 +47,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         context['podcast_list'] = podcast_page
 
          # Notification count for the logged-in user
-        user = self.request.user
+        # user = self.request.user
         # notification_count = Notification.objects.filter(
         #     user=user,
         #     is_read=False  # Example condition, adjust based on your notification model
@@ -60,7 +65,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         user = self.request.user
         user_profile, created = UserProfile.objects.get_or_create(user=user)
         if created:
-            messages.info(self.request, "Your user profile was automatically created.")
+            messages.info(self.request, "Your user profile was automatically created. complete quiz to get your personal nutrient type gallery")
         return user_profile
 
     def filter_products(self, user_profile):
@@ -79,7 +84,6 @@ class Dashboard(LoginRequiredMixin, TemplateView):
          #).select_related('health_benefit').prefetch_related('health_benefit__fortify', 'health_benefit__health_support')
         
         # return products_with_health_benefits
-
 
     def group_products(self, products):
         products_by_attribute = {}

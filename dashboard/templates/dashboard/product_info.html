@@ -61,6 +61,7 @@
 </html> -->
 
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -72,7 +73,7 @@
 <body>
     <div class="flex-container" id="product-detail-page">
         <div class="image-section">
-            <img src="product-image.jpg" alt="Product Image">
+            <img src="{{ product.pictures.main_image|safe }}" alt="Product Image">
             <div class="thumbnails">
                 <img src="thumbnail1.jpg" alt="Thumbnail 1">
                 <img src="thumbnail2.jpg" alt="Thumbnail 2">
@@ -90,11 +91,11 @@
             </div>
             <div class="tab-content">
                 <div class="common-details active" id="common-details-content">
-                    <h2>Product Name</h2>
-                    <p>Price: $19.99</p>
-                    <p>Strength: 100mg</p>
-                    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Ratings: 4.5/5</p>
+                    <h2>{{product.name}}</h2>
+                    <p>Price: {{product.price}}</p>
+                    <p>Strength: {{product.strength}}</p>
+                    <p>Description: {{product.description}}</p>
+                    <p>Ratings: 4.5/5{{product.rating}}</p>
                 </div>
                 <div class="benefits" id="benefits-content">
                     <div class="benefit-container" id="fortifies-benefit">

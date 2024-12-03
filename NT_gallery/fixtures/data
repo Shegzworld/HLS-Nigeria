@@ -1,0 +1,85 @@
+[
+    {
+    "name": "Pregnacare Original",
+    "category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["25"],
+    "brands": ["Vitabiotics"],
+    "gender": ["Women"],
+    "Lifestyle": ["Lorem"],
+    "Dosage Forms": ["Ipsum"],
+    "Lifestyle Rating": ["Fola"],
+    "pharmacy grouping": ["Multivitamins"]
+    },
+    "price": "15000",
+    "strength": "",
+    "description": "For pregnant woman",
+    "lsvs": [
+    {
+    "name": ""
+    }
+    ],
+    "pictures": {
+    "main_image": "/static/home_images/benfek item1.jpg",
+    "side_image_1": "",
+    "side_image_2": "",
+    "side_image_3": ""
+    }
+    },
+
+    {
+    "name": "Wellman Sport",
+    "category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["40"],
+    "brands": ["Vitabiotics"],
+    "gender": ["Male"],
+    "Lifestyle": ["Fela"],
+    "Dosage Forms": ["Day"],
+    "Lifestyle Rating": ["High"],
+    "pharmacy grouping": ["Multivitamins"]
+    },
+    "price": "15000",
+    "strength": "2000mg",
+    "description": "To keep men active and sportish",
+    "lsvs": [
+    {
+    "name": ""
+    }
+    ],
+    "pictures": {
+    "main_image": "/static/home_images/benfek item2.jpg",
+    "side_image_1": "",
+    "side_image_2": "",
+    "side_image_3": ""
+    }
+    },
+
+    {
+    "name": "Wellman Max",
+    "category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["30"],
+    "brands": ["Vitabiotics"],
+    "gender": ["Male"],
+    "Lifestyle": ["Aniku"],
+    "Dosage Forms": ["Night and Day"],
+    "Lifestyle Rating": ["Mid"],
+    "pharmacy grouping": ["Multivitamins"]
+    },
+    "price": "2000",
+    "strength": "67mg",
+    "description": "Lorem ipsum raman numeeor neremica fascai.",
+    "lsvs": [
+    {
+    "name": ""
+    }
+    ],
+    "pictures": {
+    "main_image": "/static/home_images/benfek item3.jpg",
+    "side_image_1": "",
+    "side_image_2": "",
+    "side_image_3": ""
+    }
+    }
+]

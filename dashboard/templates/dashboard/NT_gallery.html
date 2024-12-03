@@ -52,45 +52,38 @@
 				<img src="{{product.image.url}}" alt="Nutrient Picture" />
 				<div class="overlay"></div>
 				<i class="fas fa-shopping-cart"></i>
-				<a
-					href="{% url 'dashboard:product_info' product.id %}"
-					class="view_info_btn"
-					>Info</a
-				>
+				<a href="{% url 'dashboard:product_info' product.id %}" class="view_info_btn">Info
+				</a>
 				<div class="info_menu">
 					<div class="tooltip">
 						<i class="fas fa-info-circle"></i>
 						<span class="tooltip-text"
 							>Product Name: {{product.name}}<br />Price:
-							{{product.price}}</span
-						>
+							{{product.price}}
+						</span>
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-headphones"></i>
 						<span class="tooltip-text"
-							>Podcast mentions: {{product.podcast.count}}</span
-						>
+							>Podcast mentions: {{product.podcast.count}}
+						</span>
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-book"></i>
 						<span class="tooltip-text"
-							>Research Journals: {{product.journals.count}}</span
-						>
+							>Research Journals: {{product.journals.count}}
+						</span>
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-comment-alt"></i>
-						<span class="tooltip-text"
-							>User Reviews: {{product.review.count}}</span
-						>
+						<span class="tooltip-text">
+							User Reviews: {{product.review.count}}
+						</span>	
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-angle-double-right"></i>
 						{% if product.id %} <br />
-						<span
-							class="tooltip-text"
-							onclick="location.href='{% url 'dashboard:product_info' product.id %}'"
-							>More Details</span
-						>
+						<a class="tooltip-text" href="{% url 'dashboard:product_info' product.id %}">More Details</a>
 						{% else %}<br />
 						<span class="tooltip-text">Details Not Available</span>
 						{% endif %}<br />
@@ -99,17 +92,11 @@
 			</div>
 			{% endfor %}<br />
 			<div class="my_specifics_picture">
-				<img
-					src="/static/home_images/supplement 2.jpg"
-					alt="Nutrient Picture"
-				/>
+				<img src="/static/home_images/supplement 2.jpg"
+					alt="Nutrient Picture"/>
 				<div class="overlay"></div>
 				<i class="fas fa-shopping-cart"></i>
-				<button
-					class="view_info_btn"
-					
-					info
-				</button>
+				<button class="view_info_btn"></button>
 				<div class="info_menu">
 					<div class="tooltip">
 						<i class="fas fa-info-circle"></i>
@@ -134,7 +121,49 @@
 				</div>
 			</div>
 		</div>
-		<div id="dr_pick_container" class="nutrient_gallery_container"></div>
+		{% for product in dr_picks %}
+		<div id="dr_pick_container" class="nutrient_gallery_container">
+			<div class="my_specifics_picture">
+				<img src="{{ product.pictures.main_image|safe }}" alt="Nutrient Picture" />
+				<div class="overlay"></div>
+				<i class="fas fa-shopping-cart"></i>
+				<a href="{% url 'dashboard:product_info' product.id %}" class="view_info_btn">Info</a>
+				<button class="view_info_btn"></button>
+				<div class="info_menu">
+					<div class="tooltip">
+						<i class="fas fa-info-circle"></i>
+						<span class="tooltip-text">{{product.name}}<br />Price:
+							{{product.price}}
+						</span>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-headphones"></i>
+						<span class="tooltip-text">Podcast: {{product.podcast.count}}
+						</span>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-book"></i>
+						<span class="tooltip-text">Journals: {{product.journals.count}}
+						</span>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-comment-alt"></i>
+						<span class="tooltip-text">
+							User Reviews: {{product.review.count}}
+						</span>
+					</div>
+					<div class="tooltip">
+						<i class="fas fa-angle-double-right"></i>
+						<span>
+							<a href="{% url 'dashboard:product_info' product.id %}" class="view_info_btn">Info
+							</a>
+						</span>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		{% endfor %}
 	</div>
 </div>
 <div class="selected_nutrient_screen">
