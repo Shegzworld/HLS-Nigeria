@@ -14,6 +14,10 @@ const overlay = document.querySelector('.overlay');
 const closeClinicalStudyBtn = document.getElementById('close-clinical-study-btn');
 
 
+// back to gallery from product detail
+
+
+
 // Add event listeners
 commonDetailsTab.addEventListener('click', () => {
     commonDetailsContent.classList.add('active');
@@ -121,3 +125,6 @@ benefitSelect.addEventListener('change', () => {
 });
 });
 });
+function goBack() {
+        window.history.back();
+    }

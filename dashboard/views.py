@@ -32,6 +32,14 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         products = Product.objects.all()
         context['dr_picks'] = products
 
+        products = Product.objects.filter(
+        Q(sub_categories__gender_icontains="Love") |  
+        Q(sub_categories__age__icontains="25")         
+    )
+
+        print(products)
+
+
         
         blog_list = Blog.objects.all().order_by('-created_at') #Blog.objects.all()
         blog_paginator = Paginator(blog_list, 5)
