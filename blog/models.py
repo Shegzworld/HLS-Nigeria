@@ -9,7 +9,7 @@ from django.db import models
 # Create your models here.
 class Author(models.Model):
     name = models.CharField(max_length=255)
-    author_img = models.ImageField(upload_to='author_images/', null = True)
+    author_img = models.ImageField(upload_to='author_images/', null = True, blank = True, default = 'default_image.jpg')
     bio = models.TextField()
 
     def __str__(self):
@@ -26,9 +26,9 @@ class Blog(models.Model):
     title = models.CharField(max_length=255) 
     category = models.ManyToManyField(Category)
     highlight = models.TextField(null=True, blank=True)
-    image_1 = models.ImageField(upload_to='blog_images/',null=True, blank=True)
+    image_1 = models.ImageField(upload_to='blog_images/',null=True, blank = True, default = 'default_image.jpg')
     content_1 = models.TextField(null=True, blank=True)
-    image_2 = models.ImageField(upload_to='blog_images/',null=True, blank=True)
+    image_2 = models.ImageField(upload_to='blog_images/',null=True, blank = True, default = 'default_image.jpg')
     content_2 = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
