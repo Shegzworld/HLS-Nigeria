@@ -20,7 +20,7 @@
                 </div>
             </div>
             <div class="post_title">
-                <h4 class="blog_tag">{{post.category}}</h4>
+                <h4 class="blog_tag">{{ post.category.all|join:", "|linebreaks }}</h4>
                 <h1 class="post_title">{{post.title}}</h1>
                 <h3 class="blog_key_point">{{post.highlight}}
                     debitis ipsa est.</h3>
@@ -62,17 +62,19 @@
             <h5>image comment</h5>
             <p class="post-content">{{post.content_2}}
             </p>
-            <div class="action-buttons">
-                <button class="like-button"><i class="fas fa-heart"></i></button>
-                <button class="comment-button"><i class="fas fa-comment"></i></button>
-                <button class="share-button"><i class="fas fa-share"></i></button>
-            </div>
         </div>
-
-        
         <div class="author-info">
-            <img src="{{post.author.image.url}}" alt="Author Profile Picture" class="author-profile-picture">
-            <p class="{{post.author.bio}}">Ayomide Ogunlusi is a practising pharmacologist currently working in bita betterpahrmaceuticals in ireland great britain she graduated from lagos state university and has a passion to bring medical breakthroughs to all hopefuls in healthcare and medicine</p>
+            <div class="author_pic">
+                <img src="{{post.author.author_img.url}}" alt="Author Profile Picture" class="author-profile-picture">
+            </div>
+            <div class="author-detail">
+                <p class="author_bio">{{post.author.bio}}</p>
+                <div class="action-buttons">
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-comment"></i>
+                    <i class="fas fa-share"></i>
+                </div>
+            </div>
         </div>
     </div>
     <!-- <script src="{% static 'js/blog_detail.js' %}"></script> -->

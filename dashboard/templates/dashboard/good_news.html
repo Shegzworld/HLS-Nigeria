@@ -14,7 +14,7 @@
 			<div class="article-card">
 				<div class="article_image">
 					<!-- posts image -->
-					<img src="{{ post.image.url }}" alt="Article Image" />
+					<img src="{{ post.image_1.url }}" alt="Article Image" />
 				</div>
 				<div class="article-info">
 					<h3>{{ post.title }}</h3>
@@ -32,21 +32,20 @@
 			{% endfor %}
 			<div class="paginator">
 				{% if blog_list.has_previous %}
-				<a href="?page=1">First</a>
-				<a href="?page={{ blog_list.previous_page_number }}">Previous</a>
-				{% else %}
-				<span>pages: </span>
+					<a href="?page=1">First</a>
+					<a href="?page={{ blog_list.previous_page_number }}">Previous</a>
 				{% endif %} <br />
-				{% for num in blog_list.paginator.page_range %}<br />
-				{% if blog_list.number == num %}<br />
-				<strong>{{ num }}</strong>
-				{% elif num > blog_list.number|add:'-2' and num <
-				blog_list.number|add:'2' %}
-				<a href="?page={{ num }}">{{ num }}</a>> {% endif %}<br />
-				{% endfor %}<br />
+					{% for num in blog_list.paginator.page_range %}<br />
+						{% if blog_list.number == num %}<br />
+							<strong>pages: {{ num }} of {{ blog_list.paginator.num_pages }}</strong>
+						{% elif num > blog_list.number|add:'-2' and num < blog_list.number|add:'2'%}
+							<a href="?page={{ num }}">{{ num }}</a> 
+						{% endif %}<br />
+					{% endfor %}<br />
+				
 				{% if blog_list.has_next %}<br />
-				<a href="?page={{ blog_list.next_page_number }}">Next</a>
-				<a href="?page={{ blog_list.paginator.num_pages }}">Last</a>
+					<a href="?page={{ blog_list.next_page_number }}">Next</a>
+					<a href="?page={{ blog_list.paginator.num_pages }}">Last</a>
 				{% endif %}
 			</div>
 		</div>
