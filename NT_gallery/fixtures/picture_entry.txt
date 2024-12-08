@@ -1,0 +1,86 @@
+Fertilboost Men-4
+Pregnacare Original-5
+Pregnacare Max-6
+Pregnacare Plus-7
+Wellman Plus-8
+Wellman Sport-9
+Wellman Max-10
+*Wellwoman Skin-11
+Wellwoman Plus-12
+Wellwoman Sport-13
+Magnesium-14
+*Osteocare-15
+Nat B-16
+Visionace Max-17
+Cellgevity-18
+Neurozan-19
+Pregnacare Conception for Her-20
+Wellman conception-21
+Pregnacare Breastfeeding-22
+Wellman-23
+Wellman 50+-24
+Wellman 70+-25
+Wellwoman-26
+Wellwoman 50+-27
+Wellwoman 70+-28
+
+
+def remove_duplicate_products():
+    products = Product.objects.all()
+    unique_products = []
+    deleted_products = []
+    
+    for product in products:
+        if product.name not in unique_products:
+            unique_products.append(product.name)
+        else:
+            print(f"Deleting duplicate product: {product.name}")
+            deleted_products.append(product.name)
+            product.delete()
+    
+    print("Deleted products:")
+    for product in deleted_products:
+        print(product)
+
+remove_duplicate_products()
+
+(Renaming a Product)
+To rename a product, you can retrieve the product instance and update its name field:
+
+product = Product.objects.get(id=product_id)
+product.name = new_name
+print(product.name)
+product.save()
+
+
+
+old_picture_name = product.pictures['main_image']
+new_picture_name = old_picture_name.replace(old_picture_name.split('/')[-1], product.name + '.jpg')
+product.pictures['main_image'] = new_picture_name
+product.save()
+
+import os
+
+folder_path = 'C:/Users/HLS Nigeria/Downloads/product_pics'
+file_list = os.listdir(folder_path)
+
+for file_name in file_list:
+    file_path = os.path.join(folder_path, file_name)
+    product_id = file_name.split('.')[0]
+    # Check if file name is already the same as the product name
+    if file_name == f"{Product.objects.get(id=int(product_id)).name}.{file_name.split('.')[-1]}":
+        print(f"Product already renamed for file: {file_name}")
+        continue
+    # Check if product_id is a digit
+    if not product_id.isdigit():
+        print(f"Match or product not found for previous file name: {file_name}")
+        continue
+    try:
+        product = Product.objects.get(id=int(product_id))
+        new_file_name = f"{product.name}.{file_name.split('.')[-1]}"
+        print(f"Previous file name: {file_name}")
+        print(f"New file name: {new_file_name}")
+        print("------------------------")
+        os.rename(file_path, os.path.join(folder_path, new_file_name))
+    except Exception as e:
+        print(f"Error renaming file {file_name}: {str(e)}")

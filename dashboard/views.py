@@ -17,6 +17,12 @@ from user.models import Notification,HealthCondition,Lifestyle,Basic
 class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard/dashboard.html'
 
+    # user_age = 'Adult'
+    # user_gender = 'female'
+    # products = Product.objects.filter(
+    # Q(age=user_age) & Q(gender=user_gender)
+    # )
+    
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
@@ -29,13 +35,14 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # context['specifics'] = products_by_attribute
         # context['nutrient_gallery'] = packs
 
+       
         products = Product.objects.all()
         context['dr_picks'] = products
 
-        products = Product.objects.filter(
-        Q(sub_categories__gender_icontains="Love") |  
-        Q(sub_categories__age__icontains="25")         
-    )
+    #     products = Product.objects.filter(
+    #     Q(sub_categories__gender_icontains="female") |  
+    #     Q(sub_categories__age__icontains="teen")         
+    # )
 
         print(products)
 

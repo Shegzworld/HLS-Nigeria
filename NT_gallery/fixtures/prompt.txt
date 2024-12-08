@@ -1,0 +1,122 @@
+import re
+import json
+from decimal import Decimal
+from NT_gallery.models import Product
+from NT_gallery.models import LSV
+
+
+age_categories = {
+    'infant': {'male': ['Cryptorchidism', 'Hypospadias'], 
+                'female': ['Congenital heart defects', 'Respiratory distress syndrome']},
+    'child': {'male': ['ADHD', 'Autism'], 
+               'female': ['Juvenile idiopathic arthritis', 'Pediatric asthma']},
+    'teen': {'male': ['Acne', 'Sports-related injuries'], 
+              'female': ['Menstrual disorders', 'Eating disorders']},
+    'young_adult': {'male': ['Hypertension', 'Testicular cancer'], 
+                       'female': ['Polycystic ovary syndrome', 'Endometriosis']},
+    'adult': {'male': ['Prostate cancer', 'Cardiovascular disease'], 
+               'female': ['Breast cancer', 'Osteoporosis']},
+    'menopausal': {'female': ['Hot flashes', 'Vaginal dryness']},
+    'aged': {'male': ['Prostate enlargement', 'Age-related macular degeneration'], 
+              'female': ['Dementia', 'Urinary incontinence']},
+    'male (50-60)': {'male': ['Benign prostatic hyperplasia', 'Age-related erectile dysfunction',
+                               'Prostate fibrosis', 'Testicular atrophy']}
+}
+
+
+# Load products JSON data
+with open('NT_gallery/fixtures/data.json') as f:
+    products_data = json.load(f)
+
+for product in products_data:
+    print(f"{product['name']}-{clean_price(product['price'])}")     
+
+
+dbproducts = Product.objects.all()
+for dbproduct in dbproducts:
+    print(f"{dbproduct.name}-{clean_price(dbproduct.price)}")
+
+
+for dbproduct in dbproducts:
+    print(f"{dbproduct.name}-{dbproduct.id}")
+
+for product in products_data:
+    dbproduct = Product.objects.filter(name=product['name']).first()
+    if dbproduct:
+        cleaned_price = clean_price(product['price'])
+        if cleaned_price is not None:
+            dbproduct.price = cleaned_price
+            dbproduct.save()
+            print(f"Updated price for {dbproduct.name} to {dbproduct.price}")
+        else:
+            print(f"No price found for {product['name']}")
+    else:
+        print(f"Product '{product['name']}' not found in the database.")
+
+def clean_price(price):
+    # Check if the price is a string
+    if isinstance(price, str):
+        # Remove the Naira sign
+        price = price.replace('â‚¦', '').replace('₦', '')
+        
+        # Remove any commas
+        price = price.replace(',', '')
+        
+        # Check if the price is empty
+        if price.strip() == '':
+            return None
+        
+        # Check if the price is a range
+        if '-' in price:
+            # Split the price range into min and max prices
+            prices = price.split('-')
+            min_price = Decimal(prices[0].strip())
+            max_price = Decimal(prices[1].strip())
+            
+            # Calculate the average price
+            avg_price = (min_price + max_price) / 2
+            return avg_price
+        else:
+            # Return the price as a Decimal
+            return Decimal(price)
+    else:
+        # Return the price as is (already a Decimal)
+        return price
+
+
+# Loop through each product
+for product in products_data:
+    age = 'adult'  
+    gender = product['sub_categories']['gender']
+    flag_condition_objs = []
+    if 'male' in gender:
+        flag_condition_objs.extend(age_categories[age]['male'])
+    if 'female' in gender:
+        flag_condition_objs.extend(age_categories[age]['female'])
+    if 'pictures' in product and 'main_image' in product['pictures']:
+        old_path = product['pictures']['main_image']
+        new_path = old_path.replace('/blog_images/', 'product_image/')
+        product['pictures']['main_image'] = new_path
+    product['sub_categories']['age'] = [age]
+    price_str = product['price']
+    product['price'] = clean_price(price_str)
+    lsv_objs = []
+    for lsv in product['lsvs']:
+        lsv_obj, created = LSV.objects.get_or_create(name=lsv['name'])
+        lsv_objs.append(lsv_obj)
+    product_obj, created = Product.objects.get_or_create(
+        name=product['name'],
+        category=product['category'],
+        sub_categories=product['sub_categories'],
+        price=product['price'],
+        strength=product['strength'],
+        description=product['description'],
+        pictures=product['pictures']
+    )
+    flag_condition_instances = []
+    for condition in flag_condition_objs:
+        flag_condition_instance, created = Flag_condition.objects.get_or_create(name=condition)
+        flag_condition_instances.append(flag_condition_instance)
+    product_obj.flag_condition.set(flag_condition_instances)
+    product_obj.lsvs.set(lsv_objs)
+    product_obj.save()
