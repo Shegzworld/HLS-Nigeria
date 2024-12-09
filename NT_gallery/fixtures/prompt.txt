@@ -3,6 +3,7 @@ import json
 from decimal import Decimal
 from NT_gallery.models import Product
 from NT_gallery.models import LSV
+from NT_gallery.models import Flag_condition
 
 
 age_categories = {
@@ -27,31 +28,6 @@ age_categories = {
 # Load products JSON data
 with open('NT_gallery/fixtures/data.json') as f:
     products_data = json.load(f)
-
-for product in products_data:
-    print(f"{product['name']}-{clean_price(product['price'])}")     
-
-
-dbproducts = Product.objects.all()
-for dbproduct in dbproducts:
-    print(f"{dbproduct.name}-{clean_price(dbproduct.price)}")
-
-
-for dbproduct in dbproducts:
-    print(f"{dbproduct.name}-{dbproduct.id}")
-
-for product in products_data:
-    dbproduct = Product.objects.filter(name=product['name']).first()
-    if dbproduct:
-        cleaned_price = clean_price(product['price'])
-        if cleaned_price is not None:
-            dbproduct.price = cleaned_price
-            dbproduct.save()
-            print(f"Updated price for {dbproduct.name} to {dbproduct.price}")
-        else:
-            print(f"No price found for {product['name']}")
-    else:
-        print(f"Product '{product['name']}' not found in the database.")
 
 def clean_price(price):
     # Check if the price is a string
@@ -82,6 +58,31 @@ def clean_price(price):
     else:
         # Return the price as is (already a Decimal)
         return price
+
+for product in products_data:
+    print(f"{product['name']}-{clean_price(product['price'])}")     
+
+
+dbproducts = Product.objects.all()
+for dbproduct in dbproducts:
+    print(f"{dbproduct.name}-{clean_price(dbproduct.price)}")
+
+
+for dbproduct in dbproducts:
+    print(f"{dbproduct.name}-{dbproduct.id}")
+
+for product in products_data:
+    dbproduct = Product.objects.filter(name=product['name']).first()
+    if dbproduct:
+        cleaned_price = clean_price(product['price'])
+        if cleaned_price is not None:
+            dbproduct.price = cleaned_price
+            dbproduct.save()
+            print(f"Updated price for {dbproduct.name} to {dbproduct.price}")
+        else:
+            print(f"No price found for {product['name']}")
+    else:
+        print(f"Product '{product['name']}' not found in the database.")
 
 
 # Loop through each product

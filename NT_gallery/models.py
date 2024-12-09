@@ -155,11 +155,6 @@ class Product(models.Model):
     lsvs = models.ManyToManyField(LSV, related_name='products',blank=True) 
     pictures = models.JSONField(default=dict,null=True,blank=True)  # Store images paths in a JSON field
     flag_condition = models.ManyToManyField(Flag_condition, related_name='products',blank=True) 
-    
-    #fortify = models.OneToOneField('Fortify', related_name='products', blank=True)
-    # side_effect = models.ManyToManyField('Side_effects', related_name='products', blank=True)
-    # fortify = models.OneToOneField(FortifyOption, on_delete=models.CASCADE, related_name='product', null=True)
-    # author = models.ForeignKey(User, on_delete=models.CASCADE,null = True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True,null=True)
 

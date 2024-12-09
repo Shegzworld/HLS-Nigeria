@@ -6,6 +6,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.views.decorators.http import require_POST
 import json
 from .models import Product
+from .models import LSV, Flag_condition
 
 @csrf_exempt  # Disable CSRF for this endpoint, optional for testing
 # @require_POST
@@ -38,7 +39,7 @@ def create_product(request):
         product.save()
 
         # Return a success response
-        return render(request, 'dashboard/NT_gallery.html', {'products': relevant_products})
+        # return render(request, 'dashboard/NT_gallery.html', {'products': relevant_products})
     
     except Exception as e:
         # Handle any errors and return an error response
