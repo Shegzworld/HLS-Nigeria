@@ -27,13 +27,13 @@ class UserProfile(models.Model):
         return f"{self.user.username}"
     
  class Message(models.Model):
-     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='messages')
-     product = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='messages',null=True)
-     content = models.TextField()
-     title = models.CharField(max_length=255,null=True, blank=True)
-     is_read = models.BooleanField(default=False)
-     created_at =  models.DateTimeField(default=now)
-     updated_at = models.DateTimeField(default=now)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='messages')
+    product = models.OneToOneField(Product, on_delete=models.CASCADE, related_name='messages',null=True)
+    content = models.TextField()
+    title = models.CharField(max_length=255,null=True, blank=True)
+    is_read = models.BooleanField(default=False)
+    created_at =  models.DateTimeField(default=now)
+    updated_at = models.DateTimeField(default=now)
 
     def __str__(self):
         return f"New Message  for {self.user.username}: {self.content[:30]}"
