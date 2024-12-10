@@ -12,7 +12,8 @@ from django.core.paginator import Paginator
 from django.contrib.auth.models import User
 from NT_gallery.models import Product
 from django.contrib import messages
-from user.models import Notification,HealthCondition,Lifestyle,Basic
+from user.models import HealthCondition,Lifestyle,Basic
+# from user.models import Notification
 
 class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard/dashboard.html'
