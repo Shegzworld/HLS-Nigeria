@@ -9,14 +9,9 @@ class Notification(models.Model):
     message = models.ForeignKey("Message", on_delete=models.CASCADE, related_name='profile',blank=True,null=True)
     created_at = models.DateTimeField(default=now)
     is_read = models.BooleanField(default=False)
- class Notification(models.Model):
-     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='notifications')
-     message = models.ForeignKey("Message", on_delete=models.CASCADE, related_name='profile',blank=True,null=True)
-     created_at = models.DateTimeField(default=now)
-     is_read = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"Notification for {self.user.username}: {self.message.content[:30]}"
+        return f"Notification for {self.user.username}: {self.message.content[:30]}"    
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
@@ -40,8 +35,8 @@ class UserProfile(models.Model):
      created_at =  models.DateTimeField(default=now)
      updated_at = models.DateTimeField(default=now)
 
-#     def __str__(self):
-#         return f"New Message  for {self.user.username}: {self.content[:30]}"
+    def __str__(self):
+        return f"New Message  for {self.user.username}: {self.content[:30]}"
 
 
 
