@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('NT_gallery', '0005_alter_flag_condition_options'),
-        ('user', '0002_remove_notification_message_remove_notification_user_and_more'),
+        ('user', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
     ]
 
