@@ -37,7 +37,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # context['nutrient_gallery'] = packs
 
        
-        specific_product = Product.objects.get(id=70)  # replace 123 with the desired ID
+        specific_products = Product.objects.filter(name='Tothema')
 
         products_starting_with_w = Product.objects.filter(name__istartswith='w')[:2]
         
@@ -48,7 +48,6 @@ class Dashboard(LoginRequiredMixin, TemplateView):
             #     Q(sub_categories__age__icontains="teen")         
             # )
         
-                print(products)
 
 
         
