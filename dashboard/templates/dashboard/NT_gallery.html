@@ -126,16 +126,16 @@
 		<div id="dr_pick_container" class="nutrient_gallery_container">
 			{% if dr_picks %}
 			<div class="my_specifics_picture">
-				<img src= "{{product.pictures.main_image|safe}}" alt="Nutrient Picture" />
+				<img src= "{{dr_picks.pictures.main_image|safe}}" alt="Nutrient Picture" />
 				<div class="overlay"></div>
 				<i class="fas fa-shopping-cart"></i>
-				<a href="{% url 'dashboard:product_info' product.id %}" class="view_info_btn">Info</a>
+				<a href="{% url 'dashboard:product_info' dr_picks.id %}" class="view_info_btn">Info</a>
 				<button class="view_info_btn"></button>
 				<div class="info_menu">
 					<div class="tooltip">
 						<i class="fas fa-info-circle"></i>
-						<span class="tooltip-text">{{product.name}}<br />Price:
-							{{product.price}}
+						<span class="tooltip-text">{{dr_picks.name}}<br />Price:
+							{{dr_picks.price}}
 						</span>
 					</div>
 					<div class="tooltip">
@@ -145,19 +145,19 @@
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-book"></i>
-						<span class="tooltip-text">Journals: {{product.journals.count}}
+						<span class="tooltip-text">Journals: {{dr_picks.journals.count}}
 						</span>
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-comment-alt"></i>
 						<span class="tooltip-text">
-							User Reviews: {{product.review.count}}
+							User Reviews: {{dr_picks.review.count}}
 						</span>
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-angle-double-right"></i>
 						<span>
-							<a href="{% url 'dashboard:product_info' product.id %}" class="view_info_btn">Info
+							<a href="{% url 'dashboard:product_info' dr_picks.id %}" class="view_info_btn">Info
 							</a>
 						</span>
 						
