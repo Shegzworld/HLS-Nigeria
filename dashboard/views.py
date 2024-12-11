@@ -37,7 +37,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # context['nutrient_gallery'] = packs
 
        
-        products = Product.objects.all()
+        products = Product.objects.get(id=70)
         context['dr_picks'] = products
 
     #     products = Product.objects.filter(
