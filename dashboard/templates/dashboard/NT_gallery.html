@@ -125,7 +125,7 @@
 		{% for product in dr_picks %}
 		<div id="dr_pick_container" class="nutrient_gallery_container">
 			<div class="my_specifics_picture">
-				<img src= "{% static product.pictures.main_image|safe %}" alt="Nutrient Picture" />
+				<img src= "{{product.pictures.main_image|safe}}" alt="Nutrient Picture" />
 				<div class="overlay"></div>
 				<i class="fas fa-shopping-cart"></i>
 				<a href="{% url 'dashboard:product_info' product.id %}" class="view_info_btn">Info</a>
