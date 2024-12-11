@@ -37,11 +37,11 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # context['nutrient_gallery'] = packs
 
        
-        specific_products = Product.objects.filter(name='Tothema')
+        specific_product = Product.objects.filter(name='Tothema')
 
         products_starting_with_w = Product.objects.filter(name__istartswith='w')[:2]
         
-        context['dr_picks'] = [specific_product] + list(products_starting_with_w)
+        context['dr_picks'] = list(specific_product) + list(products_starting_with_w)
         
             #     products = Product.objects.filter(
             #     Q(sub_categories__gender_icontains="female") |  
