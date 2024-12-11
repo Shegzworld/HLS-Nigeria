@@ -122,8 +122,9 @@
 				</div>
 			</div>
 		</div>
-		{% for product in dr_picks %}
+		
 		<div id="dr_pick_container" class="nutrient_gallery_container">
+			{% for product in dr_picks %}
 			<div class="my_specifics_picture">
 				<img src= "{{product.pictures.main_image|safe}}" alt="Nutrient Picture" />
 				<div class="overlay"></div>
@@ -163,8 +164,9 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		{% endfor %}
+		</div>
+		
 	</div>
 </div>
 <div class="selected_nutrient_screen">
