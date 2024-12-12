@@ -26,18 +26,16 @@ Wellwoman 70+-28
 
 
 def remove_duplicate_products():
-    products = Product.objects.all()
-    unique_products = []
+    products = Product.objects.all().order_by('-created_at')
+    unique_products = {}
     deleted_products = []
-    
     for product in products:
         if product.name not in unique_products:
-            unique_products.append(product.name)
+            unique_products[product.name] = product
         else:
-            print(f"Deleting duplicate product: {product.name}")
+            print(f"Deleting older product: {product.name}")
             deleted_products.append(product.name)
             product.delete()
-    
     print("Deleted products:")
     for product in deleted_products:
         print(product)
@@ -54,10 +52,13 @@ product.save()
 
 
 
-old_picture_name = product.pictures['main_image']
-new_picture_name = old_picture_name.replace(old_picture_name.split('/')[-1], product.name + '.jpg')
-product.pictures['main_image'] = new_picture_name
-product.save()
+for product in products:
+    old_picture_name = product.main_image.name
+    filename, extension = os.path.splitext(old_picture_name)
+    new_picture_name = f"{product.name}{'.jpg'}"
+    product.main_image.name = new_picture_name
+    product.save()
+    print(f'{product.name}-{product.main_image}')
 
 import os
 
@@ -84,3 +85,7 @@ for file_name in file_list:
         os.rename(file_path, os.path.join(folder_path, new_file_name))
     except Exception as e:
         print(f"Error renaming file {file_name}: {str(e)}")
+
+def print_product_names():
+    product_names = Product.objects.values_list('name', flat=True)
+    print(list(product_names))

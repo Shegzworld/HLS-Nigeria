@@ -3,7 +3,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import TemplateView, ListView,DetailView
 from blog.models import Blog
 from user.models import UserProfile
-# from NT_gallery.models import Product
 from podcasts.models import Podcast,Episode
 from decimal import Decimal
 from django.core.paginator import Paginator
@@ -27,7 +26,8 @@ class Dashboard(LoginRequiredMixin, TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        # user_profile = self.get_user_profile()
+        # user_p
+        # profile = self.get_user_profile()
         # products = self.filter_products(user_profile)
 
         # print(products)
@@ -37,15 +37,23 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # context['nutrient_gallery'] = packs
 
        
-        products = Product.objects.all()
-        context['dr_picks'] = products
+        specific_products = Product.objects.filter(name='Tothema')
+
+        products_starting_with_w = Product.objects.filter(name__istartswith='w')[:2]
+        
+        context['dr_picks'] = list(specific_products) + list(products_starting_with_w)
+        
+            #     products = Product.objects.filter(
+            #     Q(sub_categories__gender_icontains="female") |  
+            #     Q(sub_categories__age__icontains="teen")         
+            # )
+        for product in context['dr_picks']:
+            print(product.name)
 
     #     products = Product.objects.filter(
     #     Q(sub_categories__gender_icontains="female") |  
     #     Q(sub_categories__age__icontains="teen")         
     # )
-
-        print(products)
 
 
         

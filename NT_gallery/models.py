@@ -153,7 +153,7 @@ class Product(models.Model):
     strength = models.CharField(max_length=255,null=True,blank=True)
     description = models.TextField(null=True, blank=True)
     lsvs = models.ManyToManyField(LSV, related_name='products',blank=True) 
-    pictures = models.JSONField(default=dict,null=True,blank=True)  # Store images paths in a JSON field
+    main_image = models.ImageField(upload_to='product_images/',null=True, blank = True, default = 'default_image.jpg')
     flag_condition = models.ManyToManyField(Flag_condition, related_name='products',blank=True) 
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True,null=True)
@@ -173,27 +173,27 @@ class Product(models.Model):
         else:
             return None  # Or handle errors as needed
 
-    @staticmethod
-    def process_product_data(data):
-        """
-        Process the API response and return the product data in a structured format.
-        """
-        # Here we return a dictionary of the data fetched
-        product_data = {
-            'name': data.get('name'),
-            # 'generic_name': data.get('generic_name'),
-            'price': data.get('price'),
-            'strength': data.get('strength'),
-            'description': data.get('description'),
-            'main_image': data.get('main_image'),
-            'side_image_1': data.get('side_image_1'),
-            'side_image_2': data.get('side_image_2'),
-            'side_image_3': data.get('side_image_3'),
-            # 'fortify':data.get('fortify_id'),  # Assuming foreign key IDs are provided
-            # 'side_effect':data.get('side_effect_id'),
-            # 'health_support':data.get('health_support_id'),
-        }
-        return product_data
+    # @staticmethod
+    # def process_product_data(data):
+    #     """
+    #     Process the API response and return the product data in a structured format.
+    #     """
+    #     # Here we return a dictionary of the data fetched
+    #     product_data = {
+    #         'name': data.get('name'),
+    #         # 'generic_name': data.get('generic_name'),
+    #         'price': data.get('price'),
+    #         'strength': data.get('strength'),
+    #         'description': data.get('description'),
+    #         'main_image': data.get('main_image'),
+    #         'side_image_1': data.get('side_image_1'),
+    #         'side_image_2': data.get('side_image_2'),
+    #         'side_image_3': data.get('side_image_3'),
+    #         # 'fortify':data.get('fortify_id'),  # Assuming foreign key IDs are provided
+    #         # 'side_effect':data.get('side_effect_id'),
+    #         # 'health_support':data.get('health_support_id'),
+    #     }
+    #     return product_data
     
     
         

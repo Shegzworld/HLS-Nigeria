@@ -121,3 +121,60 @@ for product in products_data:
     product_obj.flag_condition.set(flag_condition_instances)
     product_obj.lsvs.set(lsv_objs)
     product_obj.save()
+
+
+    ----------------------------------------------------------------------------------------
+    for lifestyle
+
+products = Product.objects.all()
+for product in products:
+    if 'pictures' in product.__dict__:
+        pictures = product.__dict__['pictures']
+        main_image_name = pictures.get('main_image')
+        main_image_name = main_image_name.replace('product_image/', '')
+        product.main_image = f'product_images/{main_image_name}'
+        product.save()
+        del product.__dict__['pictures']
+        product.save()
+
+
+
+    def load_products_from_json(file_path):
+    with open('NT_gallery/fixtures/lifestyledata.json') as f:
+        data = json.load(f)
+
+    for product_data in data:
+        sub_categories = {
+            'age': product_data['sub_categories']['age'],
+            'brands': product_data['sub_categories']['brands'],
+            'gender': product_data['sub_categories']['gender'],
+            'Lifestyle': product_data['sub_categories']['Lifestyle'],
+            'Dosage Forms': product_data['sub_categories']['Dosage Forms'],
+            'Lifestyle Rating': product_data['sub_categories']['Lifestyle Rating'],
+            'pharmacy grouping': product_data['sub_categories']['pharmacy grouping'],
+        }
+
+        product, created = Product.objects.get_or_create(
+            name=product_data['name'],
+            defaults={
+                'category': product_data['main_category'],
+                'sub_categories': sub_categories,
+                'description': product_data['description'],
+                'pictures': product_data['pictures'],
+            }
+        )
+
+        if created:
+            print(f"Product '{product.name}' created successfully.")
+        else:
+            print(f"Product '{product.name}' already exists.")
+
+        if not created:
+            product.category = product_data['main_category']
+            product.sub_categories = sub_categories
+            product.description = product_data['description']
+            product.pictures = product_data['pictures']
+            product.save()
+
+# Usage
+load_products_from_json('products.json')

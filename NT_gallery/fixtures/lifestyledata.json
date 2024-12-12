@@ -1,0 +1,461 @@
+[
+{
+"name": "Iron",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Aid"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Single Mineral", "Tonics"]
+},
+"description": "Iron is an essential mineral that plays a critical role in the production of hemoglobin, which carries oxygen to the body's tissues. It helps to fortify the blood and prevent anemia. Iron also supports immune function and cognitive health. With Iron, you can boost your energy levels and stay healthy. Iron is suitable for both men and women.",
+"pictures": {
+"main_image": "Iron.jpg"
+}
+},
+{
+"name": "Ashwagandha",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Force Factor"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Ashwagandha is an ancient herb that helps to reduce stress and anxiety. It promotes relaxation and calms the mind. Ashwagandha also supports immune function and boosts energy levels. With Ashwagandha, you can achieve a healthy work-life balance. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Ashwagandha.jpg"
+}
+},
+{
+"name": "Turmeric/Curcumin",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Piping Rock", "Force Factor"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Turmeric/Curcumin is a powerful antioxidant that helps to reduce inflammation and improve joint health. It also supports immune function and boosts cognitive health. With Turmeric/Curcumin, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Turmeric/Curcumin.jpg"
+}
+},
+{
+"name": "Echinacea",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Piping Rock"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Echinacea is an herbal supplement that helps to boost the immune system and fight off infections. It also supports respiratory health and reduces inflammation. With Echinacea, you can stay healthy and strong. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Echinacea.jpg"
+}
+},
+{
+"name": "NAC",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Force Factor"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Amino Acids"]
+},
+"description": "NAC is an amino acid that helps to support respiratory health and reduce inflammation. It also supports immune function and boosts cognitive health. With NAC, you can breathe easy and stay healthy. It is suitable for both men and women.",
+"pictures": {
+"main_image": "NAC.jpg"
+}
+},
+{
+"name": "Elderberry Syrup",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Sambucus"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements", "Tonic"]
+},
+"description": "Elderberry Syrup is a natural remedy that helps to boost the immune system and fight off cold and flu. It also supports respiratory health and reduces inflammation. With Elderberry Syrup, you can stay healthy and strong. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Elderberry Syrup.jpg"
+}
+},
+{
+"name": "Alpha Lipoic Acid",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Piping Rock"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Antioxidants"]
+},
+"description": "Alpha Lipoic Acid is an antioxidant that helps to reduce inflammation and improve nerve function. It also supports heart health and boosts energy levels. With Alpha Lipoic Acid, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Alpha Lipoic Acid.jpg"
+}
+},
+{
+"name": "Vitamin A",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Piping Rock"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Single Vitamins"]
+},
+"description": "Vitamin A is an essential nutrient that helps to support eye health and immune function. It also supports skin health and reduces the risk of chronic diseases. With Vitamin A, you can achieve healthy vision and a strong immune system. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Vitamin A.jpg"
+}
+},
+{
+"name": "Eye Antioxidants",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Field"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Antioxidants"]
+},
+"description": "Eye Antioxidants are a blend of nutrients that help to support eye health and reduce the risk of age-related macular degeneration. They also support immune function and boost cognitive health. With Eye Antioxidants, you can achieve healthy vision and a strong immune system. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Eye Antioxidants.jpg"
+}
+},
+{
+"name": "Resveratrol",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Piping Rock"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Antioxidants"]
+},
+"description": "Resveratrol is an antioxidant that helps to reduce inflammation and improve heart health. It also supports immune function and boosts cognitive health. With Resveratrol, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Resveratrol.jpg"
+}
+},
+{
+"name": "COQ10",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Piping Rock"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Antioxidants", "Enzymes"]
+},
+"description": "COQ10 is an antioxidant that helps to generate energy for the body's cells. It also supports heart health and reduces the risk of chronic diseases. With COQ10, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "COQ10.jpg"
+}
+},
+{
+"name": "Libido",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Health Aid"],
+"gender": ["male"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Tonics"]
+},
+"description": "Libido is a natural supplement that helps to boost male fertility and libido. It also supports testosterone production and improves overall sexual health. With Libido, you can achieve a healthy and active sex life. It is suitable for men only.",
+"pictures": {
+"main_image": "Libido.jpg"
+}
+},
+{
+"name": "Vitamin C 1000mg",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Field"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Single Vitamins"]
+},
+"description": "Vitamin C 1000mg is a high-potency supplement that helps to support immune function and reduce the risk of chronic diseases. It also supports collagen production and improves skin health. With Vitamin C 1000mg, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Vitamin C 1000mg.jpg"
+}
+},
+{
+"name": "Safi Blood Purifier",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Safi"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Tonics"]
+},
+"description": "Safi Blood Purifier is a natural supplement that helps to purify the blood and support liver health. It also supports immune function and reduces the risk of chronic diseases. With Safi Blood Purifier, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Safi Blood Purifier.jpg"
+}
+},
+{
+"name": "Ginkgo Biloba",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Field"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Ginkgo Biloba is a natural supplement that helps to support brain health and improve memory function. It also supports blood flow and reduces the risk of chronic diseases. With Ginkgo Biloba, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Ginkgo Biloba.jpg"
+}
+},
+{
+"name": "Glucosamine & Chondroitin",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Piping Rock"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Glucosamine & Chondroitin is a natural supplement that helps to support joint health and reduce inflammation. It also supports cartilage health and improves mobility. With Glucosamine & Chondroitin, you can achieve healthy and flexible joints. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Glucosamine & Chondroitin.jpg"
+}
+},
+{
+"name": "Milk Thistle",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Piping Rock"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Milk Thistle is a natural supplement that helps to support liver health and detoxification. It also supports immune function and reduces the risk of chronic diseases. With Milk Thistle, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Milk Thistle.jpg"
+}
+},
+{
+"name": "Myo-Inositol",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Fairhaven"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Amino Acids"]
+},
+"description": "Myo-Inositol is a natural supplement that helps to support brain health and reduce anxiety. It also supports insulin sensitivity and improves fertility. With Myo-Inositol, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Myo-Inositol.jpg"
+}
+},
+{
+"name": "DHEA",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Field"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Natural Hormones"]
+},
+"description": "DHEA is a natural supplement that helps to support hormone balance and reduce stress. It also supports immune function and improves overall health. With DHEA, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "DHEA.jpg"
+}
+},
+{
+"name": "Evening Primrose Caps",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Field", "Efamol"],
+"gender": ["female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Evening Primrose Caps is a natural supplement that helps to support women's health and reduce symptoms of PMS. It also supports skin health and improves overall well-being. With Evening Primrose Caps, you can achieve a healthy and balanced lifestyle. It is suitable for women only.",
+"pictures": {
+"main_image": "Evening Primrose Caps.jpg"
+}
+},
+{
+"name": "Prostate Defense",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Field"],
+"gender": ["male"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Prostate Defense is a natural supplement that helps to support prostate health and reduce the risk of prostate cancer. It also supports immune function and improves overall health. With Prostate Defense, you can achieve a healthy and active lifestyle. It is suitable for men only.",
+"pictures": {
+"main_image": "Prostate Defense.jpg"
+}
+},
+{
+"name": "Toxiflush",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Field"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Toxiflush is a natural supplement that helps to support liver health and detoxification. It also supports immune function and reduces the risk of chronic diseases. With Toxiflush, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Toxiflush.jpg"
+}
+},
+{
+"name": "Astymin Syrup",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Fidson"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Tonics"]
+},
+"description": "Astymin Syrup is a natural supplement that helps to support immune function and reduce the risk of infections. It also supports energy production and improves overall health. With Astymin Syrup, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Astymin Syrup.jpg"
+}
+},
+{
+"name": "Calm Nite",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Field"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Calm Nite is a natural supplement that helps to support relaxation and reduce stress. It also supports sleep quality and improves overall well-being. With Calm Nite, you can achieve a restful and peaceful sleep. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Calm Nite.jpg"
+}
+},
+{
+"name": "Phentermine",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Duromine"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Amine Stimulants"]
+},
+"description": "Phentermine is a natural supplement that helps to support weight loss and reduce appetite. It also supports energy production and improves overall health. With Phentermine, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Phentermine.jpg"
+}
+},
+{
+"name": "Glutathione",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Now"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Antioxidants", "Amino Acids"]
+},
+"description": "Glutathione is a natural supplement that helps to support immune function and reduce oxidative stress. It also supports liver health and improves overall well-being. With Glutathione, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Glutathione.jpg"
+}
+},
+{
+"name": "Psyllium Husk",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": [],
+"brands": ["Nature's Field"],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Dosage Forms": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": ["Herbal Supplements"]
+},
+"description": "Psyllium Husk is a natural supplement that helps to support digestive health and promote regular bowel movements. It also supports heart health and reduces cholesterol levels. With Psyllium Husk, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
+"pictures": {
+"main_image": "Psyllium Husk.jpg"
+}
+}
+]
