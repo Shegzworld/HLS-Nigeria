@@ -153,7 +153,7 @@ class Product(models.Model):
     strength = models.CharField(max_length=255,null=True,blank=True)
     description = models.TextField(null=True, blank=True)
     lsvs = models.ManyToManyField(LSV, related_name='products',blank=True) 
-    main_image = models.ImageField(upload_to='product_images/',null=True, blank = True, default = 'default_image.jpg')
+    main_image = models.ImageField(upload_to='product_image/',null=True, blank = True, default = 'default_image.jpg')
     flag_condition = models.ManyToManyField(Flag_condition, related_name='products',blank=True) 
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True,null=True)

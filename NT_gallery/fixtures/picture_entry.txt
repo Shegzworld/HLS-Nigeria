@@ -51,7 +51,7 @@ print(product.name)
 product.save()
 
 
-
+products = Product.objects.all()
 for product in products:
     old_picture_name = product.main_image.name
     filename, extension = os.path.splitext(old_picture_name)

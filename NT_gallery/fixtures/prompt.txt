@@ -1,4 +1,5 @@
 import re
+import os
 import json
 from decimal import Decimal
 from NT_gallery.models import Product
@@ -125,17 +126,6 @@ for product in products_data:
 
     ----------------------------------------------------------------------------------------
     for lifestyle
-
-products = Product.objects.all()
-for product in products:
-    if 'pictures' in product.__dict__:
-        pictures = product.__dict__['pictures']
-        main_image_name = pictures.get('main_image')
-        main_image_name = main_image_name.replace('product_image/', '')
-        product.main_image = f'product_images/{main_image_name}'
-        product.save()
-        del product.__dict__['pictures']
-        product.save()
 
 
 
