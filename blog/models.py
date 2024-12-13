@@ -32,8 +32,8 @@ class Blog(models.Model):
     content_2 = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    slug = models.SlugField(unique=True, blank=True)  # Make sure the slug is unique and can be empty initially
-    author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True, blank=True)
+    slug = models.SlugField(unique=True, blank=True, max_length = 255)  # Make sure the slug is unique and can be empty initially
+    author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True, blank=True, max_length=255)
     # author = models.OneToOneField(Author, on_delete=models.CASCADE, null=True, blank=True, related_name='blog')
     # bio = models.OneToOneField(Author, on_delete=models.CASCADE, null=True, blank=True, related_name='blog')
 
