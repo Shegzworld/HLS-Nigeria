@@ -74,7 +74,7 @@
     <div class="flex-container" id="product-detail-page">
         <button onclick="goBack()">Back to Gallery</button>
         <div class="image-section">
-            <img src="{{ product.pictures.main_image|safe }}" alt="Product Image">
+            <img src="{{ product.main_image.url|safe }}" alt="Product Image">
             <div class="thumbnails">
                 <img src="thumbnail1.jpg" alt="Thumbnail 1">
                 <img src="thumbnail2.jpg" alt="Thumbnail 2">

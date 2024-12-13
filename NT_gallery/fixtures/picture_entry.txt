@@ -55,10 +55,11 @@ products = Product.objects.all()
 for product in products:
     old_picture_name = product.main_image.name
     filename, extension = os.path.splitext(old_picture_name)
-    new_picture_name = f"{product.name}{'.jpg'}"
+    new_picture_name = f"product_image/{product.name}{'.jpg'}"
     product.main_image.name = new_picture_name
     product.save()
-    print(f'{product.name}-{product.main_image}')
+    product.refresh_from_db
+    print(f'{product.name}-{product.main_image.url}')
 
 import os
 

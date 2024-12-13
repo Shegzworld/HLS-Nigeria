@@ -37,7 +37,7 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # context['nutrient_gallery'] = packs
 
        
-        specific_product = Product.objects.filter(name='Tothema')
+        specific_product = Product.objects.filter(name='Wellman 50+')
 
         products_starting_with_w = Product.objects.filter(name__istartswith='w')[:2]
         
