@@ -1,10 +1,12 @@
 import re
 import os
+from django.utils import timezone
 import json
 from decimal import Decimal
 from NT_gallery.models import Product
 from NT_gallery.models import LSV
 from NT_gallery.models import Flag_condition
+from datetime import datetime
 
 
 age_categories = {
@@ -2128,3 +2130,75 @@ for product in data:
     "updated_at": ""
     }
 ]
+
+
+import json
+from datetime import datetime
+from django.core.management import call_command
+from django.utils import timezone
+from your_app.models import Product  # Replace 'your_app' with your actual app name
+
+# Delete existing products
+Product.objects.all().delete()
+
+# Load JSON data
+with open('NT_gallery/fixtures/lifestyledata.json', 'r') as f:
+    data = json.load(f)
+
+# Create products
+for product_data in data:
+    price = product_data.get('price')
+    if price is not None and price != '':
+        try:
+            price = Decimal(float(price))
+        except (ValueError, decimal.InvalidOperation):
+            price = None
+    else:
+        price = None
+    product = Product(
+        name=product_data['name'],
+        category=product_data['category'],
+        sub_categories=product_data['sub_categories'],
+        price=price,
+        strength=product_data['strength'],
+        description=product_data['description'],
+        main_image=product_data['main_image'],
+    )
+    product.save()
+    
+    # Add LSVs
+    for lsv in product_data['lsvs']:
+        # Assuming LSV is a model with a name field
+        lsv_obj, _ = LSV.objects.get_or_create(name=lsv)
+        product.lsvs.add(lsv_obj)
+        
+    # Add flag conditions
+    for flag_condition in product_data['flag_condition']:
+        # Assuming FlagCondition is a model with a name field
+        flag_condition_obj, _ = Flag_condition.objects.get_or_create(name=flag_condition)
+        product.flag_condition.add(flag_condition_obj)
+
+
+import json
+
+# Load JSON data
+with open('your_file.json', 'r') as f:
+    data = json.load(f)
+
+# Loop over each product
+for product in data:
+    sub_categories = product['sub_categories']
+    
+    # Check if 'pharmacy_grouping' key exists
+    if 'pharmacy_grouping' in sub_categories:
+        # Add value to 'pharmacy grouping' list
+        if 'pharmacy grouping' not in sub_categories:
+            sub_categories['pharmacy grouping'] = []
+        sub_categories['pharmacy grouping'].append(sub_categories['pharmacy_grouping'])
+        
+        # Delete 'pharmacy_grouping' key
+        del sub_categories['pharmacy_grouping']
+
+# Save updated JSON data
+with open('your_file.json', 'w') as f:
+    json.dump(data, f, indent=4)

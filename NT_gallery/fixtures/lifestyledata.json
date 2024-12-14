@@ -902,7 +902,6 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Single Mineral",
                 "Tonics"
             ]
         },
@@ -1044,7 +1043,6 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Herbal Supplements",
                 "Tonic"
             ]
         },
@@ -1185,7 +1183,6 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Antioxidants",
                 "Enzymes"
             ]
         },
@@ -1604,7 +1601,6 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Antioxidants",
                 "Amino Acids"
             ]
         },
@@ -1662,9 +1658,8 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Minerals"
-            ],
-            "pharmacy_grouping": "Single Vitamins"
+                "Single Vitamins"
+            ]
         },
         "price": "",
         "strength": "",
@@ -1690,8 +1685,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": [
                 "Herbal Supplements"
-            ],
-            "pharmacy_grouping": "Herbal Supplements"
+            ]
         },
         "price": "",
         "strength": "",
@@ -1719,8 +1713,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": [
                 "Amino Acids"
-            ],
-            "pharmacy_grouping": "Amino Acids"
+            ]
         },
         "price": "",
         "strength": "",
@@ -1745,9 +1738,8 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Stress Relief"
-            ],
-            "pharmacy_grouping": "Adaptogens"
+                "Adaptogens"
+            ]
         },
         "price": "",
         "strength": "",
@@ -1829,8 +1821,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": [
                 "Amino Acids"
-            ],
-            "pharmacy_grouping": "Amino Acids"
+            ]
         },
         "price": "",
         "strength": "",
@@ -1859,8 +1850,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": [
                 "Amino Acids"
-            ],
-            "pharmacy_grouping": "Amino Acids"
+            ]
         },
         "price": "",
         "strength": "",
@@ -1887,9 +1877,8 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Tonics"
-            ],
-            "pharmacy_grouping": "Multi Vitamins"
+                "Multi Vitamins"
+            ]
         },
         "price": "",
         "strength": "",
@@ -1916,9 +1905,8 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Joint Care"
-            ],
-            "pharmacy_grouping": "Herbal Supplements"
+                "Herbal Supplements"
+            ]
         },
         "price": "",
         "strength": "",
@@ -1943,9 +1931,8 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Bone Health"
-            ],
-            "pharmacy_grouping": "Single Vitamins"
+                "Single Vitamins"
+            ]
         },
         "price": "",
         "strength": "",
@@ -1972,9 +1959,8 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Heart Health"
-            ],
-            "pharmacy_grouping": "Essential Fatty Acids"
+                "Essential Fatty Acids"
+            ]
         },
         "price": "",
         "strength": "",
@@ -2001,9 +1987,8 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Weight Management"
-            ],
-            "pharmacy_grouping": "Single Vitamins"
+                "Single Vitamins"
+            ]
         },
         "price": "",
         "strength": "",
@@ -2031,9 +2016,8 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Digestive Health"
-            ],
-            "pharmacy_grouping": "Herbal Supplements"
+                "Herbal Supplements"
+            ]
         },
         "price": "",
         "strength": "",
