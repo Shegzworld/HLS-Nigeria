@@ -24,6 +24,14 @@ Wellwoman-26
 Wellwoman 50+-27
 Wellwoman 70+-28
 
+import re
+import os
+import json
+from decimal import Decimal
+from NT_gallery.models import Product
+from NT_gallery.models import LSV
+from NT_gallery.models import Flag_condition
+
 
 def remove_duplicate_products():
     products = Product.objects.all().order_by('-created_at')
@@ -42,6 +50,27 @@ def remove_duplicate_products():
 
 remove_duplicate_products()
 
+
+def trim_out_duplicate_products():
+    unique_products = {}
+    duplicate = []
+    for product in data:
+        if product['name'] not in unique_products:
+            unique_products[product['name']] = product['name']
+        else:
+            print(f"Deleting older product: {product['name']}")
+            duplicate.append(product)
+    # Remove duplicates from the data list
+    data[:] = [product for product in data if product not in duplicate]
+    print("Unique products:")
+    for product_name in unique_products:
+        print(product_name)
+    print("----------------------------------------------------------------")
+    with open('NT_gallery/fixtures/lifestyledata.json', 'w') as f:
+        json.dump(data, f, indent=4)
+
+trim_out_duplicate_products()
+
 (Renaming a Product)
 To rename a product, you can retrieve the product instance and update its name field:
 
@@ -55,10 +84,9 @@ products = Product.objects.all()
 for product in products:
     old_picture_name = product.main_image.name
     filename, extension = os.path.splitext(old_picture_name)
-    new_picture_name = f"product_image/{product.name}{'.jpg'}"
+    new_picture_name = f"product_image/{product.name}{extension}"
     product.main_image.name = new_picture_name
     product.save()
-    product.refresh_from_db
     print(f'{product.name}-{product.main_image.url}')
 
 import os
