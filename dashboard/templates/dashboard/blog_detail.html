@@ -63,7 +63,7 @@
             <p class="post-content">{{post.content_2}}
             </p>
         </div>
-        <div class="author-info">
+        <!-- <div class="author-info">
             <div class="author_pic">
                 <img src="{{post.author.author_img.url}}" alt="Author Profile Picture" class="author-profile-picture">
             </div>
@@ -75,8 +75,44 @@
                     <i class="fas fa-share"></i>
                 </div>
             </div>
+        </div> -->
+        <div class="author-info">
+            <div class="author_pic">
+                <img src="{{post.author.author_img.url}}" alt="Author Profile Picture" class="author-profile-picture">
+            </div>
+            <div class="author-detail">
+                <div class="tab-menu">
+                    <button class="tab-button active" data-tab="author-bio">Author Bio</button>
+                    <button class="tab-button" data-tab="authors-choice">Author's Choice</button>
+                </div>
+                <div class="tab-content">
+                    <div class="author-bio tab-pane active">
+                        <p class="author_bio">{{post.author.bio}}</p>
+                        <div class="action-buttons">
+                            <div class="action-button green">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="action-button red">
+                                <i class="fas fa-comment"></i>
+                            </div>
+                            <div class="action-button brown">
+                                <i class="fas fa-share"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="authors-choice tab-pane">
+                        <div class="product-slider">
+                            <!-- product cards will be added here -->
+                            <div class="product-card"></div>
+                            <div class="product-card"></div>
+                            <div class="product-card"></div>
+                            <div class="product-card"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- <script src="{% static 'js/blog_detail.js' %}"></script> -->
+    <script src="{% static 'js/blog_detail.js' %}"></script>
 </body>
 </html>

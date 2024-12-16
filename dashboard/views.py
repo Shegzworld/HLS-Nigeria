@@ -39,9 +39,9 @@ class Dashboard(LoginRequiredMixin, TemplateView):
        
         specific_product = Product.objects.filter(name='Wellman 50+')
 
-        products_starting_with_w = Product.objects.filter(name__istartswith='w')[:2]
+        # products_starting_with_w = Product.objects.filter(name__istartswith='w')[:2]
         
-        context['dr_picks'] = list(specific_product) + list(products_starting_with_w)
+        context['dr_picks'] = list(specific_product)
         
             #     products = Product.objects.filter(
             #     Q(sub_categories__gender_icontains="female") |  

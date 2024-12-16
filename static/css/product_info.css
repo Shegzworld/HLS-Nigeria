@@ -128,19 +128,21 @@ body {
     display: flex;
     flex-direction: row;
     height: 35px;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     align-items: center;
+    background-color: white;
 }
 
 .tab-menu li {
     margin-right: 20px;
     cursor: pointer;
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
 }
 
 .tab-menu li.active {
     border-bottom: 2px solid #007bff;
+    background-color: #007bff38;
 }
 
 /* Tab Content */
@@ -154,16 +156,15 @@ body {
 }
 
 .tab-content {
-    border: 1px solid #aaa;
     padding: 10px;
     width: 100%;
+    background-color: white;
 }
 
 .common-details,
 .benefits,
 .live-reviews {
     display: none;
-    border: 1px solid #ddd;
 }
 
 .common-details.active,
@@ -172,7 +173,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
+    background-color: white;
+}
+
+#common-details-content p{
+    font-weight: 200;
 }
 
 .benefit-header {
@@ -214,7 +220,6 @@ cursor: pointer;
 width: 100%;
 }
 
-
 /* Clinical Study Container */
 
 .clinical-studies-container {
@@ -239,33 +244,57 @@ width: 100%;
     right: 10px;
     cursor: pointer;
 }
-
 /* Live Reviews */
 
 .live-reviews ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    height: 60px;
+    border: solid 1px;
+    border-color: #aca5a540;
+    gap: 20px
 }
 
 .live-reviews h2{
     font-size: 16px;
 }
 
-
-/* .live-reviews li {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    padding: 10px;
-} */
-
 .reviews-list {
     display: none;
+    overflow-x: auto;
+    white-space: nowrap;
     margin-bottom: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.reviews-list::-webkit-scrollbar {
+    /* Chrome, Safari, and Opera */
+    display: none;
 }
 
 .reviews-list.show {
     display: block;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
 }
 
 .overlay {

@@ -72,8 +72,8 @@ liveReviewsTab.addEventListener('click', () => {
     commonDetailsTab.classList.remove('active');
     benefitsTab.classList.remove('active');
 
-    document.querySelector('#audio-reviews-list').classList.add('show');
-
+    document.querySelector('#audio-reviews-list').style.display = 'flex';
+    document.querySelector('#audio-reviews-list').style.justifyContent = 'space-around';
     // Get all review headers
     const reviewHeaders = document.querySelectorAll('.live-reviews h2');
 
@@ -82,16 +82,43 @@ liveReviewsTab.addEventListener('click', () => {
     header.addEventListener('click', () => {
       // Get the corresponding review list
       console.log(header.id)
-      const reviewList = document.querySelector(`#${header.id}-list`);
-
-      // Toggle the display of the review list
+      const reviewList = document.querySelector(`#${header.id}-list`)
+      
       reviewList.classList.toggle('show');
+      // Toggle the display of the review list
+      if ((header.id) === 'audio-reviews' || (header.id) === 'podcast-mentions') {
+        // Add touch event listeners for swiping
+        // let touchStartX = 0;
+        // list.addEventListener('touchstart', (e) => {
+        //   touchStartX = e.touches[0].clientX;
+        // });
+        // list.addEventListener('touchend', (e) => {
+        //   const touchEndX = e.changedTouches[0].clientX;
+        //   const swipeDistance = touchEndX - touchStartX;
+        //   if (swipeDistance > 50) {
+        //     // Swipe right
+        //     currentScroll -= itemWidth;
+        //     if (currentScroll < 0) currentScroll = 0;
+        //     list.scrollLeft = currentScroll;
+        //   } else if (swipeDistance < -50) {
+        //     // Swipe left
+        //     currentScroll += itemWidth;
+        //     if (currentScroll > maxScroll) currentScroll = maxScroll;
+        //     list.scrollLeft = currentScroll;
+        //   }
+        // });
+        reviewList.style.justifyContent = 'space-around';
+        reviewList.style.display = reviewList.classList.contains('show') ? 'flex' : 'none';
+      }
+      else
+        reviewList.style.display = reviewList.classList.contains('show') ? 'block' : 'none';
 
       // Hide other review lists
       reviewHeaders.forEach((otherHeader) => {
         if (otherHeader !== header) {
           const otherReviewList = document.querySelector(`#${otherHeader.id}-list`);
           otherReviewList.classList.remove('show');
+          otherReviewList.style.display = 'none'; 
         }
       });
     });

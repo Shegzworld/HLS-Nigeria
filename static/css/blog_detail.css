@@ -38,6 +38,10 @@ body{
     gap: 4px;
 }
 
+.related_podcast h3{
+    white-space: nowrap;
+}
+
 .blog_tag{
     margin-bottom: 5px;
 }
@@ -79,19 +83,17 @@ body{
 
 .author-info {
     display: flex;
-    min-height: 100px;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     gap: 5px;
     border-top: #666 solid 1px;
     padding-top: 10px;
 }
 
 .author_pic{
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
     overflow: hidden;
     border-radius: 50%;
-    border: solid black;
 }
 
 
@@ -99,12 +101,6 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.author-detail{
-    display: flex;
-    flex-direction: column;
-    width: 60%;
 }
 
 .author-name {
@@ -158,23 +154,109 @@ body{
     margin-bottom: 20px;
 }
 
+
+.author-detail {
+    flex: 1;
+}
+
+.tab-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    height: 25px;
+}
+
+.tab-button {
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 13px;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.tab-button.active {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
 .action-buttons {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.action-button {
+    width: 40px;
+    height: 100%;
+    display: flex;
     justify-content: center;
-    align-items: flex-end;
-    gap: 10px;
+    align-items: center;
+}
+
+.action-button.green {
+    background-color: green;
+    flex-grow: 1;
+    
+}
+
+.action-button.red {
+    background-color: red;
+    flex-grow: 1;
+}
+
+.action-button.brown {
+    background-color: brown;
+    flex-grow: 1;
+}
+
+.product-slider {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    border: solid 0.1px rgba(177, 173, 173, 0.51);
+}
+
+.product-slider .product-card {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 30%;
-    border: solid 1px rgb(53, 71, 68);
-    margin-top: 8px;
+    height: 95%;
+    background-color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #ddd;
 }
 
- .action-buttons .fas{
-    color: rgb(53, 71, 68);
-    cursor: pointer;
+.product-slider .product-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
-.like-button:hover,
-.comment-button:hover,
-.share-button:hover {
-    background-color: #1f48219f;
+.prev-button{
+    position: absolute;
+    top: 45%;
+    left: 0;
+}
+
+.next-button{
+    position: absolute;
+    top: 45%;
+    right: 0;
 }
