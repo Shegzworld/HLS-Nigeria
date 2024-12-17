@@ -33,6 +33,23 @@ from NT_gallery.models import LSV
 from NT_gallery.models import Flag_condition
 
 
+def show_duplicate_products():
+    products = Product.objects.all().order_by('-created_at')
+    unique_products = {}
+    duplicate_products = []
+    for product in products:
+        if product.name not in unique_products:
+            unique_products[product.name] = product
+        else:
+            print(f"show duplicate product: {product.name}")
+            duplicate_products.append(product.name)
+    print("duplicate products:")
+    for product in duplicate_products:
+        print(product)
+
+show_duplicate_products()
+
+
 def remove_duplicate_products():
     products = Product.objects.all().order_by('-created_at')
     unique_products = {}
@@ -44,9 +61,29 @@ def remove_duplicate_products():
             print(f"Deleting older product: {product.name}")
             deleted_products.append(product.name)
             product.delete()
-    print("Deleted products:")
-    for product in deleted_products:
-        print(product)
+        data[:] = [product if product not in deleted_products]
+        with open('NT_gallery/fixtures/Generalproducts.json', 'w') as f:
+            json.dump(data, f, indent=4)
+
+remove_duplicate_products()
+
+def remove_duplicate_products():
+    products = Product.objects.all().order_by('-created_at')
+    unique_products = {}
+    deleted_products = []
+    for product in products:
+        if product.name not in unique_products:
+            unique_products[product.name] = product
+        else:
+            print(f"Deleting older product: {product.name}")
+            deleted_products.append(product.name)
+            product.delete()
+    # Refresh the products queryset after deletion
+    products = Product.objects.all()
+    # Create a list of unique products
+    unique_products_list = list(unique_products.values())
+    with open('NT_gallery/fixtures/Generalproducts.json', 'w') as f:
+        json.dump([product.__dict__ for product in unique_products_list], f, indent=4)
 
 remove_duplicate_products()
 
@@ -66,7 +103,7 @@ def trim_out_duplicate_products():
     for product_name in unique_products:
         print(product_name)
     print("----------------------------------------------------------------")
-    with open('NT_gallery/fixtures/lifestyledata.json', 'w') as f:
+    with open('NT_gallery/fixtures/Generalproducts.json', 'w') as f:
         json.dump(data, f, indent=4)
 
 trim_out_duplicate_products()
