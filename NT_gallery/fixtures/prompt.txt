@@ -294,8 +294,8 @@ def load_products(json_file_name):
             product.flag_condition.add(flag_condition_obj)
     print("Added Products:")
     for product in added_products:
-        print(product.name)
-        print('-------------------------------------------------------------------')
+        print(product)
+    print('-------------------------------------------------------------------')
 
 # Usage
 load_products(json_file_name)
@@ -310,7 +310,8 @@ file_names = [
     'eye',
     'digestive',
     'brain',
-    'bones_joint'
+    'bones_joint',
+    'blood'
 ]
 
 for file_name in file_names:
