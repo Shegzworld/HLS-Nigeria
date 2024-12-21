@@ -1,0 +1,233 @@
+[
+    {
+    "name": "Glucosamine",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Glucosamine supports joint health and reduces inflammation, making it an effective treatment for osteoarthritis. It helps to repair and rebuild damaged cartilage, promoting healthy joint function. Glucosamine also reduces joint pain and inflammation, improving overall quality of life. By taking glucosamine supplements, individuals can experience improved joint mobility and reduced stiffness. This supplement is a natural and effective way to manage osteoarthritis symptoms.",
+    "lsvs": [],
+    "main_image": "product_image/Glucosamine.jpg",
+    "flag_condition": ["Osteoarthritis"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Chondroitin",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Chondroitin supports joint health by promoting healthy cartilage growth and reducing inflammation. This supplement is often used to treat osteoarthritis, as it helps to repair and rebuild damaged cartilage. Chondroitin also reduces joint pain and inflammation, improving overall quality of life. By taking chondroitin supplements, individuals can experience improved joint mobility and reduced stiffness. This supplement is a natural and effective way to manage osteoarthritis symptoms.",
+    "lsvs": [],
+    "main_image": "product_image/Chondroitin.jpg",
+    "flag_condition": ["Osteoarthritis"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Omega-3 Fatty Acids",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Omega-3 fatty acids reduce inflammation and promote overall health, making them an effective treatment for various conditions. These essential fatty acids support heart health, reduce joint pain and inflammation, and promote brain function. Omega-3s also have anti-inflammatory properties, which can help reduce symptoms of conditions like rheumatoid arthritis. By taking omega-3 supplements, individuals can experience improved overall health and reduced inflammation. This supplement is a natural and effective way to manage various health conditions.",
+    "lsvs": [],
+    "main_image": "product_image/Omega-3 Fatty Acids.jpg",
+    "flag_condition": ["Rheumatoid Arthritis", "Heart Health"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Vitamin C",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Vitamin C is essential for collagen production, wound healing, and immune function. This antioxidant vitamin also reduces inflammation and promotes overall health. Vitamin C supplements can help treat conditions like tendinitis, as they promote collagen production and reduce inflammation. By taking vitamin C supplements, individuals can experience improved immune function, reduced inflammation, and enhanced overall health. This supplement is a natural and effective way to manage various health conditions.",
+    "lsvs": [],
+    "main_image": "product_image/Vitamin C.jpg",
+    "flag_condition": ["Tendinitis"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Vitamin D",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Vitamin D is essential for bone health, immune function, and mood regulation. This vitamin helps the body absorb calcium, promoting strong bones and teeth. Vitamin D supplements can help treat conditions like osteoporosis, as they promote bone density and reduce the risk of fractures. By taking vitamin D supplements, individuals can experience improved bone health, immune function, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
+    "lsvs": [],
+    "main_image": "product_image/Vitamin D.jpg",
+    "flag_condition": ["Osteoporosis"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Magnesium",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Magnesium is essential for muscle and nerve function, as well as bone health. This mineral helps regulate muscle contractions, nerve function, and heart rhythm. Magnesium supplements can help treat conditions like fibromyalgia, as they reduce muscle cramps, spasms, and pain. By taking magnesium supplements, individuals can experience improved muscle function, nerve function, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
+    "lsvs": [],
+    "main_image": "product_image/Magnesium.jpg",
+    "flag_condition": ["Fibromyalgia"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Calcium",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Calcium is essential for bone health, as it helps build and maintain strong bones and teeth. This mineral also supports muscle function and nerve function. Calcium supplements can help treat conditions like osteoporosis, as they promote bone density and reduce the risk of fractures. By taking calcium supplements, individuals can experience improved bone health, muscle function, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
+    "lsvs": [],
+    "main_image": "product_image/Calcium.jpg",
+    "flag_condition": ["Osteoporosis"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Turmeric/Curcumin",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Turmeric/curcumin is a natural anti-inflammatory compound that reduces joint pain and inflammation. This supplement is often used to treat conditions like rheumatoid arthritis, as it reduces inflammation and promotes overall health. Turmeric/curcumin also has antioxidant properties, which can help protect against cell damage and reduce the risk of chronic diseases. By taking turmeric/curcumin supplements, individuals can experience improved joint health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
+    "lsvs": [],
+    "main_image": "product_image/Turmeric Curcumin.jpg",
+    "flag_condition": ["Rheumatoid Arthritis"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Ginger",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Ginger is a natural anti-inflammatory compound that reduces joint pain and inflammation. This supplement is often used to treat conditions like rheumatoid arthritis, as it reduces inflammation and promotes overall health. Ginger also has antioxidant properties, which can help protect against cell damage and reduce the risk of chronic diseases. By taking ginger supplements, individuals can experience improved joint health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
+    "lsvs": [],
+    "main_image": "product_image/Ginger.jpg",
+    "flag_condition": ["Rheumatoid Arthritis"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Boswellia",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Boswellia is a natural anti-inflammatory compound that reduces joint pain and inflammation. This supplement is often used to treat conditions like rheumatoid arthritis, as it reduces inflammation and promotes overall health. Boswellia also has antioxidant properties, which can help protect against cell damage and reduce the risk of chronic diseases. By taking boswellia supplements, individuals can experience improved joint health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
+    "lsvs": [],
+    "main_image": "product_image/Boswellia.jpg",
+    "flag_condition": ["Rheumatoid Arthritis"],
+    "created_at": "",
+    "updated_at": ""
+    },
+    {
+    "name": "Quercetin",
+    "category": "",
+    "main_category": "Nutritional Supplement",
+    "sub_categories": {
+    "age": ["adults"],
+    "brands": [],
+    "gender": ["male", "female"],
+    "Lifestyle": [],
+    "Lifestyle Rating": [],
+    "pharmacy grouping": []
+    },
+    "price": 0.0,
+    "strength": "Nil",
+    "description": "Quercetin is a natural anti-inflammatory compound that reduces inflammation and promotes overall health. This supplement is often used to treat conditions like gout, as it reduces inflammation and promotes uric acid excretion. Quercetin also has antioxidant properties, which can help protect against cell damage and reduce the risk of chronic diseases. By taking quercetin supplements, individuals can experience improved joint health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
+    "lsvs": [],
+    "main_image": "product_image/Quercetin.jpg",
+    "flag_condition": ["Gout"],
+    "created_at": "",
+    "updated_at": ""
+    }
+]

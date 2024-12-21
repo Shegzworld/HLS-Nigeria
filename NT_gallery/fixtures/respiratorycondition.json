@@ -1,0 +1,359 @@
+[
+{
+"name": "Omega-3 Fatty Acids",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Omega-3 fatty acids are essential for reducing inflammation and promoting overall health. These anti-inflammatory properties can help alleviate symptoms of respiratory conditions like asthma. Omega-3s also support heart health and brain function. By taking omega-3 supplements, individuals can experience improved respiratory health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Omega-3 Fatty Acids.jpg",
+"flag_condition": ["Asthma", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Vitamin C",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Vitamin C is essential for immune system function and overall health. This antioxidant vitamin can help reduce oxidative stress and inflammation in respiratory conditions like pneumonia. Vitamin C also supports collagen production and wound healing. By taking vitamin C supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Vitamin C.jpg",
+"flag_condition": ["Pneumonia", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Vitamin D",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Vitamin D is essential for bone health and immune system function. This vitamin can help reduce the risk of respiratory infections and improve lung function in conditions like asthma. Vitamin D also supports mood regulation and overall health. By taking vitamin D supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Vitamin D.jpg",
+"flag_condition": ["Asthma", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "N-Acetyl Cysteine (NAC)",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "N-Acetyl Cysteine (NAC) is an amino acid that supports respiratory health. NAC has mucolytic properties, which can help break down mucus and reduce symptoms of respiratory conditions like bronchitis. NAC also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking NAC supplements, individuals can experience improved respiratory health, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/N-Acetyl Cysteine (NAC).jpg",
+"flag_condition": ["Bronchitis", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Magnesium",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Magnesium is an essential mineral that supports muscle and nerve function. Magnesium can help relax airway muscles, reducing symptoms of respiratory conditions like asthma. Magnesium also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking magnesium supplements, individuals can experience improved respiratory health, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Magnesium.jpg",
+"flag_condition": ["Asthma", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Zinc",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Zinc is an essential mineral that supports immune system function. Zinc can help reduce the severity and duration of respiratory infections like pneumonia. Zinc also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking zinc supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Zinc.jpg",
+"flag_condition": ["Pneumonia", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Probiotics",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Probiotics are beneficial bacteria that support gut health. Probiotics can help maintain a healthy gut microbiome, which can help boost the immune system and reduce the risk of respiratory infections. Probiotics also have anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking probiotic supplements, individuals can experience improved gut health, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Probiotics.jpg",
+"flag_condition": ["Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Elderberry",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Elderberry is a natural antiviral agent that can help reduce the severity and duration of respiratory infections like influenza. Elderberry has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking elderberry supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Elderberry.jpg",
+"flag_condition": ["Influenza", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Melatonin",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Melatonin is a natural hormone that regulates sleep-wake cycles. Melatonin can help improve sleep quality and reduce symptoms of sleep disorders like insomnia. Melatonin also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking melatonin supplements, individuals can experience improved sleep quality, reduced severity of sleep disorders, and overall well-being. This supplement is a natural and effective way to manage sleep health.",
+"lsvs": [],
+"main_image": "product_image/Melatonin.jpg",
+"flag_condition": ["Insomnia", "Sleep Disorders"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Valerian Root",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Valerian root is a natural herb that promotes relaxation and improves sleep quality. Valerian root can help reduce symptoms of sleep disorders like insomnia and restlessness. Valerian root also has anti-anxiety properties, which can help reduce stress and promote relaxation. By taking valerian root supplements, individuals can experience improved sleep quality, reduced severity of sleep disorders, and overall well-being. This supplement is a natural and effective way to manage sleep health.",
+"lsvs": [],
+"main_image": "product_image/Valerian Root.jpg",
+"flag_condition": ["Insomnia", "Sleep Disorders"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Ginkgo Biloba",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Ginkgo biloba is a natural herb that improves blood flow and reduces inflammation. Ginkgo biloba can help improve cognitive function and memory, as well as reduce symptoms of respiratory conditions like asthma. Ginkgo biloba also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking ginkgo biloba supplements, individuals can experience improved cognitive function, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Ginkgo Biloba.jpg",
+"flag_condition": ["Asthma", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Vitamin E",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Vitamin E is a natural antioxidant that reduces oxidative stress and inflammation. Vitamin E can help improve skin health and reduce symptoms of respiratory conditions like pulmonary fibrosis. Vitamin E also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking vitamin E supplements, individuals can experience improved skin health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Vitamin E.jpg",
+"flag_condition": ["Pulmonary Fibrosis", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Coenzyme Q10 (CoQ10)",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Coenzyme Q10 (CoQ10) is a natural antioxidant that reduces oxidative stress and inflammation. CoQ10 can help improve energy production and reduce symptoms of respiratory conditions like pulmonary fibrosis. CoQ10 also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking CoQ10 supplements, individuals can experience improved energy production, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Coenzyme Q10 (CoQ10).jpg",
+"flag_condition": ["Pulmonary Fibrosis", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Echinacea",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Echinacea is a natural herb that supports immune system function. Echinacea can help reduce the severity and duration of respiratory infections like the common cold and flu. Echinacea also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking echinacea supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Echinacea.jpg",
+"flag_condition": ["Common Cold", "Flu", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Ginger",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Ginger is a natural herb that reduces inflammation and improves respiratory health. Ginger can help reduce symptoms of respiratory conditions like asthma and bronchitis. Ginger also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking ginger supplements, individuals can experience improved respiratory health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Ginger.jpg",
+"flag_condition": ["Asthma", "Bronchitis", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Turmeric/Curcumin",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Turmeric/curcumin is a natural herb that reduces inflammation and improves respiratory health. Turmeric/curcumin can help reduce symptoms of respiratory conditions like asthma and bronchitis. Turmeric/curcumin also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking turmeric/curcumin supplements, individuals can experience improved respiratory health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Turmeric_Curcumin.jpg",
+"flag_condition": ["Asthma", "Bronchitis", "Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Slippery Elm",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Slippery elm is a natural herb that soothes and protects the mucous membranes. Slippery elm can help reduce inflammation and improve respiratory health. Slippery elm also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking slippery elm supplements, individuals can experience improved respiratory health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
+"lsvs": [],
+"main_image": "product_image/Slippery Elm.jpg",
+"flag_condition": ["Respiratory Health"],
+"created_at": "",
+"updated_at": ""
+}
+]

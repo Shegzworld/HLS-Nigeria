@@ -1,0 +1,317 @@
+[
+    {
+"name": "Iodine",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Iodine supports thyroid health and hormone production, helping to treat hypothyroidism. It regulates metabolism, growth, and development. Iodine deficiency can lead to fatigue, weight gain, and hair loss. Supplementing with iodine can improve energy levels and overall well-being. Consult a healthcare professional before taking iodine supplements.",
+"lsvs": [],
+"main_image": "product_image/Iodine.jpg",
+"flag_condition": ["Hypothyroidism"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Selenium",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Selenium supports immune function and thyroid health, helping to protect against cell damage. It regulates antioxidant defenses and reduces inflammation. Selenium deficiency can lead to impaired immune function and increased risk of chronic diseases. Supplementing with selenium can improve overall health and well-being. Consult a healthcare professional before taking selenium supplements.",
+"lsvs": [],
+"main_image": "product_image/Selenium.jpg",
+"flag_condition": ["Hypothyroidism"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Zinc",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Zinc supports immune function, wound healing, and protein synthesis, helping to treat hypogonadism. It regulates testosterone production and sperm quality. Zinc deficiency can lead to impaired immune function, slow wound healing, and reduced fertility. Supplementing with zinc can improve overall health and fertility. Consult a healthcare professional before taking zinc supplements.",
+"lsvs": [],
+"main_image": "product_image/Zinc.jpg",
+"flag_condition": ["Hypogonadism"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Omega-3 fatty acids",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Omega-3 fatty acids support heart health, reduce inflammation, and promote brain function, helping to treat hyperthyroidism. They regulate triglycerides, blood pressure, and inflammation. Omega-3 deficiency can lead to increased risk of chronic diseases. Supplementing with omega-3 fatty acids can improve overall health and well-being. Consult a healthcare professional before taking omega-3 supplements.",
+"lsvs": [],
+"main_image": "product_image/Omega-3 fatty acids.jpg",
+"flag_condition": ["Hyperthyroidism"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "L-Carnitine",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "L-Carnitine supports energy production, reduces fatigue, and promotes heart health, helping to treat hyperthyroidism. It regulates fatty acid metabolism and reduces oxidative stress. L-Carnitine deficiency can lead to fatigue, weakness, and decreased exercise performance. Supplementing with L-Carnitine can improve energy levels and overall well-being. Consult a healthcare professional before taking L-Carnitine supplements.",
+"lsvs": [],
+"main_image": "product_image/L-Carnitine.jpg",
+"flag_condition": ["Hyperthyroidism"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Inositol",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Inositol supports ovarian function, improves fertility, and reduces symptoms of PCOS. It regulates insulin sensitivity, hormone balance, and ovulation. Inositol deficiency can lead to impaired fertility, weight gain, and acne. Supplementing with inositol can improve fertility, reduce symptoms of PCOS, and promote overall well-being. Consult a healthcare professional before taking inositol supplements.",
+"lsvs": [],
+"main_image": "product_image/Inositol.jpg",
+"flag_condition": ["PCOS"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Berberine",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Berberine supports blood sugar regulation, improves insulin sensitivity, and reduces inflammation, helping to treat PCOS and diabetes. It regulates glucose metabolism, lipid profiles, and hormone balance. Berberine deficiency can lead to impaired glucose regulation, weight gain, and increased risk of chronic diseases. Supplementing with berberine can improve insulin sensitivity, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking berberine supplements.",
+"lsvs": [],
+"main_image": "product_image/Berberine.jpg",
+"flag_condition": ["PCOS", "Diabetes"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Vitamin D",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Vitamin D supports bone health, immune function, and testosterone production, helping to treat hypogonadism. It regulates calcium metabolism, immune response, and hormone balance. Vitamin D deficiency can lead to impaired bone health, increased risk of infections, and reduced fertility. Supplementing with vitamin D can improve bone health, boost immune function, and promote overall well-being. Consult a healthcare professional before taking vitamin D supplements.",
+"lsvs": [],
+"main_image": "product_image/Vitamin D.jpg",
+"flag_condition": ["Hypogonadism"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "D-Aspartic Acid (DAA)",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "D-Aspartic Acid (DAA) supports testosterone production, improves fertility, and enhances athletic performance, helping to treat hypogonadism. It regulates hormone balance, sperm quality, and muscle growth. DAA deficiency can lead to impaired fertility, reduced muscle mass, and decreased athletic performance. Supplementing with DAA can improve testosterone levels, enhance fertility, and promote overall well-being. Consult a healthcare professional before taking DAA supplements.",
+"lsvs": [],
+"main_image": "product_image/D-Aspartic Acid (DAA).jpg",
+"flag_condition": ["Hypogonadism"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Lactobacillus acidophilus Probiotics",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Lactobacillus acidophilus probiotics support gut health, immune function, and hormone regulation, helping to treat endometriosis. They regulate gut microbiota, immune response, and hormone balance. Probiotic deficiency is not a recognized medical condition, but supplementing with Lactobacillus acidophilus probiotics can improve gut health, boost immune function, and promote overall well-being. Consult a healthcare professional before taking probiotic supplements.",
+"lsvs": [],
+"main_image": "product_image/Lactobacillus acidophilus Probiotics.jpg",
+"flag_condition": ["Endometriosis"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Cinnamon",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Cinnamon supports blood sugar regulation, improves insulin sensitivity, and reduces inflammation, helping to treat diabetes. It regulates glucose metabolism, lipid profiles, and hormone balance. Cinnamon deficiency is not a recognized medical condition, but supplementing with cinnamon can improve insulin sensitivity, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking cinnamon supplements.",
+"lsvs": [],
+"main_image": "product_image/Cinnamon.jpg",
+"flag_condition": ["Diabetes"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Vitamin B6",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Vitamin B6 supports immune function, brain health, and hormone regulation, helping to treat menstrual irregularities. It regulates neurotransmitter synthesis, immune response, and hormone balance. Vitamin B6 deficiency can lead to impaired immune function, fatigue, and decreased cognitive performance. Supplementing with vitamin B6 can improve immune function, reduce symptoms of PMS, and promote overall well-being. Consult a healthcare professional before taking vitamin B6 supplements.",
+"lsvs": [],
+"main_image": "product_image/Vitamin B6.jpg",
+"flag_condition": ["Menstrual Irregularities"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Magnesium",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Magnesium supports muscle relaxation, nerve function, and bone health, helping to treat menstrual cramps. It regulates muscle contraction, neurotransmitter synthesis, and bone mineralization. Magnesium deficiency can lead to muscle cramps, fatigue, and decreased bone density. Supplementing with magnesium can improve muscle relaxation, reduce symptoms of PMS, and promote overall well-being. Consult a healthcare professional before taking magnesium supplements.",
+"lsvs": [],
+"main_image": "product_image/Magnesium.jpg",
+"flag_condition": ["Menstrual Cramps"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Turmeric/Curcumin",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Turmeric/Curcumin supports joint health, reduces inflammation, and promotes antioxidant defenses, helping to treat endometriosis. It regulates inflammatory response, antioxidant defenses, and hormone balance. Turmeric/curcumin deficiency is not a recognized medical condition, but supplementing with turmeric/curcumin can improve joint health, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking turmeric/curcumin supplements.",
+"lsvs": [],
+"main_image": "product_image/Turmeric-Curcumin.jpg",
+"flag_condition": ["Endometriosis"],
+"created_at": "",
+"updated_at": ""
+},
+{
+"name": "Chromium",
+"category": "",
+"main_category": "Nutritional Supplement",
+"sub_categories": {
+"age": ["adults"],
+"brands": [],
+"gender": ["male", "female"],
+"Lifestyle": [],
+"Lifestyle Rating": [],
+"pharmacy grouping": []
+},
+"price": 0.0,
+"strength": "Nil",
+"description": "Chromium supports blood sugar regulation, improves insulin sensitivity, and reduces inflammation, helping to treat diabetes. It regulates glucose metabolism, lipid profiles, and hormone balance. Chromium deficiency can lead to impaired glucose regulation, weight gain, and increased risk of chronic diseases. Supplementing with chromium can improve insulin sensitivity, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking chromium supplements.",
+"lsvs": [],
+"main_image": "product_image/Chromium.jpg",
+"flag_condition": ["Diabetes"],
+"created_at": "",
+"updated_at": ""
+}
+]
