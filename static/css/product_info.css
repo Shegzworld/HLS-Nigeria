@@ -274,9 +274,9 @@ width: 100%;
     display: none;
 }
 
-.reviews-list.show {
+/* .reviews-list.show {
     display: block;
-}
+} */
 
 .prev-button,
 .next-button {

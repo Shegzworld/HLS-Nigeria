@@ -197,6 +197,11 @@ body{
     flex-direction: row;
     justify-content: space-between;
     height: 30px;
+    margin-top: 3px;
+}
+
+.action-button .fas{
+    color: whitesmoke;
 }
 
 .action-button {
@@ -223,23 +228,44 @@ body{
     flex-grow: 1;
 }
 
-.product-slider {
+/* .product-slider {
     position: relative;
     width: 100%;
     height: 120px;
     overflow: hidden;
     border: solid 0.1px rgba(177, 173, 173, 0.51);
-}
+} */
 
-.product-slider .product-card {
+/* .product-slider .product-card {
     position: absolute;
     top: 0;
     left: 0;
     width: 30%;
-    height: 95%;
+    height: 85%;
+    margin: auto;
     background-color: #f0f0f0;
     padding: 5px;
     border: 1px solid #ddd;
+    margin-top: 3%;
+    margin-left: 3%;
+} */
+
+.product-slider {
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    height: 120px;
+    border: solid 0.1px rgba(177, 173, 173, 0.51);
+    scroll-behavior: smooth;
+    flex-wrap: nowrap;
+}
+
+.product-card {
+    flex: 0 0 auto;
+    width: 30%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    height: 85%;
 }
 
 .product-slider .product-card img {
@@ -249,7 +275,7 @@ body{
     border-radius: 10px;
 }
 
-.prev-button{
+/* .prev-button{
     position: absolute;
     top: 45%;
     left: 0;
@@ -259,4 +285,22 @@ body{
     position: absolute;
     top: 45%;
     right: 0;
+} */
+
+.paginator {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paginator-item {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+}
+
+.paginator-item.active {
+    background-color: #007bff;
 }

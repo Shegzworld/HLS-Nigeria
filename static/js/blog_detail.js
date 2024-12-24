@@ -34,39 +34,57 @@ document.addEventListener('DOMContentLoaded', function(){
       });
     });
 
-    const productSlider = document.querySelector('.product-slider');
-    const productCards = document.querySelectorAll('.product-card');
+    // const productSlider = document.querySelector('.product-slider');
+    // const productCards = document.querySelectorAll('.product-card');
 
-    let currentSlide = 0;
+  //   let currentSlide = 0;
 
-    function showSlide(slideIndex) {
-      productCards.forEach((card, index) => {
-        card.style.transform = `translateX(${(index - slideIndex) * 100}%)`;
-      });
-    }
+  //   function showSlide(slideIndex) {
+  // productSlider.style.transform = `translateX(${(slideIndex * -100)}%)`;
+  // }
 
-    function nextSlide() {
-      currentSlide = (currentSlide + 1) % productCards.length;
-      showSlide(currentSlide);
-    }
+  //   function nextSlide() {
+  //     currentSlide = (currentSlide + 1) % productCards.length;
+  //     showSlide(currentSlide);
+  //   }
 
-    function prevSlide() {
-      currentSlide = (currentSlide - 1 + productCards.length) % productCards.length;
-      showSlide(currentSlide);
-    }
+  //   function prevSlide() {
+  //     currentSlide = (currentSlide - 1 + productCards.length) % productCards.length;
+  //     showSlide(currentSlide);
+  //   }
 
 
-    showSlide(currentSlide);
+  //   showSlide(currentSlide);
 
-    productSlider.addEventListener('swipeleft', nextSlide);
-    productSlider.addEventListener('swiperight', prevSlide);
+  //   productSlider.addEventListener('swipeleft', nextSlide);
+  //   productSlider.addEventListener('swiperight', prevSlide);
 
-    // Add navigation buttons
-    const navButtons = document.createElement('div');
-    navButtons.innerHTML = `
-      <button class="prev-button">&lt;</button>
-      <button class="next-button">&gt;</button>
-    `;
+  //   // Add navigation buttons
+  //   const navButtons = document.createElement('div');
+  //   navButtons.innerHTML = `
+  //     <button class="prev-button">&lt;</button>
+  //     <button class="next-button">&gt;</button>
+  //   `;
 
-  productSlider.appendChild(navButtons);
+  // productSlider.appendChild(navButtons);
+  
+// update paginator items based on card position
+// function updatePaginator() {
+//   paginatorItems.forEach((item, index) => {
+//     if (index === Math.floor(cardPosition / cardTotalWidth)) {
+//       item.classList.add('active');
+//     } else {
+//       item.classList.remove('active');
+//     }
+//   });
+// }
+
+// // update paginator when card position changes
+// productSlider.addEventListener('touchend', () => {
+//   updatePaginator();
+// });
+
+// // initialize paginator
+// updatePaginator();
+
 })

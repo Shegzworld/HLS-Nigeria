@@ -7,7 +7,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "NOW"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -19,7 +21,7 @@
                 "Essential Fatty Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Omega-3 fatty acids play a crucial role in brain function and development. They have been shown to support brain health by reducing inflammation and promoting neural connections. Omega-3s have been found to be beneficial in treating conditions such as depression, anxiety, and ADHD. They also support cognitive function and memory. By incorporating omega-3s into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -36,7 +38,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Earth Creation"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -48,7 +52,7 @@
                 "Single Vitamins"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "B vitamins are essential for maintaining healthy nerve cells and supporting cognitive function. They play a crucial role in synthesizing neurotransmitters, such as serotonin and dopamine, which regulate mood and motivation. B vitamins have been found to be beneficial in treating conditions such as depression, anxiety, and fatigue. They also support energy production and can help alleviate symptoms of stress. By ensuring adequate B vitamin intake, you can support optimal brain function.",
         "lsvs": [],
@@ -65,7 +69,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Puritan's Pride"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -77,7 +83,7 @@
                 "Single Vitamins"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Vitamin D is essential for maintaining healthy brain function and development. It has been shown to play a role in regulating mood, motivation, and cognitive function. Vitamin D deficiency has been linked to an increased risk of depression, anxiety, and seasonal affective disorder. Supplementing with vitamin D can help alleviate symptoms of depression and anxiety. By maintaining adequate vitamin D levels, you can support overall brain health.",
         "lsvs": [],
@@ -94,7 +100,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Unavailable"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -106,7 +114,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Curcumin is a potent antioxidant and anti-inflammatory compound that has been shown to support brain health. It has been found to be beneficial in treating conditions such as depression, anxiety, and Alzheimer's disease. Curcumin has been shown to reduce inflammation and oxidative stress in the brain, promoting healthy neural connections. It also supports cognitive function and memory. By incorporating curcumin into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -123,7 +131,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Puritan's Pride"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -135,7 +145,7 @@
                 "Antioxidants"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Coenzyme Q10 (CoQ10) is an antioxidant that plays a crucial role in energy production within cells. It has been shown to support brain health by reducing oxidative stress and inflammation. CoQ10 has been found to be beneficial in treating conditions such as Parkinson's disease, Alzheimer's disease, and migraines. It also supports cognitive function and memory. By supplementing with CoQ10, you can support overall brain health and energy production.",
         "lsvs": [],
@@ -152,7 +162,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Vitabiotics"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -161,10 +173,10 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Multi Minerals"
+                "Single Mineral"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Magnesium is an essential mineral that plays a crucial role in neuronal function and synaptic plasticity. It has been shown to support brain health by reducing inflammation and oxidative stress. Magnesium deficiency has been linked to an increased risk of depression, anxiety, and ADHD. Supplementing with magnesium can help alleviate symptoms of depression and anxiety. By maintaining adequate magnesium levels, you can support overall brain health.",
         "lsvs": [],
@@ -181,7 +193,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Unavailable"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -193,7 +207,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "N-Acetyl Cysteine (NAC) is an amino acid that has been shown to support brain health by reducing oxidative stress and inflammation. It has been found to be beneficial in treating conditions such as depression, anxiety, and bipolar disorder. NAC also supports cognitive function and memory. By supplementing with NAC, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -210,7 +224,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Unavailable"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -222,7 +238,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "S-Adenosylmethionine (SAMe) is an amino acid that plays a crucial role in methylation processes within the brain. It has been shown to support brain health by reducing inflammation and oxidative stress. SAMe has been found to be beneficial in treating conditions such as depression, anxiety, and ADHD. It also supports cognitive function and memory. By supplementing with SAMe, you can support overall brain health.",
         "lsvs": [],
@@ -239,7 +255,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "NOW"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -251,7 +269,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "St. John's Wort is a herbal supplement that has been used for centuries to support mental health. It has been shown to support brain health by reducing inflammation and oxidative stress. St. John's Wort has been found to be beneficial in treating conditions such as depression, anxiety, and seasonal affective disorder. It also supports cognitive function and mood. By incorporating St. John's Wort into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -268,7 +286,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "NOW"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -280,7 +300,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "GABA (Gamma-Aminobutyric Acid) is a neurotransmitter that plays a crucial role in regulating calmness and relaxation. It has been shown to support brain health by reducing anxiety and stress. GABA has been found to be beneficial in treating conditions such as anxiety disorders, insomnia, and ADHD. It also supports cognitive function and mood. By supplementing with GABA, you can support overall brain health and relaxation.",
         "lsvs": [],
@@ -297,7 +317,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Solgar"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -309,7 +331,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "5-Hydroxytryptophan (5-HTP) is an amino acid that plays a crucial role in synthesizing serotonin, a neurotransmitter that regulates mood. It has been shown to support brain health by reducing symptoms of depression and anxiety. 5-HTP has been found to be beneficial in treating conditions such as depression, anxiety, and insomnia. It also supports cognitive function and mood. By supplementing with 5-HTP, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -326,7 +348,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Force Factor"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -338,7 +362,7 @@
                 "Adaptogens"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Ashwagandha is an adaptogenic herb that has been used for centuries to support stress relief and overall well-being. It has been shown to support brain health by reducing cortisol levels and oxidative stress. Ashwagandha has been found to be beneficial in treating conditions such as anxiety disorders, depression, and ADHD. It also supports cognitive function and memory. By incorporating ashwagandha into your diet, you can support overall brain health and resilience.",
         "lsvs": [],
@@ -355,7 +379,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Swanson"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -367,7 +393,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Acetyl-L-Carnitine (ALCAR) is an amino acid that plays a crucial role in energy production within cells. It has been shown to support brain health by reducing oxidative stress and inflammation. ALCAR has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and depression. It also supports cognitive function and memory. By supplementing with ALCAR, you can support overall brain health and energy production.",
         "lsvs": [],
@@ -384,7 +410,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "NOW"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -396,7 +424,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "L-lysine is an amino acid that plays a crucial role in protein synthesis and neurotransmitter regulation. It has been shown to support brain health by reducing stress and anxiety and improving mood. L-lysine has been found to be beneficial in treating conditions such as anxiety disorders and depression. It also supports cognitive function and memory. By supplementing with L-lysine, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -413,7 +441,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Mason"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -425,7 +455,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Korean ginseng is a herbal supplement that has been used for centuries to support energy and vitality. It has been shown to support brain health by improving cognitive function and reducing fatigue. Korean ginseng has been found to be beneficial in treating conditions such as depression, anxiety, and ADHD. It also supports cognitive function and memory. By incorporating Korean ginseng into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -442,7 +472,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "NOW"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -454,7 +486,7 @@
                 "Single Vitamins"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Pantothenic acid is a B vitamin that plays a crucial role in energy production and neurotransmitter regulation. It has been shown to support brain health by reducing stress and anxiety and improving mood. Pantothenic acid has been found to be beneficial in treating conditions such as depression, anxiety, and fatigue. It also supports energy production and can help alleviate symptoms of stress. By ensuring adequate pantothenic acid intake, you can support optimal brain function.",
         "lsvs": [],
@@ -471,7 +503,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Revive"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -483,7 +517,7 @@
                 "Antioxidants"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Ubiquinol is an antioxidant that plays a crucial role in reducing oxidative stress and inflammation. It has been shown to support brain health by improving cognitive function and reducing symptoms of depression and anxiety. Ubiquinol has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and migraines. It also supports cognitive function and memory. By supplementing with ubiquinol, you can support overall brain health and energy production.",
         "lsvs": [],
@@ -500,7 +534,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Hovid"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -512,7 +548,7 @@
                 "Essential Fatty Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "DHA (docosahexaenoic acid) is an omega-3 fatty acid that plays a crucial role in brain function and development. It has been shown to support brain health by reducing inflammation and promoting neural connections. DHA has been found to be beneficial in treating conditions such as depression, anxiety, and ADHD. It also supports cognitive function and memory. By incorporating DHA into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -529,7 +565,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Swanson"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -541,7 +579,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "L-carnitine is an amino acid that plays a crucial role in energy production within cells. It has been shown to support brain health by reducing oxidative stress and inflammation. L-carnitine has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and depression. It also supports cognitive function and memory. By supplementing with L-carnitine, you can support overall brain health and energy production.",
         "lsvs": [],
@@ -558,7 +596,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Unavailable"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -570,7 +610,7 @@
                 "Phospholipids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Phosphatidylserine is a phospholipid that plays a crucial role in neuronal membrane structure and function. It has been shown to support brain health by improving cognitive function and reducing age-related cognitive decline. Phosphatidylserine has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and depression. It also supports cognitive function and memory. By supplementing with phosphatidylserine, you can support overall brain health.",
         "lsvs": [],
@@ -587,7 +627,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Tyronex Pharma"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -599,7 +641,7 @@
                 "Cognitive Support"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Cognitol is a supplement that is claimed to support brain health and cognitive function. However, more research is needed to fully understand its effects.",
         "lsvs": [],
@@ -616,7 +658,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Vitabiotics"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -628,7 +672,7 @@
                 "Cognitive Support"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Neurozan is a supplement that is claimed to support brain health and cognitive function. However, more research is needed to fully understand its effects.",
         "lsvs": [],
@@ -645,7 +689,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Unavailable"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -657,7 +703,7 @@
                 "Cognitive Support"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Focus factor is a supplement that is claimed to support brain health and cognitive function. However, more research is needed to fully understand its effects.",
         "lsvs": [],
@@ -674,7 +720,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Moleac"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -686,7 +734,7 @@
                 "Cognitive Support"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Neuroaid is a supplement that is claimed to support brain health and cognitive function. However, more research is needed to fully understand its effects.",
         "lsvs": [],
@@ -703,7 +751,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Unavailable"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -715,7 +765,7 @@
                 "Stress Relief"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Stress defense is a supplement that is claimed to support brain health and cognitive function during times of stress. However, more research is needed to fully understand its effects.",
         "lsvs": [],
@@ -732,7 +782,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Unavailable"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -744,7 +796,7 @@
                 "Stress Relief"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Stress comfort is a supplement that is claimed to support brain health and cognitive function during times of stress. However, more research is needed to fully understand its effects.",
         "lsvs": [],
@@ -761,7 +813,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Deal Supplement"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -773,7 +827,7 @@
                 "Adaptogens"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Rhodiola rosea is an adaptogenic herb that has been used for centuries to support stress relief and mental performance. It has been shown to support brain health by reducing stress and anxiety and improving mood. Rhodiola rosea has been found to be beneficial in treating conditions such as depression, anxiety, and fatigue. It also supports cognitive function and memory. By incorporating rhodiola rosea into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -790,7 +844,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Nutricost"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -802,7 +858,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Bacopa monnieri is a herbal supplement that has been used for centuries to support brain health and cognitive function. It has been shown to support brain health by improving memory and cognitive processing speed. Bacopa monnieri has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and ADHD. It also supports cognitive function and memory. By incorporating bacopa monnieri into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -819,7 +875,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Nature's Field"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -831,7 +889,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Ginkgo biloba is a herbal supplement that has been used for centuries to support brain health and cognitive function. It has been shown to support brain health by improving blood flow and reducing oxidative stress. Ginkgo biloba has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and depression. It also supports cognitive function and memory. By incorporating ginkgo biloba into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
@@ -848,7 +906,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Puritan's Pride"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -857,10 +917,10 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Sleep Aids"
+                "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Melatonin is a hormone that plays a crucial role in regulating sleep-wake cycles. It has been shown to support brain health by reducing oxidative stress and inflammation. Melatonin has been found to be beneficial in treating conditions such as insomnia, sleep disorders, and jet lag. It also supports cognitive function and memory. By supplementing with melatonin, you can support overall brain health and sleep quality.",
         "lsvs": [],
@@ -877,7 +937,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "NOW"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -889,7 +951,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Valerian root is a herbal supplement that has been used for centuries to support relaxation and sleep. It has been shown to support brain health by reducing stress and anxiety and promoting relaxation. Valerian root has been found to be beneficial in treating conditions such as insomnia, sleep disorders, and anxiety. It also supports cognitive function and mood. By incorporating valerian root into your diet, you can support overall brain health and sleep quality.",
         "lsvs": [],
@@ -906,7 +968,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Nature's Made"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -915,10 +979,10 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Vitamins"
+                "Single Vitamins"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Vitamin C is an antioxidant that plays a crucial role in reducing oxidative stress and inflammation. It has been shown to support brain health by improving cognitive function and reducing symptoms of depression and anxiety. Vitamin C has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and ADHD. It also supports cognitive function and memory. By ensuring adequate vitamin C intake, you can support overall brain health.",
         "lsvs": [],
@@ -935,7 +999,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Nature's Field"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -944,10 +1010,10 @@
             "Dosage Forms": [],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
-                "Vitamins"
+                "Single Vitamins"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Vitamin E is an antioxidant that plays a crucial role in reducing oxidative stress and inflammation. It has been shown to support brain health by improving cognitive function and reducing symptoms of depression and anxiety. Vitamin E has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and ADHD. It also supports cognitive function and memory. By ensuring adequate vitamin E intake, you can support overall brain health.",
         "lsvs": [],
@@ -964,7 +1030,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Nature's Made"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -976,7 +1044,7 @@
                 "Minerals"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Iron is an essential mineral that plays a crucial role in transporting oxygen to cells. It has been shown to support brain health by improving cognitive function and reducing symptoms of depression and anxiety. Iron has been found to be beneficial in treating conditions such as iron deficiency anemia, ADHD, and restless leg syndrome. It also supports energy production and can help alleviate symptoms of fatigue. By ensuring adequate iron intake, you can support overall brain health.",
         "lsvs": [],
@@ -993,7 +1061,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Puritan's Pride"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -1005,7 +1075,7 @@
                 "Antioxidants"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Alpha lipoic acid is an antioxidant that plays a crucial role in reducing oxidative stress and inflammation. It has been shown to support brain health by improving cognitive function and reducing symptoms of depression and anxiety. Alpha lipoic acid has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and diabetic neuropathy. It also supports energy production and can help alleviate symptoms of fatigue. By supplementing with alpha lipoic acid, you can support overall brain health.",
         "lsvs": [],
@@ -1022,7 +1092,9 @@
             "age": [
                 "adults"
             ],
-            "brands": [],
+            "brands": [
+                "Efamol"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -1034,7 +1106,7 @@
                 "Essential Fatty Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Efamol is a supplement that contains essential fatty acids, particularly gamma-linolenic acid (GLA). It has been shown to support brain health by reducing inflammation and promoting neural function. Efamol has been found to be beneficial in treating conditions such as ADHD, depression, and anxiety. It also supports cognitive function and mood. By supplementing with Efamol, you can support overall brain health and well-being.",
         "lsvs": [],

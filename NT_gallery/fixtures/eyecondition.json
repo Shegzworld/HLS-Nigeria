@@ -1,275 +1,421 @@
 [
     {
-    "name": "Omega-3 Fatty Acids",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Omega-3 Fatty Acids are essential nutrients that play a crucial role in reducing inflammation and promoting eye health. These fatty acids help treat various eye conditions, including cataracts, glaucoma, and age-related macular degeneration. By taking Omega-3 Fatty Acids, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Omega-3 Fatty Acids also support healthy heart function and promote overall well-being. Omega-3 Fatty Acids are a natural and effective way to support eye health and reduce inflammation.",
-    "lsvs": [],
-    "main_image": "product_image/Omega-3 Fatty Acids.jpg",
-    "flag_condition": ["Cataracts", "Glaucoma", "Age-Related Macular Degeneration"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Vitamin C",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Vitamin C is an essential antioxidant that plays a crucial role in reducing oxidative stress and promoting eye health. Vitamin C helps treat various eye conditions, including cataracts and astigmatism. By taking Vitamin C, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Vitamin C also supports healthy immune function and promotes overall well-being. Vitamin C is a natural and effective way to support eye health and reduce oxidative stress.",
-    "lsvs": [],
-    "main_image": "product_image/Vitamin C.jpg",
-    "flag_condition": ["Cataracts", "Astigmatism"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Omega-3 Fatty Acids",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Earth Creation"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Essential Fatty Acids"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Omega-3 Fatty Acids are essential nutrients that play a crucial role in reducing inflammation and promoting eye health. These fatty acids help treat various eye conditions, including cataracts, glaucoma, and age-related macular degeneration. By taking Omega-3 Fatty Acids, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Omega-3 Fatty Acids also support healthy heart function and promote overall well-being. Omega-3 Fatty Acids are a natural and effective way to support eye health and reduce inflammation.",
+        "lsvs": [],
+        "main_image": "product_image/Omega-3 Fatty Acids.jpg",
+        "flag_condition": [
+            "Cataracts",
+            "Glaucoma",
+            "Age-Related Macular Degeneration"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Vitamin A",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Vitamin A is an essential nutrient that plays a crucial role in promoting vision health and reducing the risk of eye conditions. Vitamin A helps treat various eye conditions, including dry eye syndrome, myopia, and hyperopia. By taking Vitamin A, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Vitamin A also supports healthy immune function and promotes overall well-being. Vitamin A is a natural and effective way to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/Vitamin A.jpg",
-    "flag_condition": ["Dry Eye Syndrome", "Myopia", "Hyperopia"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Vitamin D",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Vitamin D is an essential nutrient that plays a crucial role in promoting bone health and reducing the risk of eye conditions. Vitamin D helps treat various eye conditions, including age-related macular degeneration and presbyopia. By taking Vitamin D, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Vitamin D also supports healthy immune function and promotes overall well-being. Vitamin D is a natural and effective way to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/Vitamin D.jpg",
-    "flag_condition": ["Age-Related Macular Degeneration", "Presbyopia"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Vitamin C",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Nature's Made"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Single Vitamins"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Vitamin C is an essential antioxidant that plays a crucial role in reducing oxidative stress and promoting eye health. Vitamin C helps treat various eye conditions, including cataracts and astigmatism. By taking Vitamin C, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Vitamin C also supports healthy immune function and promotes overall well-being. Vitamin C is a natural and effective way to support eye health and reduce oxidative stress.",
+        "lsvs": [],
+        "main_image": "product_image/Vitamin C.jpg",
+        "flag_condition": [
+            "Cataracts",
+            "Astigmatism"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Magnesium",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Magnesium is an essential mineral that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Magnesium helps treat various eye conditions, including glaucoma. By taking Magnesium, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Magnesium also supports healthy heart function and promotes overall well-being. Magnesium is a natural and effective way to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/Magnesium.jpg",
-    "flag_condition": ["Glaucoma"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Ginkgo Biloba",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Ginkgo Biloba is a natural herb that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Ginkgo Biloba helps treat various eye conditions, including glaucoma and presbyopia. By taking Ginkgo Biloba, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Ginkgo Biloba also supports healthy blood flow and promotes overall well-being. Ginkgo Biloba is a natural and effective way to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/Ginkgo Biloba.jpg",
-    "flag_condition": ["Glaucoma", "Presbyopia"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Vitamin A",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Vitamin A is an essential nutrient that plays a crucial role in promoting vision health and reducing the risk of eye conditions. Vitamin A helps treat various eye conditions, including dry eye syndrome, myopia, and hyperopia. By taking Vitamin A, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Vitamin A also supports healthy immune function and promotes overall well-being. Vitamin A is a natural and effective way to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/Vitamin A.jpg",
+        "flag_condition": [
+            "Dry Eye Syndrome",
+            "Myopia",
+            "Hyperopia"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Acetyl-L-Carnitine (ALCAR)",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Acetyl-L-Carnitine (ALCAR) is an amino acid that plays a crucial role in promoting eye health and reducing the risk of eye conditions. ALCAR helps treat various eye conditions, including glaucoma. By taking ALCAR, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. ALCAR also supports healthy nerve function and promotes overall well-being. ALCAR is a natural and effective way to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/Acetyl-L-Carnitine (ALCAR).jpg",
-    "flag_condition": ["Glaucoma"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Lutein and Zeaxanthin",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Lutein and Zeaxanthin are essential nutrients that play a crucial role in promoting eye health and reducing the risk of eye conditions. Lutein and Zeaxanthin help treat various eye conditions, including age-related macular degeneration. By taking Lutein and Zeaxanthin, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Lutein and Zeaxanthin also support healthy vision and promote overall well-being. Lutein and Zeaxanthin are natural and effective ways to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/Lutein and Zeaxanthin.jpg",
-    "flag_condition": ["Age-Related Macular Degeneration"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Vitamin D",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Single Vitamins"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Vitamin D is an essential nutrient that plays a crucial role in promoting bone health and reducing the risk of eye conditions. Vitamin D helps treat various eye conditions, including age-related macular degeneration and presbyopia. By taking Vitamin D, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Vitamin D also supports healthy immune function and promotes overall well-being. Vitamin D is a natural and effective way to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/Vitamin D.jpg",
+        "flag_condition": [
+            "Age-Related Macular Degeneration",
+            "Presbyopia"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Bilberry Extract",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Bilberry Extract is a rich source of anthocyanins, which play a crucial role in promoting eye health and reducing the risk of eye conditions. Bilberry Extract helps treat various eye conditions, including cataracts, myopia, and astigmatism. By taking Bilberry Extract, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Bilberry Extract also supports healthy vision and promotes overall well-being. Bilberry Extract is a natural and effective way to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/Bilberry Extract.jpg",
-    "flag_condition": ["Cataracts", "Myopia", "Astigmatism"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Zinc",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Zinc is an essential mineral that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Zinc helps treat various eye conditions, including dry eye syndrome, hyperopia, and conjunctivitis. By taking Zinc, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Zinc also supports healthy immune function and promotes overall well-being. Zinc is a natural and effective way to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/Zinc.jpg",
-    "flag_condition": ["Dry Eye Syndrome", "Hyperopia", "Conjunctivitis"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Magnesium",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Vitabiotics"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Single Mineral"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Magnesium is an essential mineral that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Magnesium helps treat various eye conditions, including glaucoma. By taking Magnesium, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Magnesium also supports healthy heart function and promotes overall well-being. Magnesium is a natural and effective way to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/Magnesium.jpg",
+        "flag_condition": [
+            "Glaucoma"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Coenzyme Q10 (CoQ10)",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Coenzyme Q10 (CoQ10) is an essential antioxidant that plays a crucial role in promoting eye health and reducing the risk of eye conditions. CoQ10 helps treat various eye conditions, including age-related macular degeneration. By taking CoQ10, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. CoQ10 also supports healthy heart function and promotes overall well-being. CoQ10 is a natural and effective way to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/Coenzyme Q10 (CoQ10).jpg",
-    "flag_condition": ["Age-Related Macular Degeneration"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Turmeric/Curcumin",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Turmeric/Curcumin is a natural anti-inflammatory compound that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Turmeric/Curcumin helps treat various eye conditions, including dry eye syndrome and conjunctivitis. By taking Turmeric/Curcumin, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Turmeric/Curcumin also supports healthy joint function and promotes overall well-being. Turmeric/Curcumin is a natural and effective way to support eye health and reduce inflammation.",
-    "lsvs": [],
-    "main_image": "product_image/Turmeric Curcumin.jpg",
-    "flag_condition": ["Dry Eye Syndrome", "Conjunctivitis"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Ginkgo Biloba",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Nature's Field"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Herbal Supplements"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Ginkgo Biloba is a natural herb that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Ginkgo Biloba helps treat various eye conditions, including glaucoma and presbyopia. By taking Ginkgo Biloba, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Ginkgo Biloba also supports healthy blood flow and promotes overall well-being. Ginkgo Biloba is a natural and effective way to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/Ginkgo Biloba.jpg",
+        "flag_condition": [
+            "Glaucoma",
+            "Presbyopia"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "B Vitamins",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
+        "name": "Acetyl-L-Carnitine (ALCAR)",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Swanson"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Acetyl-L-Carnitine (ALCAR) is an amino acid that plays a crucial role in promoting eye health and reducing the risk of eye conditions. ALCAR helps treat various eye conditions, including glaucoma. By taking ALCAR, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. ALCAR also supports healthy nerve function and promotes overall well-being. ALCAR is a natural and effective way to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/Acetyl-L-Carnitine (ALCAR).jpg",
+        "flag_condition": [
+            "Glaucoma"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "B Vitamins are essential nutrients that play a crucial role in promoting eye health and reducing the risk of eye conditions. B Vitamins help treat various eye conditions, including cataracts and age-related macular degeneration. By taking B Vitamins, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. B Vitamins also support healthy heart function and promote overall well-being. B Vitamins are a natural and effective way to support eye health and reduce the risk of eye conditions.",
-    "lsvs": [],
-    "main_image": "product_image/B Vitamins.jpg",
-    "flag_condition": ["Cataracts", "Age-Related Macular Degeneration"],
-    "created_at": "",
-    "updated_at": ""
+    {
+        "name": "Lutein and Zeaxanthin",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Bausch+Lomb"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Lutein and Zeaxanthin are essential nutrients that play a crucial role in promoting eye health and reducing the risk of eye conditions. Lutein and Zeaxanthin help treat various eye conditions, including age-related macular degeneration. By taking Lutein and Zeaxanthin, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Lutein and Zeaxanthin also support healthy vision and promote overall well-being. Lutein and Zeaxanthin are natural and effective ways to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/Lutein and Zeaxanthin.jpg",
+        "flag_condition": [
+            "Age-Related Macular Degeneration"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Bilberry Extract",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Unavailable"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Bilberry Extract is a rich source of anthocyanins, which play a crucial role in promoting eye health and reducing the risk of eye conditions. Bilberry Extract helps treat various eye conditions, including cataracts, myopia, and astigmatism. By taking Bilberry Extract, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Bilberry Extract also supports healthy vision and promotes overall well-being. Bilberry Extract is a natural and effective way to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/Bilberry Extract.jpg",
+        "flag_condition": [
+            "Cataracts",
+            "Myopia",
+            "Astigmatism"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Zinc",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Single Mineral"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Zinc is an essential mineral that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Zinc helps treat various eye conditions, including dry eye syndrome, hyperopia, and conjunctivitis. By taking Zinc, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Zinc also supports healthy immune function and promotes overall well-being. Zinc is a natural and effective way to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/Zinc.jpg",
+        "flag_condition": [
+            "Dry Eye Syndrome",
+            "Hyperopia",
+            "Conjunctivitis"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Coenzyme Q10 (CoQ10)",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Antioxidants, Enzymes"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Coenzyme Q10 (CoQ10) is an essential antioxidant that plays a crucial role in promoting eye health and reducing the risk of eye conditions. CoQ10 helps treat various eye conditions, including age-related macular degeneration. By taking CoQ10, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. CoQ10 also supports healthy heart function and promotes overall well-being. CoQ10 is a natural and effective way to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/Coenzyme Q10 (CoQ10).jpg",
+        "flag_condition": [
+            "Age-Related Macular Degeneration"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Turmeric/Curcumin",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Herbal Supplements"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Turmeric/Curcumin is a natural anti-inflammatory compound that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Turmeric/Curcumin helps treat various eye conditions, including dry eye syndrome and conjunctivitis. By taking Turmeric/Curcumin, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Turmeric/Curcumin also supports healthy joint function and promotes overall well-being. Turmeric/Curcumin is a natural and effective way to support eye health and reduce inflammation.",
+        "lsvs": [],
+        "main_image": "product_image/Turmeric Curcumin.jpg",
+        "flag_condition": [
+            "Dry Eye Syndrome",
+            "Conjunctivitis"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "B Vitamins",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Earth Creation"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "B Vitamins are essential nutrients that play a crucial role in promoting eye health and reducing the risk of eye conditions. B Vitamins help treat various eye conditions, including cataracts and age-related macular degeneration. By taking B Vitamins, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. B Vitamins also support healthy heart function and promote overall well-being. B Vitamins are a natural and effective way to support eye health and reduce the risk of eye conditions.",
+        "lsvs": [],
+        "main_image": "product_image/B Vitamins.jpg",
+        "flag_condition": [
+            "Cataracts",
+            "Age-Related Macular Degeneration"
+        ],
+        "created_at": "",
+        "updated_at": ""
     }
 ]

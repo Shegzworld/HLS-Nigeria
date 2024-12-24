@@ -320,3 +320,137 @@ for file_name in file_names:
     print(f"Done loading products for {file_name}.\n")
 
 
+-----------------PRINT SUPPLEMENT WITH MULTIPLE APPEARANCES-----------------------------
+supplements that appear in multiple JSON files
+supplements_in_multiple_files = {}
+
+# Loop through every JSON file in the fixtures directory
+for filename in os.listdir('NT_gallery/fixtures'):
+    if filename.endswith('.json'):
+        # Open the JSON file and load its data
+        with open(os.path.join('NT_gallery/fixtures', filename), 'r') as file:
+            data = json.load(file)
+        # Print the name of the JSON file as the header
+        print(f"{filename[:-5]}:")
+        for supplement in data:
+            # Print the name of the supplement
+            print(supplement['name'])
+            # Check if the supplement appears in multiple JSON files
+            if supplement['name'] in supplements_in_multiple_files:
+                supplements_in_multiple_files[supplement['name']]['filenames'].append(filename)
+            else:
+                supplements_in_multiple_files[supplement['name']] = {
+                    'description': supplement['description'],
+                    'filenames': [filename]
+                }
+        print()  # Empty line for better readability
+
+# Print supplements that appear in multiple JSON files
+print("Supplements that appear in multiple JSON files:")
+for supplement, info in supplements_in_multiple_files.items():
+    if len(info['filenames']) > 1:
+        print(f"{supplement}:")
+        print(f"Description: {info['description']}")
+        print(f"Appears in: {', '.join(info['filenames'])}")
+        print()  # Empty line for better readability
+
+
+
+-----------------PRINT ALL SUPPLEMENTS AND THEIR BRAND NAMES-------------------------------
+unique_supplements = []
+# Loop through every JSON file in the fixtures directory
+for filename in os.listdir('NT_gallery/fixtures'):
+    if filename.endswith('.json'):
+        # Open the JSON file and load its data
+        with open(os.path.join('NT_gallery/fixtures', filename), 'r') as file:
+            data = json.load(file)
+        # Add each supplement's name to the list
+        for supplement in data:
+            if supplement['name'] not in [s['name'] for s in unique_supplements]:
+                unique_supplements.append(supplement)
+
+for supplement in unique_supplements:
+    print(f'{supplement['name']}----{supplement['sub_categories']['brands']}')
+
+
+---------------------------PRINT ONLY SUPPLEMENTS WITHOUT BRAND NAMES-------------
+unique_supplements = []
+
+# Loop through every JSON file in the fixtures directory
+for filename in os.listdir('NT_gallery/fixtures'):
+    if filename.endswith('.json'):
+        # Open the JSON file and load its data
+        with open(os.path.join('NT_gallery/fixtures', filename), 'r') as file:
+            data = json.load(file)
+        for supplement in data:
+            if ('sub_categories' not in supplement or 'brands' not in supplement['sub_categories'] or not supplement['sub_categories']['brands']) and supplement['name'] not in [s['name'] for s in unique_supplements]:
+                unique_supplements.append(supplement)
+
+for supplement in unique_supplements:
+    print(f"{supplement['name']}----{supplement.get('sub_categories', {}).get('brands', 'No brand')}")
+
+
+fixtures = 'NT_gallery/fixtures'
+for filename in os.listdir(fixtures):
+    if filename.endswith('.json'):
+        with open(os.path.join(fixtures, filename), 'r') as file:
+            data = json.load(file)
+        print(f"{filename[:-5]}:")
+        for supplement in data:
+            name = supplement.get('name')
+            if name in supplement_brands:
+                supplement['sub_categories']['brands'] = [supplement_brands[name]]
+                print(f"Fixed brand for {name} to {supplement_brands[name]}")
+            else:
+                supplement['sub_categories']['brands'] = ['Unavailable']
+                print(f"No brand found for {name}. Set to 'Unavailable'")
+        print(f"Brands fixed in {filename}\n")
+        with open(os.path.join(fixtures, filename), 'w') as f:
+            json.dump(data, f, indent=4)
+----------------------------------------------------------------------------------------
+
+Reset prices for each
+
+fixtures = 'NT_gallery/fixtures'
+for filename in os.listdir(fixtures):
+    if filename.endswith('.json'):
+        with open(os.path.join(fixtures, filename), 'r') as file:
+            data = json.load(file)
+        for supplement in data:
+            supplement['price'] = 0.0
+        with open(os.path.join(fixtures, filename), 'w') as f:
+            json.dump(data, f, indent=4)
+
+
+fixtures = 'NT_gallery/fixtures'
+
+for filename in os.listdir(fixtures):
+    if filename.endswith('.json'):
+        with open(os.path.join(fixtures, filename), 'r') as file:
+            data = json.load(file)
+        for supplement in data:
+            name = supplement.get('name')
+            if name in pharmacy_grouping:
+                supplement['sub_categories']['pharmacy grouping'] = [pharmacy_grouping[name]]
+                print(f"Supplement: {supplement['name']}--->{supplement['sub_categories']['pharmacy grouping']}")
+                print(f"grouping fixed in {filename}\n")
+        with open(os.path.join(fixtures, filename), 'w') as f:
+            json.dump(data, f, indent=4)
+
+
+unmatched_supplements = []
+for item in data:
+    name = item.get('name')
+    pharmacy_grouping = item.get('pharmacy grouping')
+    if isinstance(pharmacy_grouping, list):
+        pharmacy_grouping_str = ', '.join(pharmacy_grouping)
+    else:
+        pharmacy_grouping_str = pharmacy_grouping
+    
+    if pharmacy_grouping_str not in pharmacy_grouping_classes:
+        unmatched_supplements.append((name, pharmacy_grouping_str))
+
+if unmatched_supplements:
+    print("Supplements whose pharmacy grouping does not contain any of the above pharmacy grouping class:")
+    for supplement, pharmacy_grouping in unmatched_supplements:
+        print(f"{supplement}: {pharmacy_grouping}")

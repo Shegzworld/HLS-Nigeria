@@ -18,8 +18,6 @@ document.addEventListener('click', function(e) {
   }
 });
 
-
-
   let currentTestimonialView = 0
 
   const updateTestimonialVisibility = () => {
@@ -48,8 +46,6 @@ document.addEventListener('click', function(e) {
   })
 
   updateTestimonialVisibility() // Initialize product display
-
-
 
   const productBox = document.querySelectorAll(".product-box")
   const nextBtn = document.querySelector(".slide_left")

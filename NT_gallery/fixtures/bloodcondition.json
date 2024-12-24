@@ -1,296 +1,436 @@
 [
     {
-    "name": "Iron",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Iron supplements help treat iron deficiency anemia by increasing red blood cell production and improving oxygen delivery to the body's tissues. Iron supplements also support healthy immune function and reduce fatigue. By taking iron supplements, individuals can experience improved energy levels, reduced shortness of breath, and enhanced overall health. Iron supplements are essential for individuals with iron deficiency anemia, and they can help alleviate symptoms and improve quality of life. Regular iron supplementation can also help prevent iron deficiency anemia in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Iron.jpg",
-    "flag_condition": ["Iron Deficiency Anemia"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Vitamin B12",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Vitamin B12 supplements play a crucial role in the production of red blood cells and the maintenance of a healthy nervous system. Vitamin B12 deficiency can lead to anemia, fatigue, and neurological problems. By taking vitamin B12 supplements, individuals can experience improved energy levels, reduced fatigue, and enhanced cognitive function. Vitamin B12 supplements are essential for individuals with vitamin B12 deficiency, and they can help alleviate symptoms and improve quality of life. Regular vitamin B12 supplementation can also help prevent vitamin B12 deficiency in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Vitamin B12.jpg",
-    "flag_condition": ["Vitamin B12 Deficiency"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Iron",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Nature's Made"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Iron supplements help treat iron deficiency anemia by increasing red blood cell production and improving oxygen delivery to the body's tissues. Iron supplements also support healthy immune function and reduce fatigue. By taking iron supplements, individuals can experience improved energy levels, reduced shortness of breath, and enhanced overall health. Iron supplements are essential for individuals with iron deficiency anemia, and they can help alleviate symptoms and improve quality of life. Regular iron supplementation can also help prevent iron deficiency anemia in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Iron.jpg",
+        "flag_condition": [
+            "Iron Deficiency Anemia"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Folic Acid",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Folic acid supplements are essential for the production of red blood cells and the prevention of anemia. Folic acid deficiency can lead to fatigue, weakness, and neurological problems. By taking folic acid supplements, individuals can experience improved energy levels, reduced fatigue, and enhanced cognitive function. Folic acid supplements are particularly important for pregnant women, as they can help prevent birth defects of the brain and spine. Regular folic acid supplementation can also help prevent folic acid deficiency in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Folic Acid.jpg",
-    "flag_condition": ["Folic Acid Deficiency"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Potassium",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Potassium supplements help lower blood pressure and reduce the risk of heart disease. Potassium also supports healthy muscle and nerve function. By taking potassium supplements, individuals can experience improved blood pressure management, reduced muscle cramps, and enhanced overall health. Potassium supplements are essential for individuals with potassium deficiency, and they can help alleviate symptoms and improve quality of life. Regular potassium supplementation can also help prevent potassium deficiency in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Potassium.jpg",
-    "flag_condition": ["Hypertension", "Heart Disease"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Vitamin B12",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Vitamin B12 supplements play a crucial role in the production of red blood cells and the maintenance of a healthy nervous system. Vitamin B12 deficiency can lead to anemia, fatigue, and neurological problems. By taking vitamin B12 supplements, individuals can experience improved energy levels, reduced fatigue, and enhanced cognitive function. Vitamin B12 supplements are essential for individuals with vitamin B12 deficiency, and they can help alleviate symptoms and improve quality of life. Regular vitamin B12 supplementation can also help prevent vitamin B12 deficiency in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Vitamin B12.jpg",
+        "flag_condition": [
+            "Vitamin B12 Deficiency"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Omega-3 Fatty Acids",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Omega-3 fatty acid supplements support heart health by reducing inflammation and improving blood lipid profiles. Omega-3 fatty acids also support brain function and may help alleviate symptoms of depression. By taking omega-3 fatty acid supplements, individuals can experience improved heart health, reduced inflammation, and enhanced cognitive function. Omega-3 fatty acid supplements are essential for individuals with heart disease, and they can help alleviate symptoms and improve quality of life. Regular omega-3 fatty acid supplementation can also help prevent heart disease in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Omega-3 Fatty Acids.jpg",
-    "flag_condition": ["Heart Disease", "Depression"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Coenzyme Q10 (CoQ10)",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Coenzyme Q10 (CoQ10) supplements support energy production and reduce oxidative stress. CoQ10 also supports heart health and may help alleviate symptoms of migraines. By taking CoQ10 supplements, individuals can experience improved energy levels, reduced oxidative stress, and enhanced heart health. CoQ10 supplements are essential for individuals with heart disease, and they can help alleviate symptoms and improve quality of life. Regular CoQ10 supplementation can also help prevent heart disease in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Coenzyme Q10 (CoQ10).jpg",
-    "flag_condition": ["Heart Disease", "Migraines"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Folic Acid",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Folic acid supplements are essential for the production of red blood cells and the prevention of anemia. Folic acid deficiency can lead to fatigue, weakness, and neurological problems. By taking folic acid supplements, individuals can experience improved energy levels, reduced fatigue, and enhanced cognitive function. Folic acid supplements are particularly important for pregnant women, as they can help prevent birth defects of the brain and spine. Regular folic acid supplementation can also help prevent folic acid deficiency in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Folic Acid.jpg",
+        "flag_condition": [
+            "Folic Acid Deficiency"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Ginseng",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Ginseng supplements support energy production and reduce fatigue. Ginseng also supports immune function and may help alleviate symptoms of stress. By taking ginseng supplements, individuals can experience improved energy levels, reduced fatigue, and enhanced immune function. Ginseng supplements are essential for individuals with chronic fatigue syndrome, and they can help alleviate symptoms and improve quality of life. Regular ginseng supplementation can also help prevent chronic fatigue syndrome in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Ginseng.jpg",
-    "flag_condition": ["Chronic Fatigue Syndrome"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Vitamin K",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Vitamin K supplements support blood clotting and bone health. Vitamin K also supports cardiovascular health and may help alleviate symptoms of osteoporosis. By taking vitamin K supplements, individuals can experience improved blood clotting, reduced risk of bone fractures, and enhanced cardiovascular health. Vitamin K supplements are essential for individuals with vitamin K deficiency, and they can help alleviate symptoms and improve quality of life. Regular vitamin K supplementation can also help prevent vitamin K deficiency in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Vitamin K.jpg",
-    "flag_condition": ["Vitamin K Deficiency", "Osteoporosis"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Potassium",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Potassium supplements help lower blood pressure and reduce the risk of heart disease. Potassium also supports healthy muscle and nerve function. By taking potassium supplements, individuals can experience improved blood pressure management, reduced muscle cramps, and enhanced overall health. Potassium supplements are essential for individuals with potassium deficiency, and they can help alleviate symptoms and improve quality of life. Regular potassium supplementation can also help prevent potassium deficiency in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Potassium.jpg",
+        "flag_condition": [
+            "Hypertension",
+            "Heart Disease"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "N-Acetylcysteine (NAC)",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "N-Acetylcysteine (NAC) supplements support respiratory health and reduce oxidative stress. NAC also supports immune function and may help alleviate symptoms of chronic bronchitis. By taking NAC supplements, individuals can experience improved respiratory function, reduced oxidative stress, and enhanced immune function. NAC supplements are essential for individuals with respiratory disorders, and they can help alleviate symptoms and improve quality of life. Regular NAC supplementation can also help prevent respiratory disorders in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/N-Acetylcysteine (NAC).jpg",
-    "flag_condition": ["Respiratory Disorders", "Chronic Bronchitis"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Antioxidants (Vitamins C and E, Beta-Carotene)",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Antioxidant supplements (vitamins C and E, beta-carotene) support immune function and reduce oxidative stress. Antioxidants also support skin health and may help alleviate symptoms of aging. By taking antioxidant supplements, individuals can experience improved immune function, reduced oxidative stress, and enhanced skin health. Antioxidant supplements are essential for individuals with oxidative stress, and they can help alleviate symptoms and improve quality of life. Regular antioxidant supplementation can also help prevent oxidative stress in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Antioxidants (Vitamins C and E, Beta-Carotene).jpg",
-    "flag_condition": ["Oxidative Stress"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Omega-3 Fatty Acids",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Earth Creation"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Essential Fatty Acids"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Omega-3 fatty acid supplements support heart health by reducing inflammation and improving blood lipid profiles. Omega-3 fatty acids also support brain function and may help alleviate symptoms of depression. By taking omega-3 fatty acid supplements, individuals can experience improved heart health, reduced inflammation, and enhanced cognitive function. Omega-3 fatty acid supplements are essential for individuals with heart disease, and they can help alleviate symptoms and improve quality of life. Regular omega-3 fatty acid supplementation can also help prevent heart disease in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Omega-3 Fatty Acids.jpg",
+        "flag_condition": [
+            "Heart Disease",
+            "Depression"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Turmeric/Curcumin",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Turmeric/curcumin supplements support joint health and reduce inflammation. Turmeric/curcumin also supports immune function and may help alleviate symptoms of arthritis. By taking turmeric/curcumin supplements, individuals can experience improved joint health, reduced inflammation, and enhanced immune function. Turmeric/curcumin supplements are essential for individuals with arthritis, and they can help alleviate symptoms and improve quality of life. Regular turmeric/curcumin supplementation can also help prevent arthritis in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Turmeric Curcumin.jpg",
-    "flag_condition": ["Arthritis"],
-    "created_at": "",
-    "updated_at": ""
-    },
-    {
-    "name": "Folic Acid",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Folic acid supplements support fetal development during pregnancy and reduce the risk of birth defects. Folic acid also supports red blood cell production and may help alleviate symptoms of anemia. By taking folic acid supplements, individuals can experience improved fetal development, reduced risk of birth defects, and enhanced red blood cell production. Folic acid supplements are essential for pregnant women, and they can help alleviate symptoms and improve quality of life. Regular folic acid supplementation can also help prevent birth defects in individuals with a high risk of developing the condition.",
-    "lsvs": [],
-    "main_image": "product_image/Folic Acid.jpg",
-    "flag_condition": ["Pregnancy", "Anemia"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Coenzyme Q10 (CoQ10)",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Antioxidants, Enzymes"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Coenzyme Q10 (CoQ10) supplements support energy production and reduce oxidative stress. CoQ10 also supports heart health and may help alleviate symptoms of migraines. By taking CoQ10 supplements, individuals can experience improved energy levels, reduced oxidative stress, and enhanced heart health. CoQ10 supplements are essential for individuals with heart disease, and they can help alleviate symptoms and improve quality of life. Regular CoQ10 supplementation can also help prevent heart disease in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Coenzyme Q10 (CoQ10).jpg",
+        "flag_condition": [
+            "Heart Disease",
+            "Migraines"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Turmeric/Curcumin",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
-    },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Turmeric/curcumin supplements support immune function and reduce inflammation, which can help alleviate symptoms of anemia. Turmeric/curcumin also supports antioxidant function and may help reduce oxidative stress. By taking turmeric/curcumin supplements, individuals can experience improved immune function, reduced inflammation, and enhanced antioxidant function. Turmeric/curcumin supplements are essential for individuals with anemia, and they can help alleviate symptoms and improve quality of life.",
-    "lsvs": [],
-    "main_image": "product_image/Turmeric Curcumin.jpg",
-    "flag_condition": ["Anemia"],
-    "created_at": "",
-    "updated_at": ""
+        "name": "Ginseng",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Mega We Care"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Ginseng supplements support energy production and reduce fatigue. Ginseng also supports immune function and may help alleviate symptoms of stress. By taking ginseng supplements, individuals can experience improved energy levels, reduced fatigue, and enhanced immune function. Ginseng supplements are essential for individuals with chronic fatigue syndrome, and they can help alleviate symptoms and improve quality of life. Regular ginseng supplementation can also help prevent chronic fatigue syndrome in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Ginseng.jpg",
+        "flag_condition": [
+            "Chronic Fatigue Syndrome"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
     {
-    "name": "Glutamine",
-    "category": "",
-    "main_category": "Nutritional Supplement",
-    "sub_categories": {
-    "age": ["adults"],
-    "brands": [],
-    "gender": ["male", "female"],
-    "Lifestyle": [],
-    "Lifestyle Rating": [],
-    "pharmacy grouping": []
+        "name": "Vitamin K",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Nature's Field"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Vitamin K supplements support blood clotting and bone health. Vitamin K also supports cardiovascular health and may help alleviate symptoms of osteoporosis. By taking vitamin K supplements, individuals can experience improved blood clotting, reduced risk of bone fractures, and enhanced cardiovascular health. Vitamin K supplements are essential for individuals with vitamin K deficiency, and they can help alleviate symptoms and improve quality of life. Regular vitamin K supplementation can also help prevent vitamin K deficiency in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Vitamin K.jpg",
+        "flag_condition": [
+            "Vitamin K Deficiency",
+            "Osteoporosis"
+        ],
+        "created_at": "",
+        "updated_at": ""
     },
-    "price": 0.0,
-    "strength": "Nil",
-    "description": "Glutamine supplements support immune function and reduce oxidative stress, which can help alleviate symptoms of sickle cell anemia. Glutamine also supports blood flow and may help reduce pain crises in individuals with sickle cell anemia. By taking glutamine supplements, individuals can experience improved immune function, reduced oxidative stress, and enhanced blood flow. Glutamine supplements are essential for individuals with sickle cell anemia, and they can help alleviate symptoms and improve quality of life.",
-    "lsvs": [],
-    "main_image": "product_image/Glutamine.jpg",
-    "flag_condition": ["Sickle Cell Anemia"],
-    "created_at": "",
-    "updated_at": ""
+    {
+        "name": "N-Acetylcysteine (NAC)",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Unavailable"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "N-Acetylcysteine (NAC) supplements support respiratory health and reduce oxidative stress. NAC also supports immune function and may help alleviate symptoms of chronic bronchitis. By taking NAC supplements, individuals can experience improved respiratory function, reduced oxidative stress, and enhanced immune function. NAC supplements are essential for individuals with respiratory disorders, and they can help alleviate symptoms and improve quality of life. Regular NAC supplementation can also help prevent respiratory disorders in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/N-Acetylcysteine (NAC).jpg",
+        "flag_condition": [
+            "Respiratory Disorders",
+            "Chronic Bronchitis"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Antioxidants (Vitamins C and E, Beta-Carotene)",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Antioxidant supplements (vitamins C and E, beta-carotene) support immune function and reduce oxidative stress. Antioxidants also support skin health and may help alleviate symptoms of aging. By taking antioxidant supplements, individuals can experience improved immune function, reduced oxidative stress, and enhanced skin health. Antioxidant supplements are essential for individuals with oxidative stress, and they can help alleviate symptoms and improve quality of life. Regular antioxidant supplementation can also help prevent oxidative stress in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Antioxidants (Vitamins C and E, Beta-Carotene).jpg",
+        "flag_condition": [
+            "Oxidative Stress"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Turmeric/Curcumin",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Herbal Supplements"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Turmeric/curcumin supplements support joint health and reduce inflammation. Turmeric/curcumin also supports immune function and may help alleviate symptoms of arthritis. By taking turmeric/curcumin supplements, individuals can experience improved joint health, reduced inflammation, and enhanced immune function. Turmeric/curcumin supplements are essential for individuals with arthritis, and they can help alleviate symptoms and improve quality of life. Regular turmeric/curcumin supplementation can also help prevent arthritis in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Turmeric Curcumin.jpg",
+        "flag_condition": [
+            "Arthritis"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Folic Acid",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Folic acid supplements support fetal development during pregnancy and reduce the risk of birth defects. Folic acid also supports red blood cell production and may help alleviate symptoms of anemia. By taking folic acid supplements, individuals can experience improved fetal development, reduced risk of birth defects, and enhanced red blood cell production. Folic acid supplements are essential for pregnant women, and they can help alleviate symptoms and improve quality of life. Regular folic acid supplementation can also help prevent birth defects in individuals with a high risk of developing the condition.",
+        "lsvs": [],
+        "main_image": "product_image/Folic Acid.jpg",
+        "flag_condition": [
+            "Pregnancy",
+            "Anemia"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Turmeric/Curcumin",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Puritan's Pride"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Herbal Supplements"
+            ]
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Turmeric/curcumin supplements support immune function and reduce inflammation, which can help alleviate symptoms of anemia. Turmeric/curcumin also supports antioxidant function and may help reduce oxidative stress. By taking turmeric/curcumin supplements, individuals can experience improved immune function, reduced inflammation, and enhanced antioxidant function. Turmeric/curcumin supplements are essential for individuals with anemia, and they can help alleviate symptoms and improve quality of life.",
+        "lsvs": [],
+        "main_image": "product_image/Turmeric Curcumin.jpg",
+        "flag_condition": [
+            "Anemia"
+        ],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Glutamine",
+        "category": "",
+        "main_category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [
+                "adults"
+            ],
+            "brands": [
+                "Nectamin"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": []
+        },
+        "price": 0.0,
+        "strength": "Nil",
+        "description": "Glutamine supplements support immune function and reduce oxidative stress, which can help alleviate symptoms of sickle cell anemia. Glutamine also supports blood flow and may help reduce pain crises in individuals with sickle cell anemia. By taking glutamine supplements, individuals can experience improved immune function, reduced oxidative stress, and enhanced blood flow. Glutamine supplements are essential for individuals with sickle cell anemia, and they can help alleviate symptoms and improve quality of life.",
+        "lsvs": [],
+        "main_image": "product_image/Glutamine.jpg",
+        "flag_condition": [
+            "Sickle Cell Anemia"
+        ],
+        "created_at": "",
+        "updated_at": ""
     }
 ]

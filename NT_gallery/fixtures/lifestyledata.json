@@ -21,7 +21,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 22000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Fertilboost Men supports male fertility and reproductive health. It improves sperm quality, increases sperm count, and enhances fertility. Suitable for men of childbearing age.",
         "lsvs": [
@@ -43,7 +43,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -57,7 +57,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 25000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Pregnacare Original provides essential nutrients for pregnant and breastfeeding women. It supports fetal development and maternal health with folic acid, iron, and calcium. Suitable from conception to breastfeeding.",
         "lsvs": [
@@ -79,7 +79,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -94,7 +94,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 45000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Pregnacare Max is a high-strength prenatal supplement supporting pregnant and breastfeeding women. It provides essential nutrients like folic acid, iron, and calcium in higher doses. Suitable from conception to breastfeeding.",
         "lsvs": [
@@ -116,7 +116,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -130,7 +130,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 30000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Pregnacare Plus supports pregnant and breastfeeding women with essential nutrients. It includes omega-3 fatty acids for fetal brain development and folic acid, iron, and calcium for maternal health. Suitable from conception to breastfeeding.",
         "lsvs": [
@@ -152,7 +152,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "male"
@@ -166,7 +166,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 35000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellman Plus supports men's health and wellbeing with essential nutrients. It boosts energy levels, immune function, and overall health. Suitable for men of all ages.",
         "lsvs": [
@@ -188,7 +188,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "male"
@@ -202,7 +202,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 13000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellman Sport supports men's health and fitness, particularly for those who exercise regularly. It provides essential nutrients for energy levels, muscle function, and recovery. Suitable for active men.",
         "lsvs": [
@@ -224,7 +224,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "male"
@@ -238,7 +238,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 45000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellman Max is a high-strength supplement supporting men's health and wellbeing. It provides essential nutrients in higher doses for optimal health. Suitable for men of all ages.",
         "lsvs": [
@@ -260,7 +260,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -276,7 +276,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellwoman Skin supports women's skin health and beauty. It provides essential nutrients for skin elasticity, hydration, and radiance. Suitable for women of all ages.",
         "lsvs": [
@@ -298,7 +298,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -312,7 +312,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 27500.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellwoman Plus supports women's health and wellbeing with essential nutrients. It boosts energy levels, immune function, and overall health. Suitable for women of all ages.",
         "lsvs": [
@@ -334,7 +334,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -348,7 +348,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": null,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellwoman Sport supports women's health and fitness, particularly for those who exercise regularly. It provides essential nutrients for energy levels, muscle function, and recovery. Suitable for active women.",
         "lsvs": [
@@ -370,7 +370,7 @@
                 "adult"
             ],
             "brands": [
-                "Nature's Field"
+                "Vitabiotics"
             ],
             "gender": [],
             "Lifestyle": [
@@ -381,9 +381,11 @@
                 "Tablet"
             ],
             "Lifestyle Rating": [],
-            "pharmacy grouping": []
+            "pharmacy grouping": [
+                "Single Mineral"
+            ]
         },
-        "price": 15000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Magnesium supports muscle function, nerve function, and overall health in both men and women. It provides essential nutrients for energy levels, bone health, and heart health. Suitable for adults of all ages.",
         "lsvs": [
@@ -402,7 +404,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [],
             "Lifestyle": [
@@ -416,7 +418,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 12500.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Osteocare supports bone health and density in both men and women. It provides essential nutrients for calcium absorption, bone growth, and overall wellbeing. Suitable for adults of all ages.",
         "lsvs": [
@@ -435,7 +437,7 @@
                 "adult"
             ],
             "brands": [
-                "Mega We Care"
+                "Vitabiotics"
             ],
             "gender": [
                 "male"
@@ -450,7 +452,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 10000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Nat B supports men's health and wellbeing, particularly for those with busy lifestyles. It provides essential nutrients for energy levels, immune function, and overall health. Suitable for active men.",
         "lsvs": [
@@ -472,7 +474,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [],
             "Lifestyle": [
@@ -485,7 +487,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 55000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Visionace Max supports eye health and vision in both men and women. It provides essential nutrients for eye function, vision clarity, and overall wellbeing. Suitable for adults of all ages.",
         "lsvs": [
@@ -518,7 +520,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 35000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Cellgevity supports cellular health, energy levels, and overall wellbeing in both men and women. It provides essential nutrients for cellular function, antioxidant defenses, and overall health. Suitable for adults of all ages.",
         "lsvs": [
@@ -537,7 +539,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [],
             "Lifestyle": [
@@ -550,7 +552,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 25000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Neurozan supports brain health, cognitive function, and overall wellbeing in both men and women. It provides essential nutrients for brain function, nerve function, and overall health. Suitable for adults of all ages.",
         "lsvs": [
@@ -569,7 +571,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -583,7 +585,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 20000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Pregnacare Conception for Her supports women's fertility and reproductive health. It regulates menstrual cycles, improves egg quality, and enhances fertility. Suitable for women trying to conceive.",
         "lsvs": [
@@ -605,7 +607,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Unavailable"
             ],
             "gender": [
                 "male"
@@ -619,7 +621,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 64200.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Pregnacare Conception for Him supports men's fertility and reproductive health. It improves sperm quality, increases sperm count, and enhances fertility. Suitable for men trying to conceive.",
         "lsvs": [
@@ -641,7 +643,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -656,7 +658,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 25000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Pregnacare Breastfeeding supports breastfeeding mothers with essential nutrients. It promotes milk production, supports infant development, and maintains maternal health. Suitable for breastfeeding women.",
         "lsvs": [
@@ -678,7 +680,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "male"
@@ -692,7 +694,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 20000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellman supports men's health and wellbeing with essential nutrients. It boosts energy levels, immune function, and overall health. Suitable for men of all ages.",
         "lsvs": [
@@ -714,7 +716,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "male"
@@ -728,7 +730,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 20000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellman 50+ supports men's health and wellbeing during midlife and beyond. It provides essential nutrients for energy levels, immune function, and overall health. Suitable for men over 50.",
         "lsvs": [
@@ -750,7 +752,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "male"
@@ -764,7 +766,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 20000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellman 70+ supports men's health and wellbeing during older age. It provides essential nutrients for energy levels, immune function, and overall health. Suitable for men over 70.",
         "lsvs": [
@@ -786,7 +788,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -800,7 +802,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 20000.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellwoman supports women's health and wellbeing with essential nutrients. It boosts energy levels, immune function, and overall health. Suitable for women of all ages.",
         "lsvs": [
@@ -822,7 +824,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -836,7 +838,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 22500.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellwoman 50+ supports women's health and wellbeing during midlife and beyond. It provides essential nutrients for energy levels, immune function, and overall health. Suitable for women over 50.",
         "lsvs": [
@@ -858,7 +860,7 @@
                 "adult"
             ],
             "brands": [
-                "Vitabiotic"
+                "Vitabiotics"
             ],
             "gender": [
                 "female"
@@ -872,7 +874,7 @@
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
-        "price": 17500.0,
+        "price": 0.0,
         "strength": "Nil",
         "description": "Wellwoman 70+ supports women's health and wellbeing during older age. It provides essential nutrients for energy levels, immune function, and overall health. Suitable for women over 70.",
         "lsvs": [
@@ -892,7 +894,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Nature's Aid"
+                "Nature's Made"
             ],
             "gender": [
                 "male",
@@ -905,7 +907,7 @@
                 "Tonics"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Iron is an essential mineral that plays a critical role in the production of hemoglobin, which carries oxygen to the body's tissues. It helps to fortify the blood and prevent anemia. Iron also supports immune function and cognitive health. With Iron, you can boost your energy levels and stay healthy. Iron is suitable for both men and women.",
         "lsvs": [],
@@ -933,7 +935,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Ashwagandha is an ancient herb that helps to reduce stress and anxiety. It promotes relaxation and calms the mind. Ashwagandha also supports immune function and boosts energy levels. With Ashwagandha, you can achieve a healthy work-life balance. It is suitable for both men and women.",
         "lsvs": [],
@@ -948,8 +950,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Piping Rock",
-                "Force Factor"
+                "Puritan's Pride"
             ],
             "gender": [
                 "male",
@@ -962,7 +963,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Turmeric/Curcumin is a powerful antioxidant that helps to reduce inflammation and improve joint health. It also supports immune function and boosts cognitive health. With Turmeric/Curcumin, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -977,7 +978,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Piping Rock"
+                "Puritan's Pride"
             ],
             "gender": [
                 "male",
@@ -990,7 +991,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Echinacea is an herbal supplement that helps to boost the immune system and fight off infections. It also supports respiratory health and reduces inflammation. With Echinacea, you can stay healthy and strong. It is suitable for both men and women.",
         "lsvs": [],
@@ -1005,7 +1006,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Force Factor"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1018,7 +1019,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "NAC is an amino acid that helps to support respiratory health and reduce inflammation. It also supports immune function and boosts cognitive health. With NAC, you can breathe easy and stay healthy. It is suitable for both men and women.",
         "lsvs": [],
@@ -1033,7 +1034,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Sambucus"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1046,7 +1047,7 @@
                 "Tonic"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Elderberry Syrup is a natural remedy that helps to boost the immune system and fight off cold and flu. It also supports respiratory health and reduces inflammation. With Elderberry Syrup, you can stay healthy and strong. It is suitable for both men and women.",
         "lsvs": [],
@@ -1061,7 +1062,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Piping Rock"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1074,7 +1075,7 @@
                 "Antioxidants"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Alpha Lipoic Acid is an antioxidant that helps to reduce inflammation and improve nerve function. It also supports heart health and boosts energy levels. With Alpha Lipoic Acid, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1089,7 +1090,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Piping Rock"
+                "Puritan's Pride"
             ],
             "gender": [
                 "male",
@@ -1102,7 +1103,7 @@
                 "Single Vitamins"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Vitamin A is an essential nutrient that helps to support eye health and immune function. It also supports skin health and reduces the risk of chronic diseases. With Vitamin A, you can achieve healthy vision and a strong immune system. It is suitable for both men and women.",
         "lsvs": [],
@@ -1117,7 +1118,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Nature's Field"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1130,7 +1131,7 @@
                 "Antioxidants"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Eye Antioxidants are a blend of nutrients that help to support eye health and reduce the risk of age-related macular degeneration. They also support immune function and boost cognitive health. With Eye Antioxidants, you can achieve healthy vision and a strong immune system. It is suitable for both men and women.",
         "lsvs": [],
@@ -1145,7 +1146,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Piping Rock"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1158,7 +1159,7 @@
                 "Antioxidants"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Resveratrol is an antioxidant that helps to reduce inflammation and improve heart health. It also supports immune function and boosts cognitive health. With Resveratrol, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1173,7 +1174,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Piping Rock"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1186,7 +1187,7 @@
                 "Enzymes"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "COQ10 is an antioxidant that helps to generate energy for the body's cells. It also supports heart health and reduces the risk of chronic diseases. With COQ10, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1201,7 +1202,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Health Aid"
+                "Unavailable"
             ],
             "gender": [
                 "male"
@@ -1213,7 +1214,7 @@
                 "Tonics"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Libido is a natural supplement that helps to boost male fertility and libido. It also supports testosterone production and improves overall sexual health. With Libido, you can achieve a healthy and active sex life. It is suitable for men only.",
         "lsvs": [],
@@ -1228,7 +1229,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Nature's Field"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1241,7 +1242,7 @@
                 "Single Vitamins"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Vitamin C 1000mg is a high-potency supplement that helps to support immune function and reduce the risk of chronic diseases. It also supports collagen production and improves skin health. With Vitamin C 1000mg, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1256,7 +1257,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Safi"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1269,7 +1270,7 @@
                 "Tonics"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Safi Blood Purifier is a natural supplement that helps to purify the blood and support liver health. It also supports immune function and reduces the risk of chronic diseases. With Safi Blood Purifier, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1297,7 +1298,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Ginkgo Biloba is a natural supplement that helps to support brain health and improve memory function. It also supports blood flow and reduces the risk of chronic diseases. With Ginkgo Biloba, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1312,7 +1313,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Piping Rock"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1325,7 +1326,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Glucosamine & Chondroitin is a natural supplement that helps to support joint health and reduce inflammation. It also supports cartilage health and improves mobility. With Glucosamine & Chondroitin, you can achieve healthy and flexible joints. It is suitable for both men and women.",
         "lsvs": [],
@@ -1340,7 +1341,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Piping Rock"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1353,7 +1354,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Milk Thistle is a natural supplement that helps to support liver health and detoxification. It also supports immune function and reduces the risk of chronic diseases. With Milk Thistle, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1368,7 +1369,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Fairhaven"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1381,7 +1382,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Myo-Inositol is a natural supplement that helps to support brain health and reduce anxiety. It also supports insulin sensitivity and improves fertility. With Myo-Inositol, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1396,7 +1397,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Nature's Field"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1409,7 +1410,7 @@
                 "Natural Hormones"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "DHEA is a natural supplement that helps to support hormone balance and reduce stress. It also supports immune function and improves overall health. With DHEA, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1424,8 +1425,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Nature's Field",
-                "Efamol"
+                "Unavailable"
             ],
             "gender": [
                 "female"
@@ -1437,7 +1437,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Evening Primrose Caps is a natural supplement that helps to support women's health and reduce symptoms of PMS. It also supports skin health and improves overall well-being. With Evening Primrose Caps, you can achieve a healthy and balanced lifestyle. It is suitable for women only.",
         "lsvs": [],
@@ -1452,7 +1452,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Nature's Field"
+                "Unavailable"
             ],
             "gender": [
                 "male"
@@ -1464,7 +1464,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Prostate Defense is a natural supplement that helps to support prostate health and reduce the risk of prostate cancer. It also supports immune function and improves overall health. With Prostate Defense, you can achieve a healthy and active lifestyle. It is suitable for men only.",
         "lsvs": [],
@@ -1479,7 +1479,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Nature's Field"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1492,7 +1492,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Toxiflush is a natural supplement that helps to support liver health and detoxification. It also supports immune function and reduces the risk of chronic diseases. With Toxiflush, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1507,7 +1507,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Fidson"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1520,7 +1520,7 @@
                 "Tonics"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Astymin Syrup is a natural supplement that helps to support immune function and reduce the risk of infections. It also supports energy production and improves overall health. With Astymin Syrup, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1535,7 +1535,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Nature's Field"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1548,7 +1548,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Calm Nite is a natural supplement that helps to support relaxation and reduce stress. It also supports sleep quality and improves overall well-being. With Calm Nite, you can achieve a restful and peaceful sleep. It is suitable for both men and women.",
         "lsvs": [],
@@ -1563,7 +1563,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Duromine"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1576,7 +1576,7 @@
                 "Amine Stimulants"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Phentermine is a natural supplement that helps to support weight loss and reduce appetite. It also supports energy production and improves overall health. With Phentermine, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1591,7 +1591,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Now"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1604,7 +1604,7 @@
                 "Amino Acids"
             ]
         },
-        "price": null,
+        "price": 0.0,
         "strength": null,
         "description": "Glutathione is a natural supplement that helps to support immune function and reduce oxidative stress. It also supports liver health and improves overall well-being. With Glutathione, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
@@ -1615,6 +1615,62 @@
     },
     {
         "name": "Psyllium Husk",
+        "category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [],
+            "brands": [
+                "Unavailable"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Dosage Forms": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Herbal Supplements"
+            ]
+        },
+        "price": 0.0,
+        "strength": null,
+        "description": "Psyllium Husk is a natural supplement that helps to support digestive health and promote regular bowel movements. It also supports heart health and reduces cholesterol levels. With Psyllium Husk, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
+        "lsvs": [],
+        "main_image": "Psyllium Husk.jpg",
+        "flag_condition": [],
+        "created_at": "2024-12-10 16:38:45.344931+00:00",
+        "updated_at": "2024-12-12 16:53:56.817791+00:00"
+    },
+    {
+        "name": "Magnesium Glycinate",
+        "category": "Nutritional Supplement",
+        "sub_categories": {
+            "age": [],
+            "brands": [
+                "Unavailable"
+            ],
+            "gender": [
+                "male",
+                "female"
+            ],
+            "Lifestyle": [],
+            "Dosage Forms": [],
+            "Lifestyle Rating": [],
+            "pharmacy grouping": [
+                "Single Vitamins"
+            ]
+        },
+        "price": 0.0,
+        "strength": "",
+        "description": "Magnesium Glycinate is a highly bioavailable supplement designed to help support muscle relaxation, nerve function, and bone health. Our magnesium glycinate formula helps to provide your body with the necessary magnesium it needs to regulate muscle contractions, support bone mineralization, and promote overall well-being. By taking Magnesium Glycinate, you can help to reduce muscle cramps, improve sleep quality, and support immune function.",
+        "lsvs": [],
+        "main_image": "Magnesium Glycinate.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": ""
+    },
+    {
+        "name": "Maca",
         "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [],
@@ -1632,62 +1688,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": null,
-        "strength": null,
-        "description": "Psyllium Husk is a natural supplement that helps to support digestive health and promote regular bowel movements. It also supports heart health and reduces cholesterol levels. With Psyllium Husk, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
-        "lsvs": [],
-        "main_image": "Psyllium Husk.jpg",
-        "flag_condition": [],
-        "created_at": "2024-12-10 16:38:45.344931+00:00",
-        "updated_at": "2024-12-12 16:53:56.817791+00:00"
-    },
-    {
-        "name": "Magnesium Glycinate",
-        "category": "Nutritional Supplement",
-        "sub_categories": {
-            "age": [],
-            "brands": [
-                "Earth Creation",
-                "Swanson"
-            ],
-            "gender": [
-                "male",
-                "female"
-            ],
-            "Lifestyle": [],
-            "Dosage Forms": [],
-            "Lifestyle Rating": [],
-            "pharmacy grouping": [
-                "Single Vitamins"
-            ]
-        },
-        "price": "",
-        "strength": "",
-        "description": "Magnesium Glycinate is a highly bioavailable supplement designed to help support muscle relaxation, nerve function, and bone health. Our magnesium glycinate formula helps to provide your body with the necessary magnesium it needs to regulate muscle contractions, support bone mineralization, and promote overall well-being. By taking Magnesium Glycinate, you can help to reduce muscle cramps, improve sleep quality, and support immune function.",
-        "lsvs": [],
-        "main_image": "Magnesium Glycinate.jpg",
-        "flag_condition": [],
-        "created_at": "",
-        "updated_at": ""
-    },
-    {
-        "name": "Maca",
-        "category": "Nutritional Supplement",
-        "sub_categories": {
-            "age": [],
-            "brands": "Nature's Field",
-            "gender": [
-                "male",
-                "female"
-            ],
-            "Lifestyle": [],
-            "Dosage Forms": [],
-            "Lifestyle Rating": [],
-            "pharmacy grouping": [
-                "Herbal Supplements"
-            ]
-        },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Maca is a natural supplement designed to help support energy, vitality, and hormonal balance. Our maca formula helps to provide your body with the necessary nutrients it needs to regulate hormonal function, improve fertility, and enhance mental clarity. By taking Maca, you can help to boost your energy levels, improve your mood, and support overall well-being.",
         "lsvs": [],
@@ -1702,7 +1703,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Mason"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1715,7 +1716,7 @@
                 "Amino Acids"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "L-Arginine is a natural amino acid supplement designed to help support blood flow, immune function, and muscle growth. Our L-arginine formula helps to provide your body with the necessary amino acids it needs to regulate blood flow, support immune function, and promote muscle growth. By taking L-Arginine, you can help to improve your exercise performance, enhance your immune function, and support overall cardiovascular health.",
         "lsvs": [],
@@ -1729,7 +1730,9 @@
         "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [],
-            "brands": "Nature's Field",
+            "brands": [
+                "Nature's Field"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -1741,7 +1744,7 @@
                 "Adaptogens"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Stress Defense is a natural supplement designed to help support stress relief, mood enhancement, and emotional well-being. Our stress defense formula helps to provide your body with the necessary nutrients it needs to regulate stress hormones, support mood stability, and promote relaxation. By taking Stress Defense, you can help to reduce stress and anxiety, improve your mood, and support overall mental well-being.",
         "lsvs": [],
@@ -1755,7 +1758,9 @@
         "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [],
-            "brands": "Nature's Field",
+            "brands": [
+                "Unavailable"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -1767,7 +1772,7 @@
                 "Antioxidants"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Eye Antioxidants are designed to protect your eyes from damage caused by free radicals. These powerful antioxidants help to fortify your eyes against age-related macular degeneration and cataracts. By taking Eye Antioxidants, you can help to maintain healthy vision and reduce the risk of eye problems. Our formula is carefully crafted to provide the highest level of protection for your eyes. With Eye Antioxidants, you can trust that you're giving your eyes the best possible care.",
         "lsvs": [],
@@ -1782,7 +1787,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Hamdard"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1795,7 +1800,7 @@
                 "Tonics"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Safi Blood Purifier is a natural supplement designed to help purify and detoxify your blood. Our unique formula helps to remove impurities and toxins from your blood, promoting healthy circulation and overall well-being. By taking Safi Blood Purifier, you can help to boost your energy levels, improve your skin health, and support your immune system. Our supplement is carefully crafted to provide the highest level of purity and potency. With Safi Blood Purifier, you can trust that you're giving your body the best possible care.",
         "lsvs": [],
@@ -1810,7 +1815,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Nutrex"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1823,7 +1828,7 @@
                 "Amino Acids"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Creatine Powder is a popular supplement designed to help increase muscle strength, power, and endurance. Our pure creatine powder helps to boost your muscle's energy production, allowing you to perform at your best during high-intensity workouts. By taking Creatine Powder, you can help to improve your athletic performance, enhance your muscle growth, and accelerate your recovery. Our supplement is carefully crafted to provide the highest level of purity and potency. With Creatine Powder, you can trust that you're giving your muscles the best possible fuel.",
         "lsvs": [],
@@ -1838,8 +1843,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Body Fortress",
-                "Sixstar"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1852,7 +1856,7 @@
                 "Amino Acids"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Whey Protein is a high-quality supplement designed to help support muscle growth and recovery. Our pure whey protein powder helps to provide your muscles with the essential amino acids they need to grow and repair. By taking Whey Protein, you can help to boost your muscle mass, enhance your athletic performance, and accelerate your recovery. Our supplement is carefully crafted to provide the highest level of purity and potency. With Whey Protein, you can trust that you're giving your muscles the best possible nutrition.",
         "lsvs": [],
@@ -1867,7 +1871,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Superlife"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1880,7 +1884,7 @@
                 "Multi Vitamins"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "STC 30 is a unique supplement designed to help support overall health and wellness. Our formula combines a blend of natural ingredients to help boost your energy levels, improve your mental clarity, and support your immune system. By taking STC 30, you can help to improve your overall quality of life and feel your best.",
         "lsvs": [],
@@ -1895,7 +1899,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Fafor Life"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1908,7 +1912,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Spidex is a natural supplement designed to help support joint health and mobility. Our formula combines a blend of natural ingredients to help reduce inflammation, improve joint flexibility, and support overall joint health. By taking Spidex, you can help to improve your mobility, reduce joint pain, and enjoy a more active lifestyle.",
         "lsvs": [],
@@ -1922,7 +1926,9 @@
         "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [],
-            "brands": "Nature's Field",
+            "brands": [
+                "Nature's Field"
+            ],
             "gender": [
                 "male",
                 "female"
@@ -1934,7 +1940,7 @@
                 "Single Vitamins"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Calcium is an essential mineral supplement designed to help support bone health and development. Our calcium supplement helps to provide your body with the necessary calcium it needs to build and maintain strong bones and teeth. By taking Calcium, you can help to reduce the risk of osteoporosis, improve bone density, and support overall bone health.",
         "lsvs": [],
@@ -1949,7 +1955,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Earth Creation"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1962,7 +1968,7 @@
                 "Essential Fatty Acids"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Omega 3 Fatty Acid is a natural supplement designed to help support heart health and brain function. Our omega-3 supplement helps to provide your body with the necessary fatty acids it needs to reduce inflammation, improve heart health, and support brain function. By taking Omega 3 Fatty Acid, you can help to reduce the risk of heart disease, improve cognitive function, and support overall health and wellness.",
         "lsvs": [],
@@ -1977,7 +1983,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "P/P"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -1990,7 +1996,7 @@
                 "Single Vitamins"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Chromium Piccolinate is a natural supplement designed to help support blood sugar control and weight management. Our chromium supplement helps to provide your body with the necessary nutrients it needs to regulate blood sugar levels, improve insulin sensitivity, and support weight loss. By taking Chromium Piccolinate, you can help to improve your overall metabolic health and reduce the risk of chronic diseases.",
         "lsvs": [],
@@ -2005,8 +2011,7 @@
         "sub_categories": {
             "age": [],
             "brands": [
-                "Best Naturals",
-                "Sugar MD"
+                "Unavailable"
             ],
             "gender": [
                 "male",
@@ -2019,7 +2024,7 @@
                 "Herbal Supplements"
             ]
         },
-        "price": "",
+        "price": 0.0,
         "strength": "",
         "description": "Beberine is a natural supplement designed to help support digestive health and blood sugar control. Our berberine supplement helps to provide your body with the necessary nutrients it needs to regulate blood sugar levels, improve insulin sensitivity, and support gut health. By taking Beberine, you can help to improve your overall metabolic health and reduce the risk of chronic diseases.",
         "lsvs": [],

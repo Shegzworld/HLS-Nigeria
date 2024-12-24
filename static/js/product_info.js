@@ -9,6 +9,7 @@ const liveReviewsContent = document.querySelector('.live-reviews');
 // const clinicalStudiesSelect = document.getElementById('clinical-studies-select');
 const clinicalStudiesBtns = document.querySelectorAll('.clinical-studies-btn');
 const overlay = document.querySelector('.overlay');
+const reviewHeaders = document.querySelectorAll('.live-reviews h2');
 
 // const clinicalStudiesContainer = document.getElementById('clinical-study-container');
 const closeClinicalStudyBtn = document.getElementById('close-clinical-study-btn');
@@ -20,30 +21,40 @@ const closeClinicalStudyBtn = document.getElementById('close-clinical-study-btn'
 
 // Add event listeners
 commonDetailsTab.addEventListener('click', () => {
+    commonDetailsTab.classList.add('active');
     commonDetailsContent.classList.add('active');
     benefitsContent.classList.remove('active');
     liveReviewsContent.classList.remove('active');
-    commonDetailsTab.classList.add('active');
     benefitsTab.classList.remove('active');
     liveReviewsTab.classList.remove('active');
 });
 
 benefitsTab.addEventListener('click', () => {
     benefitHeaders[0].click();
+    benefitsTab.classList.add('active');
     benefitsContent.classList.add('active');
     commonDetailsContent.classList.remove('active');
     liveReviewsContent.classList.remove('active');
-    benefitsTab.classList.add('active');
     commonDetailsTab.classList.remove('active');
     liveReviewsTab.classList.remove('active');
+    // Close previously opened contents
+    benefitHeaders.forEach((header) => {
+      const benefitContent = header.nextElementSibling;
+      benefitContent.style.display = 'none';
+    });
+
+    // Make the first benefit header display its content by default
+    const firstBenefitHeader = benefitHeaders[0];
+    const firstBenefitContent = firstBenefitHeader.nextElementSibling;
+    firstBenefitContent.style.display = 'block';
 });
 
 
 benefitHeaders.forEach(function(header) {
     header.addEventListener('click', function() {
-      const benefitContent = header.nextElementSibling;
-      const clinicalStudiesContainer = benefitContent.nextElementSibling;
-      // header.nextElementSibling.nextElementSibling.style.display = 'flex';
+    const benefitContent = header.nextElementSibling;
+    const clinicalStudiesContainer = benefitContent.nextElementSibling;
+    // header.nextElementSibling.nextElementSibling.style.display = 'flex';
 
       benefitHeaders.forEach(function(otherHeader) {
         if (otherHeader !== header) {
@@ -71,59 +82,61 @@ liveReviewsTab.addEventListener('click', () => {
     liveReviewsTab.classList.add('active');
     commonDetailsTab.classList.remove('active');
     benefitsTab.classList.remove('active');
-
+    reviewHeaders.forEach((header) => {
+      const reviewList = document.querySelector(`#${header.id}-list`);
+      reviewList.style.display = 'none';
+    })
     document.querySelector('#audio-reviews-list').style.display = 'flex';
     document.querySelector('#audio-reviews-list').style.justifyContent = 'space-around';
-    // Get all review headers
-    const reviewHeaders = document.querySelectorAll('.live-reviews h2');
-
-  // Add event listener to each review header
-    reviewHeaders.forEach((header) => {
+})
+    
+// Get all review headers
+  reviewHeaders.forEach((header) => {
     header.addEventListener('click', () => {
-      // Get the corresponding review list
-      console.log(header.id)
-      const reviewList = document.querySelector(`#${header.id}-list`)
-      
-      reviewList.classList.toggle('show');
-      // Toggle the display of the review list
-      if ((header.id) === 'audio-reviews' || (header.id) === 'podcast-mentions') {
-        // Add touch event listeners for swiping
-        // let touchStartX = 0;
-        // list.addEventListener('touchstart', (e) => {
-        //   touchStartX = e.touches[0].clientX;
-        // });
-        // list.addEventListener('touchend', (e) => {
-        //   const touchEndX = e.changedTouches[0].clientX;
-        //   const swipeDistance = touchEndX - touchStartX;
-        //   if (swipeDistance > 50) {
-        //     // Swipe right
-        //     currentScroll -= itemWidth;
-        //     if (currentScroll < 0) currentScroll = 0;
-        //     list.scrollLeft = currentScroll;
-        //   } else if (swipeDistance < -50) {
-        //     // Swipe left
-        //     currentScroll += itemWidth;
-        //     if (currentScroll > maxScroll) currentScroll = maxScroll;
-        //     list.scrollLeft = currentScroll;
-        //   }
-        // });
-        reviewList.style.justifyContent = 'space-around';
-        reviewList.style.display = reviewList.classList.contains('show') ? 'flex' : 'none';
-      }
-      else
-        reviewList.style.display = reviewList.classList.contains('show') ? 'block' : 'none';
-
-      // Hide other review lists
+      // Close other review lists
       reviewHeaders.forEach((otherHeader) => {
         if (otherHeader !== header) {
           const otherReviewList = document.querySelector(`#${otherHeader.id}-list`);
-          otherReviewList.classList.remove('show');
-          otherReviewList.style.display = 'none'; 
+          otherReviewList.style.display = 'none';
         }
       });
-    });
+    
+    // Get the corresponding review list
+    const reviewList = document.querySelector(`#${header.id}-list`);
+    if ((header.id) === 'audio-reviews' || (header.id) === 'podcast-mentions') {
+      reviewList.style.display = 'flex';
+    } else {
+      reviewList.style.display = 'block';
+    }
   });
 });
+  //     // Toggle the display of the review list
+  //     if ((header.id) === 'audio-reviews' || (header.id) === 'podcast-mentions') {
+  //       // Add touch event listeners for swiping
+  //       // let touchStartX = 0;
+  //       // list.addEventListener('touchstart', (e) => {
+  //       //   touchStartX = e.touches[0].clientX;
+  //       // });
+  //       // list.addEventListener('touchend', (e) => {
+  //       //   const touchEndX = e.changedTouches[0].clientX;
+  //       //   const swipeDistance = touchEndX - touchStartX;
+  //       //   if (swipeDistance > 50) {
+  //       //     // Swipe right
+  //       //     currentScroll -= itemWidth;
+  //       //     if (currentScroll < 0) currentScroll = 0;
+  //       //     list.scrollLeft = currentScroll;
+  //       //   } else if (swipeDistance < -50) {
+  //       //     // Swipe left
+  //       //     currentScroll += itemWidth;
+  //       //     if (currentScroll > maxScroll) currentScroll = maxScroll;
+  //       //     list.scrollLeft = currentScroll;
+  //       //   }
+  //       // });
+  //       reviewList.style.justifyContent = 'space-around';
+  //       reviewList.style.display = reviewList.classList.contains('show') ? 'flex' : 'none';
+  //     }
+  //     
+
 
 clinicalStudiesBtns.forEach((btn) => {
 btn.addEventListener('click', () => {
@@ -148,7 +161,6 @@ benefitSelect.addEventListener('change', () => {
     overlay.style.display = 'none'; // Hide overlay
   });
 });
-
 });
 });
 });
