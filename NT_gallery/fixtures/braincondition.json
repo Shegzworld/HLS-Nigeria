@@ -28,7 +28,9 @@
         "main_image": "product_image/Omega 3 fatty acids.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/Omega 3 fatty acids['NOW']Nil.jpg",
+        "id": 1
     },
     {
         "name": "B Vitamins",
@@ -59,19 +61,19 @@
         "main_image": "product_image/B Vitamins.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/B Vitamins['Earth Creation']Nil.jpg",
+        "id": 2
     },
     {
-        "name": "Vitamin D",
+        "name": "Vitamin D3",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -84,13 +86,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000 I.U",
         "description": "Vitamin D is essential for maintaining healthy brain function and development. It has been shown to play a role in regulating mood, motivation, and cognitive function. Vitamin D deficiency has been linked to an increased risk of depression, anxiety, and seasonal affective disorder. Supplementing with vitamin D can help alleviate symptoms of depression and anxiety. By maintaining adequate vitamin D levels, you can support overall brain health.",
         "lsvs": [],
         "main_image": "product_image/Vitamin D.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Softgel",
+        "image": "product_image/Vitamin D3Puritan's Pride1000 I.U.jpg",
+        "id": 3
     },
     {
         "name": "Curcumin",
@@ -121,7 +126,9 @@
         "main_image": "product_image/Curcumin.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/Curcumin['Unavailable']Nil.jpg",
+        "id": 4
     },
     {
         "name": "Coenzyme Q10",
@@ -152,7 +159,9 @@
         "main_image": "product_image/Coenzyme Q10.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/Coenzyme Q10[\"Puritan's Pride\"]Nil.jpg",
+        "id": 5
     },
     {
         "name": "Magnesium",
@@ -162,9 +171,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -177,13 +184,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Magnesium is an essential mineral that plays a crucial role in neuronal function and synaptic plasticity. It has been shown to support brain health by reducing inflammation and oxidative stress. Magnesium deficiency has been linked to an increased risk of depression, anxiety, and ADHD. Supplementing with magnesium can help alleviate symptoms of depression and anxiety. By maintaining adequate magnesium levels, you can support overall brain health.",
         "lsvs": [],
         "main_image": "product_image/Magnesium.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Tablet",
+        "image": "product_image/MagnesiumPuritan's Pride500mg.jpg",
+        "id": 6
     },
     {
         "name": "N-Acetyl Cysteine",
@@ -214,7 +224,9 @@
         "main_image": "product_image/N-Acetyl Cysteine.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/N-Acetyl Cysteine['Unavailable']Nil.jpg",
+        "id": 7
     },
     {
         "name": "S-Adenosylmethionine",
@@ -245,7 +257,9 @@
         "main_image": "product_image/S-Adenosylmethionine.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/S-Adenosylmethionine['Unavailable']Nil.jpg",
+        "id": 8
     },
     {
         "name": "St. John's Wort",
@@ -276,7 +290,9 @@
         "main_image": "product_image/St. John's Wort.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/St. John's Wort['NOW']Nil.jpg",
+        "id": 9
     },
     {
         "name": "GABA",
@@ -286,9 +302,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "NOW"
-            ],
+            "brands": "NOW",
             "gender": [
                 "male",
                 "female"
@@ -301,13 +315,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "750mg",
         "description": "GABA (Gamma-Aminobutyric Acid) is a neurotransmitter that plays a crucial role in regulating calmness and relaxation. It has been shown to support brain health by reducing anxiety and stress. GABA has been found to be beneficial in treating conditions such as anxiety disorders, insomnia, and ADHD. It also supports cognitive function and mood. By supplementing with GABA, you can support overall brain health and relaxation.",
         "lsvs": [],
         "main_image": "product_image/GABA.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Caps",
+        "image": "product_image/GABANOW750mg.jpg",
+        "id": 10
     },
     {
         "name": "5-Hydroxytryptophan",
@@ -338,7 +355,9 @@
         "main_image": "product_image/5-Hydroxytryptophan.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/5-Hydroxytryptophan['Solgar']Nil.jpg",
+        "id": 11
     },
     {
         "name": "Ashwagandha",
@@ -348,9 +367,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Force Factor"
-            ],
+            "brands": "Hovid",
             "gender": [
                 "male",
                 "female"
@@ -363,25 +380,26 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "100mg",
         "description": "Ashwagandha is an adaptogenic herb that has been used for centuries to support stress relief and overall well-being. It has been shown to support brain health by reducing cortisol levels and oxidative stress. Ashwagandha has been found to be beneficial in treating conditions such as anxiety disorders, depression, and ADHD. It also supports cognitive function and memory. By incorporating ashwagandha into your diet, you can support overall brain health and resilience.",
         "lsvs": [],
         "main_image": "product_image/Ashwagandha.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Liquid",
+        "image": "product_image/AshwagandhaHovid100mg.jpg",
+        "id": 12
     },
     {
-        "name": "Acetyl-L-Carnitine",
+        "name": "Acetyl L-Carnitine",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Swanson"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -394,13 +412,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Acetyl-L-Carnitine (ALCAR) is an amino acid that plays a crucial role in energy production within cells. It has been shown to support brain health by reducing oxidative stress and inflammation. ALCAR has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and depression. It also supports cognitive function and memory. By supplementing with ALCAR, you can support overall brain health and energy production.",
         "lsvs": [],
         "main_image": "product_image/Acetyl-L-Carnitine.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Caps",
+        "image": "product_image/Acetyl L-CarnitinePuritan's Pride500mg.jpg",
+        "id": 13
     },
     {
         "name": "L-lysine",
@@ -431,7 +452,9 @@
         "main_image": "product_image/L-lysine.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/L-lysine['NOW']Nil.jpg",
+        "id": 14
     },
     {
         "name": "Korean ginseng",
@@ -441,9 +464,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Mason"
-            ],
+            "brands": "Masons Natural",
             "gender": [
                 "male",
                 "female"
@@ -456,13 +477,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000mg",
         "description": "Korean ginseng is a herbal supplement that has been used for centuries to support energy and vitality. It has been shown to support brain health by improving cognitive function and reducing fatigue. Korean ginseng has been found to be beneficial in treating conditions such as depression, anxiety, and ADHD. It also supports cognitive function and memory. By incorporating Korean ginseng into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
         "main_image": "product_image/Korean ginseng.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Tablet",
+        "image": "product_image/Korean ginsengMasons Natural1000mg.jpg",
+        "id": 15
     },
     {
         "name": "Pantothenic acid",
@@ -472,9 +496,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "NOW"
-            ],
+            "brands": "NOW",
             "gender": [
                 "male",
                 "female"
@@ -487,13 +509,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Pantothenic acid is a B vitamin that plays a crucial role in energy production and neurotransmitter regulation. It has been shown to support brain health by reducing stress and anxiety and improving mood. Pantothenic acid has been found to be beneficial in treating conditions such as depression, anxiety, and fatigue. It also supports energy production and can help alleviate symptoms of stress. By ensuring adequate pantothenic acid intake, you can support optimal brain function.",
         "lsvs": [],
         "main_image": "product_image/Pantothenic acid.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Caps",
+        "image": "product_image/Pantothenic acidNOW500mg.jpg",
+        "id": 16
     },
     {
         "name": "Ubiquinol",
@@ -524,7 +549,9 @@
         "main_image": "product_image/Ubiquinol.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/Ubiquinol['Revive']Nil.jpg",
+        "id": 17
     },
     {
         "name": "DHA",
@@ -534,9 +561,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Hovid"
-            ],
+            "brands": "Hovid",
             "gender": [
                 "male",
                 "female"
@@ -549,13 +574,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "100mg",
         "description": "DHA (docosahexaenoic acid) is an omega-3 fatty acid that plays a crucial role in brain function and development. It has been shown to support brain health by reducing inflammation and promoting neural connections. DHA has been found to be beneficial in treating conditions such as depression, anxiety, and ADHD. It also supports cognitive function and memory. By incorporating DHA into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
         "main_image": "product_image/DHA.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Liquid",
+        "image": "product_image/DHAHovid100mg.jpg",
+        "id": 18
     },
     {
         "name": "L-carnitine",
@@ -565,9 +593,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Swanson"
-            ],
+            "brands": "Swanson",
             "gender": [
                 "male",
                 "female"
@@ -580,13 +606,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "L-carnitine is an amino acid that plays a crucial role in energy production within cells. It has been shown to support brain health by reducing oxidative stress and inflammation. L-carnitine has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and depression. It also supports cognitive function and memory. By supplementing with L-carnitine, you can support overall brain health and energy production.",
         "lsvs": [],
         "main_image": "product_image/L-carnitine.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Tablet",
+        "image": "product_image/L-carnitineSwanson500mg.jpg",
+        "id": 19
     },
     {
         "name": "Phosphatidylserine",
@@ -617,7 +646,9 @@
         "main_image": "product_image/Phosphatidylserine.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/Phosphatidylserine['Unavailable']Nil.jpg",
+        "id": 20
     },
     {
         "name": "Cognitol",
@@ -627,9 +658,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Tyronex Pharma"
-            ],
+            "brands": "Tyronex",
             "gender": [
                 "male",
                 "female"
@@ -642,13 +671,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "5mg",
         "description": "Cognitol is a supplement that is claimed to support brain health and cognitive function. However, more research is needed to fully understand its effects.",
         "lsvs": [],
         "main_image": "product_image/Cognitol.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Tablet",
+        "image": "product_image/CognitolTyronex5mg.jpg",
+        "id": 21
     },
     {
         "name": "Neurozan",
@@ -658,9 +690,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "male",
                 "female"
@@ -673,25 +703,26 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "Mixed Strength",
         "description": "Neurozan is a supplement that is claimed to support brain health and cognitive function. However, more research is needed to fully understand its effects.",
         "lsvs": [],
         "main_image": "product_image/Neurozan.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Caps",
+        "image": "product_image/NeurozanVitabioticsMixed Strength.jpg",
+        "id": 22
     },
     {
-        "name": "Focus factor",
+        "name": "Focus Factor (Brain Nutrition)",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Unavailable"
-            ],
+            "brands": "Force Factor",
             "gender": [
                 "male",
                 "female"
@@ -704,13 +735,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "Mixed Strength",
         "description": "Focus factor is a supplement that is claimed to support brain health and cognitive function. However, more research is needed to fully understand its effects.",
         "lsvs": [],
         "main_image": "product_image/Focus factor.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Tablet",
+        "image": "product_image/Focus Factor (Brain Nutrition)Force FactorMixed Strength.jpg",
+        "id": 23
     },
     {
         "name": "Neuroaid",
@@ -720,9 +754,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Moleac"
-            ],
+            "brands": "Moleac",
             "gender": [
                 "male",
                 "female"
@@ -735,13 +767,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "Mixed Strength",
         "description": "Neuroaid is a supplement that is claimed to support brain health and cognitive function. However, more research is needed to fully understand its effects.",
         "lsvs": [],
         "main_image": "product_image/Neuroaid.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Capsule",
+        "image": "product_image/NeuroaidMoleacMixed Strength.jpg",
+        "id": 24
     },
     {
         "name": "Stress defense",
@@ -751,9 +786,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Unavailable"
-            ],
+            "brands": "Nature's Field",
             "gender": [
                 "male",
                 "female"
@@ -766,13 +799,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "25mg",
         "description": "Stress defense is a supplement that is claimed to support brain health and cognitive function during times of stress. However, more research is needed to fully understand its effects.",
         "lsvs": [],
         "main_image": "product_image/Stress defense.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Tablet",
+        "image": "product_image/Stress defenseNature's Field25mg.jpg",
+        "id": 25
     },
     {
         "name": "Stress comfort",
@@ -803,7 +839,9 @@
         "main_image": "product_image/Stress comfort.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/Stress comfort['Unavailable']Nil.jpg",
+        "id": 26
     },
     {
         "name": "Rhodiola rosea",
@@ -813,9 +851,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Deal Supplement"
-            ],
+            "brands": "Deals Supplements",
             "gender": [
                 "male",
                 "female"
@@ -828,13 +864,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "5000mg",
         "description": "Rhodiola rosea is an adaptogenic herb that has been used for centuries to support stress relief and mental performance. It has been shown to support brain health by reducing stress and anxiety and improving mood. Rhodiola rosea has been found to be beneficial in treating conditions such as depression, anxiety, and fatigue. It also supports cognitive function and memory. By incorporating rhodiola rosea into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
         "main_image": "product_image/Rhodiola rosea.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Capsules",
+        "image": "product_image/Rhodiola roseaDeals Supplements5000mg.jpg",
+        "id": 27
     },
     {
         "name": "Bacopa monnieri",
@@ -844,9 +883,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nutricost"
-            ],
+            "brands": "Nutricost",
             "gender": [
                 "male",
                 "female"
@@ -859,13 +896,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000mg",
         "description": "Bacopa monnieri is a herbal supplement that has been used for centuries to support brain health and cognitive function. It has been shown to support brain health by improving memory and cognitive processing speed. Bacopa monnieri has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and ADHD. It also supports cognitive function and memory. By incorporating bacopa monnieri into your diet, you can support overall brain health and well-being.",
         "lsvs": [],
         "main_image": "product_image/Bacopa monnieri.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Tablet",
+        "image": "product_image/Bacopa monnieriNutricost1000mg.jpg",
+        "id": 28
     },
     {
         "name": "Ginkgo biloba",
@@ -896,7 +936,9 @@
         "main_image": "product_image/Ginkgo biloba.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/Ginkgo biloba[\"Nature's Field\"]Nil.jpg",
+        "id": 29
     },
     {
         "name": "Melatonin",
@@ -906,9 +948,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -921,13 +961,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "10mg",
         "description": "Melatonin is a hormone that plays a crucial role in regulating sleep-wake cycles. It has been shown to support brain health by reducing oxidative stress and inflammation. Melatonin has been found to be beneficial in treating conditions such as insomnia, sleep disorders, and jet lag. It also supports cognitive function and memory. By supplementing with melatonin, you can support overall brain health and sleep quality.",
         "lsvs": [],
         "main_image": "product_image/Melatonin.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Caps",
+        "image": "product_image/MelatoninPuritan's Pride10mg.jpg",
+        "id": 30
     },
     {
         "name": "Valerian root",
@@ -958,7 +1001,9 @@
         "main_image": "product_image/Valerian root.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/Valerian root['NOW']Nil.jpg",
+        "id": 31
     },
     {
         "name": "Vitamin C",
@@ -968,9 +1013,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Made"
-            ],
+            "brands": "Nature's Made",
             "gender": [
                 "male",
                 "female"
@@ -983,13 +1026,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000mg",
         "description": "Vitamin C is an antioxidant that plays a crucial role in reducing oxidative stress and inflammation. It has been shown to support brain health by improving cognitive function and reducing symptoms of depression and anxiety. Vitamin C has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and ADHD. It also supports cognitive function and memory. By ensuring adequate vitamin C intake, you can support overall brain health.",
         "lsvs": [],
         "main_image": "product_image/Vitamin C.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Tablet",
+        "image": "product_image/Vitamin CNature's Made1000mg.jpg",
+        "id": 32
     },
     {
         "name": "Vitamin E",
@@ -999,9 +1045,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Field"
-            ],
+            "brands": "Nature's Field",
             "gender": [
                 "male",
                 "female"
@@ -1014,13 +1058,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000 I.U",
         "description": "Vitamin E is an antioxidant that plays a crucial role in reducing oxidative stress and inflammation. It has been shown to support brain health by improving cognitive function and reducing symptoms of depression and anxiety. Vitamin E has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and ADHD. It also supports cognitive function and memory. By ensuring adequate vitamin E intake, you can support overall brain health.",
         "lsvs": [],
         "main_image": "product_image/Vitamin E.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Softgel",
+        "image": "product_image/Vitamin ENature's Field1000 I.U.jpg",
+        "id": 33
     },
     {
         "name": "Iron",
@@ -1030,9 +1077,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Made"
-            ],
+            "brands": "Nature Made",
             "gender": [
                 "male",
                 "female"
@@ -1045,13 +1090,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "65mg",
         "description": "Iron is an essential mineral that plays a crucial role in transporting oxygen to cells. It has been shown to support brain health by improving cognitive function and reducing symptoms of depression and anxiety. Iron has been found to be beneficial in treating conditions such as iron deficiency anemia, ADHD, and restless leg syndrome. It also supports energy production and can help alleviate symptoms of fatigue. By ensuring adequate iron intake, you can support overall brain health.",
         "lsvs": [],
         "main_image": "product_image/Iron.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Tablet",
+        "image": "product_image/IronNature Made65mg.jpg",
+        "id": 34
     },
     {
         "name": "Alpha lipoic acid",
@@ -1061,9 +1109,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -1076,13 +1122,16 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "600mg",
         "description": "Alpha lipoic acid is an antioxidant that plays a crucial role in reducing oxidative stress and inflammation. It has been shown to support brain health by improving cognitive function and reducing symptoms of depression and anxiety. Alpha lipoic acid has been found to be beneficial in treating conditions such as Alzheimer's disease, Parkinson's disease, and diabetic neuropathy. It also supports energy production and can help alleviate symptoms of fatigue. By supplementing with alpha lipoic acid, you can support overall brain health.",
         "lsvs": [],
         "main_image": "product_image/Alpha lipoic acid.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "dosage_form": "Caps",
+        "image": "product_image/Alpha lipoic acidPuritan's Pride600mg.jpg",
+        "id": 35
     },
     {
         "name": "Efamol",
@@ -1113,6 +1162,8 @@
         "main_image": "product_image/Efamol.jpg",
         "flag_condition": [],
         "created_at": null,
-        "updated_at": null
+        "updated_at": null,
+        "image": "product_image/Efamol['Efamol']Nil.jpg",
+        "id": 36
     }
 ]

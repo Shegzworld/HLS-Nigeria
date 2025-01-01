@@ -27,7 +27,9 @@
             "Osteoarthritis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Glucosamine['Unavailable']Nil.jpg",
+        "id": 1
     },
     {
         "name": "Chondroitin",
@@ -57,7 +59,9 @@
             "Osteoarthritis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Chondroitin['Unavailable']Nil.jpg",
+        "id": 2
     },
     {
         "name": "Omega-3 Fatty Acids",
@@ -90,7 +94,9 @@
             "Heart Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Omega-3 Fatty Acids['Earth Creation']Nil.jpg",
+        "id": 3
     },
     {
         "name": "Vitamin C",
@@ -100,9 +106,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Made"
-            ],
+            "brands": "Nature's Made",
             "gender": [
                 "male",
                 "female"
@@ -114,7 +118,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000mg",
         "description": "Vitamin C is essential for collagen production, wound healing, and immune function. This antioxidant vitamin also reduces inflammation and promotes overall health. Vitamin C supplements can help treat conditions like tendinitis, as they promote collagen production and reduce inflammation. By taking vitamin C supplements, individuals can experience improved immune function, reduced inflammation, and enhanced overall health. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
         "main_image": "product_image/Vitamin C.jpg",
@@ -122,19 +126,20 @@
             "Tendinitis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Vitamin CNature's Made1000mg.jpg",
+        "id": 4
     },
     {
-        "name": "Vitamin D",
+        "name": "Vitamin D3",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -146,7 +151,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000 I.U",
         "description": "Vitamin D is essential for bone health, immune function, and mood regulation. This vitamin helps the body absorb calcium, promoting strong bones and teeth. Vitamin D supplements can help treat conditions like osteoporosis, as they promote bone density and reduce the risk of fractures. By taking vitamin D supplements, individuals can experience improved bone health, immune function, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
         "main_image": "product_image/Vitamin D.jpg",
@@ -154,7 +159,10 @@
             "Osteoporosis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Softgel",
+        "image": "product_image/Vitamin D3Puritan's Pride1000 I.U.jpg",
+        "id": 5
     },
     {
         "name": "Magnesium",
@@ -164,9 +172,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -178,7 +184,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Magnesium is essential for muscle and nerve function, as well as bone health. This mineral helps regulate muscle contractions, nerve function, and heart rhythm. Magnesium supplements can help treat conditions like fibromyalgia, as they reduce muscle cramps, spasms, and pain. By taking magnesium supplements, individuals can experience improved muscle function, nerve function, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
         "main_image": "product_image/Magnesium.jpg",
@@ -186,7 +192,10 @@
             "Fibromyalgia"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/MagnesiumPuritan's Pride500mg.jpg",
+        "id": 6
     },
     {
         "name": "Calcium",
@@ -216,7 +225,9 @@
             "Osteoporosis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Calcium[\"Nature's Field\"]Nil.jpg",
+        "id": 7
     },
     {
         "name": "Turmeric/Curcumin",
@@ -226,9 +237,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -240,7 +249,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "400mg and 800mg",
         "description": "Turmeric/curcumin is a natural anti-inflammatory compound that reduces joint pain and inflammation. This supplement is often used to treat conditions like rheumatoid arthritis, as it reduces inflammation and promotes overall health. Turmeric/curcumin also has antioxidant properties, which can help protect against cell damage and reduce the risk of chronic diseases. By taking turmeric/curcumin supplements, individuals can experience improved joint health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
         "main_image": "product_image/Turmeric Curcumin.jpg",
@@ -248,7 +257,10 @@
             "Rheumatoid Arthritis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Capsule",
+        "image": "product_image/Turmeric/CurcuminPuritan's Pride400mg and 800mg.jpg",
+        "id": 8
     },
     {
         "name": "Ginger",
@@ -280,7 +292,9 @@
             "Rheumatoid Arthritis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Ginger['Unavailable']Nil.jpg",
+        "id": 9
     },
     {
         "name": "Boswellia",
@@ -310,7 +324,9 @@
             "Rheumatoid Arthritis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Boswellia['Unavailable']Nil.jpg",
+        "id": 10
     },
     {
         "name": "Quercetin",
@@ -320,9 +336,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Bounty"
-            ],
+            "brands": "Nature's Bounty",
             "gender": [
                 "male",
                 "female"
@@ -332,7 +346,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Quercetin is a natural anti-inflammatory compound that reduces inflammation and promotes overall health. This supplement is often used to treat conditions like gout, as it reduces inflammation and promotes uric acid excretion. Quercetin also has antioxidant properties, which can help protect against cell damage and reduce the risk of chronic diseases. By taking quercetin supplements, individuals can experience improved joint health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
         "main_image": "product_image/Quercetin.jpg",
@@ -340,6 +354,9 @@
             "Gout"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Caps",
+        "image": "product_image/QuercetinNature's Bounty500mg.jpg",
+        "id": 11
     }
 ]

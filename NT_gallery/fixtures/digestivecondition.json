@@ -7,9 +7,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Garden of Life"
-            ],
+            "brands": "Nature's Field",
             "gender": [
                 "male",
                 "female"
@@ -21,7 +19,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1.85 Billion",
         "description": "Probiotics are beneficial bacteria that support gut health and immune function. They help alleviate symptoms of digestive disorders, such as irritable bowel syndrome (IBS) and inflammatory bowel disease (IBD). Probiotics also boost the immune system, reducing the severity of illnesses like the common cold and flu. Additionally, probiotics promote the production of vitamins and hormones, supporting overall well-being. By taking probiotics, individuals can experience improved digestive health, enhanced immune function, and increased energy levels.",
         "lsvs": [],
         "main_image": "product_image/Probiotics.jpg",
@@ -30,19 +28,20 @@
             "IBD"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Capsules",
+        "image": "product_image/ProbioticsNature's Field1.85 Billion.jpg",
+        "id": 1
     },
     {
-        "name": "Psyllium",
+        "name": "Psyllium Husk Powder",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Field"
-            ],
+            "brands": "Nature's Field",
             "gender": [
                 "male",
                 "female"
@@ -52,7 +51,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "8.55g",
         "description": "Psyllium is a natural fiber supplement that promotes digestive health and regular bowel movements. It helps alleviate symptoms of constipation, diarrhea, and irritable bowel syndrome (IBS). Psyllium also supports healthy blood sugar levels and cholesterol levels, reducing the risk of chronic diseases. Additionally, psyllium promotes satiety and weight management, supporting a healthy weight. By taking psyllium, individuals can experience improved digestive health, regular bowel movements, and enhanced overall well-being.",
         "lsvs": [],
         "main_image": "product_image/Psyllium.jpg",
@@ -62,19 +61,20 @@
             "IBS"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Powder",
+        "image": "product_image/Psyllium Husk PowderNature's Field8.55g.jpg",
+        "id": 2
     },
     {
-        "name": "Zinc",
+        "name": "Zinc Gluconate",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -86,7 +86,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "50mg",
         "description": "Zinc is an essential mineral that supports immune function, wound healing, and protein synthesis. It helps alleviate symptoms of zinc deficiency, such as impaired growth and development, weakened immune systems, and increased susceptibility to illnesses. Zinc also supports healthy skin, hair, and nails, reducing the appearance of acne, eczema, and other skin conditions. Additionally, zinc promotes eye health, reducing the risk of age-related macular degeneration. By taking zinc, individuals can experience improved immune function, enhanced wound healing, and increased overall well-being.",
         "lsvs": [],
         "main_image": "product_image/Zinc.jpg",
@@ -94,7 +94,10 @@
             "Zinc Deficiency"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Zinc GluconatePuritan's Pride50mg.jpg",
+        "id": 3
     },
     {
         "name": "Ginger",
@@ -128,7 +131,9 @@
             "Motion Sickness"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Ginger['Unavailable']Nil.jpg",
+        "id": 4
     },
     {
         "name": "Vitamin C",
@@ -138,9 +143,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Made"
-            ],
+            "brands": "Nature's Made",
             "gender": [
                 "male",
                 "female"
@@ -152,7 +155,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000mg",
         "description": "Vitamin C is an essential antioxidant that supports immune function, collagen production, and iron absorption. It helps reduce the severity of illnesses like the common cold and flu, and supports healthy skin, bones, and connective tissue. Vitamin C also promotes healthy blood vessels, reducing the risk of cardiovascular disease. Additionally, vitamin C supports eye health, reducing the risk of age-related macular degeneration. By taking vitamin C, individuals can experience improved immune function, enhanced collagen production, and increased overall well-being.",
         "lsvs": [],
         "main_image": "product_image/Vitamin C.jpg",
@@ -160,7 +163,10 @@
             "Vitamin C Deficiency"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Vitamin CNature's Made1000mg.jpg",
+        "id": 5
     },
     {
         "name": "Licorice Root",
@@ -192,7 +198,9 @@
             "Stomach Ulcers"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Licorice Root['Unavailable']Nil.jpg",
+        "id": 6
     },
     {
         "name": "Peppermint Oil",
@@ -224,7 +232,9 @@
             "Gas"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Peppermint Oil['Unavailable']Nil.jpg",
+        "id": 7
     },
     {
         "name": "Aloe Vera",
@@ -256,7 +266,9 @@
             "Gas"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Aloe Vera['Forever Living Aloe']Nil.jpg",
+        "id": 8
     },
     {
         "name": "Horse Chestnut",
@@ -287,7 +299,9 @@
             "Swollen Legs"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Horse Chestnut['NOW']Nil.jpg",
+        "id": 9
     },
     {
         "name": "Ginger",
@@ -321,7 +335,9 @@
             "Motion Sickness"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Ginger['Unavailable']Nil.jpg",
+        "id": 10
     },
     {
         "name": "Vitamin C",
@@ -331,9 +347,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Made"
-            ],
+            "brands": "Nature's Made",
             "gender": [
                 "male",
                 "female"
@@ -345,7 +359,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000mg",
         "description": "Vitamin C is an essential antioxidant that supports immune function, collagen production, and iron absorption. It helps reduce the severity of illnesses like the common cold and flu, and supports healthy skin, bones, and connective tissue. Vitamin C also promotes healthy blood vessels, reducing the risk of cardiovascular disease. Additionally, vitamin C supports eye health, reducing the risk of age-related macular degeneration. By taking vitamin C, individuals can experience improved immune function, enhanced collagen production, and increased overall well-being.",
         "lsvs": [],
         "main_image": "product_image/Vitamin C.jpg",
@@ -353,7 +367,10 @@
             "Vitamin C Deficiency"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Vitamin CNature's Made1000mg.jpg",
+        "id": 11
     },
     {
         "name": "Licorice Root",
@@ -385,6 +402,8 @@
             "Stomach Ulcers"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Licorice Root['Unavailable']Nil.jpg",
+        "id": 12
     }
 ]

@@ -28,19 +28,19 @@
             "Neuralgia"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Alpha-Lipoic Acid[\"Puritan's Pride\"]Nil.jpg",
+        "id": 1
     },
     {
-        "name": "Vitamin B12",
+        "name": "Vitamin B-12",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -50,7 +50,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mcg",
         "description": "Vitamin B12 is an essential nutrient that plays a crucial role in the production of myelin, the fatty substance that surrounds and protects nerve fibers. Vitamin B12 deficiency can lead to peripheral neuropathy, multiple sclerosis, and other nerve-related disorders. By taking Vitamin B12, individuals can experience improved nerve function, reduced symptoms of peripheral neuropathy and multiple sclerosis, and enhanced overall health. Vitamin B12 also supports healthy red blood cell production and promotes overall well-being. Vitamin B12 is a natural and effective way to support nerve health and reduce symptoms of nerve-related disorders.",
         "lsvs": [],
         "main_image": "product_image/Vitamin B12.jpg",
@@ -61,19 +61,20 @@
             "Neuralgia"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Vitamin B-12Puritan's Pride500mcg.jpg",
+        "id": 2
     },
     {
-        "name": "Acetyl-L-Carnitine (ALCAR)",
+        "name": "Acetyl L-Carnitine",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Swanson"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -83,7 +84,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Acetyl-L-Carnitine (ALCAR) is an amino acid that plays a crucial role in the production of energy for nerve cells. ALCAR helps treat peripheral neuropathy and multiple sclerosis by reducing oxidative stress and inflammation, and promoting nerve regeneration. By taking ALCAR, individuals can experience improved nerve function, reduced symptoms of peripheral neuropathy and multiple sclerosis, and enhanced overall health. ALCAR also supports healthy cognitive function and promotes overall well-being. ALCAR is a natural and effective way to support nerve health and reduce symptoms of nerve-related disorders.",
         "lsvs": [],
         "main_image": "product_image/Acetyl-L-Carnitine (ALCAR).jpg",
@@ -92,7 +93,10 @@
             "Multiple Sclerosis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Caps",
+        "image": "product_image/Acetyl L-CarnitinePuritan's Pride500mg.jpg",
+        "id": 3
     },
     {
         "name": "Omega-3 Fatty Acids",
@@ -126,7 +130,9 @@
             "Alzheimer's Disease"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Omega-3 Fatty Acids['Earth Creation']Nil.jpg",
+        "id": 4
     },
     {
         "name": "Magnesium",
@@ -136,9 +142,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -150,7 +154,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Magnesium is an essential mineral that plays a crucial role in muscle relaxation, nerve function, and heart health. Magnesium helps treat carpal tunnel syndrome, restless leg syndrome, and neuralgia by reducing inflammation, promoting relaxation, and improving nerve function. By taking Magnesium, individuals can experience improved muscle relaxation, reduced symptoms of carpal tunnel syndrome and restless leg syndrome, and enhanced overall health. Magnesium also supports healthy bone density and promotes overall well-being. Magnesium is a natural and effective way to support muscle and nerve health.",
         "lsvs": [],
         "main_image": "product_image/Magnesium.jpg",
@@ -160,7 +164,10 @@
             "Neuralgia"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/MagnesiumPuritan's Pride500mg.jpg",
+        "id": 5
     },
     {
         "name": "Coenzyme Q10 (CoQ10)",
@@ -170,9 +177,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -184,7 +189,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "200mg",
         "description": "Coenzyme Q10 (CoQ10) is an essential antioxidant that plays a crucial role in energy production and overall health. CoQ10 helps treat Parkinson's disease by reducing oxidative stress, promoting energy production, and improving nerve function. By taking CoQ10, individuals can experience improved energy levels, reduced symptoms of Parkinson's disease, and enhanced overall health. CoQ10 also supports healthy heart function and promotes overall well-being. CoQ10 is a natural and effective way to support energy production and overall health.",
         "lsvs": [],
         "main_image": "product_image/Coenzyme Q10 (CoQ10).jpg",
@@ -192,7 +197,10 @@
             "Parkinson's Disease"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Softgel",
+        "image": "product_image/Coenzyme Q10 (CoQ10)Puritan's Pride200mg.jpg",
+        "id": 6
     },
     {
         "name": "Ginkgo Biloba",
@@ -225,7 +233,9 @@
             "Alzheimer's Disease"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Ginkgo Biloba[\"Nature's Field\"]Nil.jpg",
+        "id": 7
     },
     {
         "name": "Turmeric/Curcumin",
@@ -235,9 +245,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -249,7 +257,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "400mg and 800mg",
         "description": "Turmeric/Curcumin is a natural anti-inflammatory compound that plays a crucial role in reducing inflammation, improving cognitive function, and overall health. Turmeric/Curcumin helps treat peripheral neuropathy, carpal tunnel syndrome, and Alzheimer's disease by reducing inflammation, promoting nerve regeneration, and improving cognitive function. By taking Turmeric/Curcumin, individuals can experience reduced inflammation, improved cognitive function, and enhanced overall health. Turmeric/Curcumin also supports healthy joint function and promotes overall well-being. Turmeric/Curcumin is a natural and effective way to support overall health and reduce inflammation.",
         "lsvs": [],
         "main_image": "product_image/Turmeric Curcumin.jpg",
@@ -259,7 +267,10 @@
             "Alzheimer's Disease"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Capsule",
+        "image": "product_image/Turmeric/CurcuminPuritan's Pride400mg and 800mg.jpg",
+        "id": 8
     },
     {
         "name": "B Vitamins",
@@ -289,7 +300,9 @@
             "Alzheimer's Disease"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/B Vitamins['Earth Creation']Nil.jpg",
+        "id": 9
     },
     {
         "name": "Iron",
@@ -299,9 +312,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Made"
-            ],
+            "brands": "Nature Made",
             "gender": [
                 "male",
                 "female"
@@ -311,7 +322,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "65mg",
         "description": "Iron is an essential mineral that plays a crucial role in healthy red blood cell production, energy production, and overall health. Iron helps treat restless leg syndrome by reducing iron deficiency, improving cognitive function, and promoting nerve health. By taking Iron, individuals can experience improved energy levels, reduced symptoms of restless leg syndrome, and enhanced overall health. Iron also supports healthy immune function and promotes overall well-being. Iron is a natural and effective way to support energy production and overall health.",
         "lsvs": [],
         "main_image": "product_image/Iron.jpg",
@@ -319,7 +330,10 @@
             "Restless Leg Syndrome"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/IronNature Made65mg.jpg",
+        "id": 10
     },
     {
         "name": "5-Hydroxytryptophan (5-HTP)",
@@ -349,7 +363,9 @@
             "Restless Leg Syndrome"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/5-Hydroxytryptophan (5-HTP)['Unavailable']Nil.jpg",
+        "id": 11
     },
     {
         "name": "Valerian Root",
@@ -381,6 +397,8 @@
             "Restless Leg Syndrome"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Valerian Root['Unavailable']Nil.jpg",
+        "id": 12
     }
 ]

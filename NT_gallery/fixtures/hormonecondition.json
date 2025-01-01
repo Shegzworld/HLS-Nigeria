@@ -7,9 +7,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nutricost"
-            ],
+            "brands": "Nutricost",
             "gender": [
                 "male",
                 "female"
@@ -19,7 +17,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "325mg",
         "description": "Iodine supports thyroid health and hormone production, helping to treat hypothyroidism. It regulates metabolism, growth, and development. Iodine deficiency can lead to fatigue, weight gain, and hair loss. Supplementing with iodine can improve energy levels and overall well-being. Consult a healthcare professional before taking iodine supplements.",
         "lsvs": [],
         "main_image": "product_image/Iodine.jpg",
@@ -27,7 +25,10 @@
             "Hypothyroidism"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Caps",
+        "image": "product_image/IodineNutricost325mg.jpg",
+        "id": 1
     },
     {
         "name": "Selenium",
@@ -37,9 +38,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -49,7 +48,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "200mcg",
         "description": "Selenium supports immune function and thyroid health, helping to protect against cell damage. It regulates antioxidant defenses and reduces inflammation. Selenium deficiency can lead to impaired immune function and increased risk of chronic diseases. Supplementing with selenium can improve overall health and well-being. Consult a healthcare professional before taking selenium supplements.",
         "lsvs": [],
         "main_image": "product_image/Selenium.jpg",
@@ -57,19 +56,20 @@
             "Hypothyroidism"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/SeleniumPuritan's Pride200mcg.jpg",
+        "id": 2
     },
     {
-        "name": "Zinc",
+        "name": "Zinc Gluconate",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -81,7 +81,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "50mg",
         "description": "Zinc supports immune function, wound healing, and protein synthesis, helping to treat hypogonadism. It regulates testosterone production and sperm quality. Zinc deficiency can lead to impaired immune function, slow wound healing, and reduced fertility. Supplementing with zinc can improve overall health and fertility. Consult a healthcare professional before taking zinc supplements.",
         "lsvs": [],
         "main_image": "product_image/Zinc.jpg",
@@ -89,7 +89,10 @@
             "Hypogonadism"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Zinc GluconatePuritan's Pride50mg.jpg",
+        "id": 3
     },
     {
         "name": "Omega-3 fatty acids",
@@ -119,7 +122,9 @@
             "Hyperthyroidism"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Omega-3 fatty acids['Earth Creation']Nil.jpg",
+        "id": 4
     },
     {
         "name": "L-Carnitine",
@@ -129,9 +134,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Unavailable"
-            ],
+            "brands": "Swanson",
             "gender": [
                 "male",
                 "female"
@@ -141,7 +144,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "L-Carnitine supports energy production, reduces fatigue, and promotes heart health, helping to treat hyperthyroidism. It regulates fatty acid metabolism and reduces oxidative stress. L-Carnitine deficiency can lead to fatigue, weakness, and decreased exercise performance. Supplementing with L-Carnitine can improve energy levels and overall well-being. Consult a healthcare professional before taking L-Carnitine supplements.",
         "lsvs": [],
         "main_image": "product_image/L-Carnitine.jpg",
@@ -149,7 +152,10 @@
             "Hyperthyroidism"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/L-CarnitineSwanson500mg.jpg",
+        "id": 5
     },
     {
         "name": "Inositol",
@@ -159,9 +165,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -171,7 +175,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000mg",
         "description": "Inositol supports ovarian function, improves fertility, and reduces symptoms of PCOS. It regulates insulin sensitivity, hormone balance, and ovulation. Inositol deficiency can lead to impaired fertility, weight gain, and acne. Supplementing with inositol can improve fertility, reduce symptoms of PCOS, and promote overall well-being. Consult a healthcare professional before taking inositol supplements.",
         "lsvs": [],
         "main_image": "product_image/Inositol.jpg",
@@ -179,7 +183,10 @@
             "PCOS"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/InositolPuritan's Pride1000mg.jpg",
+        "id": 6
     },
     {
         "name": "Berberine",
@@ -210,19 +217,19 @@
             "Diabetes"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Berberine[\"Nature's Bounty\"]Nil.jpg",
+        "id": 7
     },
     {
-        "name": "Vitamin D",
+        "name": "Vitamin D3",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -234,7 +241,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000 I.U",
         "description": "Vitamin D supports bone health, immune function, and testosterone production, helping to treat hypogonadism. It regulates calcium metabolism, immune response, and hormone balance. Vitamin D deficiency can lead to impaired bone health, increased risk of infections, and reduced fertility. Supplementing with vitamin D can improve bone health, boost immune function, and promote overall well-being. Consult a healthcare professional before taking vitamin D supplements.",
         "lsvs": [],
         "main_image": "product_image/Vitamin D.jpg",
@@ -242,7 +249,10 @@
             "Hypogonadism"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Softgel",
+        "image": "product_image/Vitamin D3Puritan's Pride1000 I.U.jpg",
+        "id": 8
     },
     {
         "name": "D-Aspartic Acid (DAA)",
@@ -271,7 +281,9 @@
             "Hypogonadism"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/D-Aspartic Acid (DAA)['Unavailable']Nil.jpg",
+        "id": 9
     },
     {
         "name": "Lactobacillus acidophilus Probiotics",
@@ -281,9 +293,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Field"
-            ],
+            "brands": "Nature's Field",
             "gender": [
                 "male",
                 "female"
@@ -293,7 +303,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1.85 Billion",
         "description": "Lactobacillus acidophilus probiotics support gut health, immune function, and hormone regulation, helping to treat endometriosis. They regulate gut microbiota, immune response, and hormone balance. Probiotic deficiency is not a recognized medical condition, but supplementing with Lactobacillus acidophilus probiotics can improve gut health, boost immune function, and promote overall well-being. Consult a healthcare professional before taking probiotic supplements.",
         "lsvs": [],
         "main_image": "product_image/Lactobacillus acidophilus Probiotics.jpg",
@@ -301,7 +311,10 @@
             "Endometriosis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Capsules",
+        "image": "product_image/Lactobacillus acidophilus ProbioticsNature's Field1.85 Billion.jpg",
+        "id": 10
     },
     {
         "name": "Cinnamon",
@@ -311,9 +324,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -323,7 +334,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Cinnamon supports blood sugar regulation, improves insulin sensitivity, and reduces inflammation, helping to treat diabetes. It regulates glucose metabolism, lipid profiles, and hormone balance. Cinnamon deficiency is not a recognized medical condition, but supplementing with cinnamon can improve insulin sensitivity, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking cinnamon supplements.",
         "lsvs": [],
         "main_image": "product_image/Cinnamon.jpg",
@@ -331,7 +342,10 @@
             "Diabetes"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Capsules",
+        "image": "product_image/CinnamonPuritan's Pride500mg.jpg",
+        "id": 11
     },
     {
         "name": "Vitamin B6",
@@ -361,7 +375,9 @@
             "Menstrual Irregularities"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Vitamin B6[\"Puritan's Pride\"]Nil.jpg",
+        "id": 12
     },
     {
         "name": "Magnesium",
@@ -371,9 +387,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -385,7 +399,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Magnesium supports muscle relaxation, nerve function, and bone health, helping to treat menstrual cramps. It regulates muscle contraction, neurotransmitter synthesis, and bone mineralization. Magnesium deficiency can lead to muscle cramps, fatigue, and decreased bone density. Supplementing with magnesium can improve muscle relaxation, reduce symptoms of PMS, and promote overall well-being. Consult a healthcare professional before taking magnesium supplements.",
         "lsvs": [],
         "main_image": "product_image/Magnesium.jpg",
@@ -393,7 +407,10 @@
             "Menstrual Cramps"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/MagnesiumPuritan's Pride500mg.jpg",
+        "id": 13
     },
     {
         "name": "Turmeric/Curcumin",
@@ -403,9 +420,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -417,7 +432,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "400mg and 800mg",
         "description": "Turmeric/Curcumin supports joint health, reduces inflammation, and promotes antioxidant defenses, helping to treat endometriosis. It regulates inflammatory response, antioxidant defenses, and hormone balance. Turmeric/curcumin deficiency is not a recognized medical condition, but supplementing with turmeric/curcumin can improve joint health, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking turmeric/curcumin supplements.",
         "lsvs": [],
         "main_image": "product_image/Turmeric-Curcumin.jpg",
@@ -425,19 +440,20 @@
             "Endometriosis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Capsule",
+        "image": "product_image/Turmeric/CurcuminPuritan's Pride400mg and 800mg.jpg",
+        "id": 14
     },
     {
-        "name": "Chromium",
+        "name": "Chromium Picolinate",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -447,7 +463,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mcg",
         "description": "Chromium supports blood sugar regulation, improves insulin sensitivity, and reduces inflammation, helping to treat diabetes. It regulates glucose metabolism, lipid profiles, and hormone balance. Chromium deficiency can lead to impaired glucose regulation, weight gain, and increased risk of chronic diseases. Supplementing with chromium can improve insulin sensitivity, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking chromium supplements.",
         "lsvs": [],
         "main_image": "product_image/Chromium.jpg",
@@ -455,6 +471,9 @@
             "Diabetes"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Caps",
+        "image": "product_image/Chromium PicolinatePuritan's Pride500mcg.jpg",
+        "id": 15
     }
 ]

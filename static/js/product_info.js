@@ -105,38 +105,12 @@ liveReviewsTab.addEventListener('click', () => {
     const reviewList = document.querySelector(`#${header.id}-list`);
     if ((header.id) === 'audio-reviews' || (header.id) === 'podcast-mentions') {
       reviewList.style.display = 'flex';
+      reviewList.style.justifyContent = 'space-between';
     } else {
       reviewList.style.display = 'block';
     }
   });
 });
-  //     // Toggle the display of the review list
-  //     if ((header.id) === 'audio-reviews' || (header.id) === 'podcast-mentions') {
-  //       // Add touch event listeners for swiping
-  //       // let touchStartX = 0;
-  //       // list.addEventListener('touchstart', (e) => {
-  //       //   touchStartX = e.touches[0].clientX;
-  //       // });
-  //       // list.addEventListener('touchend', (e) => {
-  //       //   const touchEndX = e.changedTouches[0].clientX;
-  //       //   const swipeDistance = touchEndX - touchStartX;
-  //       //   if (swipeDistance > 50) {
-  //       //     // Swipe right
-  //       //     currentScroll -= itemWidth;
-  //       //     if (currentScroll < 0) currentScroll = 0;
-  //       //     list.scrollLeft = currentScroll;
-  //       //   } else if (swipeDistance < -50) {
-  //       //     // Swipe left
-  //       //     currentScroll += itemWidth;
-  //       //     if (currentScroll > maxScroll) currentScroll = maxScroll;
-  //       //     list.scrollLeft = currentScroll;
-  //       //   }
-  //       // });
-  //       reviewList.style.justifyContent = 'space-around';
-  //       reviewList.style.display = reviewList.classList.contains('show') ? 'flex' : 'none';
-  //     }
-  //     
-
 
 clinicalStudiesBtns.forEach((btn) => {
 btn.addEventListener('click', () => {

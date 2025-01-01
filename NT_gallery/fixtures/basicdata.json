@@ -1,15 +1,12 @@
 [
     {
         "name": "Fertilboost Men",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Earth Creation"
-            ],
+            "brands": "Earth Creation",
             "gender": [
                 "male"
             ],
@@ -30,24 +27,22 @@
                 "name": "Eric Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Fertilboost Men.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Fertilboost Men.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Fertilboost MenEarth CreationNil.jpg",
+        "id": 1
     },
     {
         "name": "Pregnacare Original",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -68,24 +63,22 @@
                 "name": "SS Duke"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Pregnacare Original.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Pregnacare Original.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Pregnacare OriginalVitabioticsNil.jpg",
+        "id": 2
     },
     {
         "name": "Pregnacare Max",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -107,24 +100,22 @@
                 "name": "SS Duke"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Pregnacare Max.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Pregnacare Max.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Pregnacare MaxVitabioticsNil.jpg",
+        "id": 3
     },
     {
         "name": "Pregnacare Plus",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -145,24 +136,22 @@
                 "name": "SS Duke"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Pregnacare Plus.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Pregnacare Plus.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Pregnacare PlusVitabioticsNil.jpg",
+        "id": 4
     },
     {
         "name": "Wellman Plus",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "male"
             ],
@@ -183,24 +172,22 @@
                 "name": "SS Duke"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellman Plus.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellman Plus.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellman PlusVitabioticsNil.jpg",
+        "id": 5
     },
     {
         "name": "Wellman Sport",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "male"
             ],
@@ -221,24 +208,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellman Sport.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellman Sport.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellman SportVitabioticsNil.jpg",
+        "id": 6
     },
     {
         "name": "Wellman Max",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "male"
             ],
@@ -259,24 +244,22 @@
                 "name": "Joy Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellman Max.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellman Max.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellman MaxVitabioticsNil.jpg",
+        "id": 7
     },
     {
         "name": "Wellwoman Skin",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -299,24 +282,22 @@
                 "name": "Joy Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellwoman Skin.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellwoman Skin.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellwoman SkinVitabioticsNil.jpg",
+        "id": 8
     },
     {
         "name": "Wellwoman Plus",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -337,24 +318,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellwoman Plus.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellwoman Plus.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellwoman PlusVitabioticsNil.jpg",
+        "id": 9
     },
     {
         "name": "Wellwoman Sport",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -375,24 +354,22 @@
                 "name": ""
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellwoman Sport.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellwoman Sport.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellwoman SportVitabioticsNil.jpg",
+        "id": 10
     },
     {
         "name": "Magnesium",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "P",
             "gender": [],
             "Lifestyle": [
                 "Supplement"
@@ -407,31 +384,29 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Magnesium supports muscle function, nerve function, and overall health in both men and women. It provides essential nutrients for energy levels, bone health, and heart health. Suitable for adults of all ages.",
         "lsvs": [
             {
                 "name": "Eric Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Magnesium.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Magnesium.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/MagnesiumP500mg.jpg",
+        "id": 11
     },
     {
         "name": "Osteocare",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [],
             "Lifestyle": [
                 "Multivitamin"
@@ -452,24 +427,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Osteocare.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Osteocare.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/OsteocareVitabioticsNil.jpg",
+        "id": 12
     },
     {
         "name": "Nat B",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "male"
             ],
@@ -491,24 +464,22 @@
                 "name": "Nedu Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Nat B.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Nat B.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Nat BVitabioticsNil.jpg",
+        "id": 13
     },
     {
         "name": "Visionace Max",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [],
             "Lifestyle": [
                 "Eye Supplement"
@@ -528,24 +499,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Visionace Max.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Visionace Max.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Visionace MaxVitabioticsNil.jpg",
+        "id": 14
     },
     {
         "name": "Cellgevity",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Max International"
-            ],
+            "brands": "Max International",
             "gender": [],
             "Lifestyle": [
                 "Skin",
@@ -566,24 +535,22 @@
                 "name": "Chisom Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Cellgevity.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Cellgevity.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/CellgevityMax InternationalNil.jpg",
+        "id": 15
     },
     {
         "name": "Neurozan",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "V",
             "gender": [],
             "Lifestyle": [
                 "Multivitamin"
@@ -596,31 +563,29 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "Mixed Strength",
         "description": "Neurozan supports brain health, cognitive function, and overall wellbeing in both men and women. It provides essential nutrients for brain function, nerve function, and overall health. Suitable for adults of all ages.",
         "lsvs": [
             {
                 "name": "SS Duke"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Neurozan.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Neurozan.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/NeurozanVMixed Strength.jpg",
+        "id": 16
     },
     {
         "name": "Pregnacare Conception for Her",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -641,24 +606,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Pregnacare Conception for Her.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Pregnacare Conception for Her.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Pregnacare Conception for HerVitabioticsNil.jpg",
+        "id": 17
     },
     {
         "name": "Pregnacare Conception for Him",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "male"
             ],
@@ -679,24 +642,22 @@
                 "name": "SS Duke"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Pregnacare Conception for Him.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Pregnacare Conception for Him.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Pregnacare Conception for HimVitabioticsNil.jpg",
+        "id": 18
     },
     {
         "name": "Pregnacare Breastfeeding",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -718,24 +679,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Pregnacare Breastfeeding.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Pregnacare Breastfeeding.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Pregnacare BreastfeedingVitabioticsNil.jpg",
+        "id": 19
     },
     {
         "name": "Wellman",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "male"
             ],
@@ -756,24 +715,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellman.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellman.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/WellmanVitabioticsNil.jpg",
+        "id": 20
     },
     {
         "name": "Wellman 50+",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "50"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "male"
             ],
@@ -794,24 +751,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellman 50+.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellman 50+.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellman 50+VitabioticsNil.jpg",
+        "id": 21
     },
     {
         "name": "Wellman 70+",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "70"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "male"
             ],
@@ -832,24 +787,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellman 70+.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellman 70+.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellman 70+VitabioticsNil.jpg",
+        "id": 22
     },
     {
         "name": "Wellwoman",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "18"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -870,24 +823,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellwoman.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellwoman.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/WellwomanVitabioticsNil.jpg",
+        "id": 23
     },
     {
         "name": "Wellwoman 50+",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "50"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -908,24 +859,22 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellwoman 50+.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellwoman 50+.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellwoman 50+VitabioticsNil.jpg",
+        "id": 24
     },
     {
         "name": "Wellwoman 70+",
-        "main_category": "Nutritional Supplement",
-        "category": "",
+        "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "70"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Vitabiotics",
             "gender": [
                 "female"
             ],
@@ -946,11 +895,12 @@
                 "name": "Vita Rep Idumota"
             }
         ],
-        "pictures": {
-            "main_image": "/blog_images/Wellwoman 70+.jpg",
-            "side_image_1": "",
-            "side_image_2": "",
-            "side_image_3": ""
-        }
+        "main_image": "Wellwoman 70+.jpg",
+        "flag_condition": [],
+        "created_at": "",
+        "updated_at": "",
+        "dosage_form": "",
+        "image": "product_image/Wellwoman 70+VitabioticsNil.jpg",
+        "id": 25
     }
 ]

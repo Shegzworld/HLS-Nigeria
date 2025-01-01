@@ -30,7 +30,9 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Omega-3 Fatty Acids['Earth Creation']Nil.jpg",
+        "id": 1
     },
     {
         "name": "Vitamin C",
@@ -40,9 +42,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Made"
-            ],
+            "brands": "Nature's Made",
             "gender": [
                 "male",
                 "female"
@@ -54,7 +54,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000mg",
         "description": "Vitamin C is essential for immune system function and overall health. This antioxidant vitamin can help reduce oxidative stress and inflammation in respiratory conditions like pneumonia. Vitamin C also supports collagen production and wound healing. By taking vitamin C supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Vitamin C.jpg",
@@ -63,19 +63,20 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Vitamin CNature's Made1000mg.jpg",
+        "id": 2
     },
     {
-        "name": "Vitamin D",
+        "name": "Vitamin D3",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -87,7 +88,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000 I.U",
         "description": "Vitamin D is essential for bone health and immune system function. This vitamin can help reduce the risk of respiratory infections and improve lung function in conditions like asthma. Vitamin D also supports mood regulation and overall health. By taking vitamin D supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Vitamin D.jpg",
@@ -96,7 +97,10 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Softgel",
+        "image": "product_image/Vitamin D3Puritan's Pride1000 I.U.jpg",
+        "id": 3
     },
     {
         "name": "N-Acetyl Cysteine (NAC)",
@@ -129,7 +133,9 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/N-Acetyl Cysteine (NAC)['Unavailable']Nil.jpg",
+        "id": 4
     },
     {
         "name": "Magnesium",
@@ -139,9 +145,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -153,7 +157,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Magnesium is an essential mineral that supports muscle and nerve function. Magnesium can help relax airway muscles, reducing symptoms of respiratory conditions like asthma. Magnesium also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking magnesium supplements, individuals can experience improved respiratory health, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Magnesium.jpg",
@@ -162,19 +166,20 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/MagnesiumPuritan's Pride500mg.jpg",
+        "id": 5
     },
     {
-        "name": "Zinc",
+        "name": "Zinc Gluconate",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -186,7 +191,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "50mg",
         "description": "Zinc is an essential mineral that supports immune system function. Zinc can help reduce the severity and duration of respiratory infections like pneumonia. Zinc also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking zinc supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Zinc.jpg",
@@ -195,7 +200,10 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Zinc GluconatePuritan's Pride50mg.jpg",
+        "id": 6
     },
     {
         "name": "Probiotics",
@@ -205,9 +213,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Garden of Life"
-            ],
+            "brands": "Nature's Field",
             "gender": [
                 "male",
                 "female"
@@ -219,7 +225,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1.85 Billion",
         "description": "Probiotics are beneficial bacteria that support gut health. Probiotics can help maintain a healthy gut microbiome, which can help boost the immune system and reduce the risk of respiratory infections. Probiotics also have anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking probiotic supplements, individuals can experience improved gut health, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Probiotics.jpg",
@@ -227,7 +233,10 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Capsules",
+        "image": "product_image/ProbioticsNature's Field1.85 Billion.jpg",
+        "id": 7
     },
     {
         "name": "Elderberry",
@@ -237,9 +246,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Sambucol"
-            ],
+            "brands": "Sambucol",
             "gender": [
                 "male",
                 "female"
@@ -251,7 +258,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "16.72mg",
         "description": "Elderberry is a natural antiviral agent that can help reduce the severity and duration of respiratory infections like influenza. Elderberry has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking elderberry supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Elderberry.jpg",
@@ -260,7 +267,10 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Gummies",
+        "image": "product_image/ElderberrySambucol16.72mg.jpg",
+        "id": 8
     },
     {
         "name": "Melatonin",
@@ -270,9 +280,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -284,7 +292,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "10mg",
         "description": "Melatonin is a natural hormone that regulates sleep-wake cycles. Melatonin can help improve sleep quality and reduce symptoms of sleep disorders like insomnia. Melatonin also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking melatonin supplements, individuals can experience improved sleep quality, reduced severity of sleep disorders, and overall well-being. This supplement is a natural and effective way to manage sleep health.",
         "lsvs": [],
         "main_image": "product_image/Melatonin.jpg",
@@ -293,7 +301,10 @@
             "Sleep Disorders"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Caps",
+        "image": "product_image/MelatoninPuritan's Pride10mg.jpg",
+        "id": 9
     },
     {
         "name": "Valerian Root",
@@ -326,7 +337,9 @@
             "Sleep Disorders"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Valerian Root['Unavailable']Nil.jpg",
+        "id": 10
     },
     {
         "name": "Ginkgo Biloba",
@@ -359,7 +372,9 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Ginkgo Biloba[\"Nature's Field\"]Nil.jpg",
+        "id": 11
     },
     {
         "name": "Vitamin E",
@@ -369,9 +384,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Field"
-            ],
+            "brands": "Nature's Field",
             "gender": [
                 "male",
                 "female"
@@ -383,7 +396,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000 I.U",
         "description": "Vitamin E is a natural antioxidant that reduces oxidative stress and inflammation. Vitamin E can help improve skin health and reduce symptoms of respiratory conditions like pulmonary fibrosis. Vitamin E also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking vitamin E supplements, individuals can experience improved skin health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Vitamin E.jpg",
@@ -392,7 +405,10 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Softgel",
+        "image": "product_image/Vitamin ENature's Field1000 I.U.jpg",
+        "id": 12
     },
     {
         "name": "Coenzyme Q10 (CoQ10)",
@@ -402,9 +418,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -416,7 +430,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "200mg",
         "description": "Coenzyme Q10 (CoQ10) is a natural antioxidant that reduces oxidative stress and inflammation. CoQ10 can help improve energy production and reduce symptoms of respiratory conditions like pulmonary fibrosis. CoQ10 also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking CoQ10 supplements, individuals can experience improved energy production, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Coenzyme Q10 (CoQ10).jpg",
@@ -425,7 +439,10 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Softgel",
+        "image": "product_image/Coenzyme Q10 (CoQ10)Puritan's Pride200mg.jpg",
+        "id": 13
     },
     {
         "name": "Echinacea",
@@ -435,9 +452,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -449,7 +464,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "400mg",
         "description": "Echinacea is a natural herb that supports immune system function. Echinacea can help reduce the severity and duration of respiratory infections like the common cold and flu. Echinacea also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking echinacea supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Echinacea.jpg",
@@ -459,7 +474,10 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/EchinaceaPuritan's Pride400mg.jpg",
+        "id": 14
     },
     {
         "name": "Ginger",
@@ -493,7 +511,9 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Ginger['Unavailable']Nil.jpg",
+        "id": 15
     },
     {
         "name": "Turmeric/Curcumin",
@@ -503,9 +523,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -517,7 +535,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "400mg and 800mg",
         "description": "Turmeric/curcumin is a natural herb that reduces inflammation and improves respiratory health. Turmeric/curcumin can help reduce symptoms of respiratory conditions like asthma and bronchitis. Turmeric/curcumin also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking turmeric/curcumin supplements, individuals can experience improved respiratory health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Turmeric_Curcumin.jpg",
@@ -527,19 +545,20 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Capsule",
+        "image": "product_image/Turmeric/CurcuminPuritan's Pride400mg and 800mg.jpg",
+        "id": 16
     },
     {
-        "name": "Slippery Elm",
+        "name": "Slippery Elm Bark",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Swanson"
-            ],
+            "brands": "",
             "gender": [
                 "male",
                 "female"
@@ -551,7 +570,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "400mg",
         "description": "Slippery elm is a natural herb that soothes and protects the mucous membranes. Slippery elm can help reduce inflammation and improve respiratory health. Slippery elm also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking slippery elm supplements, individuals can experience improved respiratory health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
         "main_image": "product_image/Slippery Elm.jpg",
@@ -559,6 +578,9 @@
             "Respiratory Health"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Caps",
+        "image": "product_image/Slippery Elm Bark400mg.jpg",
+        "id": 17
     }
 ]

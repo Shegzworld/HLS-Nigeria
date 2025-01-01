@@ -1,28 +1,38 @@
-Fertilboost Men-4
-Pregnacare Original-5
-Pregnacare Max-6
-Pregnacare Plus-7
-Wellman Plus-8
-Wellman Sport-9
-Wellman Max-10
-*Wellwoman Skin-11
-Wellwoman Plus-12
-Wellwoman Sport-13
-Magnesium-14
-*Osteocare-15
-Nat B-16
-Visionace Max-17
-Cellgevity-18
-Neurozan-19
-Pregnacare Conception for Her-20
-Wellman conception-21
-Pregnacare Breastfeeding-22
-Wellman-23
-Wellman 50+-24
-Wellman 70+-25
-Wellwoman-26
-Wellwoman 50+-27
-Wellwoman 70+-28
+Fertilboost Men--182
+Pregnacare Original--183
+Pregnacare Max--184
+Pregnacare Plus--185
+Wellman Plus--186
+Wellman Sport--187
+Wellman Max--188
+Wellwoman Skin--189
+Wellwoman Plus--190
+Wellwoman Sport--191
+Magnesium--253
+Osteocare--193
+Nat B--194
+Visionace Max--195
+Cellgevity--196
+Neurozan--269
+Pregnacare Conception for Her--198
+Pregnacare Breastfeeding--200
+Wellman--201
+Wellman 50+--202
+Wellman 70+--203
+Wellwoman--204
+Wellwoman 50+--205
+Wellwoman 70+--206
+Pregnacare Conception for Him by ['Vitabiotics']******* yet to be resolved
+
+
+
+
+for supplement in data:
+    # Get the supplement name from the JSON data
+    supplement_name = supplement['name']
+    product = Product.objects.filter(name=supplement_name).first()
+    if product:
+        print(f"{supplement_name}--{product.id}")
 
 import re
 import os
@@ -125,6 +135,21 @@ for product in products:
     product.main_image.name = new_picture_name
     product.save()
     print(f'{product.name}-{product.main_image.url}')
+
+
+for filename in os.listdir(fixtures):
+    if filename.endswith('.json'):
+        with open(os.path.join(fixtures, filename), 'r+') as file:
+            data = json.load(file)
+            for item in data:
+                old_picture_name = item['main_image']
+                filename, extension = os.path.splitext(old_picture_name)
+                new_picture_name = f"product_image/{item['name']}{item['sub_categories']['brands']}{item['strength']}{extension}"
+                item['image'] = new_picture_name
+                if item['sub_categories']['brands']:
+                    print(f"{item['name']} - {new_picture_name}")
+            file.seek(0)
+            json.dump(data, file, indent=4)
 
 import os
 

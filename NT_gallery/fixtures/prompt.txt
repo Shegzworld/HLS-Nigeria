@@ -1,5 +1,6 @@
 import re
 import os
+from fuzzywuzzy import fuzz, process
 from django.utils import timezone
 import json
 from decimal import Decimal
@@ -7,6 +8,7 @@ from NT_gallery.models import Product
 from NT_gallery.models import LSV
 from NT_gallery.models import Flag_condition
 from datetime import datetime
+fixtures = 'NT_gallery/fixtures'
 
 
 age_categories = {
@@ -248,8 +250,20 @@ with open('your_file.json', 'w') as f:
     json.dump(data, f, indent=4)
 
 ------------------------------------------------------------------------------------------------
-with open('NT_gallery/fixtures/condition.json') as f:
-    data = json.load(f)
+def print_products(json_file_name):
+    with open(f'NT_gallery/fixtures/{json_file_name}') as f:
+        data = json.load(f)
+        for p in data:
+            print(p['name'])
+            #('------------------------------------------')
+            #print("Unmatched Supplements:")
+            #for supplement in unmatched_supplements:
+                #print(supplement)
+            print("\n")
+
+print_products('respiratorycondition.json')
+
+
 
 
 def load_products(json_file_name):
@@ -375,6 +389,7 @@ for supplement in unique_supplements:
 
 ---------------------------PRINT ONLY SUPPLEMENTS WITHOUT BRAND NAMES-------------
 unique_supplements = []
+branded_supplements = []
 
 # Loop through every JSON file in the fixtures directory
 for filename in os.listdir('NT_gallery/fixtures'):
@@ -385,10 +400,15 @@ for filename in os.listdir('NT_gallery/fixtures'):
         for supplement in data:
             if ('sub_categories' not in supplement or 'brands' not in supplement['sub_categories'] or not supplement['sub_categories']['brands']) and supplement['name'] not in [s['name'] for s in unique_supplements]:
                 unique_supplements.append(supplement)
+            else:
+                branded_supplements.append(supplement)
+
 
 for supplement in unique_supplements:
     print(f"{supplement['name']}----{supplement.get('sub_categories', {}).get('brands', 'No brand')}")
 
+for supplement in branded_supplements:
+    print(f"{supplement['name']}----{supplement.get('sub_categories', {}).get('brands', 'No brand')}")
 
 fixtures = 'NT_gallery/fixtures'
 for filename in os.listdir(fixtures):
@@ -454,3 +474,171 @@ if unmatched_supplements:
     print("Supplements whose pharmacy grouping does not contain any of the above pharmacy grouping class:")
     for supplement, pharmacy_grouping in unmatched_supplements:
         print(f"{supplement}: {pharmacy_grouping}")
+
+
+target_supplements = ["Spidex", "STC 30"]
+unavailable_brands = []
+
+for filename in os.listdir('NT_gallery/fixtures'):
+    if filename.endswith('.json'):
+        with open(os.path.join('NT_gallery/fixtures', filename), 'r') as file:
+            data = json.load(file)
+            for item in data:
+                if item['name'].lower() in [target.lower() for target in target_supplements]:
+                    print(f"Found target supplement: {item['name']} in file {filename}")
+                if "unavailable" in [brand.lower() for brand in item['sub_categories']['brands']]:
+                    unavailable_brands.append((item['name'], filename))
+
+for supplement, filename in unavailable_brands:
+    print(f"Found supplement with unavailable brand: {supplement} in file {filename}")
+--------------------------------------------------------------------------------------------
+matched_supplements = {}
+unmatched_supplements = set()
+def match_supplements(supplements_data, fixtures):
+    def reset_supplements_match():
+        matched_supplements = {}
+        unmatched_supplements = set()
+    for supplement in supplements_data:
+        unmatched_supplements.add(supplement['name'])
+    for filename in os.listdir(fixtures):
+        if filename.endswith('.json'):
+            with open(os.path.join(fixtures, filename), 'r+') as file:
+                data = json.load(file)
+                for supplement in supplements_data:
+                    # Check if the current supplement matches any item in the current file's data
+                    for item in data:
+                        if supplement['name'].lower() in item['name'].lower():
+                            # If a match is found, add the supplement to the matched_supplements dictionary
+                            if supplement['name'] not in matched_supplements:
+                                matched_supplements[supplement['name']] = {
+                                    'brand': supplement['brand'],
+                                    'strength': supplement['strength'],
+                                    'dosage_form': supplement['dosage_form'],
+                                    'files': [filename]
+                                }
+                            else:
+                                if filename not in matched_supplements[supplement['name']]['files']:
+                                    matched_supplements[supplement['name']]['files'].append(filename)
+                            unmatched_supplements.discard(supplement['name'])
+                            item['sub_categories']['brands'] = supplement['brand']
+                            item['strength'] = supplement['strength']
+                            item['dosage_form'] = supplement['dosage_form']
+                file.seek(0)
+                json.dump(data, file, indent=4)
+
+def print_supplement_results():
+    print("Matched Supplements:")
+    for supplement, values in matched_supplements.items():
+        print(f"Name: {supplement}")
+        print(f"Brand: {values['brand']}")
+        print(f"Strength: {values['strength']}")
+        print(f"Dosage Form: {values['dosage_form']}")
+        print(f"Files: {', '.join(values['files'])}")
+        print("------------------------")
+    print("\nUnmatched Supplements:")
+    for supplement in unmatched_supplements:
+        print(f"Name: {supplement}")
+        print(f"Files: No matches found in any file")
+        print("------------------------")
+
+
+def print_potential_ratios(unmatched_supplements, fixtures, ratio_threshold):
+    for supplement in unmatched_supplements:
+        for filename in os.listdir(fixtures):
+            if filename.endswith('.json'):
+                with open(os.path.join(fixtures, filename), 'r') as file:
+                    data = json.load(file)
+                    for item in data:
+                        ratio = fuzz.partial_ratio(supplement.lower(), item['name'].lower())
+                        if ratio > ratio_threshold:
+                            print(f"Supplement: {supplement}")
+                            print(f"Potential Match: {item['name']}")
+                            print(f"File: {filename}")
+                            print(f"Similarity Ratio: {ratio}")
+                            print("------------------------")
+
+def detect_json_errors(fixtures):
+    for filename in os.listdir(fixtures):
+        if filename.endswith('.json'):
+            try:
+                with open(os.path.join(fixtures, filename), 'r') as file:
+                    json.load(file)
+            except json.JSONDecodeError as e:
+                print(f"Error in file: {filename}")
+
+def rewrite_potential_matches(unmatched_supplements, fixtures, exclude_names):
+    print("Unmatched Supplements:")
+    for supplement in unmatched_supplements:
+        print(f"Name: {supplement}")
+    print("\nPotential Matches (Fuzzy):")
+    for supplement in unmatched_supplements[:]:  # Iterate over a copy of the list
+        for filename in os.listdir(fixtures):
+            if filename.endswith('.json'):
+                with open(os.path.join(fixtures, filename), 'r+') as file:
+                    data = json.load(file)
+                    for item in data:
+                        ratio = fuzz.partial_ratio(supplement.lower(), item['name'].lower())
+                        if ratio > 80:
+                            original_name = item['name']
+                            if item['name'].lower() in [name.lower() for name in exclude_names]:
+                                new_name = item['name']
+                            else:
+                                new_name = supplement
+                            item['name'] = new_name
+                            print(f"Supplement: {supplement}")
+                            print(f"Potential Match: {original_name} -> {new_name}")
+                            print(f"File: {filename}")
+                            print(f"Similarity Ratio: {ratio}")
+                            print("------------------------")
+                            # Remove the matched supplement from the unmatched_supplements list
+                            unmatched_supplements.remove(supplement)
+                            break  # Break out of the inner loop
+                    with open(os.path.join(fixtures, filename), 'w') as file:
+                        json.dump(data, file, indent=4)
+
+
+match_supplements(supplements_data, fixtures)
+rewrite_potential_matches(unmatched_supplements, fixtures, exclude_names)
+print_potential_ratios(unmatched_supplements, fixtures, 80)
+detect_json_errors(fixtures)
+print_supplement_results()
+print_products('respiratorycondition.json')
+
+
+exclude_names = ['Vitamin B6','Vitamin C','Vitamin E','Vitamin k','Vitamin A','Calcium','Probiotics','Potassium']
+
+
+# Loop through each file in the fixtures folder
+pic_bucket = []
+unique_items = set()
+pic_number = 1
+
+
+# Loop through each file in the fixtures folder
+for filename in os.listdir(fixtures):
+    if filename.endswith('.json'):
+        # Open the JSON file
+        file_path = os.path.join(fixtures, filename)
+        with open(file_path, 'r') as file:
+            # Load the JSON data
+            data = json.load(file)
+            for item in data:
+                if 'name' in item and item['name'] not in unique_items:
+                    unique_items.add(item['name'])
+                    pic_bucket.append((item['name'], pic_number))
+                    pic_number += 1
+for item in pic_bucket:
+    print(f"{item[0]} -- {item[1]}")
+print(f"Length of pic_bucket: {len(pic_bucket)}")
+
+list = []
+for item in pic_bucket:
+    if 'cinnamon' in item[0] or 'acidophilus' in item[0]:
+        list.append(item[1])
+
+
+print(list)
+
+for item in pic_bucket:
+    if 'Cinnamon' in item[0]:
+        print(f"{item[1]}")

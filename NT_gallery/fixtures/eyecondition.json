@@ -31,7 +31,9 @@
             "Age-Related Macular Degeneration"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Omega-3 Fatty Acids['Earth Creation']Nil.jpg",
+        "id": 1
     },
     {
         "name": "Vitamin C",
@@ -41,9 +43,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Nature's Made"
-            ],
+            "brands": "Nature's Made",
             "gender": [
                 "male",
                 "female"
@@ -55,7 +55,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000mg",
         "description": "Vitamin C is an essential antioxidant that plays a crucial role in reducing oxidative stress and promoting eye health. Vitamin C helps treat various eye conditions, including cataracts and astigmatism. By taking Vitamin C, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Vitamin C also supports healthy immune function and promotes overall well-being. Vitamin C is a natural and effective way to support eye health and reduce oxidative stress.",
         "lsvs": [],
         "main_image": "product_image/Vitamin C.jpg",
@@ -64,19 +64,20 @@
             "Astigmatism"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Vitamin CNature's Made1000mg.jpg",
+        "id": 2
     },
     {
-        "name": "Vitamin A",
+        "name": "Vitamin A (Beta-Carotene)",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -86,7 +87,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "10,000 I.U",
         "description": "Vitamin A is an essential nutrient that plays a crucial role in promoting vision health and reducing the risk of eye conditions. Vitamin A helps treat various eye conditions, including dry eye syndrome, myopia, and hyperopia. By taking Vitamin A, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Vitamin A also supports healthy immune function and promotes overall well-being. Vitamin A is a natural and effective way to support eye health and reduce the risk of eye conditions.",
         "lsvs": [],
         "main_image": "product_image/Vitamin A.jpg",
@@ -96,19 +97,20 @@
             "Hyperopia"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Softgel",
+        "image": "product_image/Vitamin A (Beta-Carotene)Puritan's Pride10,000 I.U.jpg",
+        "id": 3
     },
     {
-        "name": "Vitamin D",
+        "name": "Vitamin D3",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -120,7 +122,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "1000 I.U",
         "description": "Vitamin D is an essential nutrient that plays a crucial role in promoting bone health and reducing the risk of eye conditions. Vitamin D helps treat various eye conditions, including age-related macular degeneration and presbyopia. By taking Vitamin D, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Vitamin D also supports healthy immune function and promotes overall well-being. Vitamin D is a natural and effective way to support eye health and reduce the risk of eye conditions.",
         "lsvs": [],
         "main_image": "product_image/Vitamin D.jpg",
@@ -129,7 +131,10 @@
             "Presbyopia"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Softgel",
+        "image": "product_image/Vitamin D3Puritan's Pride1000 I.U.jpg",
+        "id": 4
     },
     {
         "name": "Magnesium",
@@ -139,9 +144,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Vitabiotics"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -153,7 +156,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Magnesium is an essential mineral that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Magnesium helps treat various eye conditions, including glaucoma. By taking Magnesium, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Magnesium also supports healthy heart function and promotes overall well-being. Magnesium is a natural and effective way to support eye health and reduce the risk of eye conditions.",
         "lsvs": [],
         "main_image": "product_image/Magnesium.jpg",
@@ -161,7 +164,10 @@
             "Glaucoma"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/MagnesiumPuritan's Pride500mg.jpg",
+        "id": 5
     },
     {
         "name": "Ginkgo Biloba",
@@ -194,19 +200,19 @@
             "Presbyopia"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Ginkgo Biloba[\"Nature's Field\"]Nil.jpg",
+        "id": 6
     },
     {
-        "name": "Acetyl-L-Carnitine (ALCAR)",
+        "name": "Acetyl L-Carnitine",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Swanson"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -216,7 +222,7 @@
             "pharmacy grouping": []
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "500mg",
         "description": "Acetyl-L-Carnitine (ALCAR) is an amino acid that plays a crucial role in promoting eye health and reducing the risk of eye conditions. ALCAR helps treat various eye conditions, including glaucoma. By taking ALCAR, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. ALCAR also supports healthy nerve function and promotes overall well-being. ALCAR is a natural and effective way to support eye health and reduce the risk of eye conditions.",
         "lsvs": [],
         "main_image": "product_image/Acetyl-L-Carnitine (ALCAR).jpg",
@@ -224,7 +230,10 @@
             "Glaucoma"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Caps",
+        "image": "product_image/Acetyl L-CarnitinePuritan's Pride500mg.jpg",
+        "id": 7
     },
     {
         "name": "Lutein and Zeaxanthin",
@@ -254,7 +263,9 @@
             "Age-Related Macular Degeneration"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Lutein and Zeaxanthin['Bausch+Lomb']Nil.jpg",
+        "id": 8
     },
     {
         "name": "Bilberry Extract",
@@ -286,19 +297,19 @@
             "Astigmatism"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/Bilberry Extract['Unavailable']Nil.jpg",
+        "id": 9
     },
     {
-        "name": "Zinc",
+        "name": "Zinc Gluconate",
         "category": "",
         "main_category": "Nutritional Supplement",
         "sub_categories": {
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -310,7 +321,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "50mg",
         "description": "Zinc is an essential mineral that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Zinc helps treat various eye conditions, including dry eye syndrome, hyperopia, and conjunctivitis. By taking Zinc, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Zinc also supports healthy immune function and promotes overall well-being. Zinc is a natural and effective way to support eye health and reduce the risk of eye conditions.",
         "lsvs": [],
         "main_image": "product_image/Zinc.jpg",
@@ -320,7 +331,10 @@
             "Conjunctivitis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Tablet",
+        "image": "product_image/Zinc GluconatePuritan's Pride50mg.jpg",
+        "id": 10
     },
     {
         "name": "Coenzyme Q10 (CoQ10)",
@@ -330,9 +344,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -344,7 +356,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "200mg",
         "description": "Coenzyme Q10 (CoQ10) is an essential antioxidant that plays a crucial role in promoting eye health and reducing the risk of eye conditions. CoQ10 helps treat various eye conditions, including age-related macular degeneration. By taking CoQ10, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. CoQ10 also supports healthy heart function and promotes overall well-being. CoQ10 is a natural and effective way to support eye health and reduce the risk of eye conditions.",
         "lsvs": [],
         "main_image": "product_image/Coenzyme Q10 (CoQ10).jpg",
@@ -352,7 +364,10 @@
             "Age-Related Macular Degeneration"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Softgel",
+        "image": "product_image/Coenzyme Q10 (CoQ10)Puritan's Pride200mg.jpg",
+        "id": 11
     },
     {
         "name": "Turmeric/Curcumin",
@@ -362,9 +377,7 @@
             "age": [
                 "adults"
             ],
-            "brands": [
-                "Puritan's Pride"
-            ],
+            "brands": "Puritan's Pride",
             "gender": [
                 "male",
                 "female"
@@ -376,7 +389,7 @@
             ]
         },
         "price": 0.0,
-        "strength": "Nil",
+        "strength": "400mg and 800mg",
         "description": "Turmeric/Curcumin is a natural anti-inflammatory compound that plays a crucial role in promoting eye health and reducing the risk of eye conditions. Turmeric/Curcumin helps treat various eye conditions, including dry eye syndrome and conjunctivitis. By taking Turmeric/Curcumin, individuals can experience improved vision, reduced symptoms of eye conditions, and enhanced overall health. Turmeric/Curcumin also supports healthy joint function and promotes overall well-being. Turmeric/Curcumin is a natural and effective way to support eye health and reduce inflammation.",
         "lsvs": [],
         "main_image": "product_image/Turmeric Curcumin.jpg",
@@ -385,7 +398,10 @@
             "Conjunctivitis"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "dosage_form": "Capsule",
+        "image": "product_image/Turmeric/CurcuminPuritan's Pride400mg and 800mg.jpg",
+        "id": 12
     },
     {
         "name": "B Vitamins",
@@ -416,6 +432,8 @@
             "Age-Related Macular Degeneration"
         ],
         "created_at": "",
-        "updated_at": ""
+        "updated_at": "",
+        "image": "product_image/B Vitamins['Earth Creation']Nil.jpg",
+        "id": 13
     }
 ]
