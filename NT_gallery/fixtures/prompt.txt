@@ -627,8 +627,10 @@ for filename in os.listdir(fixtures):
                     unique_items.add(item['name'])
                     pic_bucket.append((item['name'], pic_number))
                     pic_number += 1
+
 for item in pic_bucket:
     print(f"{item[0]} -- {item[1]}")
+
 print(f"Length of pic_bucket: {len(pic_bucket)}")
 
 list = []
@@ -640,5 +642,21 @@ for item in pic_bucket:
 print(list)
 
 for item in pic_bucket:
-    if 'Cinnamon' in item[0]:
+    if 'stress' in item[0].lower():
         print(f"{item[1]}")
+
+
+vitamins_to_check = ['Acetyl-L-Carnitine', 'Vitamin C']
+
+fixtures_folder = 'NT_gallery/fixtures'
+
+for filename in os.listdir(fixtures_folder):
+    if filename.endswith(".json"):
+        with open(os.path.join(fixtures_folder, filename)) as f:
+            data = json.load(f)
+            for i, supplement in enumerate(data):
+                if supplement['name'] in vitamins_to_check and supplement['name'] not in supplement['description']:
+                    print(f"File: {filename}")
+                    print(f"Supplement Name: {supplement['name']} (#{i})")
+                    print(f"Supplement Brand: {supplement['sub_categories']['brands']}")
+                    print(f"Description: {supplement['description']}\n")

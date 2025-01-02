@@ -27,14 +27,14 @@
         "lsvs": [
             "Eric Idumota"
         ],
-        "main_image": "Fertilboost Men.jpg",
+        "main_image": "product_image/Fertilboost MenEarthCreationNil.jpg",
         "flag_condition": [
             "Prostate cancer",
             "Cardiovascular disease"
         ],
         "created_at": "2024-12-07 06:04:28.890612+00:00",
         "updated_at": "2024-12-12 16:53:47.521340+00:00",
-        "image": "product_image/Fertilboost Men['Earth Creation']Nil.jpg",
+        "image": "product_image/Fertilboost MenEarthCreationNil.jpg",
         "id": 1
     },
     {
@@ -65,14 +65,14 @@
         "lsvs": [
             "SS Duke"
         ],
-        "main_image": "Pregnacare Original.jpg",
+        "main_image": "product_image/Pregnacare OriginalVitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:39.506841+00:00",
         "updated_at": "2024-12-12 16:53:48.588455+00:00",
-        "image": "product_image/Pregnacare Original['Vitabiotics']Nil.jpg",
+        "image": "product_image/Pregnacare OriginalVitabioticsNil.jpg",
         "id": 2
     },
     {
@@ -104,14 +104,14 @@
         "lsvs": [
             "SS Duke"
         ],
-        "main_image": "Pregnacare Max.jpg",
+        "main_image": "product_image/Pregnacare MaxVitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:40.848166+00:00",
         "updated_at": "2024-12-12 16:53:48.863902+00:00",
-        "image": "product_image/Pregnacare Max['Vitabiotics']Nil.jpg",
+        "image": "product_image/Pregnacare MaxVitabioticsNil.jpg",
         "id": 3
     },
     {
@@ -142,14 +142,14 @@
         "lsvs": [
             "SS Duke"
         ],
-        "main_image": "Pregnacare Plus.jpg",
+        "main_image": "product_image/Pregnacare PlusVitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:41.808974+00:00",
         "updated_at": "2024-12-12 16:53:49.324345+00:00",
-        "image": "product_image/Pregnacare Plus['Vitabiotics']Nil.jpg",
+        "image": "product_image/Pregnacare PlusVitabioticsNil.jpg",
         "id": 4
     },
     {
@@ -180,14 +180,14 @@
         "lsvs": [
             "SS Duke"
         ],
-        "main_image": "Wellman Plus.jpg",
+        "main_image": "product_image/Wellman PlusVitabioticsNil.jpg",
         "flag_condition": [
             "Prostate cancer",
             "Cardiovascular disease"
         ],
         "created_at": "2024-12-07 08:43:42.830314+00:00",
         "updated_at": "2024-12-12 16:53:49.543889+00:00",
-        "image": "product_image/Wellman Plus['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellman PlusVitabioticsNil.jpg",
         "id": 5
     },
     {
@@ -218,14 +218,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Wellman Sport.jpg",
+        "main_image": "product_image/Wellman SportVitabioticsNil.jpg",
         "flag_condition": [
             "Prostate cancer",
             "Cardiovascular disease"
         ],
         "created_at": "2024-12-07 08:43:43.853204+00:00",
         "updated_at": "2024-12-12 16:53:49.723807+00:00",
-        "image": "product_image/Wellman Sport['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellman SportVitabioticsNil.jpg",
         "id": 6
     },
     {
@@ -256,14 +256,14 @@
         "lsvs": [
             "Joy Idumota"
         ],
-        "main_image": "Wellman Max.jpg",
+        "main_image": "product_image/Wellman MaxVitabioticsNil.jpg",
         "flag_condition": [
             "Prostate cancer",
             "Cardiovascular disease"
         ],
         "created_at": "2024-12-07 08:43:44.879351+00:00",
         "updated_at": "2024-12-12 16:53:49.968674+00:00",
-        "image": "product_image/Wellman Max['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellman MaxVitabioticsNil.jpg",
         "id": 7
     },
     {
@@ -296,14 +296,14 @@
         "lsvs": [
             "Joy Idumota"
         ],
-        "main_image": "Wellwoman Skin.jpg",
+        "main_image": "product_image/Wellwoman SkinVitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:45.893121+00:00",
         "updated_at": "2024-12-12 16:53:50.178708+00:00",
-        "image": "product_image/Wellwoman Skin['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellwoman SkinVitabioticsNil.jpg",
         "id": 8
     },
     {
@@ -334,14 +334,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Wellwoman Plus.jpg",
+        "main_image": "product_image/Wellwoman PlusVitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:46.895860+00:00",
         "updated_at": "2024-12-12 16:53:50.473926+00:00",
-        "image": "product_image/Wellwoman Plus['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellwoman PlusVitabioticsNil.jpg",
         "id": 9
     },
     {
@@ -372,14 +372,14 @@
         "lsvs": [
             ""
         ],
-        "main_image": "Wellwoman Sport.jpg",
+        "main_image": "product_image/Wellwoman SportVitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:47.979027+00:00",
         "updated_at": "2024-12-12 16:53:50.731490+00:00",
-        "image": "product_image/Wellwoman Sport['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellwoman SportVitabioticsNil.jpg",
         "id": 10
     },
     {
@@ -409,12 +409,12 @@
         "lsvs": [
             "Eric Idumota"
         ],
-        "main_image": "Magnesium.jpg",
+        "main_image": "product_image/MagnesiumPuritansPride500mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-07 08:43:48.952408+00:00",
         "updated_at": "2024-12-12 16:53:50.907743+00:00",
         "dosage_form": "Tablet",
-        "image": "product_image/MagnesiumPuritan's Pride500mg.jpg",
+        "image": "product_image/MagnesiumPuritansPride500mg.jpg",
         "id": 11
     },
     {
@@ -445,11 +445,11 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Osteocare.jpg",
+        "main_image": "product_image/OsteocareVitabioticsNil.jpg",
         "flag_condition": [],
         "created_at": "2024-12-07 08:43:49.406976+00:00",
         "updated_at": "2024-12-12 16:53:51.152288+00:00",
-        "image": "product_image/Osteocare['Vitabiotics']Nil.jpg",
+        "image": "product_image/OsteocareVitabioticsNil.jpg",
         "id": 12
     },
     {
@@ -481,14 +481,14 @@
         "lsvs": [
             "Nedu Idumota"
         ],
-        "main_image": "Nat B.jpg",
+        "main_image": "product_image/Nat BVitabioticsNil.jpg",
         "flag_condition": [
             "Prostate cancer",
             "Cardiovascular disease"
         ],
         "created_at": "2024-12-07 08:43:50.129150+00:00",
         "updated_at": "2024-12-12 16:53:51.392662+00:00",
-        "image": "product_image/Nat B['Vitabiotics']Nil.jpg",
+        "image": "product_image/Nat BVitabioticsNil.jpg",
         "id": 13
     },
     {
@@ -518,11 +518,11 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Visionace Max.jpg",
+        "main_image": "product_image/Visionace MaxVitabioticsNil.jpg",
         "flag_condition": [],
         "created_at": "2024-12-07 08:43:50.925791+00:00",
         "updated_at": "2024-12-12 16:53:51.514801+00:00",
-        "image": "product_image/Visionace Max['Vitabiotics']Nil.jpg",
+        "image": "product_image/Visionace MaxVitabioticsNil.jpg",
         "id": 14
     },
     {
@@ -553,11 +553,11 @@
         "lsvs": [
             "Chisom Idumota"
         ],
-        "main_image": "Cellgevity.jpg",
+        "main_image": "product_image/CellgevityMaxInternationalNil.jpg",
         "flag_condition": [],
         "created_at": "2024-12-07 08:43:51.912469+00:00",
         "updated_at": "2024-12-12 16:53:51.625043+00:00",
-        "image": "product_image/Cellgevity['Max International']Nil.jpg",
+        "image": "product_image/CellgevityMaxInternationalNil.jpg",
         "id": 15
     },
     {
@@ -585,7 +585,7 @@
         "lsvs": [
             "SS Duke"
         ],
-        "main_image": "Neurozan.jpg",
+        "main_image": "product_image/NeurozanVitabioticsMixed Strength.jpg",
         "flag_condition": [],
         "created_at": "2024-12-07 08:43:52.744286+00:00",
         "updated_at": "2024-12-12 16:53:51.854637+00:00",
@@ -621,14 +621,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Pregnacare Conception for Her.jpg",
+        "main_image": "product_image/Pregnacare Conception for HerVitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:53.538392+00:00",
         "updated_at": "2024-12-12 16:53:51.995821+00:00",
-        "image": "product_image/Pregnacare Conception for Her['Vitabiotics']Nil.jpg",
+        "image": "product_image/Pregnacare Conception for HerVitabioticsNil.jpg",
         "id": 17
     },
     {
@@ -659,14 +659,14 @@
         "lsvs": [
             "SS Duke"
         ],
-        "main_image": "Wellman conception.jpg",
+        "main_image": "product_image/Wellman conceptionUnavailableNil.jpg",
         "flag_condition": [
             "Prostate cancer",
             "Cardiovascular disease"
         ],
         "created_at": "2024-12-07 08:43:54.402118+00:00",
         "updated_at": "2024-12-12 16:53:52.092313+00:00",
-        "image": "product_image/Wellman conception['Unavailable']Nil.jpg",
+        "image": "product_image/Wellman conceptionUnavailableNil.jpg",
         "id": 18
     },
     {
@@ -698,14 +698,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Pregnacare Breastfeeding.jpg",
+        "main_image": "product_image/Pregnacare BreastfeedingVitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:55.004897+00:00",
         "updated_at": "2024-12-12 16:53:52.210219+00:00",
-        "image": "product_image/Pregnacare Breastfeeding['Vitabiotics']Nil.jpg",
+        "image": "product_image/Pregnacare BreastfeedingVitabioticsNil.jpg",
         "id": 19
     },
     {
@@ -736,14 +736,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Wellman.jpg",
+        "main_image": "product_image/WellmanVitabioticsNil.jpg",
         "flag_condition": [
             "Prostate cancer",
             "Cardiovascular disease"
         ],
         "created_at": "2024-12-07 08:43:55.733318+00:00",
         "updated_at": "2024-12-12 16:53:52.324281+00:00",
-        "image": "product_image/Wellman['Vitabiotics']Nil.jpg",
+        "image": "product_image/WellmanVitabioticsNil.jpg",
         "id": 20
     },
     {
@@ -774,14 +774,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Wellman 50+.jpg",
+        "main_image": "product_image/Wellman 50+VitabioticsNil.jpg",
         "flag_condition": [
             "Prostate cancer",
             "Cardiovascular disease"
         ],
         "created_at": "2024-12-07 08:43:56.405831+00:00",
         "updated_at": "2024-12-12 16:53:52.458260+00:00",
-        "image": "product_image/Wellman 50+['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellman 50+VitabioticsNil.jpg",
         "id": 21
     },
     {
@@ -812,14 +812,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Wellman 70+.jpg",
+        "main_image": "product_image/Wellman 70+VitabioticsNil.jpg",
         "flag_condition": [
             "Prostate cancer",
             "Cardiovascular disease"
         ],
         "created_at": "2024-12-07 08:43:57.087002+00:00",
         "updated_at": "2024-12-12 16:53:52.653043+00:00",
-        "image": "product_image/Wellman 70+['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellman 70+VitabioticsNil.jpg",
         "id": 22
     },
     {
@@ -850,14 +850,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Wellwoman.jpg",
+        "main_image": "product_image/WellwomanVitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:57.693699+00:00",
         "updated_at": "2024-12-12 16:53:52.805323+00:00",
-        "image": "product_image/Wellwoman['Vitabiotics']Nil.jpg",
+        "image": "product_image/WellwomanVitabioticsNil.jpg",
         "id": 23
     },
     {
@@ -888,14 +888,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Wellwoman 50+.jpg",
+        "main_image": "product_image/Wellwoman 50+VitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:58.546564+00:00",
         "updated_at": "2024-12-12 16:53:52.924853+00:00",
-        "image": "product_image/Wellwoman 50+['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellwoman 50+VitabioticsNil.jpg",
         "id": 24
     },
     {
@@ -926,14 +926,14 @@
         "lsvs": [
             "Vita Rep Idumota"
         ],
-        "main_image": "Wellwoman 70+.jpg",
+        "main_image": "product_image/Wellwoman 70+VitabioticsNil.jpg",
         "flag_condition": [
             "Breast cancer",
             "Osteoporosis"
         ],
         "created_at": "2024-12-07 08:43:59.514687+00:00",
         "updated_at": "2024-12-12 16:53:53.044597+00:00",
-        "image": "product_image/Wellwoman 70+['Vitabiotics']Nil.jpg",
+        "image": "product_image/Wellwoman 70+VitabioticsNil.jpg",
         "id": 25
     },
     {
@@ -957,12 +957,12 @@
         "strength": "65mg",
         "description": "Iron is an essential mineral that plays a critical role in the production of hemoglobin, which carries oxygen to the body's tissues. It helps to fortify the blood and prevent anemia. Iron also supports immune function and cognitive health. With Iron, you can boost your energy levels and stay healthy. Iron is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Iron.jpg",
+        "main_image": "product_image/IronNatureMade65mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:41.783666+00:00",
         "updated_at": "2024-12-12 16:53:53.174534+00:00",
         "dosage_form": "Tablet",
-        "image": "product_image/IronNature Made65mg.jpg",
+        "image": "product_image/IronNatureMade65mg.jpg",
         "id": 26
     },
     {
@@ -986,7 +986,7 @@
         "strength": "100mg",
         "description": "Ashwagandha is an ancient herb that helps to reduce stress and anxiety. It promotes relaxation and calms the mind. Ashwagandha also supports immune function and boosts energy levels. With Ashwagandha, you can achieve a healthy work-life balance. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Ashwagandha.jpg",
+        "main_image": "product_image/AshwagandhaHovid100mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:42.127391+00:00",
         "updated_at": "2024-12-12 16:53:53.341476+00:00",
@@ -1015,12 +1015,12 @@
         "strength": "400mg and 800mg",
         "description": "Turmeric/Curcumin is a powerful antioxidant that helps to reduce inflammation and improve joint health. It also supports immune function and boosts cognitive health. With Turmeric/Curcumin, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Turmeric/Curcumin.jpg",
+        "main_image": "TurmericCurcuminPuritansPride400mg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:42.326022+00:00",
         "updated_at": "2024-12-12 16:53:53.570734+00:00",
         "dosage_form": "Capsule",
-        "image": "product_image/Turmeric/CurcuminPuritan's Pride400mg and 800mg.jpg",
+        "image": "product_image/Turmeric/CurcuminPuritansPride400mg and 800mg.jpg",
         "id": 28
     },
     {
@@ -1044,12 +1044,12 @@
         "strength": "400mg",
         "description": "Echinacea is an herbal supplement that helps to boost the immune system and fight off infections. It also supports respiratory health and reduces inflammation. With Echinacea, you can stay healthy and strong. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Echinacea.jpg",
+        "main_image": "product_image/EchinaceaPuritansPride400mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:42.457017+00:00",
         "updated_at": "2024-12-12 16:53:53.707476+00:00",
         "dosage_form": "Tablet",
-        "image": "product_image/EchinaceaPuritan's Pride400mg.jpg",
+        "image": "product_image/EchinaceaPuritansPride400mg.jpg",
         "id": 29
     },
     {
@@ -1075,11 +1075,11 @@
         "strength": null,
         "description": "NAC is an amino acid that helps to support respiratory health and reduce inflammation. It also supports immune function and boosts cognitive health. With NAC, you can breathe easy and stay healthy. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "NAC.jpg",
+        "main_image": "product_image/NACUnavailableNone.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:42.592390+00:00",
         "updated_at": "2024-12-12 16:53:53.886535+00:00",
-        "image": "product_image/NAC['Unavailable']None.jpg",
+        "image": "product_image/NACUnavailableNone.jpg",
         "id": 30
     },
     {
@@ -1103,7 +1103,7 @@
         "strength": "16.72mg",
         "description": "Elderberry Syrup is a natural remedy that helps to boost the immune system and fight off cold and flu. It also supports respiratory health and reduces inflammation. With Elderberry Syrup, you can stay healthy and strong. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Elderberry Syrup.jpg",
+        "main_image": "product_image/Elderberry SyrupSambucol16.72mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:42.742781+00:00",
         "updated_at": "2024-12-12 16:53:54.029597+00:00",
@@ -1132,12 +1132,12 @@
         "strength": "600mg",
         "description": "Alpha Lipoic Acid is an antioxidant that helps to reduce inflammation and improve nerve function. It also supports heart health and boosts energy levels. With Alpha Lipoic Acid, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Alpha Lipoic Acid.jpg",
+        "main_image": "product_image/Alpha Lipoic AcidPuritansPride600mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:43.004206+00:00",
         "updated_at": "2024-12-12 16:53:54.134706+00:00",
         "dosage_form": "Caps",
-        "image": "product_image/Alpha Lipoic AcidPuritan's Pride600mg.jpg",
+        "image": "product_image/Alpha Lipoic AcidPuritansPride600mg.jpg",
         "id": 32
     },
     {
@@ -1161,12 +1161,12 @@
         "strength": "10,000 I.U",
         "description": "Vitamin A is an essential nutrient that helps to support eye health and immune function. It also supports skin health and reduces the risk of chronic diseases. With Vitamin A, you can achieve healthy vision and a strong immune system. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Vitamin A.jpg",
+        "main_image": "product_image/Vitamin A (Beta-Carotene)PuritansPride10,000 I.U.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:43.278930+00:00",
         "updated_at": "2024-12-12 16:53:54.225754+00:00",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin A (Beta-Carotene)Puritan's Pride10,000 I.U.jpg",
+        "image": "product_image/Vitamin A (Beta-Carotene)PuritansPride10,000 I.U.jpg",
         "id": 33
     },
     {
@@ -1192,11 +1192,11 @@
         "strength": null,
         "description": "Eye Antioxidants are a blend of nutrients that help to support eye health and reduce the risk of age-related macular degeneration. They also support immune function and boost cognitive health. With Eye Antioxidants, you can achieve healthy vision and a strong immune system. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Eye Antioxidants.jpg",
+        "main_image": "product_image/Eye AntioxidantsUnavailableNone.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:43.412191+00:00",
         "updated_at": "2024-12-12 16:53:54.326182+00:00",
-        "image": "product_image/Eye Antioxidants['Unavailable']None.jpg",
+        "image": "product_image/Eye AntioxidantsUnavailableNone.jpg",
         "id": 34
     },
     {
@@ -1222,11 +1222,11 @@
         "strength": null,
         "description": "Resveratrol is an antioxidant that helps to reduce inflammation and improve heart health. It also supports immune function and boosts cognitive health. With Resveratrol, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Resveratrol.jpg",
+        "main_image": "product_image/ResveratrolUnavailableNone.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:43.544467+00:00",
         "updated_at": "2024-12-12 16:53:54.441416+00:00",
-        "image": "product_image/Resveratrol['Unavailable']None.jpg",
+        "image": "product_image/ResveratrolUnavailableNone.jpg",
         "id": 35
     },
     {
@@ -1250,12 +1250,12 @@
         "strength": "200mg",
         "description": "COQ10 is an antioxidant that helps to generate energy for the body's cells. It also supports heart health and reduces the risk of chronic diseases. With COQ10, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "COQ10.jpg",
+        "main_image": "product_image/COQ10PuritansPride200mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:43.660338+00:00",
         "updated_at": "2024-12-12 16:53:54.544139+00:00",
         "dosage_form": "Softgel",
-        "image": "product_image/COQ10Puritan's Pride200mg.jpg",
+        "image": "product_image/COQ10PuritansPride200mg.jpg",
         "id": 36
     },
     {
@@ -1278,12 +1278,12 @@
         "strength": "Mixed Strength",
         "description": "Libido is a natural supplement that helps to boost male fertility and libido. It also supports testosterone production and improves overall sexual health. With Libido, you can achieve a healthy and active sex life. It is suitable for men only.",
         "lsvs": [],
-        "main_image": "Libido.jpg",
+        "main_image": "product_image/Libido HHealthbyHabitMixed Strength.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:43.762101+00:00",
         "updated_at": "2024-12-12 16:53:54.656586+00:00",
         "dosage_form": "Caps",
-        "image": "product_image/Libido HHealth by HabitMixed Strength.jpg",
+        "image": "product_image/Libido HHealthbyHabitMixed Strength.jpg",
         "id": 37
     },
     {
@@ -1307,12 +1307,12 @@
         "strength": "1000mg",
         "description": "Vitamin C 1000mg is a high-potency supplement that helps to support immune function and reduce the risk of chronic diseases. It also supports collagen production and improves skin health. With Vitamin C 1000mg, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Vitamin C 1000mg.jpg",
+        "main_image": "product_image/Vitamin C 1000mgNaturesMade1000mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:43.859122+00:00",
         "updated_at": "2024-12-12 16:53:54.807382+00:00",
         "dosage_form": "Tablet",
-        "image": "product_image/Vitamin C 1000mgNature's Made1000mg.jpg",
+        "image": "product_image/Vitamin C 1000mgNaturesMade1000mg.jpg",
         "id": 38
     },
     {
@@ -1336,7 +1336,7 @@
         "strength": "Mixed Strength",
         "description": "Safi Blood Purifier is a natural supplement that helps to purify the blood and support liver health. It also supports immune function and reduces the risk of chronic diseases. With Safi Blood Purifier, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Safi Blood Purifier.jpg",
+        "main_image": "product_image/Safi Blood PurifierHamdardMixed Strength.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:43.958730+00:00",
         "updated_at": "2024-12-12 16:53:54.921596+00:00",
@@ -1367,11 +1367,11 @@
         "strength": null,
         "description": "Ginkgo Biloba is a natural supplement that helps to support brain health and improve memory function. It also supports blood flow and reduces the risk of chronic diseases. With Ginkgo Biloba, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Ginkgo Biloba.jpg",
+        "main_image": "product_image/Ginkgo BilobaNaturesFieldNone.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:44.073772+00:00",
         "updated_at": "2024-12-12 16:53:55.028885+00:00",
-        "image": "product_image/Ginkgo Biloba[\"Nature's Field\"]None.jpg",
+        "image": "product_image/Ginkgo BilobaNaturesFieldNone.jpg",
         "id": 40
     },
     {
@@ -1397,11 +1397,11 @@
         "strength": null,
         "description": "Glucosamine & Chondroitin is a natural supplement that helps to support joint health and reduce inflammation. It also supports cartilage health and improves mobility. With Glucosamine & Chondroitin, you can achieve healthy and flexible joints. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Glucosamine & Chondroitin.jpg",
+        "main_image": "product_image/Glucosamine & ChondroitinUnavailableNone.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:44.200517+00:00",
         "updated_at": "2024-12-12 16:53:55.158277+00:00",
-        "image": "product_image/Glucosamine & Chondroitin['Unavailable']None.jpg",
+        "image": "product_image/Glucosamine & ChondroitinUnavailableNone.jpg",
         "id": 41
     },
     {
@@ -1425,16 +1425,16 @@
         "strength": "1000mg",
         "description": "Milk Thistle is a natural supplement that helps to support liver health and detoxification. It also supports immune function and reduces the risk of chronic diseases. With Milk Thistle, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Milk Thistle.jpg",
+        "main_image": "product_image/Milk ThistlePuritansPride1000mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:44.292851+00:00",
         "updated_at": "2024-12-12 16:53:55.275439+00:00",
         "dosage_form": "Softgel",
-        "image": "product_image/Milk ThistlePuritan's Pride1000mg.jpg",
+        "image": "product_image/Milk ThistlePuritansPride1000mg.jpg",
         "id": 42
     },
     {
-        "name": "Myo Inositol",
+        "name": "Myo-Inositol",
         "category": "Nutritional Supplement",
         "sub_categories": {
             "age": [],
@@ -1454,12 +1454,12 @@
         "strength": "2000mg",
         "description": "Myo-Inositol is a natural supplement that helps to support brain health and reduce anxiety. It also supports insulin sensitivity and improves fertility. With Myo-Inositol, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Myo-Inositol.jpg",
+        "main_image": "product_image/Myo InositolFairHavenHealth2000mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:44.382747+00:00",
         "updated_at": "2024-12-12 16:53:55.389943+00:00",
         "dosage_form": "Caps",
-        "image": "product_image/Myo InositolFair Haven Health2000mg.jpg",
+        "image": "product_image/Myo InositolFairHavenHealth2000mg.jpg",
         "id": 43
     },
     {
@@ -1483,12 +1483,12 @@
         "strength": "50mg",
         "description": "DHEA is a natural supplement that helps to support hormone balance and reduce stress. It also supports immune function and improves overall health. With DHEA, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "DHEA.jpg",
+        "main_image": "product_image/DHEAPuritansPride50mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:44.497959+00:00",
         "updated_at": "2024-12-12 16:53:55.508054+00:00",
         "dosage_form": "Tablet",
-        "image": "product_image/DHEAPuritan's Pride50mg.jpg",
+        "image": "product_image/DHEAPuritansPride50mg.jpg",
         "id": 44
     },
     {
@@ -1511,7 +1511,7 @@
         "strength": "500mg and 1000mg",
         "description": "Evening Primrose Caps is a natural supplement that helps to support women's health and reduce symptoms of PMS. It also supports skin health and improves overall well-being. With Evening Primrose Caps, you can achieve a healthy and balanced lifestyle. It is suitable for women only.",
         "lsvs": [],
-        "main_image": "Evening Primrose Caps.jpg",
+        "main_image": "product_image/Evening Primrose CapsEfamol500mg and 1000mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:44.592539+00:00",
         "updated_at": "2024-12-12 16:53:55.630725+00:00",
@@ -1541,11 +1541,11 @@
         "strength": null,
         "description": "Prostate Defense is a natural supplement that helps to support prostate health and reduce the risk of prostate cancer. It also supports immune function and improves overall health. With Prostate Defense, you can achieve a healthy and active lifestyle. It is suitable for men only.",
         "lsvs": [],
-        "main_image": "Prostate Defense.jpg",
+        "main_image": "product_image/Prostate DefenseUnavailableNone.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:44.696523+00:00",
         "updated_at": "2024-12-12 16:53:55.723278+00:00",
-        "image": "product_image/Prostate Defense['Unavailable']None.jpg",
+        "image": "product_image/Prostate DefenseUnavailableNone.jpg",
         "id": 46
     },
     {
@@ -1569,12 +1569,12 @@
         "strength": "Nil",
         "description": "Toxiflush is a natural supplement that helps to support liver health and detoxification. It also supports immune function and reduces the risk of chronic diseases. With Toxiflush, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Toxiflush.jpg",
+        "main_image": "product_image/ToxiflushNaturesFieldNil.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:44.811088+00:00",
         "updated_at": "2024-12-12 16:53:55.904398+00:00",
         "dosage_form": "Caps",
-        "image": "product_image/ToxiflushNature's FieldNil.jpg",
+        "image": "product_image/ToxiflushNaturesFieldNil.jpg",
         "id": 47
     },
     {
@@ -1598,12 +1598,12 @@
         "strength": "Mixed Strength",
         "description": "Astymin Syrup is a natural supplement that helps to support immune function and reduce the risk of infections. It also supports energy production and improves overall health. With Astymin Syrup, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Astymin Syrup.jpg",
+        "main_image": "product_image/Astymin SyrupFidsonPharmaceuticalsMixed Strength.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:44.916509+00:00",
         "updated_at": "2024-12-12 16:53:56.008388+00:00",
         "dosage_form": "Liquid and Caps",
-        "image": "product_image/Astymin SyrupFidson PharmaceuticalsMixed Strength.jpg",
+        "image": "product_image/Astymin SyrupFidsonPharmaceuticalsMixed Strength.jpg",
         "id": 48
     },
     {
@@ -1629,11 +1629,11 @@
         "strength": null,
         "description": "Calm Nite is a natural supplement that helps to support relaxation and reduce stress. It also supports sleep quality and improves overall well-being. With Calm Nite, you can achieve a restful and peaceful sleep. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Calm Nite.jpg",
+        "main_image": "product_image/Calm NiteUnavailableNone.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:45.007870+00:00",
         "updated_at": "2024-12-12 16:53:56.129747+00:00",
-        "image": "product_image/Calm Nite['Unavailable']None.jpg",
+        "image": "product_image/Calm NiteUnavailableNone.jpg",
         "id": 49
     },
     {
@@ -1657,7 +1657,7 @@
         "strength": "30mg",
         "description": "Phentermine is a natural supplement that helps to support weight loss and reduce appetite. It also supports energy production and improves overall health. With Phentermine, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Phentermine.jpg",
+        "main_image": "product_image/PhentermineDuromine30mg.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:45.115194+00:00",
         "updated_at": "2024-12-12 16:53:56.272872+00:00",
@@ -1688,11 +1688,11 @@
         "strength": null,
         "description": "Glutathione is a natural supplement that helps to support immune function and reduce oxidative stress. It also supports liver health and improves overall well-being. With Glutathione, you can achieve a healthy and active lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Glutathione.jpg",
+        "main_image": "product_image/GlutathioneUnavailableNone.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:45.223818+00:00",
         "updated_at": "2024-12-12 16:53:56.501408+00:00",
-        "image": "product_image/Glutathione['Unavailable']None.jpg",
+        "image": "product_image/GlutathioneUnavailableNone.jpg",
         "id": 51
     },
     {
@@ -1716,12 +1716,12 @@
         "strength": "8.55g",
         "description": "Psyllium Husk is a natural supplement that helps to support digestive health and promote regular bowel movements. It also supports heart health and reduces cholesterol levels. With Psyllium Husk, you can achieve a healthy and balanced lifestyle. It is suitable for both men and women.",
         "lsvs": [],
-        "main_image": "Psyllium Husk.jpg",
+        "main_image": "product_image/Psyllium Husk PowderNaturesField8.55g.jpg",
         "flag_condition": [],
         "created_at": "2024-12-10 16:38:45.344931+00:00",
         "updated_at": "2024-12-12 16:53:56.817791+00:00",
         "dosage_form": "Powder",
-        "image": "product_image/Psyllium Husk PowderNature's Field8.55g.jpg",
+        "image": "product_image/Psyllium Husk PowderNaturesField8.55g.jpg",
         "id": 52
     },
     {
@@ -1745,12 +1745,12 @@
         "strength": "500mg",
         "description": "Magnesium Glycinate is a highly bioavailable supplement designed to help support muscle relaxation, nerve function, and bone health. Our magnesium glycinate formula helps to provide your body with the necessary magnesium it needs to regulate muscle contractions, support bone mineralization, and promote overall well-being. By taking Magnesium Glycinate, you can help to reduce muscle cramps, improve sleep quality, and support immune function.",
         "lsvs": [],
-        "main_image": "Magnesium Glycinate.jpg",
+        "main_image": "product_image/Magnesium GlycinatePuritansPride500mg.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Magnesium GlycinatePuritan's Pride500mg.jpg",
+        "image": "product_image/Magnesium GlycinatePuritansPride500mg.jpg",
         "id": 53
     },
     {
@@ -1774,12 +1774,12 @@
         "strength": "500mg",
         "description": "Maca is a natural supplement designed to help support energy, vitality, and hormonal balance. Our maca formula helps to provide your body with the necessary nutrients it needs to regulate hormonal function, improve fertility, and enhance mental clarity. By taking Maca, you can help to boost your energy levels, improve your mood, and support overall well-being.",
         "lsvs": [],
-        "main_image": "Maca.jpg",
+        "main_image": "product_image/MacaNaturesField500mg.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/MacaNature's Field500mg.jpg",
+        "image": "product_image/MacaNaturesField500mg.jpg",
         "id": 54
     },
     {
@@ -1803,12 +1803,12 @@
         "strength": "500mg",
         "description": "L-Arginine is a natural amino acid supplement designed to help support blood flow, immune function, and muscle growth. Our L-arginine formula helps to provide your body with the necessary amino acids it needs to regulate blood flow, support immune function, and promote muscle growth. By taking L-Arginine, you can help to improve your exercise performance, enhance your immune function, and support overall cardiovascular health.",
         "lsvs": [],
-        "main_image": "L-Arginine.jpg",
+        "main_image": "product_image/L-ArginineMasonsNatural500mg.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/L-ArginineMasons Natural500mg.jpg",
+        "image": "product_image/L-ArginineMasonsNatural500mg.jpg",
         "id": 55
     },
     {
@@ -1832,12 +1832,12 @@
         "strength": "25mg",
         "description": "Stress Defense is a natural supplement designed to help support stress relief, mood enhancement, and emotional well-being. Our stress defense formula helps to provide your body with the necessary nutrients it needs to regulate stress hormones, support mood stability, and promote relaxation. By taking Stress Defense, you can help to reduce stress and anxiety, improve your mood, and support overall mental well-being.",
         "lsvs": [],
-        "main_image": "Stress Defense.jpg",
+        "main_image": "product_image/Stress DefenseNaturesField25mg.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Stress DefenseNature's Field25mg.jpg",
+        "image": "product_image/Stress DefenseNaturesField25mg.jpg",
         "id": 56
     },
     {
@@ -1863,11 +1863,11 @@
         "strength": "",
         "description": "Eye Antioxidants are designed to protect your eyes from damage caused by free radicals. These powerful antioxidants help to fortify your eyes against age-related macular degeneration and cataracts. By taking Eye Antioxidants, you can help to maintain healthy vision and reduce the risk of eye problems. Our formula is carefully crafted to provide the highest level of protection for your eyes. With Eye Antioxidants, you can trust that you're giving your eyes the best possible care.",
         "lsvs": [],
-        "main_image": "Eye Antioxidants.jpg",
+        "main_image": "product_image/Eye AntioxidantsUnavailable.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Eye Antioxidants['Unavailable'].jpg",
+        "image": "product_image/Eye AntioxidantsUnavailable.jpg",
         "id": 57
     },
     {
@@ -1891,7 +1891,7 @@
         "strength": "Mixed Strength",
         "description": "Safi Blood Purifier is a natural supplement designed to help purify and detoxify your blood. Our unique formula helps to remove impurities and toxins from your blood, promoting healthy circulation and overall well-being. By taking Safi Blood Purifier, you can help to boost your energy levels, improve your skin health, and support your immune system. Our supplement is carefully crafted to provide the highest level of purity and potency. With Safi Blood Purifier, you can trust that you're giving your body the best possible care.",
         "lsvs": [],
-        "main_image": "Safi Blood Purifier.jpg",
+        "main_image": "product_image/Safi Blood PurifierHamdardMixed Strength.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
@@ -1920,12 +1920,12 @@
         "strength": "5000mg per serving",
         "description": "Creatine Powder is a popular supplement designed to help increase muscle strength, power, and endurance. Our pure creatine powder helps to boost your muscle's energy production, allowing you to perform at your best during high-intensity workouts. By taking Creatine Powder, you can help to improve your athletic performance, enhance your muscle growth, and accelerate your recovery. Our supplement is carefully crafted to provide the highest level of purity and potency. With Creatine Powder, you can trust that you're giving your muscles the best possible fuel.",
         "lsvs": [],
-        "main_image": "Creatine Powder.jpg",
+        "main_image": "product_image/Creatine PowderNaturesField5000mg per serving.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Powder",
-        "image": "product_image/Creatine PowderNature's Field5000mg per serving.jpg",
+        "image": "product_image/Creatine PowderNaturesField5000mg per serving.jpg",
         "id": 59
     },
     {
@@ -1949,12 +1949,12 @@
         "strength": "60g",
         "description": "Whey Protein is a high-quality supplement designed to help support muscle growth and recovery. Our pure whey protein powder helps to provide your muscles with the essential amino acids they need to grow and repair. By taking Whey Protein, you can help to boost your muscle mass, enhance your athletic performance, and accelerate your recovery. Our supplement is carefully crafted to provide the highest level of purity and potency. With Whey Protein, you can trust that you're giving your muscles the best possible nutrition.",
         "lsvs": [],
-        "main_image": "Whey Protein.jpg",
+        "main_image": "product_image/Whey ProteinBodyFortress60g.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Powder",
-        "image": "product_image/Whey ProteinBody Fortress60g.jpg",
+        "image": "product_image/Whey ProteinBodyFortress60g.jpg",
         "id": 60
     },
     {
@@ -1978,12 +1978,12 @@
         "strength": "Nil",
         "description": "STC 30 is a unique supplement designed to help support overall health and wellness. Our formula combines a blend of natural ingredients to help boost your energy levels, improve your mental clarity, and support your immune system. By taking STC 30, you can help to improve your overall quality of life and feel your best.",
         "lsvs": [],
-        "main_image": "STC 30.jpg",
+        "main_image": "product_image/STC 30SuperlifeWorldNil.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/STC 30Superlife WorldNil.jpg",
+        "image": "product_image/STC 30SuperlifeWorldNil.jpg",
         "id": 61
     },
     {
@@ -2007,7 +2007,7 @@
         "strength": "Mixed Strength",
         "description": "Spidex is a natural supplement designed to help support joint health and mobility. Our formula combines a blend of natural ingredients to help reduce inflammation, improve joint flexibility, and support overall joint health. By taking Spidex, you can help to improve your mobility, reduce joint pain, and enjoy a more active lifestyle.",
         "lsvs": [],
-        "main_image": "Spidex.jpg",
+        "main_image": "product_image/SpidexFaforlifeMixed Strength.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
@@ -2038,11 +2038,11 @@
         "strength": "",
         "description": "Calcium is an essential mineral supplement designed to help support bone health and development. Our calcium supplement helps to provide your body with the necessary calcium it needs to build and maintain strong bones and teeth. By taking Calcium, you can help to reduce the risk of osteoporosis, improve bone density, and support overall bone health.",
         "lsvs": [],
-        "main_image": "Calcium.jpg",
+        "main_image": "product_image/CalciumNaturesField.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Calcium[\"Nature's Field\"].jpg",
+        "image": "product_image/CalciumNaturesField.jpg",
         "id": 63
     },
     {
@@ -2068,11 +2068,11 @@
         "strength": "",
         "description": "Omega 3 Fatty Acid is a natural supplement designed to help support heart health and brain function. Our omega-3 supplement helps to provide your body with the necessary fatty acids it needs to reduce inflammation, improve heart health, and support brain function. By taking Omega 3 Fatty Acid, you can help to reduce the risk of heart disease, improve cognitive function, and support overall health and wellness.",
         "lsvs": [],
-        "main_image": "Omega 3 Fatty Acid.jpg",
+        "main_image": "product_image/Omega 3 Fatty AcidUnavailable.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Omega 3 Fatty Acid['Unavailable'].jpg",
+        "image": "product_image/Omega 3 Fatty AcidUnavailable.jpg",
         "id": 64
     },
     {
@@ -2096,12 +2096,12 @@
         "strength": "500mcg",
         "description": "Chromium Piccolinate is a natural supplement designed to help support blood sugar control and weight management. Our chromium supplement helps to provide your body with the necessary nutrients it needs to regulate blood sugar levels, improve insulin sensitivity, and support weight loss. By taking Chromium Piccolinate, you can help to improve your overall metabolic health and reduce the risk of chronic diseases.",
         "lsvs": [],
-        "main_image": "Chromium Piccolinate.jpg",
+        "main_image": "product_image/Chromium PicolinatePuritansPride500mcg.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/Chromium PicolinatePuritan's Pride500mcg.jpg",
+        "image": "product_image/Chromium PicolinatePuritansPride500mcg.jpg",
         "id": 65
     },
     {
@@ -2127,11 +2127,11 @@
         "strength": "",
         "description": "Beberine is a natural supplement designed to help support digestive health and blood sugar control. Our berberine supplement helps to provide your body with the necessary nutrients it needs to regulate blood sugar levels, improve insulin sensitivity, and support gut health. By taking Beberine, you can help to improve your overall metabolic health and reduce the risk of chronic diseases.",
         "lsvs": [],
-        "main_image": "Beberine.jpg",
+        "main_image": "product_image/BeberineUnavailable.jpg",
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Beberine['Unavailable'].jpg",
+        "image": "product_image/BeberineUnavailable.jpg",
         "id": 66
     }
 ]

@@ -67,6 +67,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Detail Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-<YOUR-INTEGRITY-CODE-HERE>" crossorigin="anonymous" />
     <link rel="stylesheet" href="{% static 'css/product_info.css'%}">
 </head>
 
@@ -101,8 +103,11 @@
                 <div class="benefits" id="benefits-content">
                     <div class="benefit-container" id="fortifies-benefit">
                         <div class="benefit-header">
-                            <span>Fortifies:</span> 
-                            <input type="text" placeholder="click below for research proof">
+                            <span>Fortifies:</span>
+                            <div class="input-container">
+                                <input type="text" placeholder="select or search research proof">
+                                <i class="fas fa-search"></i>
+                            </div>
                         </div>
                         <div class="benefit-content">
                             <span class="benefit-list">Benefit 1</span>
@@ -111,8 +116,8 @@
                             <span class="benefit-list">Benefit 1</span>
                             <span class="benefit-list">Benefit 2</span>
                             <span class="benefit-list">Benefit 3</span>
-                        </div>documents</button>
-                        <select class="benefit-select" style="display: none;">
+                        </div>
+                        <!-- <select class="benefit-select" style="display: none;">
                             <option value="File 1.pdf">Benefit 1</option>
                             <option value="File 2.pdf">Benefit 2</option>
                             <option value="File 3.pdf">Benefit 3</option>
@@ -120,12 +125,15 @@
                         <div class="file-display" style="display: none;">
                             <button class="close-btn">X</button>
                             <iframe src="" frameborder="0" width="100%" height="500"></iframe>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="benefit-container" id="heals-benefit">
                         <div class="benefit-header">
                             <span>Heals:</span>
-                            <input type="text" placeholder="click below for research proof">
+                            <!-- <div class="input-container">
+                                <input type="text" placeholder="select or search research proof">
+                                <i class="fas fa-search"></i>
+                            </div> -->
                         </div>
                         <div class="benefit-content">
                             <span class="benefit-list">Benefit 4</span>
@@ -146,7 +154,10 @@
                     <div class="benefit-container" id="treats-benefit">
                         <div class="benefit-header">
                             <span>Side effects treatment:</span>
-                            <input type="text" placeholder="click below for research proof">
+                            <!-- <div class="input-container">
+                                <input type="text" placeholder="select or search research proof">
+                                <i class="fas fa-search"></i>
+                            </div> -->
                         </div>
                         <div class="benefit-content">
                             <span class="benefit-list">Benefit 7</span>

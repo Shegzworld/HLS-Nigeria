@@ -24,14 +24,14 @@
         "strength": "Nil",
         "description": "Omega-3 fatty acids are essential for reducing inflammation and promoting overall health. These anti-inflammatory properties can help alleviate symptoms of respiratory conditions like asthma. Omega-3s also support heart health and brain function. By taking omega-3 supplements, individuals can experience improved respiratory health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Omega-3 Fatty Acids.jpg",
+        "main_image": "product_image/Omega-3 Fatty AcidsEarthCreationNil.jpg",
         "flag_condition": [
             "Asthma",
             "Respiratory Health"
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Omega-3 Fatty Acids['Earth Creation']Nil.jpg",
+        "image": "product_image/Omega-3 Fatty AcidsEarthCreationNil.jpg",
         "id": 1
     },
     {
@@ -57,7 +57,7 @@
         "strength": "1000mg",
         "description": "Vitamin C is essential for immune system function and overall health. This antioxidant vitamin can help reduce oxidative stress and inflammation in respiratory conditions like pneumonia. Vitamin C also supports collagen production and wound healing. By taking vitamin C supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Vitamin C.jpg",
+        "main_image": "product_image/Vitamin CNaturesMade1000mg.jpg",
         "flag_condition": [
             "Pneumonia",
             "Respiratory Health"
@@ -65,7 +65,7 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Vitamin CNature's Made1000mg.jpg",
+        "image": "product_image/Vitamin CNaturesMade1000mg.jpg",
         "id": 2
     },
     {
@@ -91,7 +91,7 @@
         "strength": "1000 I.U",
         "description": "Vitamin D is essential for bone health and immune system function. This vitamin can help reduce the risk of respiratory infections and improve lung function in conditions like asthma. Vitamin D also supports mood regulation and overall health. By taking vitamin D supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Vitamin D.jpg",
+        "main_image": "product_image/Vitamin D3PuritansPride1000 I.U.jpg",
         "flag_condition": [
             "Asthma",
             "Respiratory Health"
@@ -99,7 +99,7 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin D3Puritan's Pride1000 I.U.jpg",
+        "image": "product_image/Vitamin D3PuritansPride1000 I.U.jpg",
         "id": 3
     },
     {
@@ -127,14 +127,14 @@
         "strength": "Nil",
         "description": "N-Acetyl Cysteine (NAC) is an amino acid that supports respiratory health. NAC has mucolytic properties, which can help break down mucus and reduce symptoms of respiratory conditions like bronchitis. NAC also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking NAC supplements, individuals can experience improved respiratory health, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/N-Acetyl Cysteine (NAC).jpg",
+        "main_image": "product_image/N-Acetyl Cysteine (NAC)UnavailableNil.jpg",
         "flag_condition": [
             "Bronchitis",
             "Respiratory Health"
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/N-Acetyl Cysteine (NAC)['Unavailable']Nil.jpg",
+        "image": "product_image/N-Acetyl Cysteine (NAC)UnavailableNil.jpg",
         "id": 4
     },
     {
@@ -160,7 +160,7 @@
         "strength": "500mg",
         "description": "Magnesium is an essential mineral that supports muscle and nerve function. Magnesium can help relax airway muscles, reducing symptoms of respiratory conditions like asthma. Magnesium also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking magnesium supplements, individuals can experience improved respiratory health, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Magnesium.jpg",
+        "main_image": "product_image/MagnesiumPuritansPride500mg.jpg",
         "flag_condition": [
             "Asthma",
             "Respiratory Health"
@@ -168,7 +168,7 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/MagnesiumPuritan's Pride500mg.jpg",
+        "image": "product_image/MagnesiumPuritansPride500mg.jpg",
         "id": 5
     },
     {
@@ -194,7 +194,7 @@
         "strength": "50mg",
         "description": "Zinc is an essential mineral that supports immune system function. Zinc can help reduce the severity and duration of respiratory infections like pneumonia. Zinc also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking zinc supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Zinc.jpg",
+        "main_image": "product_image/Zinc GluconatePuritansPride50mg.jpg",
         "flag_condition": [
             "Pneumonia",
             "Respiratory Health"
@@ -202,7 +202,7 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Zinc GluconatePuritan's Pride50mg.jpg",
+        "image": "product_image/Zinc GluconatePuritansPride50mg.jpg",
         "id": 6
     },
     {
@@ -228,14 +228,14 @@
         "strength": "1.85 Billion",
         "description": "Probiotics are beneficial bacteria that support gut health. Probiotics can help maintain a healthy gut microbiome, which can help boost the immune system and reduce the risk of respiratory infections. Probiotics also have anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking probiotic supplements, individuals can experience improved gut health, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Probiotics.jpg",
+        "main_image": "product_image/ProbioticsNaturesField1.85 Billion.jpg",
         "flag_condition": [
             "Respiratory Health"
         ],
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsules",
-        "image": "product_image/ProbioticsNature's Field1.85 Billion.jpg",
+        "image": "product_image/ProbioticsNaturesField1.85 Billion.jpg",
         "id": 7
     },
     {
@@ -261,7 +261,7 @@
         "strength": "16.72mg",
         "description": "Elderberry is a natural antiviral agent that can help reduce the severity and duration of respiratory infections like influenza. Elderberry has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking elderberry supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Elderberry.jpg",
+        "main_image": "product_image/ElderberrySambucol16.72mg.jpg",
         "flag_condition": [
             "Influenza",
             "Respiratory Health"
@@ -295,7 +295,7 @@
         "strength": "10mg",
         "description": "Melatonin is a natural hormone that regulates sleep-wake cycles. Melatonin can help improve sleep quality and reduce symptoms of sleep disorders like insomnia. Melatonin also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking melatonin supplements, individuals can experience improved sleep quality, reduced severity of sleep disorders, and overall well-being. This supplement is a natural and effective way to manage sleep health.",
         "lsvs": [],
-        "main_image": "product_image/Melatonin.jpg",
+        "main_image": "product_image/MelatoninPuritansPride10mg.jpg",
         "flag_condition": [
             "Insomnia",
             "Sleep Disorders"
@@ -303,7 +303,7 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/MelatoninPuritan's Pride10mg.jpg",
+        "image": "product_image/MelatoninPuritansPride10mg.jpg",
         "id": 9
     },
     {
@@ -331,14 +331,14 @@
         "strength": "Nil",
         "description": "Valerian root is a natural herb that promotes relaxation and improves sleep quality. Valerian root can help reduce symptoms of sleep disorders like insomnia and restlessness. Valerian root also has anti-anxiety properties, which can help reduce stress and promote relaxation. By taking valerian root supplements, individuals can experience improved sleep quality, reduced severity of sleep disorders, and overall well-being. This supplement is a natural and effective way to manage sleep health.",
         "lsvs": [],
-        "main_image": "product_image/Valerian Root.jpg",
+        "main_image": "product_image/Valerian RootUnavailableNil.jpg",
         "flag_condition": [
             "Insomnia",
             "Sleep Disorders"
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Valerian Root['Unavailable']Nil.jpg",
+        "image": "product_image/Valerian RootUnavailableNil.jpg",
         "id": 10
     },
     {
@@ -366,14 +366,14 @@
         "strength": "Nil",
         "description": "Ginkgo biloba is a natural herb that improves blood flow and reduces inflammation. Ginkgo biloba can help improve cognitive function and memory, as well as reduce symptoms of respiratory conditions like asthma. Ginkgo biloba also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking ginkgo biloba supplements, individuals can experience improved cognitive function, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Ginkgo Biloba.jpg",
+        "main_image": "product_image/Ginkgo BilobaNaturesFieldNil.jpg",
         "flag_condition": [
             "Asthma",
             "Respiratory Health"
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Ginkgo Biloba[\"Nature's Field\"]Nil.jpg",
+        "image": "product_image/Ginkgo BilobaNaturesFieldNil.jpg",
         "id": 11
     },
     {
@@ -399,7 +399,7 @@
         "strength": "1000 I.U",
         "description": "Vitamin E is a natural antioxidant that reduces oxidative stress and inflammation. Vitamin E can help improve skin health and reduce symptoms of respiratory conditions like pulmonary fibrosis. Vitamin E also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking vitamin E supplements, individuals can experience improved skin health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Vitamin E.jpg",
+        "main_image": "product_image/Vitamin ENaturesField1000 I.U.jpg",
         "flag_condition": [
             "Pulmonary Fibrosis",
             "Respiratory Health"
@@ -407,7 +407,7 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin ENature's Field1000 I.U.jpg",
+        "image": "product_image/Vitamin ENaturesField1000 I.U.jpg",
         "id": 12
     },
     {
@@ -433,7 +433,7 @@
         "strength": "200mg",
         "description": "Coenzyme Q10 (CoQ10) is a natural antioxidant that reduces oxidative stress and inflammation. CoQ10 can help improve energy production and reduce symptoms of respiratory conditions like pulmonary fibrosis. CoQ10 also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking CoQ10 supplements, individuals can experience improved energy production, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Coenzyme Q10 (CoQ10).jpg",
+        "main_image": "product_image/Coenzyme Q10 (CoQ10)PuritansPride200mg.jpg",
         "flag_condition": [
             "Pulmonary Fibrosis",
             "Respiratory Health"
@@ -441,7 +441,7 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Coenzyme Q10 (CoQ10)Puritan's Pride200mg.jpg",
+        "image": "product_image/Coenzyme Q10 (CoQ10)PuritansPride200mg.jpg",
         "id": 13
     },
     {
@@ -467,7 +467,7 @@
         "strength": "400mg",
         "description": "Echinacea is a natural herb that supports immune system function. Echinacea can help reduce the severity and duration of respiratory infections like the common cold and flu. Echinacea also has anti-inflammatory properties, which can help reduce inflammation and improve lung function. By taking echinacea supplements, individuals can experience improved immune function, reduced severity of respiratory infections, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Echinacea.jpg",
+        "main_image": "product_image/EchinaceaPuritansPride400mg.jpg",
         "flag_condition": [
             "Common Cold",
             "Flu",
@@ -476,7 +476,7 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/EchinaceaPuritan's Pride400mg.jpg",
+        "image": "product_image/EchinaceaPuritansPride400mg.jpg",
         "id": 14
     },
     {
@@ -504,7 +504,7 @@
         "strength": "Nil",
         "description": "Ginger is a natural herb that reduces inflammation and improves respiratory health. Ginger can help reduce symptoms of respiratory conditions like asthma and bronchitis. Ginger also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking ginger supplements, individuals can experience improved respiratory health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Ginger.jpg",
+        "main_image": "product_image/GingerUnavailableNil.jpg",
         "flag_condition": [
             "Asthma",
             "Bronchitis",
@@ -512,7 +512,7 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Ginger['Unavailable']Nil.jpg",
+        "image": "product_image/GingerUnavailableNil.jpg",
         "id": 15
     },
     {
@@ -538,7 +538,7 @@
         "strength": "400mg and 800mg",
         "description": "Turmeric/curcumin is a natural herb that reduces inflammation and improves respiratory health. Turmeric/curcumin can help reduce symptoms of respiratory conditions like asthma and bronchitis. Turmeric/curcumin also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking turmeric/curcumin supplements, individuals can experience improved respiratory health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Turmeric_Curcumin.jpg",
+        "main_image": "TurmericCurcuminPuritansPride400mg",
         "flag_condition": [
             "Asthma",
             "Bronchitis",
@@ -547,7 +547,7 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsule",
-        "image": "product_image/Turmeric/CurcuminPuritan's Pride400mg and 800mg.jpg",
+        "image": "product_image/Turmeric/CurcuminPuritansPride400mg and 800mg.jpg",
         "id": 16
     },
     {
@@ -573,7 +573,7 @@
         "strength": "400mg",
         "description": "Slippery elm is a natural herb that soothes and protects the mucous membranes. Slippery elm can help reduce inflammation and improve respiratory health. Slippery elm also has antioxidant properties, which can help reduce oxidative stress and inflammation. By taking slippery elm supplements, individuals can experience improved respiratory health, reduced severity of respiratory conditions, and overall well-being. This supplement is a natural and effective way to manage respiratory health.",
         "lsvs": [],
-        "main_image": "product_image/Slippery Elm.jpg",
+        "main_image": "product_image/Slippery Elm Bark400mg.jpg",
         "flag_condition": [
             "Respiratory Health"
         ],

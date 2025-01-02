@@ -17,12 +17,6 @@ from user.models import HealthCondition,Lifestyle,Basic
 class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard/dashboard.html'
 
-    # user_age = 'Adult'
-    # user_gender = 'female'
-    # products = Product.objects.filter(
-    # Q(age=user_age) & Q(gender=user_gender)
-    # )
-    
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
@@ -37,11 +31,13 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # context['nutrient_gallery'] = packs
 
        
-        specific_product = Product.objects.filter(name='Wellman 50+')
-
-        # products_starting_with_w = Product.objects.filter(name__istartswith='w')[:2]
+        specific_product = Product.objects.all()
+        paginator = Paginator(specific_product, 10)  # Show 10 products per page
+        page_number = self.request.GET.get('page')
+        page_obj = paginator.get_page(page_number)
+        context['dr_picks'] = page_obj
+        return context
         
-        context['dr_picks'] = list(specific_product)
         
             #     products = Product.objects.filter(
             #     Q(sub_categories__gender_icontains="female") |  

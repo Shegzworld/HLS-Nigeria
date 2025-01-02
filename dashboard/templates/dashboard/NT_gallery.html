@@ -165,6 +165,23 @@
 				</div>
 			</div>
 			{% endfor %}
+			{% if dr_picks.has_other_pages %}
+			<ul>
+				{% if dr_picks.has_previous %}
+				<li><a href="?page={{ dr_picks.previous_page_number }}">Previous</a></li>
+				{% endif %}
+				{% for i in dr_picks.paginator.page_range %}
+				{% if dr_picks.number == i %}
+				<li>{{ i }}</li>
+				{% else %}
+				<li><a href="?page={{ i }}">{{ i }}</a></li>
+				{% endif %}
+				{% endfor %}
+				{% if dr_picks.has_next %}
+				<li><a href="?page={{ dr_picks.next_page_number }}">Next</a></li>
+				{% endif %}
+			</ul>
+			{% endif %}
 		</div>
 		
 	</div>

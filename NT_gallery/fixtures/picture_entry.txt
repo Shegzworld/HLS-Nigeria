@@ -144,10 +144,14 @@ for filename in os.listdir(fixtures):
             for item in data:
                 old_picture_name = item['main_image']
                 filename, extension = os.path.splitext(old_picture_name)
-                new_picture_name = f"product_image/{item['name']}{item['sub_categories']['brands']}{item['strength']}{extension}"
-                item['image'] = new_picture_name
-                if item['sub_categories']['brands']:
-                    print(f"{item['name']} - {new_picture_name}")
+                if isinstance(item['sub_categories']['brands'], list):
+                    brand = ''.join(item['sub_categories']['brands'])
+                else:
+                    brand = item['sub_categories']['brands']
+                brand = re.sub(r'[^a-zA-Z0-9]', '', brand)
+                new_picture_name = f"product_image/{item['name']}{brand}{item['strength']}{extension}"
+                item['main_image'] = new_picture_name
+                print(f"{item['name']} - {new_picture_name}")
             file.seek(0)
             json.dump(data, file, indent=4)
 
@@ -180,3 +184,442 @@ for file_name in file_list:
 def print_product_names():
     product_names = Product.objects.values_list('name', flat=True)
     print(list(product_names))
+
+folder_path = 'C:/Users/HLS Nigeria/Downloads/product_pics/unsorted_pics'
+file_list = os.listdir(folder_path)
+
+for file_name in file_list:
+    # Extract the file name without extension
+    file_name_without_extension = file_name.split('.')[0]
+    if file_name_without_extension.isdigit():
+        # Find the corresponding item in pic_bucket
+        for item in pic_bucket:
+            if int(file_name_without_extension) == item[1]:
+                # Rename the file
+                new_file_name = f"{item[0].replace('/', '_')}.{file_name.split('.')[-1]}"
+                file_path = os.path.join(folder_path, file_name)
+                if os.path.exists(file_path):
+                    os.rename(file_path, os.path.join(folder_path, new_file_name))
+                    print(f"Renamed {file_name} to {new_file_name}")
+                else:
+                    print(f"File {file_name} not found")
+                break
+        else:
+            print(f"No matching item found for {file_name}")
+    else:
+        print(f"Ignoring non-numeric file name {file_name}")
+
+
+# Initialize variables
+number = 0
+matched_items = []
+unmatched_items = []
+
+folder_path = 'C:/Users/HLS Nigeria/Downloads/product_pics/unsorted_pics'
+file_list = os.listdir(folder_path)
+
+number = 0
+matched_items = []
+unmatched_items = []
+
+folder_path = 'C:/Users/HLS Nigeria/Downloads/product_pics/unsorted_pics'
+file_list = os.listdir(folder_path)
+
+for file_name in file_list:
+    # Extract the file name without extension
+    file_name_without_extension = file_name.split('.')[0]
+    if file_name_without_extension:
+        # Find the corresponding item in pic_bucket
+        for item in pic_bucket:
+            if file_name_without_extension == item[0]:
+                number += 1
+                print(f"{number} match found")
+                matched_items.append((file_name, item[0]))
+                break
+    else:
+        pass
+
+print("\nMatched Items:")
+for item in matched_items:
+    print(f"{item[0]} -> {item[1]}")
+
+for item in pic_bucket:
+    if item[0] not in [file_name.split('.')[0] for file_name in file_list]:
+        unmatched_items.append(item[0])
+
+print("\nUnmatched Items:")
+for item in unmatched_items:
+    print(item)
+
+
+
+# Define the paths to the image folder and fixtures folder
+folder_path = 'C:/Users/HLS Nigeria/Downloads/product_pics/Basics'
+fixtures_folder = 'NT_gallery/fixtures'
+
+unmatched_items = []
+matched_items = []
+
+# Loop through each image file in the image folder
+for image_file in os.listdir(folder_path):
+    matched = False
+    # Loop through each JSON file in the fixtures folder
+    for filename in os.listdir(fixtures_folder):
+        if filename.endswith('.json'):
+            # Open the JSON file
+            with open(os.path.join(fixtures_folder, filename), 'r') as file:
+                # Load the JSON data
+                data = json.load(file)
+                # Loop through each supplement in the JSON data
+                for supplement in data:
+                    # Get the main image name of the supplement
+                    main_image_name = supplement['main_image']
+                    # Check if the image file name corresponds to the supplement name
+                    if image_file.split('.')[0] == supplement['name']:
+                        print(f"Match found! for {image_file}")
+                        main_image_name_without_path = os.path.basename(main_image_name)
+                        main_image_name_without_extension = os.path.splitext(main_image_name_without_path)[0]
+                        # Rename the image file to the main image name with the correct extension
+                        new_image_name = f"{main_image_name_without_extension}.{image_file.split('.')[-1]}"
+                        os.rename(os.path.join(folder_path, image_file), os.path.join(folder_path, new_image_name))
+                        print(f"Renamed {image_file} to {new_image_name}")
+                        matched = True
+                        matched_items.append((image_file, main_image_name))
+                        break
+                if matched:
+                    break
+            if matched:
+                break
+    if not matched:
+        unmatched_items.append(image_file)
+
+print("Unmatched items:")
+for item in unmatched_items:
+    print(item)
+
+# Populate unmatched_items with items from pic_bucket that do not have a matching file name
+for filename in os.listdir(fixtures_folder):
+    if filename.endswith('.json'):
+        with open(os.path.join(fixtures_folder, filename), 'r') as file:
+            data = json.load(file)
+            for supplement in data:
+                main_image_name = supplement['main_image']
+                if main_image_name not in [image_file.split('.')[0] for image_file in os.listdir(folder_path)]:
+                    unmatched_items.append(main_image_name)
+
+
+def find_matches(json_file_name):
+    with open(f'NT_gallery/fixtures/{json_file_name}') as f:
+            data = json.load(f)
+    ratio_threshold = 80
+    # Initialize an empty dictionary to store the matches
+    matches = {}
+    # Iterate over each item in the list
+    items = [
+        "Vitamin B12",
+        "Acetyl-L-Carnitine",
+        "Chromium",
+        "Force Factor",
+        "Libido",
+        "Myo-Inositol",
+        "Psyllium",
+        "Slippery Elm",
+        "Turmeric_Curcumin",
+        "Vitamin A",
+        "Vitamin D",
+        "Zinc"
+        "st. john's Wort"
+    ]
+    print("Available Supplements:")
+    for supplement in data:
+        print(supplement['name'])
+    for item in items:
+        matches[item] = []
+        print("\n")
+        print(f"Checking Item: {item}")
+        for supplement in data:
+            ratio = fuzz.partial_ratio(supplement['name'].lower(), item.lower())
+            if ratio > ratio_threshold:
+                print(f"Potential Match found for {item}! \nMatch: {supplement['name']}, Ratio: {ratio}")
+                matches[item].append((supplement['name'], ratio))
+        print()
+    # Print each item and the matches found for them
+    print("Matches:")
+    for item, match_list in matches.items():
+        print(f"Item: {item}")
+        if match_list:
+            for match in match_list:
+                print(f" Match: {match[0]}, Ratio: {match[1]}")
+        else:
+            print(" No matches found.")
+        print()
+
+
+find_matches('lifestyledata.json')
+
+'respiratory',
+    'reproductive',
+    'nerve',
+    'hormone',
+    'eye',
+    'digestive',
+    'brain',
+    'bones_joint',
+    'blood'
+
+
+
+def show_matches(json_file_name):
+    with open(f'NT_gallery/fixtures/{json_file_name}') as f:
+        data = json.load(f)
+    ratio_threshold = 80
+    # Initialize an empty dictionary to store the matches
+    matches = {}
+    # Iterate over each item in the list
+    print("Available Supplements:")
+    for supplement in data:
+        print(supplement['name'])
+    for item in edited_list:
+        matches[item] = []
+        print("\n")
+        print(f"Checking Item: {item}")
+        for supplement in data:
+            ratio = fuzz.partial_ratio(supplement['name'].lower(), item.lower())
+            if ratio > ratio_threshold:
+                print(f"Potential Match found for {item}! \nMatch: {supplement['name']}, Ratio: {ratio}")
+                matches[item].append((supplement['name'], ratio))
+        print()
+    # Print each item and the matches found for them
+    print("Matches:")
+    for item, match_list in matches.items():
+        print(f"Item: {item}")
+        if match_list:
+            for match in match_list:
+                print(f" Match: {match[0]}, Ratio: {match[1]}")
+        else:
+            print(" No matches found.")
+        print()
+
+exclude = ['Vitamin B12','Vitamin D']
+
+def rename_matches(json_file_name, edited_list, exclude_items=None):
+    if exclude_items is None:
+        exclude_items = []
+    with open(f'NT_gallery/fixtures/{json_file_name}') as f:
+        data = json.load(f)
+    ratio_threshold = 80
+    renamed_items = {}
+    for item in edited_list:
+        best_match = None
+        best_ratio = 0
+        print(f"\nChecking Item: {item}")
+        for supplement in data:
+            ratio = fuzz.partial_ratio(supplement['name'].lower(), item.lower())
+            if ratio > best_ratio and ratio > ratio_threshold:
+                best_match = supplement['name']
+                best_ratio = ratio
+                print(f"Potential Match found for {item}! \nMatch: {supplement['name']}, Ratio: {ratio}")
+        if item not in exclude_items:
+            if best_match:
+                renamed_items[item] = best_match
+            else:
+                renamed_items[item] = item
+        else:
+            renamed_items[item] = item
+        print()
+    print("Renamed Items:")
+    for item, new_name in renamed_items.items():
+        print(f"{item} -> {new_name}")
+    # Create a new list of renamed items
+    edited_list = list(renamed_items.values())
+    return edited_list
+
+edited_list = rename_matches('lifestyledata.json',edited_list, exclude_items=['Vitamin B12'])
+
+def print_edited_list():
+    for item in edited_list:
+        print(item)
+
+edited_list = rename_matches('braincondition.json',edited_list, exclude_items=['Vitamin B12','Vitamin A (Beta-Carotene)', 'Acetyl-L-Carnitine','Vitamin A (Beta-Carotene)','Vitamin D3'])
+
+show_matches('lifestyledata.json')
+show_matches('respiratorycondition.json')
+show_matches('reproductivecondition.json')
+show_matches('nervecondition.json')****(rename  vitamin B12, Acetyl-L-Carnitine)
+show_matches('hormonecondition.json')
+show_matches('eyecondition.json')***(rename Acetyl-L-Carnitine)
+show_matches('digestivecondition.json')
+show_matches('braincondition.json')
+show_matches('bones_jointcondition.json')
+show_matches('bloodcondition.json')
+
+'respiratory',
+    'reproductive',
+    'nerve',
+    'hormone',
+    'eye',
+    'digestive',
+    'brain',
+    'bones_joint',
+    'blood'
+
+
+def find_matches(json_file_name):
+    with open(f'NT_gallery/fixtures/{json_file_name}') as f:
+        data = json.load(f)
+    
+    ratio_threshold = 80
+    
+    for item in edited_list:
+        match_found = False
+        print(f"\nChecking Item: {item}")
+        for supplement in data:
+            ratio = fuzz.partial_ratio(supplement['name'].lower(), item.lower())
+            if ratio > ratio_threshold:
+                print(f"Potential Match found for {item}! \nMatch: {supplement['name']}, Ratio: {ratio}")
+                match_found = True
+        
+        if not match_found:
+            print(f"Match not found for {item}")
+
+
+find_matches('lifestyledata.json')
+rename_supplements('lifestyledata.json', exclude_items=['Vitamin B12'])
+
+find_matches('respiratorycondition.json')
+rename_supplements('respiratorycondition.json, exclude_items=['Vitamin B12','Vitamin D3'])
+
+find_matches('reproductivecondition.json')
+rename_supplements('reproductivecondition.json', exclude_items=['Vitamin B12'])
+
+find_matches('nervecondition.json')  #(rename vitamin B12, Acetyl-L-Carnitine)
+rename_supplements('nervecondition.json', exclude_items=[])
+
+find_matches('hormonecondition.json')
+rename_supplements('hormonecondition.json', exclude_items=['Acetyl-L-Carnitine'])
+
+find_matches('eyecondition.json') #(rename Acetyl-L-Carnitine)
+rename_supplements('eyecondition.json', exclude_items=['vitamin D3',' Vitamin A (Beta-Carotene)'])
+
+find_matches('digestivecondition.json')
+rename_supplements('digestivecondition.json', exclude_items=['vitamin D3',' Vitamin A (Beta-Carotene)','Vitamin B12'])
+
+find_matches('braincondition.json')
+rename_supplements('braincondition.json', exclude_items=[ 'Vitamin A (Beta-Carotene)','Vitamin B12','Vitamin D3'])
+
+find_matches('bones_jointcondition.json')
+rename_supplements('bones_jointcondition.json', exclude_items=['Vitamin B12'])
+
+find_matches('bloodcondition.json')
+rename_supplements('bloodcondition.json', exclude_items=[' Vitamin A (Beta-Carotene)','Vitamin D3'])
+
+
+def rename_supplements(json_file_name, exclude_items=None):
+    if exclude_items is None:
+        exclude_items = []
+    with open(f'NT_gallery/fixtures/{json_file_name}') as f:
+        data = json.load(f)
+    ratio_threshold = 80
+    for item in edited_list:
+        for supplement in data:
+            ratio = fuzz.partial_ratio(supplement['name'].lower(), item.lower())
+            if ratio > ratio_threshold and item not in exclude_items:
+                original_name = supplement['name']
+                supplement['name'] = item
+                print(f"Renamed '{original_name}' to '{item}'")
+    
+    with open(f'NT_gallery/fixtures/{json_file_name}', 'w') as f:
+        json.dump(data, f, indent=4)
+
+
+supplement_renames = [
+('lifestyledata.json', ['Vitamin B12']),
+('respiratorycondition.json', ['Vitamin B12', 'Vitamin D3']),
+('reproductivecondition.json', ['Vitamin B12']),
+('nervecondition.json', []),
+('hormonecondition.json', ['Acetyl-L-Carnitine']),
+('eyecondition.json', ['vitamin D3', 'Vitamin A (Beta-Carotene)']),
+('digestivecondition.json', ['vitamin D3', 'Vitamin A (Beta-Carotene)', 'Vitamin B12']),
+('braincondition.json', ['Vitamin A (Beta-Carotene)', 'Vitamin B12', 'Vitamin D3']),
+('bones_jointcondition.json', ['Vitamin B12']),
+('bloodcondition.json', ['Vitamin A (Beta-Carotene)', 'Vitamin D3'])
+]
+
+
+for json_file, exclude_items in supplement_renames:
+    #find_matches(json_file)
+    rename_supplements(json_file, exclude_items=exclude_items)
+
+
+supplement_images = {
+    'Vitamin B12': 'product_image/Vitamin B-12PuritansPride500mcg.jpg',
+    'Acetyl-L-Carnitine': 'product_image/Acetyl L-CarnitinePuritansPride500mg.jpg',
+    'Chromium Picolinate': 'product_image/Chromium PicolinatePuritansPride500mcg.jpg',
+    'Focus Factor (Brain Nutrition)': 'product_image/Focus Factor (Brain Nutrition)ForceFactorMixed Strength.jpg',
+    'Libido H': 'product_image/Libido HHealthbyHabitMixed Strength.jpg',
+    'Myo-Inositol': 'product_image/InositolPuritansPride1000mg.jpg',
+    'Psyllium Husk Powder': 'product_image/Psyllium Husk PowderNaturesField8.55g.jpg',
+    'Slippery Elm Bark': 'product_image/Slippery Elm Bark400mg.jpg',
+    'Turmeric/Curcumin': 'product_image/Turmeric/CurcuminPuritansPride400mg and 800mg.jpg',
+    'Vitamin A (Beta-Carotene)': 'product_image/Vitamin A (Beta-Carotene)PuritansPride10,000 I.U.jpg',
+    'Vitamin D3': 'product_image/Vitamin D3PuritansPride1000 I.U.jpg',
+    'Zinc Gluconate': 'product_image/Zinc GluconatePuritansPride50mg.jpg',
+    "st. john's Wort": 'product_image/St. John\'s WortNOWNil.jpg'
+}
+
+# Path to the images folder
+image_folder = 'C:/Users/HLS Nigeria/Downloads/product_pics/Basics'
+
+# Iterate through each image in the image folder
+for filename in os.listdir(image_folder):
+    file_basename = os.path.splitext(filename)[0]
+    file_extension = os.path.splitext(filename)[1]
+    for json_file in os.listdir(fixtures_folder):
+        if json_file.endswith('.json'):
+            with open(os.path.join(fixtures_folder, json_file), 'r') as file:
+                data = json.load(file)
+                for supplement in data:
+                    if file_basename.lower() == supplement['name'].lower():
+                        if file_extension.lower() != os.path.splitext(supplement['main_image'])[1].lower():
+                            supplement['name'] = file_basename
+                        if filename.lower() != supplement['main_image'].lower():
+                            new_filename = os.path.splitext(supplement['main_image'])[0] + file_extension
+                            os.rename(os.path.join('image_folder', filename), os.path.join('image_folder', new_filename))
+# Save the updated JSON file
+with open('fixtures_folder.json', 'w') as f:
+    json.dump(fixtures, f, indent=4)
+
+
+
+for json_file in os.listdir(fixtures_folder):
+    if json_file.endswith('.json'):
+        with open(os.path.join(fixtures_folder, json_file), 'r') as file:
+            data = json.load(file)
+            for index, supplement in enumerate(data):
+                if supplement['name'] == 'Turmeric/Curcumin':
+                    print(f"Supplement Name: {supplement['name']}")
+                    print(f"File Name: {supplement['main_image']}")
+                    print(f"Index Number: {index}")
+                    print(json_file)
+                    print("------------------------")
+
+
+for json_file in os.listdir(fixtures_folder):
+    if json_file.endswith('.json'):
+        with open(os.path.join(fixtures_folder, json_file), 'r+') as file:
+            data = json.load(file)
+            for index, supplement in enumerate(data):
+                if 'main_image' in supplement:
+                    # Remove the 'product_image/' prefix and file extension
+                    base_name = os.path.splitext(os.path.basename(supplement['main_image']))[0]
+                    # Check if the base name contains any special characters
+                    if not re.match('^[a-zA-Z0-9_]+$', base_name):
+                        if supplement['name'] == 'Turmeric/Curcumin':
+                            supplement ['main_image']= 'TurmericCurcuminPuritansPride400mg'
+                    print(f"Supplement Name: {supplement['name']}")
+                    print(f"File Name: {supplement['main_image']}")
+                    print(f"Index Number: {index}")
+                    print(json_file)
+                    print("------------------------")
+
+fixtures_folder = 'NT_gallery/fixtures'

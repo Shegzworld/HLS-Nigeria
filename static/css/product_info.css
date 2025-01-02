@@ -184,12 +184,34 @@ body {
 .benefit-header {
     cursor: pointer;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.input-container input[type="text"] {
+    width: 90%;
+    padding-left: 3px;
+    border: none;
+    outline: none;
+    margin-top: -8px;
+}
+
+.input-container .fas{
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.input-container{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 
 .benefit-content {
     display: none;
     margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .benefit-content span.benefit-list {
