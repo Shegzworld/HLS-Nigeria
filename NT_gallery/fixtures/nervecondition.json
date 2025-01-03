@@ -22,7 +22,7 @@
         "strength": "Nil",
         "description": "Alpha-Lipoic Acid is a powerful antioxidant that helps treat peripheral neuropathy and neuralgia by reducing oxidative stress and inflammation. It improves nerve function, reduces pain and numbness, and promotes overall nerve health. Alpha-Lipoic Acid also supports healthy blood sugar levels and promotes overall well-being. By taking Alpha-Lipoic Acid, individuals can experience improved nerve function, reduced symptoms of peripheral neuropathy and neuralgia, and enhanced overall health. Alpha-Lipoic Acid is a natural and effective way to support nerve health and reduce symptoms of nerve-related disorders.",
         "lsvs": [],
-        "main_image": "product_image/Alpha-Lipoic AcidPuritansPrideNil.jpg",
+        "main_image": "product_image/Alpha-Lipoic AcidPuritansPrideNil.jpeg",
         "flag_condition": [
             "Peripheral Neuropathy",
             "Neuralgia"
@@ -52,7 +52,7 @@
         "strength": "500mcg",
         "description": "Vitamin B12 is an essential nutrient that plays a crucial role in the production of myelin, the fatty substance that surrounds and protects nerve fibers. Vitamin B12 deficiency can lead to peripheral neuropathy, multiple sclerosis, and other nerve-related disorders. By taking Vitamin B12, individuals can experience improved nerve function, reduced symptoms of peripheral neuropathy and multiple sclerosis, and enhanced overall health. Vitamin B12 also supports healthy red blood cell production and promotes overall well-being. Vitamin B12 is a natural and effective way to support nerve health and reduce symptoms of nerve-related disorders.",
         "lsvs": [],
-        "main_image": "product_image/Vitamin B12PuritansPride500mcg.jpg",
+        "main_image": "product_image/Vitamin B12PuritansPride500mcg.jpeg",
         "flag_condition": [
             "Peripheral Neuropathy",
             "Multiple Sclerosis",
@@ -120,7 +120,7 @@
         "strength": "Nil",
         "description": "Omega-3 Fatty Acids are essential nutrients that play a crucial role in reducing inflammation and promoting overall health. Omega-3 Fatty Acids help treat multiple sclerosis, Parkinson's disease, and Alzheimer's disease by reducing inflammation and oxidative stress, and promoting nerve regeneration. By taking Omega-3 Fatty Acids, individuals can experience improved heart health, reduced symptoms of multiple sclerosis, Parkinson's disease, and Alzheimer's disease, and enhanced overall health. Omega-3 Fatty Acids also support healthy brain function and promote overall well-being. Omega-3 Fatty Acids are a natural and effective way to support overall health and reduce symptoms of various diseases.",
         "lsvs": [],
-        "main_image": "product_image/Omega-3 Fatty AcidsEarthCreationNil.jpg",
+        "main_image": "product_image/Omega-3 Fatty AcidsEarthCreationNil.jpeg",
         "flag_condition": [
             "Multiple Sclerosis",
             "Parkinson's Disease",
@@ -187,7 +187,7 @@
         "strength": "200mg",
         "description": "Coenzyme Q10 (CoQ10) is an essential antioxidant that plays a crucial role in energy production and overall health. CoQ10 helps treat Parkinson's disease by reducing oxidative stress, promoting energy production, and improving nerve function. By taking CoQ10, individuals can experience improved energy levels, reduced symptoms of Parkinson's disease, and enhanced overall health. CoQ10 also supports healthy heart function and promotes overall well-being. CoQ10 is a natural and effective way to support energy production and overall health.",
         "lsvs": [],
-        "main_image": "product_image/Coenzyme Q10 (CoQ10)PuritansPride200mg.jpg",
+        "main_image": "product_image/Coenzyme Q10 (CoQ10)PuritansPride200mg.jpeg",
         "flag_condition": [
             "Parkinson's Disease"
         ],
@@ -221,7 +221,7 @@
         "strength": "Nil",
         "description": "Ginkgo Biloba is an herbal extract that plays a crucial role in improving cognitive function, memory, and overall health. Ginkgo Biloba helps treat multiple sclerosis and Alzheimer's disease by improving blood flow to the brain, reducing inflammation, and promoting nerve regeneration. By taking Ginkgo Biloba, individuals can experience improved cognitive function, reduced symptoms of multiple sclerosis and Alzheimer's disease, and enhanced overall health. Ginkgo Biloba also supports healthy blood flow and promotes overall well-being. Ginkgo Biloba is a natural and effective way to support cognitive function and overall health.",
         "lsvs": [],
-        "main_image": "product_image/Ginkgo BilobaNaturesFieldNil.jpg",
+        "main_image": "product_image/Ginkgo BilobaNaturesFieldNil.jpeg",
         "flag_condition": [
             "Multiple Sclerosis",
             "Alzheimer's Disease"
@@ -253,7 +253,7 @@
         "strength": "400mg",
         "description": "Turmeric/Curcumin is a natural anti-inflammatory compound that plays a crucial role in reducing inflammation, improving cognitive function, and overall health. Turmeric/Curcumin helps treat peripheral neuropathy, carpal tunnel syndrome, and Alzheimer's disease by reducing inflammation, promoting nerve regeneration, and improving cognitive function. By taking Turmeric/Curcumin, individuals can experience reduced inflammation, improved cognitive function, and enhanced overall health. Turmeric/Curcumin also supports healthy joint function and promotes overall well-being. Turmeric/Curcumin is a natural and effective way to support overall health and reduce inflammation.",
         "lsvs": [],
-        "main_image": "TurmericCurcuminPuritansPride400mg",
+        "main_image": "product_image/TurmericCurcuminPuritansPride400mg.jpeg",
         "flag_condition": [
             "Peripheral Neuropathy",
             "Carpal Tunnel Syndrome",
@@ -316,7 +316,7 @@
         "strength": "65mg",
         "description": "Iron is an essential mineral that plays a crucial role in healthy red blood cell production, energy production, and overall health. Iron helps treat restless leg syndrome by reducing iron deficiency, improving cognitive function, and promoting nerve health. By taking Iron, individuals can experience improved energy levels, reduced symptoms of restless leg syndrome, and enhanced overall health. Iron also supports healthy immune function and promotes overall well-being. Iron is a natural and effective way to support energy production and overall health.",
         "lsvs": [],
-        "main_image": "product_image/IronNatureMade65mg.jpg",
+        "main_image": "product_image/IronNatureMade65mg.jpeg",
         "flag_condition": [
             "Restless Leg Syndrome"
         ],
@@ -381,7 +381,7 @@
         "strength": "Nil",
         "description": "Valerian Root is a natural herb that plays a crucial role in promoting relaxation, reducing stress and anxiety, and improving sleep quality. Valerian Root helps treat restless leg syndrome by reducing symptoms of insomnia, anxiety, and stress. By taking Valerian Root, individuals can experience improved sleep quality, reduced symptoms of restless leg syndrome, and enhanced overall health. Valerian Root also supports healthy digestive function and promotes overall well-being. Valerian Root is a natural and effective way to support relaxation and overall health.",
         "lsvs": [],
-        "main_image": "product_image/Valerian RootUnavailableNil.jpg",
+        "main_image": "product_image/Valerian RootUnavailableNil.jpeg",
         "flag_condition": [
             "Restless Leg Syndrome"
         ],

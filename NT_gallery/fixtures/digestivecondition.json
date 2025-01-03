@@ -53,7 +53,7 @@
         "strength": "8.55g",
         "description": "Psyllium is a natural fiber supplement that promotes digestive health and regular bowel movements. It helps alleviate symptoms of constipation, diarrhea, and irritable bowel syndrome (IBS). Psyllium also supports healthy blood sugar levels and cholesterol levels, reducing the risk of chronic diseases. Additionally, psyllium promotes satiety and weight management, supporting a healthy weight. By taking psyllium, individuals can experience improved digestive health, regular bowel movements, and enhanced overall well-being.",
         "lsvs": [],
-        "main_image": "product_image/Psyllium Husk PowderNaturesField8.55g.jpg",
+        "main_image": "product_image/Psyllium Husk PowderNaturesField8.55g.jpeg",
         "flag_condition": [
             "Constipation",
             "Diarrhea",
@@ -87,7 +87,7 @@
         "strength": "50mg",
         "description": "Zinc is an essential mineral that supports immune function, wound healing, and protein synthesis. It helps alleviate symptoms of zinc deficiency, such as impaired growth and development, weakened immune systems, and increased susceptibility to illnesses. Zinc also supports healthy skin, hair, and nails, reducing the appearance of acne, eczema, and other skin conditions. Additionally, zinc promotes eye health, reducing the risk of age-related macular degeneration. By taking zinc, individuals can experience improved immune function, enhanced wound healing, and increased overall well-being.",
         "lsvs": [],
-        "main_image": "product_image/Zinc GluconatePuritansPride50mg.jpg",
+        "main_image": "product_image/Zinc GluconatePuritansPride50mg.jpeg",
         "flag_condition": [
             "Zinc Deficiency"
         ],
@@ -154,7 +154,7 @@
         "strength": "1000mg",
         "description": "Vitamin C is an essential antioxidant that supports immune function, collagen production, and iron absorption. It helps reduce the severity of illnesses like the common cold and flu, and supports healthy skin, bones, and connective tissue. Vitamin C also promotes healthy blood vessels, reducing the risk of cardiovascular disease. Additionally, vitamin C supports eye health, reducing the risk of age-related macular degeneration. By taking vitamin C, individuals can experience improved immune function, enhanced collagen production, and increased overall well-being.",
         "lsvs": [],
-        "main_image": "product_image/Vitamin CNaturesMade1000mg.jpg",
+        "main_image": "product_image/Vitamin CNaturesMade1000mg.jpeg",
         "flag_condition": [
             "Vitamin C Deficiency"
         ],
@@ -252,7 +252,7 @@
         "strength": "Nil",
         "description": "Aloe vera is a natural anti-inflammatory that supports digestive health and alleviates symptoms of irritable bowel syndrome (IBS), such as bloating, gas, and abdominal pain. It helps soothe the stomach lining, reducing inflammation and promoting healthy digestion. Aloe vera also supports immune function, reducing the severity of illnesses like the common cold and flu. Additionally, aloe vera promotes healthy skin, reducing the appearance of acne and eczema. By taking aloe vera, individuals can experience improved digestive health, reduced symptoms of IBS, and enhanced immune function.",
         "lsvs": [],
-        "main_image": "product_image/Aloe VeraForeverLivingAloeNil.jpg",
+        "main_image": "product_image/Aloe VeraForeverLivingAloeNil.jpeg",
         "flag_condition": [
             "IBS",
             "Bloating",
@@ -285,7 +285,7 @@
         "strength": "Nil",
         "description": "Horse chestnut is a natural anti-inflammatory that supports circulatory health and alleviates symptoms of varicose veins, such as swelling, pain, and itching. It helps improve blood flow, reducing inflammation and promoting healthy circulation. Horse chestnut also supports immune function, reducing the severity of illnesses like the common cold and flu. Additionally, horse chestnut promotes healthy skin, reducing the appearance of acne and eczema. By taking horse chestnut, individuals can experience improved circulatory health, reduced symptoms of varicose veins, and enhanced immune function.",
         "lsvs": [],
-        "main_image": "product_image/Horse ChestnutNOWNil.jpg",
+        "main_image": "product_image/Horse ChestnutNOWNil.jpeg",
         "flag_condition": [
             "Varicose Veins",
             "Swollen Legs"

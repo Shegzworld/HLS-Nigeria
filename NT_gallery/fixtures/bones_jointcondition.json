@@ -86,7 +86,7 @@
         "strength": "Nil",
         "description": "Omega-3 fatty acids reduce inflammation and promote overall health, making them an effective treatment for various conditions. These essential fatty acids support heart health, reduce joint pain and inflammation, and promote brain function. Omega-3s also have anti-inflammatory properties, which can help reduce symptoms of conditions like rheumatoid arthritis. By taking omega-3 supplements, individuals can experience improved overall health and reduced inflammation. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
-        "main_image": "product_image/Omega-3 Fatty AcidsEarthCreationNil.jpg",
+        "main_image": "product_image/Omega-3 Fatty AcidsEarthCreationNil.jpeg",
         "flag_condition": [
             "Rheumatoid Arthritis",
             "Heart Health"
@@ -118,7 +118,7 @@
         "strength": "1000mg",
         "description": "Vitamin C is essential for collagen production, wound healing, and immune function. This antioxidant vitamin also reduces inflammation and promotes overall health. Vitamin C supplements can help treat conditions like tendinitis, as they promote collagen production and reduce inflammation. By taking vitamin C supplements, individuals can experience improved immune function, reduced inflammation, and enhanced overall health. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
-        "main_image": "product_image/Vitamin CNaturesMade1000mg.jpg",
+        "main_image": "product_image/Vitamin CNaturesMade1000mg.jpeg",
         "flag_condition": [
             "Tendinitis"
         ],
@@ -150,7 +150,7 @@
         "strength": "1000 I.U",
         "description": "Vitamin D3 is essential for bone health, immune function, and mood regulation. This vitamin helps the body absorb calcium, promoting strong bones and teeth. Vitamin D supplements can help treat conditions like osteoporosis, as they promote bone density and reduce the risk of fractures. By taking vitamin D3 supplements, individuals can experience improved bone health, immune function, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
-        "main_image": "product_image/Vitamin D3PuritansPride1000 I.U.jpg",
+        "main_image": "product_image/Vitamin D3PuritansPride1000 I.U.jpeg",
         "flag_condition": [
             "Osteoporosis"
         ],
@@ -214,7 +214,7 @@
         "strength": "Nil",
         "description": "Calcium is essential for bone health, as it helps build and maintain strong bones and teeth. This mineral also supports muscle function and nerve function. Calcium supplements can help treat conditions like osteoporosis, as they promote bone density and reduce the risk of fractures. By taking calcium supplements, individuals can experience improved bone health, muscle function, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
-        "main_image": "product_image/CalciumNaturesFieldNil.jpg",
+        "main_image": "product_image/CalciumNaturesFieldNil.jpeg",
         "flag_condition": [
             "Osteoporosis"
         ],
@@ -245,7 +245,7 @@
         "strength": "400mg and 800mg",
         "description": "Turmeric/curcumin is a natural anti-inflammatory compound that reduces joint pain and inflammation. This supplement is often used to treat conditions like rheumatoid arthritis, as it reduces inflammation and promotes overall health. Turmeric/curcumin also has antioxidant properties, which can help protect against cell damage and reduce the risk of chronic diseases. By taking turmeric/curcumin supplements, individuals can experience improved joint health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
-        "main_image": "TurmericCurcuminPuritansPride400mg",
+        "main_image": "product_image/TurmericCurcuminPuritansPride400mg.jpeg",
         "flag_condition": [
             "Rheumatoid Arthritis"
         ],
@@ -339,7 +339,7 @@
         "strength": "500mg",
         "description": "Quercetin is a natural anti-inflammatory compound that reduces inflammation and promotes overall health. This supplement is often used to treat conditions like gout, as it reduces inflammation and promotes uric acid excretion. Quercetin also has antioxidant properties, which can help protect against cell damage and reduce the risk of chronic diseases. By taking quercetin supplements, individuals can experience improved joint health, reduced inflammation, and overall well-being. This supplement is a natural and effective way to manage various health conditions.",
         "lsvs": [],
-        "main_image": "product_image/QuercetinNaturesBounty500mg.jpg",
+        "main_image": "product_image/QuercetinNaturesBounty500mg.jpeg",
         "flag_condition": [
             "Gout"
         ],

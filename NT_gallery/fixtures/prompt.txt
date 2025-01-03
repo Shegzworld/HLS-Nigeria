@@ -705,3 +705,27 @@ for filename in os.listdir(fixtures):
             for supplement in empty_dosage_supplements:
                 print(supplement['name'])
             print("\n")
+
+
+# Iterate over each JSON file
+for json_file in os.listdir(fixtures_folder):
+    if json_file.endswith('.json'):
+        with open(os.path.join(fixtures_folder, json_file), 'r') as file:
+            data = json.load(file)
+        for supplement in data:
+            # Get the product name and new main image
+            product_name = supplement['name']
+            new_main_image = supplement['main_image']
+            # Update the main image in the database
+            products = Product.objects.filter(name=product_name)
+            for product in products:
+                old_main_image = product.main_image.name
+                old_extension = os.path.splitext(old_main_image)[1]
+                new_extension = os.path.splitext(new_main_image)[1]
+                product.main_image = new_main_image
+                product.save()
+                # Print the updated product information
+                print(f"Product Edited: {product_name}")
+                print(f"Old Main Image Extension: {old_extension}")
+                print(f"New Main Image Extension: {new_extension}")
+                print("------------------------")

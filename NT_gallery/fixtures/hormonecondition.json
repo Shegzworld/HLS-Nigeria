@@ -20,7 +20,7 @@
         "strength": "325mg",
         "description": "Iodine supports thyroid health and hormone production, helping to treat hypothyroidism. It regulates metabolism, growth, and development. Iodine deficiency can lead to fatigue, weight gain, and hair loss. Supplementing with iodine can improve energy levels and overall well-being. Consult a healthcare professional before taking iodine supplements.",
         "lsvs": [],
-        "main_image": "product_image/IodineNutricost325mg.jpg",
+        "main_image": "product_image/IodineNutricost325mg.jpeg",
         "flag_condition": [
             "Hypothyroidism"
         ],
@@ -50,7 +50,7 @@
         "strength": "200mcg",
         "description": "Selenium supports immune function and thyroid health, helping to protect against cell damage. It regulates antioxidant defenses and reduces inflammation. Selenium deficiency can lead to impaired immune function and increased risk of chronic diseases. Supplementing with selenium can improve overall health and well-being. Consult a healthcare professional before taking selenium supplements.",
         "lsvs": [],
-        "main_image": "product_image/SeleniumPuritansPride200mcg.jpg",
+        "main_image": "product_image/SeleniumPuritansPride200mcg.jpeg",
         "flag_condition": [
             "Hypothyroidism"
         ],
@@ -82,7 +82,7 @@
         "strength": "50mg",
         "description": "Zinc supports immune function, wound healing, and protein synthesis, helping to treat hypogonadism. It regulates testosterone production and sperm quality. Zinc deficiency can lead to impaired immune function, slow wound healing, and reduced fertility. Supplementing with zinc can improve overall health and fertility. Consult a healthcare professional before taking zinc supplements.",
         "lsvs": [],
-        "main_image": "product_image/Zinc GluconatePuritansPride50mg.jpg",
+        "main_image": "product_image/Zinc GluconatePuritansPride50mg.jpeg",
         "flag_condition": [
             "Hypogonadism"
         ],
@@ -143,7 +143,7 @@
         "strength": "500mg",
         "description": "L-Carnitine supports energy production, reduces fatigue, and promotes heart health, helping to treat hyperthyroidism. It regulates fatty acid metabolism and reduces oxidative stress. L-Carnitine deficiency can lead to fatigue, weakness, and decreased exercise performance. Supplementing with L-Carnitine can improve energy levels and overall well-being. Consult a healthcare professional before taking L-Carnitine supplements.",
         "lsvs": [],
-        "main_image": "product_image/L-CarnitineSwanson500mg.jpg",
+        "main_image": "product_image/L-CarnitineSwanson500mg.jpeg",
         "flag_condition": [
             "Hyperthyroidism"
         ],
@@ -173,7 +173,7 @@
         "strength": "1000mg",
         "description": "Inositol supports ovarian function, improves fertility, and reduces symptoms of PCOS. It regulates insulin sensitivity, hormone balance, and ovulation. Inositol deficiency can lead to impaired fertility, weight gain, and acne. Supplementing with inositol can improve fertility, reduce symptoms of PCOS, and promote overall well-being. Consult a healthcare professional before taking inositol supplements.",
         "lsvs": [],
-        "main_image": "product_image/InositolPuritansPride1000mg.jpg",
+        "main_image": "product_image/InositolPuritansPride1000mg.jpeg",
         "flag_condition": [
             "PCOS"
         ],
@@ -205,7 +205,7 @@
         "strength": "Nil",
         "description": "Berberine supports blood sugar regulation, improves insulin sensitivity, and reduces inflammation, helping to treat PCOS and diabetes. It regulates glucose metabolism, lipid profiles, and hormone balance. Berberine deficiency can lead to impaired glucose regulation, weight gain, and increased risk of chronic diseases. Supplementing with berberine can improve insulin sensitivity, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking berberine supplements.",
         "lsvs": [],
-        "main_image": "product_image/BerberineNaturesBountyNil.jpg",
+        "main_image": "product_image/BerberineNaturesBountyNil.jpeg",
         "flag_condition": [
             "PCOS",
             "Diabetes"
@@ -237,7 +237,7 @@
         "strength": "1000 I.U",
         "description": "Vitamin D supports bone health, immune function, and testosterone production, helping to treat hypogonadism. It regulates calcium metabolism, immune response, and hormone balance. Vitamin D deficiency can lead to impaired bone health, increased risk of infections, and reduced fertility. Supplementing with vitamin D can improve bone health, boost immune function, and promote overall well-being. Consult a healthcare professional before taking vitamin D supplements.",
         "lsvs": [],
-        "main_image": "product_image/Vitamin D3PuritansPride1000 I.U.jpg",
+        "main_image": "product_image/Vitamin D3PuritansPride1000 I.U.jpeg",
         "flag_condition": [
             "Hypogonadism"
         ],
@@ -297,7 +297,7 @@
         "strength": "1.85 Billion",
         "description": "Lactobacillus acidophilus probiotics support gut health, immune function, and hormone regulation, helping to treat endometriosis. They regulate gut microbiota, immune response, and hormone balance. Probiotic deficiency is not a recognized medical condition, but supplementing with Lactobacillus acidophilus probiotics can improve gut health, boost immune function, and promote overall well-being. Consult a healthcare professional before taking probiotic supplements.",
         "lsvs": [],
-        "main_image": "product_image/Lactobacillus acidophilus ProbioticsNaturesField1.85 Billion.jpg",
+        "main_image": "product_image/Lactobacillus acidophilus ProbioticsNaturesField1.85 Billion.jpeg",
         "flag_condition": [
             "Endometriosis"
         ],
@@ -327,7 +327,7 @@
         "strength": "500mg",
         "description": "Cinnamon supports blood sugar regulation, improves insulin sensitivity, and reduces inflammation, helping to treat diabetes. It regulates glucose metabolism, lipid profiles, and hormone balance. Cinnamon deficiency is not a recognized medical condition, but supplementing with cinnamon can improve insulin sensitivity, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking cinnamon supplements.",
         "lsvs": [],
-        "main_image": "product_image/CinnamonPuritansPride500mg.jpg",
+        "main_image": "product_image/CinnamonPuritansPride500mg.jpeg",
         "flag_condition": [
             "Diabetes"
         ],
@@ -359,7 +359,7 @@
         "strength": "Nil",
         "description": "Vitamin B6 supports immune function, brain health, and hormone regulation, helping to treat menstrual irregularities. It regulates neurotransmitter synthesis, immune response, and hormone balance. Vitamin B6 deficiency can lead to impaired immune function, fatigue, and decreased cognitive performance. Supplementing with vitamin B6 can improve immune function, reduce symptoms of PMS, and promote overall well-being. Consult a healthcare professional before taking vitamin B6 supplements.",
         "lsvs": [],
-        "main_image": "product_image/Vitamin B6PuritansPrideNil.jpg",
+        "main_image": "product_image/Vitamin B6PuritansPrideNil.jpeg",
         "flag_condition": [
             "Menstrual Irregularities"
         ],
@@ -422,7 +422,7 @@
         "strength": "400mg and 800mg",
         "description": "Turmeric/Curcumin supports joint health, reduces inflammation, and promotes antioxidant defenses, helping to treat endometriosis. It regulates inflammatory response, antioxidant defenses, and hormone balance. Turmeric/curcumin deficiency is not a recognized medical condition, but supplementing with turmeric/curcumin can improve joint health, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking turmeric/curcumin supplements.",
         "lsvs": [],
-        "main_image": "TurmericCurcuminPuritansPride400mg",
+        "main_image": "product_image/TurmericCurcuminPuritansPride400mg.jpeg",
         "flag_condition": [
             "Endometriosis"
         ],
@@ -452,7 +452,7 @@
         "strength": "500mcg",
         "description": "Chromium supports blood sugar regulation, improves insulin sensitivity, and reduces inflammation, helping to treat diabetes. It regulates glucose metabolism, lipid profiles, and hormone balance. Chromium deficiency can lead to impaired glucose regulation, weight gain, and increased risk of chronic diseases. Supplementing with chromium can improve insulin sensitivity, reduce inflammation, and promote overall well-being. Consult a healthcare professional before taking chromium supplements.",
         "lsvs": [],
-        "main_image": "product_image/Chromium PicolinatePuritansPride500mcg.jpg",
+        "main_image": "product_image/Chromium PicolinatePuritansPride500mcg.jpeg",
         "flag_condition": [
             "Diabetes"
         ],
