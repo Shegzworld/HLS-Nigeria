@@ -11,6 +11,75 @@ from NT_gallery.models import Flag_condition
 from datetime import datetime
 fixtures = 'NT_gallery/fixtures'
 
+def load_products(json_file_name):
+    try:
+        with open(f'NT_gallery/fixtures/{json_file_name}condition.json', 'r') as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        print(f"Error loading JSON: {e}")
+        return
+    added_products = []
+    for product_data in data:
+        price = product_data.get('price')
+        if price is not None and price != '':
+            try:
+                price = Decimal(float(price))
+            except (ValueError, Decimal.InvalidOperation):
+                price = None
+        else:
+            price = None
+        dosage_form_name = product_data.get('dosage_form')
+        if dosage_form_name:
+            dosage_form_obj, _ = DosageForm.objects.get_or_create(name=dosage_form_name)
+        else:
+            dosage_form_obj = None
+        product = Product(
+            name=product_data['name'],
+            category=product_data['category'],
+            sub_categories=product_data['sub_categories'],
+            price=price,
+            strength=product_data['strength'],
+            description=product_data['description'],
+            main_image=product_data['main_image'],
+            dosage_form=dosage_form_obj,
+        )
+        try:
+            product.save()
+            added_products.append(product.name)
+        except Exception as e:
+            print(f"Error saving product: {e}")
+            continue
+        # Add LSVs
+        for lsv in product_data['lsvs']:
+            lsv_obj, _ = LSV.objects.get_or_create(name=lsv)
+            product.lsvs.add(lsv_obj)
+        # Add flag conditions
+        for flag_condition in product_data['flag_condition']:
+            flag_condition_obj, _ = Flag_condition.objects.get_or_create(name=flag_condition)
+            product.flag_condition.add(flag_condition_obj)
+    print("Added Products:")
+    for product in added_products:
+        print(product)
+    print('-------------------------------------------------------------------')
+
+
+file_names = [
+    'respiratory',
+    'reproductive',
+    'nerve',
+    'hormone',
+    'eye',
+    'digestive',
+    'brain',
+    'bones_joint',
+    'blood'
+]
+
+for file_name in file_names:
+    print(f"Loading products for {file_name}...")
+    load_products(file_name)
+    print(f"Done loading products for {file_name}.\n")
+
 
 age_categories = {
     'infant': {'male': ['Cryptorchidism', 'Hypospadias'], 
@@ -263,82 +332,6 @@ def print_products(json_file_name):
             print("\n")
 
 print_products('respiratorycondition.json')
-
-
-
-
-def load_products(json_file_name):
-    try:
-        with open(f'NT_gallery/fixtures/{json_file_name}condition.json', 'r') as f:
-            data = json.load(f)
-    except json.JSONDecodeError as e:
-        print(f"Error loading JSON: {e}")
-        return
-    added_products = []
-    for product_data in data:
-        price = product_data.get('price')
-        if price is not None and price != '':
-            try:
-                price = Decimal(float(price))
-            except (ValueError, Decimal.InvalidOperation):
-                price = None
-        else:
-            price = None
-        dosage_form_name = product_data.get('dosage_form')
-        if dosage_form_name:
-            dosage_form_obj, _ = DosageForm.objects.get_or_create(name=dosage_form_name)
-        else:
-            dosage_form_obj = None
-        product = Product(
-            name=product_data['name'],
-            category=product_data['category'],
-            sub_categories=product_data['sub_categories'],
-            price=price,
-            strength=product_data['strength'],
-            description=product_data['description'],
-            main_image=product_data['main_image'],
-            dosage_form=dosage_form_obj,
-        )
-        try:
-            product.save()
-            added_products.append(product.name)
-        except Exception as e:
-            print(f"Error saving product: {e}")
-            continue
-        # Add LSVs
-        for lsv in product_data['lsvs']:
-            lsv_obj, _ = LSV.objects.get_or_create(name=lsv)
-            product.lsvs.add(lsv_obj)
-        # Add flag conditions
-        for flag_condition in product_data['flag_condition']:
-            flag_condition_obj, _ = Flag_condition.objects.get_or_create(name=flag_condition)
-            product.flag_condition.add(flag_condition_obj)
-    print("Added Products:")
-    for product in added_products:
-        print(product)
-    print('-------------------------------------------------------------------')
-
-# Usage
-load_products(json_file_name)
-
-
-
-file_names = [
-    'respiratory',
-    'reproductive',
-    'nerve',
-    'hormone',
-    'eye',
-    'digestive',
-    'brain',
-    'bones_joint',
-    'blood'
-]
-
-for file_name in file_names:
-    print(f"Loading products for {file_name}...")
-    load_products(file_name)
-    print(f"Done loading products for {file_name}.\n")
 
 
 -----------------PRINT SUPPLEMENT WITH MULTIPLE APPEARANCES-----------------------------
