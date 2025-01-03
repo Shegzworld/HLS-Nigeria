@@ -49,10 +49,10 @@ class Lifestyle(models.Model):
 
 # 10. Dosage Forms
 class DosageForm(models.Model):
-    DosageForm = models.CharField(max_length=255)
+    name = models.CharField(max_length=255, null=True)
 
     def __str__(self):
-        return self.DosageForm
+        return self.name
 
 # 11. Lifestyle Rating
 # class Lifestylerating(models.Model):
@@ -154,7 +154,8 @@ class Product(models.Model):
     description = models.TextField(null=True, blank=True)
     lsvs = models.ManyToManyField(LSV, related_name='products',blank=True) 
     main_image = models.ImageField(upload_to='product_image/',null=True, blank = True, default = 'default_image.jpg')
-    flag_condition = models.ManyToManyField(Flag_condition, related_name='products',blank=True) 
+    flag_condition = models.ManyToManyField(Flag_condition, related_name='products',blank=True)
+    dosage_form = models.ForeignKey(DosageForm, on_delete=models.CASCADE, related_name='dosage_form', null=True)
     created_at = models.DateTimeField(auto_now_add=True, null=True)
     updated_at = models.DateTimeField(auto_now=True,null=True)
 

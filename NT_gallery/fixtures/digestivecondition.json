@@ -30,7 +30,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsules",
-        "image": "product_image/ProbioticsNaturesField1.85 Billion.jpg",
         "id": 1
     },
     {
@@ -63,7 +62,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Powder",
-        "image": "product_image/Psyllium Husk PowderNaturesField8.55g.jpg",
         "id": 2
     },
     {
@@ -96,7 +94,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Zinc GluconatePuritansPride50mg.jpg",
         "id": 3
     },
     {
@@ -132,7 +129,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/GingerUnavailableNil.jpg",
         "id": 4
     },
     {
@@ -165,7 +161,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Vitamin CNaturesMade1000mg.jpg",
         "id": 5
     },
     {
@@ -199,7 +194,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Licorice RootUnavailableNil.jpg",
         "id": 6
     },
     {
@@ -233,7 +227,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Peppermint OilUnavailableNil.jpg",
         "id": 7
     },
     {
@@ -267,7 +260,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Aloe VeraForeverLivingAloeNil.jpg",
         "id": 8
     },
     {
@@ -300,7 +292,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Horse ChestnutNOWNil.jpg",
         "id": 9
     },
     {
@@ -336,7 +327,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/GingerUnavailableNil.jpg",
         "id": 10
     },
     {
@@ -370,7 +360,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Licorice RootUnavailableNil.jpg",
         "id": 12
     }
 ]

@@ -28,7 +28,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Vitamin CNaturesMade1000mg.jpg",
         "id": 1
     },
     {
@@ -60,7 +59,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin D3PuritansPride1000 I.U.jpg",
         "id": 2
     },
     {
@@ -92,7 +90,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin ENaturesField1000 I.U.jpg",
         "id": 3
     },
     {
@@ -123,7 +120,6 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Vitamin B6PuritansPrideNil.jpg",
         "id": 4
     },
     {
@@ -155,7 +151,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Zinc GluconatePuritansPride50mg.jpg",
         "id": 5
     },
     {
@@ -187,7 +182,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/MagnesiumPuritansPride500mg.jpg",
         "id": 6
     },
     {
@@ -217,7 +211,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/L-arginineMasonsNatural500mg.jpg",
         "id": 7
     },
     {
@@ -248,7 +241,6 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/D-aspartic acid (DAA)UnavailableNil.jpg",
         "id": 8
     },
     {
@@ -279,7 +271,6 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Omega-3 fatty acidsEarthCreationNil.jpg",
         "id": 9
     },
     {
@@ -308,7 +299,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/Saw palmettoNaturesField500mg.jpg",
         "id": 10
     },
     {
@@ -338,7 +328,6 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Beta-sitosterolNaturesFieldProstateDefenseNil.jpg",
         "id": 11
     },
     {
@@ -370,7 +359,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsule",
-        "image": "product_image/Turmeric/CurcuminPuritansPride400mg and 800mg.jpg",
         "id": 12
     },
     {
@@ -400,7 +388,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tea Bag",
-        "image": "product_image/Green tea extractLegend.jpg",
         "id": 13
     },
     {
@@ -431,7 +418,6 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Pomegranate extractUnavailableNil.jpg",
         "id": 14
     },
     {
@@ -462,7 +448,6 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/BerberineNaturesBountyNil.jpg",
         "id": 15
     },
     {
@@ -492,7 +477,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/InositolPuritansPride1000mg.jpg",
         "id": 16
     },
     {
@@ -522,7 +506,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/QuercetinNaturesBounty500mg.jpg",
         "id": 17
     },
     {
@@ -552,7 +535,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Oil",
-        "image": "product_image/Tea tree oilTeaTreeEssentials.jpg",
         "id": 18
     },
     {
@@ -582,7 +564,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/L-CarnitineSwanson500mg.jpg",
         "id": 19
     },
     {
@@ -612,7 +593,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/MacaNaturesField500mg.jpg",
         "id": 20
     },
     {
@@ -642,7 +622,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Liquid",
-        "image": "product_image/AshwagandhaHovid100mg.jpg",
         "id": 21
     },
     {
@@ -671,7 +650,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsules",
-        "image": "product_image/Tribulus TerrestrisEarthCreation500mg.jpg",
         "id": 22
     },
     {
@@ -702,7 +680,6 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/GinsengMegaWeCareNil.jpg",
         "id": 23
     },
     {
@@ -732,7 +709,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsules",
-        "image": "product_image/Probiotics (Lactobacillus acidophilus)NaturesField1.85 Billion.jpg",
         "id": 24
     }
 ]

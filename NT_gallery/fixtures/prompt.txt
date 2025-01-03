@@ -6,6 +6,7 @@ import json
 from decimal import Decimal
 from NT_gallery.models import Product
 from NT_gallery.models import LSV
+from NT_gallery.models import DosageForm
 from NT_gallery.models import Flag_condition
 from datetime import datetime
 fixtures = 'NT_gallery/fixtures'
@@ -283,6 +284,11 @@ def load_products(json_file_name):
                 price = None
         else:
             price = None
+        dosage_form_name = product_data.get('dosage_form')
+        if dosage_form_name:
+            dosage_form_obj, _ = DosageForm.objects.get_or_create(name=dosage_form_name)
+        else:
+            dosage_form_obj = None
         product = Product(
             name=product_data['name'],
             category=product_data['category'],
@@ -291,6 +297,7 @@ def load_products(json_file_name):
             strength=product_data['strength'],
             description=product_data['description'],
             main_image=product_data['main_image'],
+            dosage_form=dosage_form_obj,
         )
         try:
             product.save()
@@ -660,3 +667,48 @@ for filename in os.listdir(fixtures_folder):
                     print(f"Supplement Name: {supplement['name']} (#{i})")
                     print(f"Supplement Brand: {supplement['sub_categories']['brands']}")
                     print(f"Description: {supplement['description']}\n")
+
+
+fixtures = 'NT_gallery/fixtures'
+for filename in os.listdir(fixtures):
+    if filename.endswith('.json'):
+        with open(os.path.join(fixtures, filename), 'r') as file:
+            data = json.load(file)
+        for supplement in data:
+            if 'image' in supplement:
+                del supplement['image']
+            if 'sub_categories' in supplement and 'Dosage Forms' in supplement['sub_categories']:
+                dosage_form = supplement['sub_categories']['Dosage Forms']
+                print(supplement['name'])
+                if isinstance(dosage_form, list) and dosage_form:
+                    if isinstance(dosage_form[0], str):
+                        dosage_form_value = dosage_form[0].lower()
+                        if dosage_form_value == 'caps':
+                            supplement['dosage_form'] = 'capsules'
+                        else:
+                            supplement['dosage_form'] = dosage_form[0]
+                    else:
+                        supplement['dosage_form'] = dosage_form[0]
+                elif isinstance(dosage_form, str):
+                    dosage_form_value = dosage_form.lower()
+                    if dosage_form_value == 'caps':
+                        supplement['dosage_form'] = 'capsules'
+                    else:
+                        supplement['dosage_form'] = dosage_form
+                else:
+                    supplement['dosage_form'] = dosage_form
+                del supplement['sub_categories']['Dosage Forms']
+        with open(os.path.join(fixtures, filename), 'w') as file:
+            json.dump(data, file, indent=4)
+
+
+for filename in os.listdir(fixtures):
+    if filename.endswith('.json'):
+        with open(os.path.join(fixtures, filename), 'r') as file:
+            data = json.load(file)
+        empty_dosage_supplements = [supplement for supplement in data if 'dosage_form' not in supplement or supplement['dosage_form'] == '']
+        if empty_dosage_supplements:
+            print(f"Filename: {filename}")
+            for supplement in empty_dosage_supplements:
+                print(supplement['name'])
+            print("\n")

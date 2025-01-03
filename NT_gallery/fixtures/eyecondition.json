@@ -32,7 +32,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Omega-3 Fatty AcidsEarthCreationNil.jpg",
         "id": 1
     },
     {
@@ -66,7 +65,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Vitamin CNaturesMade1000mg.jpg",
         "id": 2
     },
     {
@@ -99,7 +97,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin A (Beta-Carotene)PuritansPride10,000 I.U.jpg",
         "id": 3
     },
     {
@@ -133,7 +130,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin D3PuritansPride1000 I.U.jpg",
         "id": 4
     },
     {
@@ -166,7 +162,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/MagnesiumPuritansPride500mg.jpg",
         "id": 5
     },
     {
@@ -201,7 +196,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Ginkgo BilobaNaturesFieldNil.jpg",
         "id": 6
     },
     {
@@ -232,7 +226,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/Acetyl L-CarnitinePuritansPride500mg.jpg",
         "id": 7
     },
     {
@@ -264,7 +257,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Lutein and ZeaxanthinBauschLombNil.jpg",
         "id": 8
     },
     {
@@ -298,7 +290,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Bilberry ExtractUnavailableNil.jpg",
         "id": 9
     },
     {
@@ -333,7 +324,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Zinc GluconatePuritansPride50mg.jpg",
         "id": 10
     },
     {
@@ -366,7 +356,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Coenzyme Q10 (CoQ10)PuritansPride200mg.jpg",
         "id": 11
     },
     {
@@ -400,7 +389,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsule",
-        "image": "product_image/Turmeric/CurcuminPuritansPride400mg and 800mg.jpg",
         "id": 12
     },
     {
@@ -433,7 +421,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/B VitaminsEarthCreationNil.jpg",
         "id": 13
     }
 ]

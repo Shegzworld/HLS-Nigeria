@@ -13,9 +13,6 @@
             "Lifestyle": [
                 "Conception"
             ],
-            "Dosage Forms": [
-                "Capsule"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -31,8 +28,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Fertilboost MenEarthCreationNil.jpg",
+        "dosage_form": "Capsule",
         "id": 1
     },
     {
@@ -49,9 +45,6 @@
             "Lifestyle": [
                 "Pregnancy"
             ],
-            "Dosage Forms": [
-                "Capsule"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -67,8 +60,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Pregnacare OriginalVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 2
     },
     {
@@ -85,10 +77,6 @@
             "Lifestyle": [
                 "Pregnancy"
             ],
-            "Dosage Forms": [
-                "Capsule",
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -104,8 +92,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Pregnacare MaxVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 3
     },
     {
@@ -122,9 +109,6 @@
             "Lifestyle": [
                 "Pregnancy"
             ],
-            "Dosage Forms": [
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -140,8 +124,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Pregnacare PlusVitabioticsNil.jpg",
+        "dosage_form": "Tablet",
         "id": 4
     },
     {
@@ -158,9 +141,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Capsule"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -176,8 +156,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellman PlusVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 5
     },
     {
@@ -194,9 +173,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Capsule"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -212,8 +188,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellman SportVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 6
     },
     {
@@ -230,9 +205,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Capsule"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -248,8 +220,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellman MaxVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 7
     },
     {
@@ -267,10 +238,6 @@
                 "Skin",
                 "Fashion"
             ],
-            "Dosage Forms": [
-                "Capsule",
-                "Gummies"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -286,8 +253,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellwoman SkinVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 8
     },
     {
@@ -304,9 +270,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Capsule"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -322,8 +285,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellwoman PlusVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 9
     },
     {
@@ -340,9 +302,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -358,8 +317,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellwoman SportVitabioticsNil.jpg",
+        "dosage_form": "Tablet",
         "id": 10
     },
     {
@@ -373,10 +331,6 @@
             "gender": [],
             "Lifestyle": [
                 "Supplement"
-            ],
-            "Dosage Forms": [
-                "Capsule",
-                "Tablet"
             ],
             "Lifestyle Rating": [],
             "pharmacy grouping": [
@@ -395,8 +349,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/MagnesiumP500mg.jpg",
+        "dosage_form": "Capsule",
         "id": 11
     },
     {
@@ -410,11 +363,6 @@
             "gender": [],
             "Lifestyle": [
                 "Multivitamin"
-            ],
-            "Dosage Forms": [
-                "Capsule",
-                "Tablet",
-                "Liquid"
             ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
@@ -431,8 +379,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/OsteocareVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 12
     },
     {
@@ -449,10 +396,6 @@
             "Lifestyle": [
                 "Stress"
             ],
-            "Dosage Forms": [
-                "Capsule",
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -468,8 +411,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Nat BVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 13
     },
     {
@@ -483,10 +425,6 @@
             "gender": [],
             "Lifestyle": [
                 "Eye Supplement"
-            ],
-            "Dosage Forms": [
-                "Capsule",
-                "Tablet"
             ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
@@ -503,8 +441,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Visionace MaxVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 14
     },
     {
@@ -519,10 +456,6 @@
             "Lifestyle": [
                 "Skin",
                 "Fashion"
-            ],
-            "Dosage Forms": [
-                "Capsule",
-                "Tablet"
             ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
@@ -539,8 +472,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/CellgevityMaxInternationalNil.jpg",
+        "dosage_form": "Capsule",
         "id": 15
     },
     {
@@ -554,10 +486,6 @@
             "gender": [],
             "Lifestyle": [
                 "Multivitamin"
-            ],
-            "Dosage Forms": [
-                "Capsule",
-                "Tablet"
             ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
@@ -574,8 +502,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/NeurozanVMixed Strength.jpg",
+        "dosage_form": "Capsule",
         "id": 16
     },
     {
@@ -592,9 +519,6 @@
             "Lifestyle": [
                 "Conception"
             ],
-            "Dosage Forms": [
-                "Capsule"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -610,8 +534,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Pregnacare Conception for HerVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 17
     },
     {
@@ -628,9 +551,6 @@
             "Lifestyle": [
                 "Conception"
             ],
-            "Dosage Forms": [
-                "Capsule"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -646,8 +566,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Pregnacare Conception for HimVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 18
     },
     {
@@ -664,10 +583,6 @@
             "Lifestyle": [
                 "Pregnancy"
             ],
-            "Dosage Forms": [
-                "Capsule",
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -683,8 +598,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Pregnacare BreastfeedingVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 19
     },
     {
@@ -701,9 +615,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -719,8 +630,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/WellmanVitabioticsNil.jpg",
+        "dosage_form": "Tablet",
         "id": 20
     },
     {
@@ -737,9 +647,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -755,8 +662,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellman 50+VitabioticsNil.jpg",
+        "dosage_form": "Tablet",
         "id": 21
     },
     {
@@ -773,9 +679,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -791,8 +694,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellman 70+VitabioticsNil.jpg",
+        "dosage_form": "Tablet",
         "id": 22
     },
     {
@@ -809,9 +711,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Capsule"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -827,8 +726,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/WellwomanVitabioticsNil.jpg",
+        "dosage_form": "Capsule",
         "id": 23
     },
     {
@@ -845,9 +743,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -863,8 +758,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellwoman 50+VitabioticsNil.jpg",
+        "dosage_form": "Tablet",
         "id": 24
     },
     {
@@ -881,9 +775,6 @@
             "Lifestyle": [
                 "Multivitamin"
             ],
-            "Dosage Forms": [
-                "Tablet"
-            ],
             "Lifestyle Rating": [],
             "pharmacy grouping": []
         },
@@ -899,8 +790,7 @@
         "flag_condition": [],
         "created_at": "",
         "updated_at": "",
-        "dosage_form": "",
-        "image": "product_image/Wellwoman 70+VitabioticsNil.jpg",
+        "dosage_form": "Tablet",
         "id": 25
     }
 ]

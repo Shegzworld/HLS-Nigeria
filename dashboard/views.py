@@ -36,7 +36,6 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         page_number = self.request.GET.get('page')
         page_obj = paginator.get_page(page_number)
         context['dr_picks'] = page_obj
-        return context
         
         
             #     products = Product.objects.filter(

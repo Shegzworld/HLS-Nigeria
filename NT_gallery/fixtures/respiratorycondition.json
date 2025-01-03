@@ -31,7 +31,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Omega-3 Fatty AcidsEarthCreationNil.jpg",
         "id": 1
     },
     {
@@ -65,7 +64,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Vitamin CNaturesMade1000mg.jpg",
         "id": 2
     },
     {
@@ -99,7 +97,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin D3PuritansPride1000 I.U.jpg",
         "id": 3
     },
     {
@@ -134,7 +131,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/N-Acetyl Cysteine (NAC)UnavailableNil.jpg",
         "id": 4
     },
     {
@@ -168,7 +164,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/MagnesiumPuritansPride500mg.jpg",
         "id": 5
     },
     {
@@ -202,7 +197,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Zinc GluconatePuritansPride50mg.jpg",
         "id": 6
     },
     {
@@ -235,7 +229,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsules",
-        "image": "product_image/ProbioticsNaturesField1.85 Billion.jpg",
         "id": 7
     },
     {
@@ -269,7 +262,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Gummies",
-        "image": "product_image/ElderberrySambucol16.72mg.jpg",
         "id": 8
     },
     {
@@ -303,7 +295,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/MelatoninPuritansPride10mg.jpg",
         "id": 9
     },
     {
@@ -338,7 +329,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Valerian RootUnavailableNil.jpg",
         "id": 10
     },
     {
@@ -373,7 +363,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Ginkgo BilobaNaturesFieldNil.jpg",
         "id": 11
     },
     {
@@ -407,7 +396,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin ENaturesField1000 I.U.jpg",
         "id": 12
     },
     {
@@ -441,7 +429,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Coenzyme Q10 (CoQ10)PuritansPride200mg.jpg",
         "id": 13
     },
     {
@@ -476,7 +463,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/EchinaceaPuritansPride400mg.jpg",
         "id": 14
     },
     {
@@ -512,7 +498,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/GingerUnavailableNil.jpg",
         "id": 15
     },
     {
@@ -547,7 +532,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsule",
-        "image": "product_image/Turmeric/CurcuminPuritansPride400mg and 800mg.jpg",
         "id": 16
     },
     {
@@ -580,7 +564,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/Slippery Elm Bark400mg.jpg",
         "id": 17
     }
 ]

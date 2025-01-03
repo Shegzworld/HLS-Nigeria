@@ -29,7 +29,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/Omega 3 fatty acidsNOWNil.jpg",
         "id": 1
     },
     {
@@ -62,7 +61,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/B VitaminsEarthCreationNil.jpg",
         "id": 2
     },
     {
@@ -94,7 +92,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin D3PuritansPride1000 I.U.jpg",
         "id": 3
     },
     {
@@ -127,7 +124,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/CurcuminUnavailableNil.jpg",
         "id": 4
     },
     {
@@ -160,7 +156,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/Coenzyme Q10PuritansPrideNil.jpg",
         "id": 5
     },
     {
@@ -192,7 +187,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Tablet",
-        "image": "product_image/MagnesiumPuritansPride500mg.jpg",
         "id": 6
     },
     {
@@ -225,7 +219,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/N-Acetyl CysteineUnavailableNil.jpg",
         "id": 7
     },
     {
@@ -258,7 +251,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/S-AdenosylmethionineUnavailableNil.jpg",
         "id": 8
     },
     {
@@ -291,7 +283,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/St. John's WortNOWNil.jpg",
         "id": 9
     },
     {
@@ -323,7 +314,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Caps",
-        "image": "product_image/GABANOW750mg.jpg",
         "id": 10
     },
     {
@@ -356,7 +346,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/5-HydroxytryptophanSolgarNil.jpg",
         "id": 11
     },
     {
@@ -388,7 +377,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Liquid",
-        "image": "product_image/AshwagandhaHovid100mg.jpg",
         "id": 12
     },
     {
@@ -420,7 +408,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Caps",
-        "image": "product_image/Acetyl L-CarnitinePuritansPride500mg.jpg",
         "id": 13
     },
     {
@@ -453,7 +440,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/L-lysineNOWNil.jpg",
         "id": 14
     },
     {
@@ -485,7 +471,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Tablet",
-        "image": "product_image/Korean ginsengMasonsNatural1000mg.jpg",
         "id": 15
     },
     {
@@ -517,7 +502,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Caps",
-        "image": "product_image/Pantothenic acidNOW500mg.jpg",
         "id": 16
     },
     {
@@ -550,7 +534,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/UbiquinolReviveNil.jpg",
         "id": 17
     },
     {
@@ -582,7 +565,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Liquid",
-        "image": "product_image/DHAHovid100mg.jpg",
         "id": 18
     },
     {
@@ -614,7 +596,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Tablet",
-        "image": "product_image/L-carnitineSwanson500mg.jpg",
         "id": 19
     },
     {
@@ -647,7 +628,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/PhosphatidylserineUnavailableNil.jpg",
         "id": 20
     },
     {
@@ -679,7 +659,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Tablet",
-        "image": "product_image/CognitolTyronex5mg.jpg",
         "id": 21
     },
     {
@@ -711,7 +690,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Caps",
-        "image": "product_image/NeurozanVitabioticsMixed Strength.jpg",
         "id": 22
     },
     {
@@ -743,7 +721,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Tablet",
-        "image": "product_image/Focus Factor (Brain Nutrition)ForceFactorMixed Strength.jpg",
         "id": 23
     },
     {
@@ -775,7 +752,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Capsule",
-        "image": "product_image/NeuroaidMoleacMixed Strength.jpg",
         "id": 24
     },
     {
@@ -807,7 +783,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Tablet",
-        "image": "product_image/Stress defenseNaturesField25mg.jpg",
         "id": 25
     },
     {
@@ -840,7 +815,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/Stress comfortUnavailableNil.jpg",
         "id": 26
     },
     {
@@ -872,7 +846,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Capsules",
-        "image": "product_image/Rhodiola roseaDealsSupplements5000mg.jpg",
         "id": 27
     },
     {
@@ -904,7 +877,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Tablet",
-        "image": "product_image/Bacopa monnieriNutricost1000mg.jpg",
         "id": 28
     },
     {
@@ -937,7 +909,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/Ginkgo bilobaNaturesFieldNil.jpg",
         "id": 29
     },
     {
@@ -969,7 +940,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Caps",
-        "image": "product_image/MelatoninPuritansPride10mg.jpg",
         "id": 30
     },
     {
@@ -1002,7 +972,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/Valerian rootNOWNil.jpg",
         "id": 31
     },
     {
@@ -1034,7 +1003,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Tablet",
-        "image": "product_image/Vitamin CNaturesMade1000mg.jpg",
         "id": 32
     },
     {
@@ -1066,7 +1034,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin ENaturesField1000 I.U.jpg",
         "id": 33
     },
     {
@@ -1098,7 +1065,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Tablet",
-        "image": "product_image/IronNatureMade65mg.jpg",
         "id": 34
     },
     {
@@ -1130,7 +1096,6 @@
         "created_at": null,
         "updated_at": null,
         "dosage_form": "Caps",
-        "image": "product_image/Alpha lipoic acidPuritansPride600mg.jpg",
         "id": 35
     },
     {
@@ -1163,7 +1128,6 @@
         "flag_condition": [],
         "created_at": null,
         "updated_at": null,
-        "image": "product_image/EfamolEfamolNil.jpg",
         "id": 36
     }
 ]

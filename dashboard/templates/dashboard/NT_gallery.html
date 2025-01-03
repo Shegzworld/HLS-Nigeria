@@ -166,17 +166,23 @@
 			</div>
 			{% endfor %}
 			{% if dr_picks.has_other_pages %}
-			<ul>
+			<ul class="pagination">
 				{% if dr_picks.has_previous %}
 				<li><a href="?page={{ dr_picks.previous_page_number }}">Previous</a></li>
 				{% endif %}
+			
 				{% for i in dr_picks.paginator.page_range %}
-				{% if dr_picks.number == i %}
-				<li>{{ i }}</li>
+				{% if i >= dr_picks.number|add:-2 and i <= dr_picks.number|add:2 %} 
+				{% if dr_picks.number == i %} 
+				<li class="active">
+					{{ i }}
+				</li>
 				{% else %}
-				<li><a href="?page={{ i }}">{{ i }}</a></li>
+					<li><a href="?page={{ i }}">{{ i }}</a></li>
 				{% endif %}
-				{% endfor %}
+				{% endif %}
+					{% endfor %}
+			
 				{% if dr_picks.has_next %}
 				<li><a href="?page={{ dr_picks.next_page_number }}">Next</a></li>
 				{% endif %}

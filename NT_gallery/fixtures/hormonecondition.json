@@ -27,7 +27,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/IodineNutricost325mg.jpg",
         "id": 1
     },
     {
@@ -58,7 +57,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/SeleniumPuritansPride200mcg.jpg",
         "id": 2
     },
     {
@@ -91,7 +89,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/Zinc GluconatePuritansPride50mg.jpg",
         "id": 3
     },
     {
@@ -123,7 +120,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Omega-3 fatty acidsEarthCreationNil.jpg",
         "id": 4
     },
     {
@@ -154,7 +150,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/L-CarnitineSwanson500mg.jpg",
         "id": 5
     },
     {
@@ -185,7 +180,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/InositolPuritansPride1000mg.jpg",
         "id": 6
     },
     {
@@ -218,7 +212,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/BerberineNaturesBountyNil.jpg",
         "id": 7
     },
     {
@@ -251,7 +244,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Softgel",
-        "image": "product_image/Vitamin D3PuritansPride1000 I.U.jpg",
         "id": 8
     },
     {
@@ -282,7 +274,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/D-Aspartic Acid (DAA)UnavailableNil.jpg",
         "id": 9
     },
     {
@@ -313,7 +304,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsules",
-        "image": "product_image/Lactobacillus acidophilus ProbioticsNaturesField1.85 Billion.jpg",
         "id": 10
     },
     {
@@ -344,7 +334,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsules",
-        "image": "product_image/CinnamonPuritansPride500mg.jpg",
         "id": 11
     },
     {
@@ -376,7 +365,6 @@
         ],
         "created_at": "",
         "updated_at": "",
-        "image": "product_image/Vitamin B6PuritansPrideNil.jpg",
         "id": 12
     },
     {
@@ -409,7 +397,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Tablet",
-        "image": "product_image/MagnesiumPuritansPride500mg.jpg",
         "id": 13
     },
     {
@@ -442,7 +429,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Capsule",
-        "image": "product_image/Turmeric/CurcuminPuritansPride400mg and 800mg.jpg",
         "id": 14
     },
     {
@@ -473,7 +459,6 @@
         "created_at": "",
         "updated_at": "",
         "dosage_form": "Caps",
-        "image": "product_image/Chromium PicolinatePuritansPride500mcg.jpg",
         "id": 15
     }
 ]
