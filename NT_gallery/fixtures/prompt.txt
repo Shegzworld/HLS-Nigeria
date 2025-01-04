@@ -10,6 +10,12 @@ from NT_gallery.models import DosageForm
 from NT_gallery.models import Flag_condition
 from datetime import datetime
 fixtures = 'NT_gallery/fixtures'
+fixtures_folder = 'NT_gallery/fixtures'
+from PIL import Image
+import io
+import boto3
+
+
 
 def load_products(json_file_name):
     try:

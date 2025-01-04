@@ -655,3 +655,58 @@ for image_file in os.listdir(image_folder):
                         print("------------------------")
                 with open(os.path.join(fixtures_folder, json_file), 'w') as f:
                     json.dump(data, f, indent=4)
+
+
+# Create an S3 client
+s3 = boto3.client('s3', aws_access_key_id='AKIATFBMO53EKIXSNNUY',aws_secret_access_key='vf+xxthS0G7T4l37rtvmYdzhiR4yEZQS3yXHIfsz')
+bucket_name = 'hlsnigeriabucket'  # Replace with your actual bucket name
+prefix = 'product_image'
+response = s3.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
+if 'Contents' in response:
+    for obj in response['Contents']:
+        key = obj['Key']
+        file_extension = os.path.splitext(key)[1][1:].upper()
+        # Download the image from S3
+        image_response = s3.get_object(Bucket=bucket_name, Key=key)
+        image_data = image_response['Body'].read()
+        # Resize the image (using Pillow)
+        image = Image.open(io.BytesIO(image_data))
+        new_width, new_height = 300, 300
+        image = image.resize((new_width, new_height))
+        # Print the object key name and its new dimensions
+        print(f"Object Key: {key}")
+        print(f"New Dimensions: {new_width}x{new_height}")
+        print("------------------------")
+else:
+    print("No objects found in the bucket.")
+
+    print(f"Resized image: {key}")
+
+
+def get_image_dimensions(bucket_name, image_key):
+    response = s3.get_object(Bucket=bucket_name, Key=image_key)
+    image_data = response['Body'].read()
+    image = Image.open(io.BytesIO(image_data))
+    width, height = image.size
+    return width, height
+
+bucket_name = 'hlsnigeriabucket'
+image_key = 'product_image/Tribulus TerrestrisEarthCreation500mg.jpeg'
+width, height = get_image_dimensions(bucket_name, image_key)
+print(f'Image dimensions: {width}x{height}')
+
+
+def check_folder_exists(bucket_name, folder_name):
+    response = s3.list_objects_v2(Bucket=bucket_name, Prefix=folder_name + '/')
+    if 'Contents' in response and len(response['Contents']) > 0:
+        return True
+    else:
+        return False
+
+bucket_name = 'your-bucket-name'
+folder_name = 'product_image'
+
+if check_folder_exists(bucket_name, folder_name):
+    print(f"The folder '{folder_name}' exists in the bucket '{bucket_name}'.")
+else:
+    print(f"The folder '{folder_name}' does not exist in the bucket '{bucket_name}'.")

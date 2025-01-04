@@ -561,6 +561,19 @@ body {
     padding: 10px;
 }
 
+.my_specifics_picture {
+    display: flex;
+    position: relative;
+    flex-basis: 150px;
+    height: 210px;
+    background-color: #f2f0f0;
+    border: solid grey 0.1px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 200px;
+    flex-grow: 1;
+}
+
 
 .my_nutrient_picture {
     position: absolute;

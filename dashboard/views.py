@@ -13,6 +13,8 @@ from NT_gallery.models import Product
 from django.contrib import messages
 from user.models import HealthCondition,Lifestyle,Basic
 # from user.models import Notification
+import boto3
+import os
 
 class Dashboard(LoginRequiredMixin, TemplateView):
     template_name = 'dashboard/dashboard.html'
@@ -30,24 +32,54 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         # context['specifics'] = products_by_attribute
         # context['nutrient_gallery'] = packs
 
-       
-        specific_product = Product.objects.all()
-        paginator = Paginator(specific_product, 10)  # Show 10 products per page
-        page_number = self.request.GET.get('page')
-        page_obj = paginator.get_page(page_number)
-        context['dr_picks'] = page_obj
-        
+
         
             #     products = Product.objects.filter(
             #     Q(sub_categories__gender_icontains="female") |  
             #     Q(sub_categories__age__icontains="teen")         
             # )
-        
+        unique_products = Product.objects.all()
 
+        # Initialize empty lists to store products
+        products_with_images = []
+        products_with_missing_images = []
 
+        # Get the list of image keys from S3
+        s3 = boto3.client('s3', aws_access_key_id='AKIATFBMO53EKIXSNNUY',aws_secret_access_key='vf+xxthS0G7T4l37rtvmYdzhiR4yEZQS3yXHIfsz')
+        image_keys = []
+        bucket_name = 'hlsnigeriabucket'  # Replace with your actual bucket name
+        prefix = 'product_image'
+        kwargs = {'Bucket': bucket_name, 'Prefix': prefix}
+
+        while True:
+            response = s3.list_objects_v2(**kwargs)
+            image_keys.extend([obj['Key'] for obj in response.get('Contents', [])])
+
+            try:
+                kwargs['ContinuationToken'] = response['NextContinuationToken']
+            except KeyError:
+                break
+
+        for product in unique_products:
+            if product.main_image in image_keys:
+                # If image exists, add product to products_with_images
+                products_with_images.append(product)
+            else:
+                # If image is missing, add product to products_with_missing_images
+                products_with_missing_images.append(product)
+
+        # Combine the two lists, with products with missing images at the end
+        final_product_list = products_with_images + products_with_missing_images
+        # Paginate the final product list
+        paginator = Paginator(final_product_list, 10)  # Show 10 products per page
+        page_number = self.request.GET.get('page')
+        page_obj = paginator.get_page(page_number)
+
+        # Return the paginated products
+        context['dr_picks'] = page_obj
         
         blog_list = Blog.objects.all().order_by('-created_at') #Blog.objects.all()
-        blog_paginator = Paginator(blog_list, 5)
+        blog_paginator = Paginator(blog_list, 10)
         blog_page_number = self.request.GET.get('page', 1)
         blog_page = blog_paginator.get_page(blog_page_number)
         context['blog_list'] = blog_page
