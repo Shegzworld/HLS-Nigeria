@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <div class="landing_page_container">
         <section class="nav_section">
             <div class="nav_logo">
@@ -54,10 +55,14 @@
                     <i class="fas fa-bars"></i>
                 </div>
                 <ul class="menu-list" id="menu-list">
+                    <li class="header">God's Ordained Health Care!</li>
                     <li><a href="{% url 'home:quiz' %}">Take Quiz</a></li>
-                    <li><a href="{% url 'user:login' %}">Login</a></li>
-                    <li><a href="{% url 'user:register' %}"> Register </a></li>
+                    <li><a href="{% url 'user:login' %}">Dashboard</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href="#">Breakthroughs</a></li>
+                    <li><a href="{% url 'user:register' %}">Register</a></li>
                     <li><a href="#">About Us</a></li>
+                    <li class="search-icon"><i class="fas fa-search"></i></li>
                 </ul>
             </div>
         </section>

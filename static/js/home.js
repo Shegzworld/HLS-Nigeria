@@ -6,15 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menuList = document.getElementById('menu-list');
 const bar = document.querySelector('.bar');
+const overlay = document.querySelector('.overlay');
 
 bar.addEventListener('click', (e) => {
   e.stopPropagation();
   menuList.classList.toggle('show-menu');
+  overlay.classList.toggle('show-overlay');
 });
 
 document.addEventListener('click', function(e) {
   if (e.target !== bar && !menuList.contains(e.target)) {
     menuList.classList.remove('show-menu');
+    overlay.classList.remove('show-overlay');
   }
 });
 

@@ -1,6 +1,7 @@
 {% extends "base/auth_base.html" %} <br />
 
 {% block login %} <br />
+{% load static %}
 {{ form.non_field_errors }}
 <!-- Display non-field errors, e.g., for incorrect credentials -->
 
@@ -8,6 +9,9 @@
 	<div class="form_container">
 		<form method="POST">
 			{% csrf_token %}
+			<div class="logo-container">
+				<img src="{% static 'home_images/HLS logo png 1.png' %}" alt="HLS Logo" class="logo">
+			</div>
 			<div class="log_container">
 				<fieldset>
 					<legend>Login to your dashboard</legend>
@@ -43,21 +47,14 @@
 					</fieldset>
 				</fieldset>
 
-				<p class="alt_login">or login with:</p>
-				<div class="social-login-options">
-					<a href="#" class="social-login facebook"
-						><i class="fab fa-facebook" aria-hidden="true"></i
-					></a>
-					<a href="#" class="social-login twitter"
-						><i class="fab fa-twitter" aria-hidden="true"></i
-					></a>
-					<a href="#" class="social-login linkedin"
-						><i class="fab fa-linkedin" aria-hidden="true"></i
-					></a>
-					<!-- WhatsApp login is not directly supported, using a generic chat icon instead -->
-					<a href="#" class="social-login whatsapp"
-						><i class="fab fa-whatsapp" aria-hidden="true"></i
-					></a>
+				<div class="social-login-container">
+					<p class="alt_login">or login with:</p>
+					<div class="social-login-options">
+						<a href="#" class="social-login facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+						<a href="#" class="social-login twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+						<a href="#" class="social-login linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+						<a href="#" class="social-login whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+					</div>
 				</div>
 			</div>
 		</form>
