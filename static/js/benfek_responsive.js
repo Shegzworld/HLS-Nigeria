@@ -76,23 +76,44 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Podcast section
 	const podcastSection = document.querySelector(".podcast-section");
 
-	// Codes for declaring Actives and event listeners for services to display contents
 
-	document.addEventListener("click", function (event) {
-		if (menuIcon.contains(event.target)) {
-			menuDropdown.style.display = "block";
-		}
+	const userIcon = document.querySelector('.user_icon');
+	const dropdownMenu = document.getElementById('user_dropdown_menu');
 
-		if (
-			!menuIcon.contains(event.target) &&
-			!menuDropdown.contains(event.target)
-		) {
-			hamburger_menu.style.display = "none";
-		}
+	userIcon.addEventListener('click', () => {
+	dropdownMenu.style.top = userIcon.offsetTop + userIcon.offsetHeight + 'px';
+	dropdownMenu.style.transform = 'translateX(0)';
+	dropdownMenu.style.transition = 'transform 0.5s ease-in-out';
+	dropdownMenu.style.display = 'block';
+	});
 
-		if (event.target === closeIcon) {
-			hamburger_menu.style.display =
-				hamburger_menu.style.display === "none" ? "block" : "none";
+	document.addEventListener('click', (event) => {
+	if (!userIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+	dropdownMenu.style.transform = 'translateX(100%)';
+	dropdownMenu.style.transition = 'transform 0.5s ease-in-out';
+	}
+	});
+
+	// Codes for declaring Actives and event listeners for services to display 
+
+	closeIcon.addEventListener('click', (e) => {
+	console.log('yeah')
+	e.stopPropagation(); 
+	menuDropdown.style.transform = 'translateX(-100%)';
+	menuDropdown.style.transition = 'transform 0.5s ease-in-out';
+	});
+	
+	menuIcon.addEventListener('click', () => {
+	menuDropdown.style.top = menuIcon.offsetTop + menuIcon.offsetHeight + 'px';
+	menuDropdown.style.transform = 'translateX(0)';
+	menuDropdown.style.transition = 'transform 0.5s ease-in-out';
+	menuDropdown.style.display = 'block';
+	});
+
+	document.addEventListener('click', (event) => {
+		if (!menuIcon.contains(event.target) && !menuDropdown.contains(event.target)) {
+		menuDropdown.style.transform = 'translateX(-100%)';
+		menuDropdown.style.transition = 'transform 0.5s ease-in-out';
 		}
 	});
 
@@ -100,13 +121,17 @@ document.addEventListener("DOMContentLoaded", function () {
 	searchIcon.addEventListener("click", () => {
 		if (isDisplayed) {
 			searchContainer.style.display = "none";
-			topStickyBar.style.height = "180px";
-			benfekWrapper.style.paddingTop = "180px";
+			topStickyBar.style.height = "250px";
+			benfekServiceIconText.forEach((text) => {
+			text.style.display = "block";
+		});
 			isDisplayed = false;
 		} else {
 			searchContainer.style.display = "block";
 			topStickyBar.style.height = "240px";
-			benfekWrapper.style.paddingTop = "240px";
+			benfekServiceIconText.forEach((text) => {
+			text.style.display = "none";
+		});
 			isDisplayed = true;
 		}
 	});
@@ -140,13 +165,17 @@ document.addEventListener("DOMContentLoaded", function () {
 			searchIcon.addEventListener("click", () => {
 				if (isDisplayed) {
 					searchContainer.style.display = "none";
-					topStickyBar.style.height = "200px";
-					benfekWrapper.style.paddingTop = "200px";
+					topStickyBar.style.height = "250px";
+					benfekServiceIconText.forEach((text) => {
+					text.style.display = "block";
+				});
 					isDisplayed = false;
 				} else {
 					searchContainer.style.display = "block";
 					topStickyBar.style.height = "240px";
-					// benfekWrapper.style.paddingTop= '240px'
+					benfekServiceIconText.forEach((text) => {
+					text.style.display = "none";
+				});
 					isDisplayed = true;
 				}
 			});
@@ -157,6 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			this.classList.add("active");
 			Nutrient_type.classList.add("active");
 			nutrientTypeGallery.style.display = "flex";
+			nutrientTypeGallery.style.paddingTop = "0px";
 			nutrient_type_container.style.display = "flex";
 			nutrient_type_container.style.transform = "translateX(0%)";
 		}
@@ -168,17 +198,22 @@ document.addEventListener("DOMContentLoaded", function () {
 			benfekSelectedArticles.style.transform = "translateX(0%)";
 			serviceHeader.style.display = "none";
 			searchContainer.style.display = "none";
+			benfekServiceIconText.forEach((text) => {
+				text.style.display = "none";
+			});
 			let isDisplayed = false;
 			searchIcon.addEventListener("click", () => {
 				if (isDisplayed) {
 					searchContainer.style.display = "none";
 					topStickyBar.style.height = "120px";
-					benfekWrapper.style.paddingTop = "120px";
+					benfekServiceIconText.forEach((text) => {
+					text.style.display = "none";
+				});
 					isDisplayed = false;
 				} else {
 					searchContainer.style.display = "block";
-					topStickyBar.style.height = "180px";
-					benfekWrapper.style.paddingTop = "180px";
+					searchContainer.style.marginBottom = "5px";
+					topStickyBar.style.height = "185px";
 					isDisplayed = true;
 				}
 			});
@@ -201,21 +236,25 @@ document.addEventListener("DOMContentLoaded", function () {
 			podcastSection.style.transform = "translateX(0%)";
 			serviceHeader.style.display = "none";
 			searchContainer.style.display = "none";
-
+			benfekServiceIconText.forEach((text) => {
+				text.style.display = "none";
+			});
 			let isDisplayed = false;
 			searchIcon.addEventListener("click", () => {
 				if (isDisplayed) {
 					searchContainer.style.display = "none";
-					topStickyBar.style.height = "146.4px";
-					benfekWrapper.style.paddingTop = "146.4px";
+					topStickyBar.style.height = "120px";
+					benfekServiceIconText.forEach((text) => {
+					text.style.display = "none";
+				});
 					isDisplayed = false;
 				} else {
 					searchContainer.style.display = "block";
-					topStickyBar.style.height = "200px";
-					benfekWrapper.style.paddingTop = "200px";
+					searchContainer.style.marginBottom = "5px";
+					topStickyBar.style.height = "185px";
 					isDisplayed = true;
 				}
-			});
+			});;
 			benfekServiceIconText.forEach((text) => {
 				text.style.display = "none";
 			});
@@ -319,38 +358,41 @@ document.addEventListener("DOMContentLoaded", function () {
     	inboxIcon.addEventListener('click', () => {
     
     display_contents.forEach(display_content=>{
-    display_content.style.display='none';
-    })
-    benfekSelectedArticles.style.display = 'flex';
-        benfekSelectedArticles.style.transform = 'translateX(0%)';
-        serviceHeader.style.display = 'none';
-        searchContainer.style.display = 'none';
-        let isDisplayed = false
-        searchIcon.addEventListener('click', ()=>{  
-            if(isDisplayed)
-            {
-            searchContainer.style.display = 'none';
-            topStickyBar.style.height = '120px';
-            benfekWrapper.style.paddingTop= '120px'
-            isDisplayed = false}
-            else
-            {   searchContainer.style.display = 'block';
-                topStickyBar.style.height = '180px';
-                benfekWrapper.style.paddingTop= '180px';
-                isDisplayed = true}
-            })
-            benfekServiceIconText.forEach(text=>{
-            text.style.display = 'none'
-            })
-            menuItems.forEach(i => i.classList.remove('active'));
-            document.getElementById('About_you').classList.add('active');
-            topStickyBar.style.height = '120px';
-            articleClassesContainer.forEach(articleContainer=>{
-                articleContainer.style.display='none'
-            })
-            aboutYouContainer.style.display = 'flex';
-            aboutYouContainer.style.transform = 'translateX(0%)';
-	    });
+		display_content.style.display='none';
+		})
+		benfekSelectedArticles.style.display = 'flex';
+		benfekSelectedArticles.style.transform = 'translateX(0%)';
+		serviceHeader.style.display = 'none';
+		searchContainer.style.display = 'none';
+	
+	let isDisplayed = false
+	searchIcon.addEventListener('click', ()=>{  
+		if(isDisplayed)
+		{
+		searchContainer.style.display = 'none';
+		topStickyBar.style.height = '120px';
+		// benfekWrapper.style.paddingTop= '120px'
+		isDisplayed = false}
+		else
+		{   searchContainer.style.display = 'block';
+			topStickyBar.style.height = '180px';
+			// benfekWrapper.style.paddingTop= '180px';
+			isDisplayed = true}
+		})
+	
+	
+		benfekServiceIconText.forEach(text=>{
+	text.style.display = 'none'
+	})
+	menuItems.forEach(i => i.classList.remove('active'));
+	document.getElementById('About_you').classList.add('active');
+	topStickyBar.style.height = '120px';
+	articleClassesContainer.forEach(articleContainer=>{
+		articleContainer.style.display='none'
+	})
+	aboutYouContainer.style.display = 'flex';
+	aboutYouContainer.style.transform = 'translateX(0%)';
+});
 
 	const my_nutrient_picture = document.querySelectorAll(".my_nutrient_picture");
 	const nextBtnNutrient_type = document.querySelector(
@@ -383,7 +425,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		} else {
 			prevBtnNutrient_type.style.color = "grey";
 		}
-	});
+});
 
 	NutrientTypeGlassCover.forEach((glassCover) => {
 		const revealButton = glassCover.querySelector("button");

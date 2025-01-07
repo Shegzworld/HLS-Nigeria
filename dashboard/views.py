@@ -80,14 +80,14 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         
         blog_list = Blog.objects.all().order_by('-created_at') #Blog.objects.all()
         blog_paginator = Paginator(blog_list, 10)
-        blog_page_number = self.request.GET.get('page', 1)
+        blog_page_number = self.request.GET.get('page')
         blog_page = blog_paginator.get_page(blog_page_number)
         context['blog_list'] = blog_page
         
         
         podcast_list = Podcast.objects.annotate(episode_count=Count('episodes'))
-        podcast_paginator = Paginator(podcast_list, 5)
-        podcast_page_number = self.request.GET.get('page', 1)
+        podcast_paginator = Paginator(podcast_list, 10)
+        podcast_page_number = self.request.GET.get('page')
         podcast_page = podcast_paginator.get_page(podcast_page_number)
         context['podcast_list'] = podcast_page
 

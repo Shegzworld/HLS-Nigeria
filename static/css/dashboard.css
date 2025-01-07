@@ -151,17 +151,35 @@ body {
 .hamburger_menu {
     display: none;
     position: absolute;
-    top: 35px;
+    top: 60px;
+    top: 0;
     left: 0;
-    background-color: #fff;
+    width: 75vw;
+    height: 75vh;
+    background-color: #ece8e8;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 8px 0;
-    padding-top: 40px;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: 300px;
-    width: 40%;
     z-index: 900000;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.hamburger_menu .menu-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.hamburger_menu .menu-header h2 {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
 }
 
 #close_icon {
@@ -184,7 +202,7 @@ body {
 
 .hamburger_menu a {
     display: block;
-    padding: 8px 16px;
+    padding: 10px;
     color: #333;
     text-decoration: none;
     text-align: center;
@@ -193,6 +211,10 @@ body {
 
 .hamburger_menu a:hover {
     background-color: #f0f0f0;
+}
+
+.hamburger_menu a:last-child {
+    border-bottom: none;
 }
 
 .logo {
@@ -214,35 +236,41 @@ body {
 .dropdown_menu {
     display: none;
     position: absolute;
-    top: 35px;
+    top: 60px;
     right: 0;
+    width: 50vw;
+    height: 28vh;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 8px 0;
+    padding: 20px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 800000;
-    height: 300px;
-    width: 45%;
-}
-
-.user_icon:hover .dropdown_menu {
-    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 450;
 }
 
 .dropdown_menu a {
     display: block;
-    padding: 8px 16px;
-    padding-top: 20px;
-    color: #333;
-    text-decoration: none;
-    font-size: 1.5rem;
+    padding:  10px 0;
+    border-bottom: 1px solid #ccc;
     text-align: center;
+    text-decoration: none;
+    color: #333;
 }
 
 .dropdown_menu a:hover {
     background-color: #f0f0f0;
 }
+
+/* .dropdown_menu a:first-child {
+    margin-top: 30px;
+} */
+
+/* .dropdown_menu a:last-child {
+    border-bottom: none;
+} */
 
 
 /* Top sticky bar- search */
@@ -1023,7 +1051,7 @@ body {
     flex-direction: column;
     min-width: 100%;
     justify-content: flex-start;
-    gap: 5px;
+    /* gap: 5px; */
     height: 100%;
     position: absolute;
     padding: 20px 0px;

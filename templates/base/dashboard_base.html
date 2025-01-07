@@ -22,6 +22,9 @@
 					<div id="menu_icon">
 						<a href="#"><i class="fas fa-bars"></i></a>
 						<div class="hamburger_menu" id="menu_dropdown_menu">
+							<div class="menu-header">
+								<h2>Quick Explore!</h2>
+							</div>
 							<a href="{% url 'home:homepage' %}">Home</a>
 							<a href="#">Market</a>
 							<a href="#">Media</a>
@@ -33,12 +36,11 @@
 								method="post"
 							>
 								{% csrf_token %}
-							</form>
-							<a
+								<a
 								href="#"
 								onclick="document.getElementById('logout-form').submit()"
-								>Logout</a
-							>
+								>Logout</a>
+							</form>
 							<span id="close_icon">&times;</span>
 						</div>
 					</div>
