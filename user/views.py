@@ -10,6 +10,93 @@ from django.conf import settings
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.response import Response
+from rest_framework import status
+from .models import Benfek, Principal
+from .serializers import BenfekSerializer, PrincipalSerializer
+from rest_framework.permissions import IsAuthenticated
+
+@api_view(['GET', 'POST'])
+@permission_classes([IsAuthenticated])
+def beneficiary_list(request):
+    if request.method == 'GET':
+        # Allow a principal to only see their beneficiaries
+        principal_id = request.user.id
+        beneficiaries = Benfek.objects.filter(principal_id=principal_id)
+        serializer = BenfekSerializer(beneficiaries, many=True)
+        return Response(serializer.data)
+
+    elif request.method == 'POST':
+        data = request.data
+        # Attach the principal ID to the request data
+        data['principal'] = request.user.id
+        serializer = BenfekSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET', 'PUT', 'DELETE'])
+@permission_classes([IsAuthenticated])
+def beneficiary_detail(request, pk):
+    try:
+        beneficiary = Benfek.objects.get(pk=pk, principal_id=request.user.id)
+    except Benfek.DoesNotExist:
+        return Response({'error': 'Beneficiary not found or not authorized'}, status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = BenfekSerializer(beneficiary)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        serializer = BenfekSerializer(beneficiary, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    elif request.method == 'DELETE':
+        beneficiary.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+@api_view(['GET', 'POST'])
+def principal_list(request):
+    if request.method == 'GET':
+        principals = Principal.objects.all()
+        serializer = PrincipalSerializer(principals, many=True)
+        return Response(serializer.data)
+
+    elif request.method == 'POST':
+        serializer = PrincipalSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+@api_view(['GET', 'PUT', 'DELETE'])
+def principal_detail(request, pk):
+    try:
+        principal = Principal.objects.get(pk=pk)
+    except Principal.DoesNotExist:
+        return Response({'error': 'Principal not found'}, status=status.HTTP_404_NOT_FOUND)
+
+    if request.method == 'GET':
+        serializer = PrincipalSerializer(principal)
+        return Response(serializer.data)
+
+    elif request.method == 'PUT':
+        serializer = PrincipalSerializer(principal, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    elif request.method == 'DELETE':
+        principal.delete()
+        return Response(status=status.HTTP_204_NO_CONTENT)
+
+
 
 @csrf_exempt
 def register_view(request):

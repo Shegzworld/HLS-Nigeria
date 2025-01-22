@@ -1,0 +1,7 @@
+<!-- templates/payments/initialize_payment.html -->
+<form action="{% url 'initialize_payment' %}" method="post">
+    {% csrf_token %}
+    <input type="email" name="email" placeholder="Your email" required>
+    <input type="number" name="amount" placeholder="Amount (₦)" required>
+    <button type="submit">Pay Now</button>
+</form>
