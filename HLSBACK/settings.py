@@ -23,7 +23,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 CORS_ALLOWED_ORIGINS  = [
     'https://hlsnigeria-e0c4b5df87f5.herokuapp.com',  # Your Heroku deployment
-    'http://127.0.0.1:5173',  # Localhost for testing on local development server
+    'http://localhost:5173',  # Localhost for testing on local development server
     'https://hls.com.ng',  # Production or main domain if hosted here
     'https://www.hls.com.ng',
     'https://hls-vr1z.onrender.com'  # Render deployment domain
