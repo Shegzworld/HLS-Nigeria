@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const lifestyleDisplayScreen = document.querySelector('#lifestyle_display_screen');
     const healthConditionDisplayScreen = document.querySelector('#health_condition_display_screen');
     const preferenceDisplayScreen = document.querySelector('#preference_display_screen');
-    
-    
+
+
     takeQuizBasics.forEach(takeQuizButton =>{
         displayScreens.forEach(displayScreen =>{
             displayScreen.style.display = 'none';
@@ -191,5 +191,12 @@ document.addEventListener('DOMContentLoaded', () => {
         
         })
     })
+    const cancelQuizDiv = document.querySelector('.cancel-quiz');
+    const quizUrl = cancelQuizDiv.dataset.quizUrl;
+
+    cancelQuizDiv.addEventListener('click', () => {
+        window.location.href = quizUrl;
+    });
+
 })
 

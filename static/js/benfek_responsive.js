@@ -81,16 +81,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	const dropdownMenu = document.getElementById('user_dropdown_menu');
 
 	userIcon.addEventListener('click', () => {
-	dropdownMenu.style.top = userIcon.offsetTop + userIcon.offsetHeight + 'px';
-	dropdownMenu.style.transform = 'translateX(0)';
-	dropdownMenu.style.transition = 'transform 0.5s ease-in-out';
 	dropdownMenu.style.display = 'block';
 	});
 
 	document.addEventListener('click', (event) => {
 	if (!userIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
-	dropdownMenu.style.transform = 'translateX(100%)';
-	dropdownMenu.style.transition = 'transform 0.5s ease-in-out';
+		dropdownMenu.style.display = 'none';
 	}
 	});
 
@@ -154,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			display_contents.forEach((display_content) => {
 				display_content.style.display = "none";
 			});
-			console.log("clicked");
 			serviceHeader.style.display = "block";
 			topStickyBar.style.height = "250px";
 			searchContainer.style.display = "none";
@@ -186,7 +181,6 @@ document.addEventListener("DOMContentLoaded", function () {
 			this.classList.add("active");
 			Nutrient_type.classList.add("active");
 			nutrientTypeGallery.style.display = "flex";
-			nutrientTypeGallery.style.paddingTop = "0px";
 			nutrient_type_container.style.display = "flex";
 			nutrient_type_container.style.transform = "translateX(0%)";
 		}
@@ -447,7 +441,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			glassCover.style.border = "0px";
 			glassCoverText.style.opacity = "0";
 			revealButton.style.opacity = "0";
-			labelBg.style.opacity = "1";
+			labelBg.style.display = "flex";
 		});
 	});
 
@@ -459,8 +453,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			selected_nutrient_screen.style.transition = "transform 1s";
 			selected_nutrient_screen.style.transform = "translateX(0%)";
 
-			backToNutrientPack =
-				selected_nutrient_screen.querySelector(".fa-arrow-left");
+			backToNutrientPack = selected_nutrient_screen.querySelector(".fa-arrow-left");
 			backToNutrientPack.addEventListener("click", () => {
 				selected_nutrient_screen.style.transform = "translateX(100%)";
 				selected_nutrient_screen.style.display = "none";

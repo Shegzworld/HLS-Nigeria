@@ -18,7 +18,6 @@ const closeClinicalStudyBtn = document.getElementById('close-clinical-study-btn'
 // back to gallery from product detail
 
 
-
 // Add event listeners
 commonDetailsTab.addEventListener('click', () => {
     commonDetailsTab.classList.add('active');
@@ -30,50 +29,74 @@ commonDetailsTab.addEventListener('click', () => {
 });
 
 benefitsTab.addEventListener('click', () => {
-    benefitHeaders[0].click();
-    benefitsTab.classList.add('active');
-    benefitsContent.classList.add('active');
-    commonDetailsContent.classList.remove('active');
-    liveReviewsContent.classList.remove('active');
-    commonDetailsTab.classList.remove('active');
-    liveReviewsTab.classList.remove('active');
-    // Close previously opened contents
-    benefitHeaders.forEach((header) => {
-      const benefitContent = header.nextElementSibling;
-      benefitContent.style.display = 'none';
-    });
-
-    // Make the first benefit header display its content by default
-    const firstBenefitHeader = benefitHeaders[0];
-    const firstBenefitContent = firstBenefitHeader.nextElementSibling;
-    firstBenefitContent.style.display = 'block';
+  benefitsTab.classList.add('active');
+  benefitsContent.classList.add('active');
+  
+  // Hide other tabs and contents
+  commonDetailsTab.classList.remove('active');
+  commonDetailsContent.classList.remove('active');
+  liveReviewsTab.classList.remove('active');
+  liveReviewsContent.classList.remove('active');
+  
+  // Show the first benefit content by default and hide its label
+  const firstBenefitHeader = document.querySelector('.benefit-header');
+  const firstBenefitContent = firstBenefitHeader.children[1];
+  const firstBenefitLabel = firstBenefitHeader.querySelector('.benefit-label');
+  firstBenefitContent.style.display = 'block';
+  firstBenefitLabel.style.display = 'none';
 });
 
 
-benefitHeaders.forEach(function(header) {
-    header.addEventListener('click', function() {
-    const benefitContent = header.nextElementSibling;
-    const clinicalStudiesContainer = benefitContent.nextElementSibling;
-    // header.nextElementSibling.nextElementSibling.style.display = 'flex';
-
-      benefitHeaders.forEach(function(otherHeader) {
+function initBenefitToggles() {
+  const benefitHeaders = document.querySelectorAll('.benefit-header');
+  benefitHeaders.forEach((header) => {
+    header.addEventListener('click', () => {
+      // Close previously opened contents
+      benefitHeaders.forEach((otherHeader) => {
         if (otherHeader !== header) {
-          otherHeader.nextElementSibling.style.display = 'none';
-          otherHeader.nextElementSibling.nextElementSibling.style.display = 'none'
+          const otherContent = otherHeader.children[1];
+          otherContent.style.display = 'none';
+          const otherLabel = otherHeader.querySelector('.benefit-label');
+          otherLabel.style.display = 'block';
         }
       });
-
-      benefitContent.style.display = benefitContent.style.display === 'block' ? 'none' : 'block';
-      header.nextElementSibling.nextElementSibling.style.display = header.nextElementSibling.nextElementSibling.style.display === 'flex' ? 'none' : 'flex';
-    });
-
-    clinicalStudiesBtns.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-      const clinicalStudiesContainer = btn.nextElementSibling;
-      clinicalStudiesContainer.style.display = clinicalStudiesContainer.style.display === 'block' ? 'none' : 'block';
+      // Hide the label of the currently clicked benefit header
+      const label = header.querySelector('.benefit-label');
+      label.style.display = 'none';
+      // Display the benefit content of the clicked header
+      header.children[1].style.display = 'block';
+      // header.children[1].style.backgroundColor = 'gray';
     });
   });
-})
+}
+
+initBenefitToggles();
+
+
+// benefitHeaders.forEach(function(header) {
+//     header.addEventListener('click', function() {
+//     const benefitContent = header.children[0].nextElementSibling;;
+//     // const clinicalStudiesContainer = benefitContent.nextElementSibling;
+//     // header.nextElementSibling.nextElementSibling.style.display = 'flex';
+
+//       benefitHeaders.forEach(function(otherHeader) {
+//         if (otherHeader !== header) {
+//           otherHeader.nextElementSibling.style.display = 'none';
+//           otherHeader.nextElementSibling.nextElementSibling.style.display = 'none'
+//         }
+//       });
+
+//       benefitContent.style.display = benefitContent.style.display === 'block' ? 'none' : 'block';
+//       header.nextElementSibling.nextElementSibling.style.display = header.nextElementSibling.nextElementSibling.style.display === 'flex' ? 'none' : 'flex';
+//     });
+
+//     clinicalStudiesBtns.forEach(function(btn) {
+//     btn.addEventListener('click', function() {
+//       const clinicalStudiesContainer = btn.nextElementSibling;
+//       clinicalStudiesContainer.style.display = clinicalStudiesContainer.style.display === 'block' ? 'none' : 'block';
+//     });
+//   });
+// })
 
 liveReviewsTab.addEventListener('click', () => {
     liveReviewsContent.classList.add('active');
@@ -88,6 +111,7 @@ liveReviewsTab.addEventListener('click', () => {
     })
     document.querySelector('#audio-reviews-list').style.display = 'flex';
     document.querySelector('#audio-reviews-list').style.justifyContent = 'space-around';
+    document.querySelector('#audio-reviews-list').style.flexWrap= 'nowrap';
 })
     
 // Get all review headers
@@ -111,6 +135,25 @@ liveReviewsTab.addEventListener('click', () => {
     }
   });
 });
+
+const reviewContainers = document.querySelectorAll('.review-container');
+
+// Loop through each review container
+reviewContainers.forEach((container) => {
+  // Get the upvotes and downvotes
+  const upvotes = parseInt(container.querySelector('.upvotes').textContent);
+  const downvotes = parseInt(container.querySelector('.downvotes').textContent);
+
+  // Update the background color based on the votes
+  if (upvotes > downvotes) {
+    container.classList.add('positive');
+  } else if (upvotes < downvotes) {
+    container.classList.add('negative');
+  } else {
+    container.classList.add('neutral');
+  }
+});
+
 
 clinicalStudiesBtns.forEach((btn) => {
 btn.addEventListener('click', () => {
@@ -137,7 +180,9 @@ benefitSelect.addEventListener('change', () => {
 });
 });
 });
-});
+
+})
+
 function goBack() {
         window.history.back();
     }
