@@ -1,65 +1,3 @@
-<!-- 
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>File Upload Form</title>
-    <link rel="stylesheet" href="premium.css">
-</head>
-
-<body>
-    <div class="container">
-        <form id="upload-form">
-            <div class="accordion">
-                <label for="invoices" class="accordion-label">Invoices (0.4%)</label>
-                <div class="accordion-content">
-                    <input type="file" id="invoices" name="invoices" multiple>
-                    <span id="invoices-value">0%</span>
-                </div>
-            </div>
-            <div class="accordion">
-                <label for="receipts" class="accordion-label">Receipts (0.2%)</label>
-                <div class="accordion-content">
-                    <input type="file" id="receipts" name="receipts" multiple>
-                    <span id="receipts-value">0%</span>
-                </div>
-            </div>
-            <div class="accordion">
-                <label for="best-pharmacies" class="accordion-label">Best 3 Pharmacies (0.1%) <span>(Limit:
-                        3)</span></label>
-                <div class="accordion-content">
-                    <textarea id="best-pharmacies" name="best-pharmacies"></textarea>
-                    <span id="best-pharmacies-value">0%</span>
-                </div>
-            </div>
-            <div class="accordion">
-                <label for="supplements" class="accordion-label">Names of 10 Supplements you wish for (0.1%)
-                    <span>(Limit: 10)</span></label>
-                <div class="accordion-content">
-                    <input type="text" id="supplements" name="supplements"
-                        placeholder="Enter supplement names separated by commas">
-                    <span id="supplements-value">0%</span>
-                </div>
-            </div>
-            <div class="accordion">
-                <label for="prescription-medicines" class="accordion-label">Names of 10 prescription medicine you
-                    currently use (0.1%) <span>(Limit: 10)</span></label>
-                <div class="accordion-content">
-                    <input type="text" id="prescription-medicines" name="prescription-medicines"
-                        placeholder="Enter medicine names separated by commas">
-                    <span id="prescription-medicines-value">0%</span>
-                </div>
-            </div>
-            <button class="submit-btn" type="submit">Submit</button>
-            <div class="total-value">Total Value: 0%</div>
-        </form>
-    </div>
-
-    <script src="premium.js"></script>
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
@@ -67,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Detail Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-<YOUR-INTEGRITY-CODE-HERE>" crossorigin="anonymous" />
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+			integrity="sha512-<YOUR-INTEGRITY-CODE-HERE>"
+			crossorigin="anonymous"
+		/>
     <link rel="stylesheet" href="{% static 'css/product_info.css'%}">
 </head>
 

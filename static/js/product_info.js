@@ -39,6 +39,14 @@ benefitsTab.addEventListener('click', () => {
   liveReviewsContent.classList.remove('active');
   
   // Show the first benefit content by default and hide its label
+  const allBenefitHeaders = document.querySelectorAll('.benefit-header');
+  allBenefitHeaders.forEach((benefitHeader) => {
+    const benefitContent = benefitHeader.children[1];
+          benefitContent.style.display = 'none';
+          const benefitLabel = benefitHeader.querySelector('.benefit-label');
+          benefitLabel.style.display = 'block';
+  })
+
   const firstBenefitHeader = document.querySelector('.benefit-header');
   const firstBenefitContent = firstBenefitHeader.children[1];
   const firstBenefitLabel = firstBenefitHeader.querySelector('.benefit-label');
@@ -65,7 +73,6 @@ function initBenefitToggles() {
       label.style.display = 'none';
       // Display the benefit content of the clicked header
       header.children[1].style.display = 'block';
-      // header.children[1].style.backgroundColor = 'gray';
     });
   });
 }
