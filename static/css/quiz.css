@@ -158,6 +158,17 @@ header p {
     margin: auto;
 }
 
+.cancel-quiz {
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
 
 @media(max-width: 480px) {
 
@@ -364,6 +375,23 @@ header p {
         object-fit: contain;
     }
 
+    .cancel-quiz {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: chocolate;
+        border-top: 1px solid #ddd;
+        padding: 0 10px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .cancel-quiz::before {
+        content: '\2190'; /* Unicode character for left arrow */
+        margin-right: 10px;
+        font-size: 20px;
+    }
 
     .form_container_screen {
         position: relative;

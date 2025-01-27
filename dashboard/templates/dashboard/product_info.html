@@ -100,7 +100,8 @@
                     <p>Description: {{product.description}}</p>
                     <p>Ratings: 4.5/5{{product.rating}}</p>
                 </div>
-                <div class="benefits" id="benefits-content">
+                
+                <!-- <div class="benefits" id="benefits-content">
                     <div class="benefit-container" id="fortifies-benefit">
                         <div class="benefit-header">
                             <span>Fortifies:</span>
@@ -117,7 +118,7 @@
                             <span class="benefit-list">Benefit 2</span>
                             <span class="benefit-list">Benefit 3</span>
                         </div>
-                        <!-- <select class="benefit-select" style="display: none;">
+                        <select class="benefit-select" style="display: none;">
                             <option value="File 1.pdf">Benefit 1</option>
                             <option value="File 2.pdf">Benefit 2</option>
                             <option value="File 3.pdf">Benefit 3</option>
@@ -125,70 +126,196 @@
                         <div class="file-display" style="display: none;">
                             <button class="close-btn">X</button>
                             <iframe src="" frameborder="0" width="100%" height="500"></iframe>
-                        </div> -->
+                        </div>
+                    </div> -->
+                <div class="benefits" id="benefits-content">
+                    <div class="benefit-container" id="fortifies-benefit">
+                        <div class="benefit-header">
+                            <label for="fortifies-content" class="benefit-label">Fortifying Benefits</label>
+                            <div class="benefit-content">
+                                <div class="input-container">
+                                    <span>Fortifies:</span>
+                                    <input type="text" placeholder="select or search research proof">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div id="fortifies-content" style="display: flex;">
+                                    <!-- content here -->
+                                    <span class="benefit-list">Benefit 1</span>
+                                    <span class="benefit-list">Benefit 2</span>
+                                    <span class="benefit-list">Benefit 3</span>
+                                    <span class="benefit-list">Benefit 1</span>
+                                    <span class="benefit-list">Benefit 2</span>
+                                    <span class="benefit-list">Benefit 3</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                
+                    <!-- <div class="benefit-container" id="heals-benefit">
+                            <div class="benefit-header">
+                                <span>Heals:</span>
+                                <div class="input-container">
+                                    <input type="text" placeholder="select or search research proof">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="benefit-content">
+                                <span class="benefit-list">Benefit 4</span>
+                                <span class="benefit-list">Benefit 5</span>
+                                <span class="benefit-list">Benefit 6</span>
+                            </div>
+                            <select class="benefit-select" style="display: none;">
+                                <option value="File 1.pdf">Benefit 1</option>
+                                <option value="File 2.pdf">Benefit 2</option>
+                                <option value="File 3.pdf">Benefit 3</option>
+                            </select>
+                            <div class="file-display" style="display: none;">
+                                <button class="close-btn">X</button>
+                                <iframe src="" frameborder="0" width="100%" height="500"></iframe>
+                            </div>
+                        </div> -->
                     <div class="benefit-container" id="heals-benefit">
                         <div class="benefit-header">
-                            <span>Heals:</span>
-                            <!-- <div class="input-container">
-                                <input type="text" placeholder="select or search research proof">
-                                <i class="fas fa-search"></i>
-                            </div> -->
-                        </div>
-                        <div class="benefit-content">
-                            <span class="benefit-list">Benefit 4</span>
-                            <span class="benefit-list">Benefit 5</span>
-                            <span class="benefit-list">Benefit 6</span>
-                            <!-- Add more benefits here -->
-                        </div>
-                        <select class="benefit-select" style="display: none;">
-                            <option value="File 1.pdf">Benefit 1</option>
-                            <option value="File 2.pdf">Benefit 2</option>
-                            <option value="File 3.pdf">Benefit 3</option>
-                        </select>
-                        <div class="file-display" style="display: none;">
-                            <button class="close-btn">X</button>
-                            <iframe src="" frameborder="0" width="100%" height="500"></iframe>
+                            <label for="heals-content" class="benefit-label">Healing Support</label>
+                            <div class="benefit-content">
+                                <div class="input-container">
+                                    <span>Heals:</span>
+                                    <input type="text" placeholder="select or search research proof">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div id="heals-content">
+                                    <span class="benefit-list">Benefit 4</span>
+                                    <span class="benefit-list">Benefit 5</span>
+                                    <span class="benefit-list">Benefit 6</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    
+                    <!-- <div class="benefit-container" id="treats-benefit">
+                            <div class="benefit-header">
+                                <span>Side effects treatment:</span>
+                                <div class="input-container">
+                                    <input type="text" placeholder="select or search research proof">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                            <div class="benefit-content">
+                                <span class="benefit-list">Benefit 7</span>
+                                <span class="benefit-list">Benefit 8</span>
+                                <span class="benefit-list">Benefit 9</span>
+                            </div>
+                            <select class="benefit-select" style="display: none;">
+                                <option value="File 1.pdf">Benefit 1</option>
+                                <option value="File 2.pdf">Benefit 2</option>
+                                <option value="File 3.pdf">Benefit 3</option>
+                            </select>
+                            <div class="file-display" style="display: none;">
+                                <button class="close-btn">X</button>
+                                <iframe src="" frameborder="0" width="100%" height="500"></iframe>
+                            </div>
+                        </div>
+                        <div class="overlay" style="display: none;"></div>
+                    </div> -->
                     <div class="benefit-container" id="treats-benefit">
                         <div class="benefit-header">
-                            <span>Side effects treatment:</span>
-                            <!-- <div class="input-container">
-                                <input type="text" placeholder="select or search research proof">
-                                <i class="fas fa-search"></i>
-                            </div> -->
-                        </div>
-                        <div class="benefit-content">
-                            <span class="benefit-list">Benefit 7</span>
-                            <span class="benefit-list">Benefit 8</span>
-                            <span class="benefit-list">Benefit 9</span>
-                            <!-- Add more benefits here -->
-                        </div>
-                        <select class="benefit-select" style="display: none;">
-                            <option value="File 1.pdf">Benefit 1</option>
-                            <option value="File 2.pdf">Benefit 2</option>
-                            <option value="File 3.pdf">Benefit 3</option>
-                        </select>
-                        <div class="file-display" style="display: none;">
-                            <button class="close-btn">X</button>
-                            <iframe src="" frameborder="0" width="100%" height="500"></iframe>
+                            <label for="treats-content" class="benefit-label">Effects For:</label>
+                            <div class="benefit-content">
+                                <div class="input-container">
+                                    <span>Side effects treatment:</span>
+                                    <input type="text" placeholder="select or search research proof">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div id="treats-content">
+                                    <!-- content here -->
+                                    <span class="benefit-list">Benefit 7</span>
+                                    <span class="benefit-list">Benefit 8</span>
+                                    <span class="benefit-list">Benefit 9</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="overlay" style="display: none;"></div>
                 </div>
                 <div class="live-reviews" id="live-reviews-content">
-                    <h2 id="audio-reviews">Audio Reviews:</h2>
+                    <h2 id="audio-reviews">Audio Reviews:</h2> 
                     <ul id="audio-reviews-list" class="reviews-list">
-                        <li>Review 1</li>
-                        <li>Review 2</li>
-                        <li>Review 3</li>
-                        <li>Review 3</li>
-                        <li>Review 3</li>
-                        <li>Review 3</li>
-                        <li>Review 3</li>
+                        <li>
+                            <div class="review-container">
+                                <!-- <div class="vote-container">
+                                    <span class="upvotes">50 <i class="fas fa-thumbs-up"></i></span>
+                                    <span class="downvotes">20 <i class="fas fa-thumbs-down"></i></span>
+                                </div> -->
+                                <div class="content-container">
+                                    <i class="fas fa-headphones headphone-icon"></i>
+                                    <div class="speaker-duration">
+                                        <span class="speaker-name">Speaker 1</span>
+                                        <span class="duration">1 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-container">
+                                <!-- <div class="vote-container">
+                                    <span class="upvotes">50 <i class="fas fa-thumbs-up"></i></span>
+                                    <span class="downvotes">20 <i class="fas fa-thumbs-down"></i></span>
+                                </div> -->
+                                <div class="content-container">
+                                    <i class="fas fa-headphones headphone-icon"></i>
+                                    <div class="speaker-duration">
+                                        <span class="speaker-name">Speaker 1</span>
+                                        <span class="duration">1 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-container">
+                                <!-- <div class="vote-container">
+                                    <span class="upvotes">50 <i class="fas fa-thumbs-up"></i></span>
+                                    <span class="downvotes">20 <i class="fas fa-thumbs-down"></i></span>
+                                </div> -->
+                                <div class="content-container">
+                                    <i class="fas fa-headphones headphone-icon"></i>
+                                    <div class="speaker-duration">
+                                        <span class="speaker-name">Speaker 1</span>
+                                        <span class="duration">1 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-container">
+                                <!-- <div class="vote-container">
+                                    <span class="upvotes">50 <i class="fas fa-thumbs-up"></i></span>
+                                    <span class="downvotes">20 <i class="fas fa-thumbs-down"></i></span>
+                                </div> -->
+                                <div class="content-container">
+                                    <i class="fas fa-headphones headphone-icon"></i>
+                                    <div class="speaker-duration">
+                                        <span class="speaker-name">Speaker 1</span>
+                                        <span class="duration">1 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review-container">
+                                <!-- <div class="vote-container">
+                                    <span class="upvotes">50 <i class="fas fa-thumbs-up"></i></span>
+                                    <span class="downvotes">20 <i class="fas fa-thumbs-down"></i></span>
+                                </div> -->
+                                <div class="content-container">
+                                    <i class="fas fa-headphones headphone-icon"></i>
+                                    <div class="speaker-duration">
+                                        <span class="speaker-name">Speaker 1</span>
+                                        <span class="duration">1 min</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
-            
+
                     <h2 id="written-reviews">Written Reviews:</h2>
                     <ul id="written-reviews-list" class="reviews-list">
                         <li>Review 1</li>
