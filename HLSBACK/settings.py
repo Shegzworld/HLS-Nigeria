@@ -4,6 +4,7 @@ import os
 import django_heroku
 from environ import Env
 
+from datetime import timedelta
 env = Env()
 Env.read_env()
 ENVIRONMENT = env('ENVIRONMENT', default='production')
@@ -47,12 +48,14 @@ CORS_ALLOW_HEADERS = [
 CSRF_ALLOWED_ORIGINS = [
     "https://hls.com.ng",           # Your main domain
     "https://www.hls.com.ng",
+    "https://hlsnew.netlify.app",
     "https://hls-vr1z.onrender.com"  # Render deployment domain
 ]
 
 CORS_ORIGINS_WHITELIST = [
     "https://hls.com.ng",           # Your main domain
     "https://www.hls.com.ng",
+    "https://hlsnew.netlify.app",
     "https://hls-vr1z.onrender.com"  # Render deployment domain
 ]
 
@@ -79,12 +82,17 @@ INSTALLED_APPS = [
     'user',
     'dashboard',
     'blog',
+    'api',
     'podcasts',
     'NT_gallery',
     'crispy_forms',
     'crispy_bootstrap4',
     'widget_tweaks',
 ]
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=7),
+}
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',

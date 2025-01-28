@@ -13,6 +13,7 @@ urlpatterns = [
     path('product/', include('NT_gallery.urls')),
     path('store/', store_site.urls),
     path('', include('home.urls')),
+    path('api/', include('api.urls')),
     path('create-product/', index),
     path('user/', include('user.urls')),
     path('dashboard/', include('dashboard.urls')),
