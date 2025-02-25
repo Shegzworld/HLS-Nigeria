@@ -1,6 +1,7 @@
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticated
 from django.conf import settings
 import requests
@@ -40,8 +41,14 @@ class CustomerCreateView(APIView):
                 user=user,
                 name=data['name'],
                 phone=data['phone'],
-                role=data.get('role', 'benfek'),  # Default role is 'benfek'
-                address=data['address']
+                role=data.get('role', 'vendor'),  # Default role is 'benfek'
+                account_name=data['account_name'],
+                bank_name=data['bank_name'],
+                account_number=data['account_number'],
+            )
+            Wallet.objects.create(
+                user = user,
+                balance = 0,
             )
             return Response({'message': 'Customer created successfully', 'customer_id': customer.id}, status=status.HTTP_201_CREATED)
         except Exception as e:
@@ -152,7 +159,16 @@ class CustomerViewSet(viewsets.ModelViewSet):
     serializer_class = CustomerSerializer
 
     def get_queryset(self):
-        return Customer.objects.filter(user=self.request.user)
+        print(Customer.objects.filter(user=self.request.user.id))
+        return Customer.objects.filter(user=self.request.user.id)
+    
+    def get_object(self):
+        """Ensure that a user can only retrieve their own customers"""
+        queryset = self.get_queryset()
+        obj = queryset.filter(user=self.request.user.id).first()
+        if obj is None:
+            raise NotFound("No Customer lorem  matches the given query.")
+        return obj
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
@@ -237,7 +253,6 @@ class WalletBalanceView(APIView):
 
     def get(self, request, *args, **kwargs):
         try:
-            print(request.user)
             wallet = Wallet.objects.get(user=request.user)
             return Response({'balance': wallet.balance}, status=status.HTTP_200_OK)
         except Wallet.DoesNotExist:

@@ -28,6 +28,7 @@ CORS_ALLOWED_ORIGINS  = [
     'https://hls.com.ng',  # Production or main domain if hosted here
     'https://www.hls.com.ng',
     'https://hlsnew.netlify.app',
+    'http://localhost:5173',
     'https://hls-vr1z.onrender.com'  # Render deployment domain
 ]
 

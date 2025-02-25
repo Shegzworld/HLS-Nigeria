@@ -35,6 +35,8 @@ class Transaction(models.Model):
 class Customer(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     account_number = models.CharField(max_length=10,null=True,blank=True)
+    account_name = models.CharField(max_length=255,null=True,blank=True)
+    bank_name = models.CharField(max_length=255,null=True,blank=True)
     name = models.CharField(max_length=200,null=True,blank=True)
     phone = models.CharField(max_length=20,null=True,blank=True)
     role = models.CharField(max_length=20,default="benfek")
