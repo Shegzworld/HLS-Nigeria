@@ -18,7 +18,7 @@ router.register(r'supplements', SupplementViewSet, basename='supplement')
 router.register(r'articles', ArticleViewSet, basename='article')
 router.register(r'podcasts', PodcastViewSet, basename='podcast')
 router.register(r'health-conditions', HealthConditionViewSet, basename='health-condition')
-router.register(r'wallet/balance', WalletBalanceView, basename='wallet-balance'),
+router.register(r'wallet/balance', WalletBalanceView.as_view(), basename='wallet-balance'),
 
 urlpatterns = [
     path('', include(router.urls)),
