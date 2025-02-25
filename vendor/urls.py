@@ -24,5 +24,5 @@ urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('auth/register', CustomerCreateView.as_view(), name='create_customer'),  # Create customer
-    path('auth/login', UserLoginView.as_view(), name='login_user'),  # User login
+    path('auth/login', UserLoginView.as_view(), name='login_user'), 
 ]

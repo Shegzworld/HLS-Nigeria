@@ -18,7 +18,6 @@ router.register(r'supplements', SupplementViewSet, basename='supplement')
 router.register(r'articles', ArticleViewSet, basename='article')
 router.register(r'podcasts', PodcastViewSet, basename='podcast')
 router.register(r'health-conditions', HealthConditionViewSet, basename='health-condition')
-router.register(r'wallet/balance', WalletBalanceView.as_view(), basename='wallet-balance'),
 
 urlpatterns = [
     path('', include(router.urls)),
@@ -26,4 +25,5 @@ urlpatterns = [
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('auth/register', CustomerCreateView.as_view(), name='create_customer'),  # Create customer
     path('auth/login', UserLoginView.as_view(), name='login_user'),  # User login
+    path(r'wallet/balance', WalletBalanceView.as_view(), basename='wallet-balance'),
 ]
