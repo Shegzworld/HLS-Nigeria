@@ -237,6 +237,7 @@ class WalletBalanceView(APIView):
 
     def get(self, request, *args, **kwargs):
         try:
+            print(request.user)
             wallet = Wallet.objects.get(user=request.user)
             return Response({'balance': wallet.balance}, status=status.HTTP_200_OK)
         except Wallet.DoesNotExist:
