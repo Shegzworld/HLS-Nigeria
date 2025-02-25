@@ -228,3 +228,16 @@ class HealthConditionViewSet(viewsets.ModelViewSet):
         health_condition = self.get_object()
         serializer = self.get_serializer(health_condition)
         return Response(serializer.data)
+    
+class WalletBalanceView(APIView):
+    """
+    API view to retrieve the authenticated user's wallet balance.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, *args, **kwargs):
+        try:
+            wallet = Wallet.objects.get(user=request.user)
+            return Response({'balance': wallet.balance}, status=status.HTTP_200_OK)
+        except Wallet.DoesNotExist:
+            return Response({'error': 'Wallet not found'}, status=status.HTTP_404_NOT_FOUND)

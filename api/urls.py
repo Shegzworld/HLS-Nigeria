@@ -7,7 +7,7 @@ from rest_framework_simplejwt.views import (
 from .views import (
     WalletViewSet, TransactionViewSet, CustomerViewSet,
     SupplementViewSet, ArticleViewSet, PodcastViewSet,HealthConditionViewSet,
-    CustomerCreateView,UserLoginView
+    CustomerCreateView,UserLoginView,WalletBalanceView
 )
 
 router = DefaultRouter()
@@ -18,6 +18,7 @@ router.register(r'supplements', SupplementViewSet, basename='supplement')
 router.register(r'articles', ArticleViewSet, basename='article')
 router.register(r'podcasts', PodcastViewSet, basename='podcast')
 router.register(r'health-conditions', HealthConditionViewSet, basename='health-condition')
+router.register(r'my/balance', WalletBalanceView, name='wallet-balance'),
 
 urlpatterns = [
     path('', include(router.urls)),
