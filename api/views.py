@@ -1,6 +1,7 @@
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from django.utils.timezone import now
 from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticated
 from django.conf import settings
@@ -75,8 +76,87 @@ class WalletViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     serializer_class = WalletSerializer
 
+    
     def get_queryset(self):
         return Wallet.objects.filter(user=self.request.user)
+    
+    def get_object(self):
+        """Ensure that a user can only retrieve their own customers"""
+        queryset = self.get_queryset()
+        obj = queryset.filter(user=self.request.user.id).first()
+        if obj is None:
+            raise NotFound("No Wallet found  matches the given query.")
+        return obj
+
+    @action(detail=True, methods=['post'])
+    def withdraw_funds(self, request, pk=None):
+        wallet = self.get_object()
+        amount = request.data.get('amount')
+
+        if not amount or float(amount) <= 0:
+            return Response({'error': 'Invalid withdrawal amount'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        if  float(amount) < 500 :
+                return Response({'error': 'minimum withdrawal is 500'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+        amount = float(amount)
+
+        # Check if the user has already withdrawn twice this month
+        now_date = now()
+        current_month = now_date.month
+        current_year = now_date.year
+
+        withdrawals_this_month = Transaction.objects.filter(
+            wallet=wallet,
+            transaction_type='withdrawal',
+            date__year=current_year,
+            date__month=current_month
+        ).count()
+        
+        
+        if withdrawals_this_month >= 2:
+            return Response({'error': 'You can only withdraw twice per month'}, status=status.HTTP_403_FORBIDDEN)
+
+        if wallet.balance < amount :
+            return Response({'error': 'Insufficient balance'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Initialize Paystack transfer
+        headers = {
+            'Authorization': f'Bearer {settings.PAYSTACK_SECRET_KEY}',
+            'Content-Type': 'application/json',
+        }
+
+        transfer_data = {
+            'source': 'balance',
+            'reason': 'Wallet Withdrawal',
+            'amount': int(amount * 100),  # Convert to kobo
+            'recipient': request.data.get('recipient_code'),  # This should be stored beforehand
+        }
+
+        paystack_response = requests.post(
+            'https://api.paystack.co/transfer',
+            json=transfer_data,
+            headers=headers
+        )
+
+        response_data = paystack_response.json()
+        if paystack_response.status_code != 200 or response_data.get('status') != True:
+            return Response({'error': 'Withdrawal failed, please try again'}, status=status.HTTP_400_BAD_REQUEST)
+
+        # Deduct balance and create transaction record
+        wallet.balance -= amount
+        wallet.save()
+
+        Transaction.objects.create(
+            wallet=wallet,
+            amount=amount,
+            transaction_type='withdrawal',
+            status='pending',  # Paystack will confirm success later
+            reference=response_data['data']['reference']
+        )
+
+        return Response({'message': 'Withdrawal request submitted successfully', 'reference': response_data['data']['reference']}, status=status.HTTP_200_OK)
 
     @action(detail=True, methods=['post'])
     def initialize_payment(self, request, pk=None):

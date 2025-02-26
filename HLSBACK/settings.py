@@ -6,11 +6,12 @@ from environ import Env
 
 from datetime import timedelta
 env = Env()
-Env.read_env()
-ENVIRONMENT = env('ENVIRONMENT', default='production')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+Env.read_env(os.path.join(BASE_DIR, '.env'))
+ENVIRONMENT = env('ENVIRONMENT', default='production')
 
 
 # Quick-start development settings - unsuitable for production
@@ -18,6 +19,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
+
+if ENVIRONMENT == "development":
+    PAYSTACK_SECRET_KEY = env('PAYSTACK_SECRET_KEY_TEST')
+else:
+    PAYSTACK_SECRET_KEY = env('PAYSTACK_SECRET_KEY_PROD')
+    
+
+
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -143,9 +152,8 @@ WSGI_APPLICATION = 'HLSBACK.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DEBUG = True
 
-if DEBUG:
+if ENVIRONMENT == "development":
         DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
