@@ -338,22 +338,26 @@ class WalletBalanceView(APIView):
         except Wallet.DoesNotExist:
             return Response({'error': 'Wallet not found'}, status=status.HTTP_404_NOT_FOUND)
         
+class MonthlyWithdrawalCountView(APIView):
+    """
+    API view to retrieve the monthly withdrawal count for the authenticated user.
+    """
+    permission_classes = [IsAuthenticated]
 
-@action(detail=False, methods=['get'])
-def get_monthly_withdrawals(request):
-    user = request.user  # Get the authenticated user
-    current_year = now().year
-    current_month = now().month
+    def get(self, request, *args, **kwargs):
+        user = request.user  # Get the authenticated user
+        current_year = now().year
+        current_month = now().month
 
-    summary = MonthlyTransactionSummary.objects.filter(
-        user=user, 
-        year=current_year, 
-        month=current_month
-    ).first()
+        summary = MonthlyTransactionSummary.objects.filter(
+            user=user, 
+            year=current_year, 
+            month=current_month
+        ).first()
 
-    return Response({
-        "user": user.username,
-        "year": current_year,
-        "month": current_month,
-        "withdrawals_count": summary.withdrawals_count if summary else 0
-    })
+        return Response({
+            "user": user.username,
+            "year": current_year,
+            "month": current_month,
+            "withdrawals_count": summary.withdrawals_count if summary else 0
+        })
