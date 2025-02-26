@@ -32,6 +32,18 @@ class Transaction(models.Model):
     date = models.DateTimeField(auto_now_add=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    
+class MonthlyTransactionSummary(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    year = models.IntegerField()
+    month = models.IntegerField()
+    withdrawals_count = models.IntegerField(default=0)
+
+    class Meta:
+        unique_together = ('user', 'year', 'month')  # Ensure one entry per user per month
+
+    def __str__(self):
+        return f"{self.user.username} - {self.month}/{self.year} - Withdrawals: {self.withdrawals_count}"
 
 class Customer(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)

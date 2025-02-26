@@ -6,7 +6,7 @@ from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticated
 from django.conf import settings
 import requests
-from .models import Wallet, Transaction, Customer, Supplement, Article, Podcast,Health_Condition
+from .models import Wallet, Transaction, Customer,MonthlyTransactionSummary, Supplement, Article, Podcast,Health_Condition
 from .serializers import (
     WalletSerializer, TransactionSerializer, CustomerSerializer,
     SupplementSerializer, ArticleSerializer, PodcastSerializer,HealthConditionSerializer
@@ -337,3 +337,23 @@ class WalletBalanceView(APIView):
             return Response({'balance': wallet.balance}, status=status.HTTP_200_OK)
         except Wallet.DoesNotExist:
             return Response({'error': 'Wallet not found'}, status=status.HTTP_404_NOT_FOUND)
+        
+
+@action(detail=False, methods=['get'])
+def get_monthly_withdrawals(request):
+    user = request.user  # Get the authenticated user
+    current_year = now().year
+    current_month = now().month
+
+    summary = MonthlyTransactionSummary.objects.filter(
+        user=user, 
+        year=current_year, 
+        month=current_month
+    ).first()
+
+    return Response({
+        "user": user.username,
+        "year": current_year,
+        "month": current_month,
+        "withdrawals_count": summary.withdrawals_count if summary else 0
+    })
