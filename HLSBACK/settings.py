@@ -24,9 +24,6 @@ if ENVIRONMENT == "development":
     PAYSTACK_SECRET_KEY = env('PAYSTACK_SECRET_KEY_TEST')
 else:
     PAYSTACK_SECRET_KEY = env('PAYSTACK_SECRET_KEY_PROD')
-    
-
-
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -51,29 +48,39 @@ CORS_ALLOW_METHODS = [
 ]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = [
-    'content-type',
+    'accept',
+    'accept-encoding',
     'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
     'x-csrftoken',
+    'x-requested-with',
+    'headers',  # Add this line to allow the 'headers' field
 ]
 # Application definition
 CSRF_ALLOWED_ORIGINS = [
     "https://hls.com.ng",           # Your main domain
     "https://www.hls.com.ng",
     "https://hlsnew.netlify.app",
-    "https://hls-vr1z.onrender.com"  # Render deployment domain
+    "https://hls-vr1z.onrender.com"  
+    "http://localhost:5173"
 ]
 
 CORS_ORIGINS_WHITELIST = [
     "https://hls.com.ng",           # Your main domain
     "https://www.hls.com.ng",
     "https://hlsnew.netlify.app",
-    "https://hls-vr1z.onrender.com"  # Render deployment domain
+    "https://hls-vr1z.onrender.com",
+    "http://localhost:5173"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     "https://hls.com.ng",           # Your main domain
     "https://www.hls.com.ng",
     "https://hls-vr1z.onrender.com"  # Render deployment domain
+    "http://localhost:5173"
 ]
 
 CSRF_COOKIE_SECURE = True  # Ensures cookie is only sent over HTTPS
