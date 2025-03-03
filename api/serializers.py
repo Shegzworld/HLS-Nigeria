@@ -41,5 +41,5 @@ class PodcastSerializer(serializers.ModelSerializer):
 class HealthConditionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Health_Condition
-        fields = ['id', 'benfek', 'code', 'phone', 'current_medication','have_health_condition','health_condition','allergies','scary_issue']  
+        fields = ['id', 'benfek', 'code', 'phone', 'current_medication','have_health_condition','health_condition','allergies','scary_issue','is_registered']  
         read_only_fields = ['user']  # Ensure the 'user' field is read-only

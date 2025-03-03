@@ -65,6 +65,7 @@ class Health_Condition(models.Model):
     benfek= models.CharField(max_length=256,)
     code = models.CharField(max_length=8)
     phone = models.CharField(max_length=15)
+    is_registered = models.BooleanField(default=False)
     current_medication = models.CharField(max_length=256,null=True,blank=True)
     family_condition = models.CharField(max_length=256,null=True,blank=True)
     have_health_condition = models.CharField(max_length=3,null=True,blank=True)
