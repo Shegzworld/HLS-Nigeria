@@ -92,15 +92,18 @@ class WalletViewSet(viewsets.ModelViewSet):
     def withdraw_funds(self, request, pk=None):
         wallet = self.get_object()
         amount = request.data.get('amount')
+        customer = Customer.objects.filter(user=self.request.user.id).first()  # Ensure single object
+
+        if not customer or not customer.status:
+            return Response({'error': 'Your account is not verified'}, status=status.HTTP_400_BAD_REQUEST)
 
         if not amount or float(amount) <= 0:
             return Response({'error': 'Invalid withdrawal amount'}, status=status.HTTP_400_BAD_REQUEST)
-        
-        if  float(amount) < 500 :
-                return Response({'error': 'minimum withdrawal is 500'}, status=status.HTTP_400_BAD_REQUEST)
-
 
         amount = float(amount)
+
+        if amount < 500:
+            return Response({'error': 'Minimum withdrawal is 500'}, status=status.HTTP_400_BAD_REQUEST)
 
         # Check if the user has already withdrawn twice this month
         now_date = now()
@@ -113,12 +116,11 @@ class WalletViewSet(viewsets.ModelViewSet):
             date__year=current_year,
             date__month=current_month
         ).count()
-        
-        
+
         if withdrawals_this_month >= 2:
             return Response({'error': 'You can only withdraw twice per month'}, status=status.HTTP_403_FORBIDDEN)
 
-        if wallet.balance < amount :
+        if wallet.balance < amount:
             return Response({'error': 'Insufficient balance'}, status=status.HTTP_400_BAD_REQUEST)
 
         # Initialize Paystack transfer
@@ -141,7 +143,7 @@ class WalletViewSet(viewsets.ModelViewSet):
         )
 
         response_data = paystack_response.json()
-        if paystack_response.status_code != 200 or response_data.get('status') != True:
+        if paystack_response.status_code != 200 or not response_data.get('status', False):
             return Response({'error': 'Withdrawal failed, please try again'}, status=status.HTTP_400_BAD_REQUEST)
 
         # Deduct balance and create transaction record
@@ -156,7 +158,10 @@ class WalletViewSet(viewsets.ModelViewSet):
             reference=response_data['data']['reference']
         )
 
-        return Response({'message': 'Withdrawal request submitted successfully', 'reference': response_data['data']['reference']}, status=status.HTTP_200_OK)
+        return Response(
+            {'message': 'Withdrawal request submitted successfully', 'reference': response_data['data']['reference']},
+            status=status.HTTP_200_OK
+        )
 
     @action(detail=True, methods=['post'])
     def initialize_payment(self, request, pk=None):
