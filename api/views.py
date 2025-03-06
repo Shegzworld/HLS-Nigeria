@@ -278,15 +278,22 @@ class SupplementViewSet(viewsets.ModelViewSet):
         serializer.save(user=self.request.user)
         
     def update(self, request, *args, **kwargs):
-        partial = kwargs.pop('partial', False)
+    try:
         instance = self.get_object()
-        serializer = self.get_serializer(instance, data=request.data, partial=partial)
 
+        # Ensure the supplement belongs to the authenticated user
+        if instance.user != request.user:
+            return Response({'error': 'You do not have permission to update this supplement.'}, status=status.HTTP_403_FORBIDDEN)
+
+        serializer = self.get_serializer(instance, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        
+    except Supplement.DoesNotExist:
+        return Response({'error': 'Supplement not found.'}, status=status.HTTP_404_NOT_FOUND)
 
 
 class ArticleViewSet(viewsets.ModelViewSet):
