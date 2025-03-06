@@ -26,5 +26,5 @@ urlpatterns = [
     path('auth/register', CustomerCreateView.as_view(), name='create_customer'),  # Create customer
     path('auth/login', UserLoginView.as_view(), name='login_user'),  # User login
     path('wallet/balance', WalletBalanceView.as_view(), name='wallet-balance'),
-     path('wallet/withdrawals/count/', MonthlyWithdrawalCountView.as_view(), name='withdrawals-count'),
+    path('wallet/withdrawals/count/', MonthlyWithdrawalCountView.as_view(), name='withdrawals-count'),
     ]
