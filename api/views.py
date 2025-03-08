@@ -309,6 +309,15 @@ class ArticleViewSet(viewsets.ModelViewSet):
 class PodcastViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated]
     serializer_class = PodcastSerializer
+    
+    def post(self, request, *args, **kwargs):
+        data = request.data
+        user = request.user  # Extract the authenticated user from the token
+        serializer = PodcastSerializer(data=data)
+        if serializer.is_valid():
+            serializer.save(user=user)  # Associate the supplement with the user
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
     def get_queryset(self):
         return Podcast.objects.filter(user=self.request.user)
