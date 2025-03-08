@@ -313,6 +313,7 @@ class PodcastViewSet(viewsets.ModelViewSet):
     def post(self, request, *args, **kwargs):
         data = request.data
         user = request.user  # Extract the authenticated user from the token
+        print(user)
         serializer = PodcastSerializer(data=data)
         if serializer.is_valid():
             serializer.save(user=user)  # Associate the supplement with the user
@@ -321,6 +322,7 @@ class PodcastViewSet(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Podcast.objects.filter(user=self.request.user)
+    
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)

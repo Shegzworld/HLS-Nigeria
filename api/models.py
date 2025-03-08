@@ -107,7 +107,7 @@ class Podcast(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     audio_file = models.FileField(upload_to='podcasts/')
-    thumbnail = models.ImageField(upload_to='podcast_thumbnails/', null=True, blank=True)
+    thumbnail  = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
