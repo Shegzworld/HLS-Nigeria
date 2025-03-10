@@ -56,7 +56,7 @@
                 </div>
                 <ul class="menu-list" id="menu-list">
                     <li class="header">God's Ordained Health Care!</li>
-                    <li><a>Take Quiz</a></li>
+                    <li><a href="{% url 'user:quiz' %}">Take Quiz</a></li>
                     <li><a href="{% url 'user:login' %}">Dashboard</a></li>
                     <li><a href="#">Podcasts</a></li>
                     <li><a href="#">Breakthroughs</a></li>
@@ -72,7 +72,7 @@
                 <span>Food Extracts</span> <span>Nutrients</span> <span>Supplements</span>
             </div>
             <h1 class="caption_pitch"><span>Personalized Just For YOU.</span></h1>
-            <a class="quiz-button">Take Quiz</a>
+            <a href="{% url 'user:quiz' %}" class="quiz-button">Take Quiz</a>
             <div class="banner_doctor">
                 <img src="/static/home_images/bannerdoctor.png" alt="Banner Image">
             </div>
