@@ -6,55 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menuList = document.getElementById('menu-list');
 const bar = document.querySelector('.bar');
-// Get the modal, overlay, and quiz button elements
-const modal = document.createElement('div');
-const overlay = document.querySelector('.overlay');
-const quizButton = document.querySelector('.quiz-button');
-const hamburgerLink = document.querySelector('#menu-list li:nth-child(2) a');
 
-// Create the modal content
-modal.innerHTML = `
-  <div class="modal-content">
-    <label for="quiz-code">Enter Quiz Code:</label>
-    <input type="text" id="quiz-code" name="quiz-code">
-    <button id="submit-quiz-code">Submit</button>
-  </div>
-`;
-
-// Add the modal to the page
-document.body.appendChild(modal);
-
-// Add event listeners to the quiz button and hamburger link
-quizButton.addEventListener('click', () => {
-  overlay.style.display = 'block';
-  modal.style.display = 'block';
-});
-
-hamburgerLink.addEventListener('click', () => {
-  overlay.style.display = 'block';
-  modal.style.display = 'block';
-});
-
-// Add event listener to the overlay to close the modal
-overlay.addEventListener('click', () => {
-  overlay.style.display = 'none';
-  modal.style.display = 'none';
-});
-
-// Add event listener to the submit button
-document.getElementById('submit-quiz-code').addEventListener('click', (e) => {
-  e.preventDefault();
-  const quizCode = document.getElementById('quiz-code').value;
-  // TO DO: Add logic to validate the quiz code
-  if (quizCode !== '') {
-    window.location.href = '{% url 'home:quiz' %}';
-  } else {
-    alert('Please enter a valid quiz code');
-  }
-});
-
-
-bar.addEventListener('click', (e) => {
+  bar.addEventListener('click', (e) => {
   e.stopPropagation();
   menuList.classList.toggle('show-menu');
   overlay.classList.toggle('show-overlay');
