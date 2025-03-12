@@ -5,13 +5,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const menuList = document.getElementById('menu-list');
-const bar = document.querySelector('.bar');
+const bar = document.querySelector('.bar')
+console.log('yes')
 const overlay = document.querySelector('.overlay');
+const quizButton = document.querySelector('.quiz-button');
+const hamburgerLink = document.querySelector('#menu-list li:nth-child(2) a');
+const modal = document.querySelector('.modal-content');
+document.body.appendChild(modal);
+
+  
+
+// Add event listeners to the quiz button and hamburger link
+quizButton.addEventListener('click', () => {
+  overlay.style.display = 'block';
+  modal.style.display = 'block';
+});
+
+hamburgerLink.addEventListener('click', () => {
+  overlay.style.display = 'block';
+  modal.style.display = 'block';
+});
+
+// Add event listener to the overlay to close the modal
+overlay.addEventListener('click', () => {
+  overlay.style.display = 'none';
+  modal.style.display = 'none';
+});
+
+// Add event listener to the submit button
+document.getElementById('submit-quiz-code').addEventListener('click', (e) => {
+  e.preventDefault();
+  const quizCode = document.getElementById('quiz-code').value;
+  // TO DO: Add logic to validate the quiz code
+  if (quizCode !== '') {
+    const quizUrl = '{% url "home:quiz" %}';
+    window.location.href = quizUrl;
+  } else {
+    alert('Please enter a valid quiz code');
+  }
+});
 
 bar.addEventListener('click', (e) => {
   e.stopPropagation();
   menuList.classList.toggle('show-menu');
   overlay.classList.toggle('show-overlay');
+  console.log('print')
 });
 
 document.addEventListener('click', function(e) {
@@ -25,7 +63,7 @@ document.addEventListener('click', function(e) {
 
   const updateTestimonialVisibility = () => {
     testimonialBox.forEach((testimonial, index) => {
-      testimonial.style.left = `${(index - currentTestimonialView) *280}px`
+      testimonial.style.left = ${(index - currentTestimonialView) *280}px
     })
   }
 
@@ -57,7 +95,7 @@ document.addEventListener('click', function(e) {
 
   const updateFormVisibility = () => {
     productBox.forEach((product, index) => {
-      product.style.left = `${(index - currentProductView) *250}px`
+      product.style.left = ${(index - currentProductView) *250}px
     })
   }
 
@@ -82,4 +120,3 @@ document.addEventListener('click', function(e) {
   
   updateFormVisibility() // Initialize product display
 })
-
