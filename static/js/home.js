@@ -38,8 +38,7 @@ document.getElementById('submit-quiz-code').addEventListener('click', (e) => {
   const quizCode = document.getElementById('quiz-code').value;
   // TO DO: Add logic to validate the quiz code
   if (quizCode !== '') {
-    const quizUrl = '{% url "home:quiz" %}';
-    window.location.href = quizUrl;
+    window.location.href = /quiz/;
   } else {
     alert('Please enter a valid quiz code');
   }
