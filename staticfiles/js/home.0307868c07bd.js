@@ -94,7 +94,7 @@ document.addEventListener('click', function(e) {
 
   const updateFormVisibility = () => {
     productBox.forEach((product, index) => {
-      product.style.left = `${(index - currentProductView) *250}px`
+      product.style.left = ${(index - currentProductView) *250}px
     })
   }
 

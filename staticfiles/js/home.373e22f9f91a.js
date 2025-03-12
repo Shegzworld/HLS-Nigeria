@@ -62,7 +62,7 @@ document.addEventListener('click', function(e) {
 
   const updateTestimonialVisibility = () => {
     testimonialBox.forEach((testimonial, index) => {
-      testimonial.style.left = `${(index - currentTestimonialView) *280}px`
+      testimonial.style.left = ${(index - currentTestimonialView) *280}px
     })
   }
 
@@ -94,7 +94,7 @@ document.addEventListener('click', function(e) {
 
   const updateFormVisibility = () => {
     productBox.forEach((product, index) => {
-      product.style.left = `${(index - currentProductView) *250}px`
+      product.style.left = ${(index - currentProductView) *250}px
     })
   }
 

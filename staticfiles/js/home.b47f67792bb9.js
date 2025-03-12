@@ -11,7 +11,7 @@ const overlay = document.querySelector('.overlay');
 const quizButton = document.querySelector('.quiz-button');
 const hamburgerLink = document.querySelector('#menu-list li:nth-child(2) a');
 const modal = document.querySelector('.modal-content');
-document.body.appendChild(modal);
+// document.body.appendChild(modal);
 
   
 
