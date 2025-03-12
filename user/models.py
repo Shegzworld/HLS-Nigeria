@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.utils.timezone import now
 from NT_gallery.models import Product
+from api.models import Health_Condition
 
 
 class Notification(models.Model):
@@ -19,7 +20,7 @@ class UserProfile(models.Model):
     bio = models.TextField(null=True, blank=True)
     budget = models.DecimalField(max_digits=10, decimal_places=2, null=True, blank=True)  # New field for budget
     new_notifications_count = models.IntegerField(default=0)  # Tracks unread notifications
-    #health_condition = models.ForeignKey("HealthCondition", on_delete=models.CASCADE, related_name='health_condition')
+    principal = models.ForeignKey(Health_Condition, on_delete=models.CASCADE, related_name='user_health_condition',null=True, blank=True)
     #lifestyle = models.OneToOneField("Lifestyle", on_delete=models.CASCADE, related_name='lifestyle')
     #basic = models.OneToOneField("Basic", on_delete=models.CASCADE, related_name='basic')
     

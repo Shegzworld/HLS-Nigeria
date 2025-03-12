@@ -7,7 +7,7 @@ from rest_framework_simplejwt.views import (
 from .views import (
     WalletViewSet, TransactionViewSet, CustomerViewSet,
     SupplementViewSet, ArticleViewSet, PodcastViewSet,HealthConditionViewSet,
-    CustomerCreateView,UserLoginView,WalletBalanceView,MonthlyWithdrawalCountView
+    CustomerCreateView,UserLoginView,WalletBalanceView,MonthlyWithdrawalCountView,CheckQuizCodeView
 )
 
 router = DefaultRouter()
@@ -27,4 +27,5 @@ urlpatterns = [
     path('auth/login', UserLoginView.as_view(), name='login_user'),  # User login
     path('wallet/balance', WalletBalanceView.as_view(), name='wallet-balance'),
     path('wallet/withdrawals/count/', MonthlyWithdrawalCountView.as_view(), name='withdrawals-count'),
+    path('check-quiz-code/', CheckQuizCodeView.as_view(), name='check_quiz_code'),
     ]

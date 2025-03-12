@@ -1,18 +1,24 @@
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
+from django.http import JsonResponse
+from django.utils.decorators import method_decorator
 from rest_framework.response import Response
 from django.utils.timezone import now
 from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticated
+from django.http import JsonResponse
 from django.conf import settings
+from user.models import UserProfile
 import requests
 from .models import Wallet, Transaction, Customer,MonthlyTransactionSummary, Supplement, Article, Podcast,Health_Condition
 from .serializers import (
     WalletSerializer, TransactionSerializer, CustomerSerializer,
     SupplementSerializer, ArticleSerializer, PodcastSerializer,HealthConditionSerializer
 )
-
+from django.views import View
 from rest_framework.views import APIView
+
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework import status
 from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
@@ -396,3 +402,37 @@ class MonthlyWithdrawalCountView(APIView):
             "month": current_month,
             "withdrawals_count": summary.withdrawals_count if summary else 0
         })
+        
+
+@method_decorator(csrf_exempt, name='dispatch')  # Exempt this view from CSRF verification
+class CheckQuizCodeView(View):
+    def post(self, request, *args, **kwargs):
+        import json
+        data = json.loads(request.body)
+        code = data.get('code')
+
+        # Check if the code exists in the Health_Condition table
+        try:
+            health_condition = Health_Condition.objects.get(code=code)
+            exists = True
+        except Health_Condition.DoesNotExist:
+            exists = False
+
+        if exists:
+            # Get the current user's profile
+            user = request.user
+            user_profile = UserProfile.objects.get(user=user)
+
+            # Update the principal field with the found Health_Condition instance
+            user_profile.principal = health_condition
+            user_profile.save()
+
+            return JsonResponse({
+                'exists': True,
+                'message': 'Quiz code is valid. Principal updated successfully.',
+            })
+        else:
+            return JsonResponse({
+                'exists': False,
+                'message': 'Invalid quiz code. Please try again.',
+            })
