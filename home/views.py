@@ -12,11 +12,11 @@ def homepage(request):
     # notifications = request.user.notifications.order_by('-created_at')
     # x  = Notification.objects.get(user=request.user)
     # Reset the new notifications count
-    user_profile = request.user.profile
-    
-
-    user_profile.new_notifications_count = 0
-    user_profile.save()
+    # user_profile = request.user.profile
+    #
+    #
+    # user_profile.new_notifications_count = 0
+    # user_profile.save()
 
     # Mark notifications as read
     # notifications.update(is_read=True)
