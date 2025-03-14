@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         // Make an API call to the server to check if the quiz code exists
-        const response = await fetch("/api/check-quiz-code/", {
+        const response = await fetch("/api/check-quiz-code/2", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -58,8 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (!response.ok) {
-          console.log(response);
-
           throw new Error("Network response was not ok");
         }
 
@@ -67,13 +65,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (data.exists) {
           // If the code exists, redirect to the quiz page
-          localStorage.setItem("hc", JSON.stringify(data.health_condition));
+          localStorage.setItem('hc',JSON.stringify(data.health_condition))
           window.location.href = `/quiz/`;
         } else {
           // If the code does not exist, show an error message
           alert("Invalid quiz code. Please try again.");
         }
       } catch (error) {
+        console.log(getCookie("csrftoken"))
+        console.log({response})
         console.error("Error:", error);
         alert("An error occurred while validating the quiz code.");
       }

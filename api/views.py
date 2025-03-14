@@ -1,3 +1,4 @@
+import logging
 from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from django.http import JsonResponse
@@ -8,6 +9,8 @@ from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticated
 from django.http import JsonResponse
 from django.conf import settings
+from django.forms.models import model_to_dict
+import json
 from user.models import UserProfile
 import requests
 from .models import Wallet, Transaction, Customer,MonthlyTransactionSummary, Supplement, Article, Podcast,Health_Condition
@@ -24,7 +27,7 @@ from django.contrib.auth.models import User
 from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import AllowAny
 from django.contrib.auth import authenticate
-
+logger = logging.getLogger(__name__)
 class CustomerCreateView(APIView):
     """
     API view to create a new customer.
@@ -404,32 +407,46 @@ class MonthlyWithdrawalCountView(APIView):
         })
         
 
+
+@method_decorator(csrf_exempt, name='dispatch')  # Exempt this view from CSRF verification
+
+
 @method_decorator(csrf_exempt, name='dispatch')  # Exempt this view from CSRF verification
 class CheckQuizCodeView(View):
     def post(self, request, *args, **kwargs):
-        import json
         data = json.loads(request.body)
         code = data.get('code')
+
+        if not code:
+            logger.error("No quiz code provided in the request.")
+            return JsonResponse({
+                'exists': False,
+                'message': 'Quiz code is required.',
+            })
 
         # Check if the code exists in the Health_Condition table
         try:
             health_condition = Health_Condition.objects.get(code=code)
             exists = True
         except Health_Condition.DoesNotExist:
+            logger.warning(f"Quiz code '{code}' does not exist in the Health_Condition table.")
             exists = False
+        except Exception as e:
+            logger.error(f"Unexpected error occurred while checking quiz code '{code}': {e}")
+            return JsonResponse({
+                'exists': False,
+                'message': 'An error occurred while processing your request. Please try again later.',
+            })
 
         if exists:
-            # Get the current user's profile
-            user = request.user
-            user_profile = UserProfile.objects.get(user=user)
-
-            # Update the principal field with the found Health_Condition instance
-            user_profile.principal = health_condition
-            user_profile.save()
-
+            # Convert the health_condition object to a dictionary
+            health_condition_dict = model_to_dict(health_condition)
+            
+            # You can customize the dictionary if needed, e.g., exclude certain fields
             return JsonResponse({
                 'exists': True,
-                'message': 'Quiz code is valid. Principal updated successfully.',
+                'message': 'Quiz code is valid.',
+                'health_condition': health_condition_dict  # Return the dictionary instead of the model object
             })
         else:
             return JsonResponse({

@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         // Make an API call to the server to check if the quiz code exists
-        const response = await fetch("/api/check-quiz-code/", {
+        const response = await fetch("/api/check-quiz-code", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

@@ -58,8 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (!response.ok) {
-          console.log(response);
-
           throw new Error("Network response was not ok");
         }
 
@@ -67,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (data.exists) {
           // If the code exists, redirect to the quiz page
-          localStorage.setItem("hc", JSON.stringify(data.health_condition));
+          localStorage.setItem('hc',JSON.stringify(data.health_condition))
           window.location.href = `/quiz/`;
         } else {
           // If the code does not exist, show an error message

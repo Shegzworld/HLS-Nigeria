@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const hamburgerMenu = document.querySelector(".hamburger-menu");
   const menuList = document.getElementById("menu-list");
   const bar = document.querySelector(".bar");
-  console.log("yes");
   const overlay = document.querySelector(".overlay");
   const quizButton = document.querySelector(".quiz-button");
   const hamburgerLink = document.querySelector("#menu-list li:nth-child(2) a");
@@ -58,6 +57,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (!response.ok) {
+          console.log(response);
+
           throw new Error("Network response was not ok");
         }
 
@@ -65,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (data.exists) {
           // If the code exists, redirect to the quiz page
+          localStorage.setItem("hc", JSON.stringify(data.health_condition));
           window.location.href = `/quiz/`;
         } else {
           // If the code does not exist, show an error message
