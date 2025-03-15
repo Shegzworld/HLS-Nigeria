@@ -581,30 +581,3 @@
 </div>
 {% endblock %}<br />
 
-<script>
-	document.addEventListener('DOMContentLoaded', function () {
-		const paginationContainer = document.getElementById('dr_pick_container');
-		const paginationButtons = document.querySelectorAll('.pagination .page-link');
-
-		paginationButtons.forEach(button => {
-			button.addEventListener('click', function (event) {
-				event.preventDefault(); // Prevent default behavior
-
-				const page = this.getAttribute('data-page');
-				const url = `?page=${page}`;
-
-				// Fetch the paginated content via AJAX
-				fetch(url, {
-					headers: {
-						'X-Requested-With': 'XMLHttpRequest' // Identify as an AJAX request
-					}
-				})
-					.then(response => response.text())
-					.then(html => {
-						paginationContainer.innerHTML = html; // Update the content
-					})
-					.catch(error => console.error('Error:', error));
-			});
-		});
-	});
-</script>
