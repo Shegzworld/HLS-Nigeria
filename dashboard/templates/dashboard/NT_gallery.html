@@ -14,10 +14,16 @@
 			<div class="nutrient_type_glass_pack" id="nutrient_type_pack_best">
 				<div class="Nutrient_type_pack">
 					<div class="my_nutrient_picture">
-						<img src="/static/home_images/supplement 1.jpg" alt="Nutrient Picture" />
+						<img
+							src="/static/home_images/supplement 1.jpg"
+							alt="Nutrient Picture"
+						/>
 					</div>
 					<div class="my_nutrient_picture">
-						<img src="/static/home_images/supplement 2.jpg" alt="Nutrient Picture" />
+						<img
+							src="/static/home_images/supplement 2.jpg"
+							alt="Nutrient Picture"
+						/>
 					</div>
 					<div class="label-bg">
 						<div class="label-text">
@@ -146,25 +152,28 @@
 				<div class="info_menu">
 					<div class="tooltip">
 						<i class="fas fa-info-circle"></i>
-						<span class="tooltip-text">Product Name: {{product.name}}<br />Price:
+						<span class="tooltip-text"
+							>Product Name: {{product.name}}<br />Price:
 							{{product.price}}
 						</span>
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-headphones"></i>
-						<span class="tooltip-text">Podcast mentions: {{product.podcast.count}}
+						<span class="tooltip-text"
+							>Podcast mentions: {{product.podcast.count}}
 						</span>
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-book"></i>
-						<span class="tooltip-text">Research Journals: {{product.journals.count}}
+						<span class="tooltip-text"
+							>Research Journals: {{product.journals.count}}
 						</span>
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-comment-alt"></i>
 						<span class="tooltip-text">
 							User Reviews: {{product.review.count}}
-						</span>
+						</span>	
 					</div>
 					<div class="tooltip">
 						<i class="fas fa-angle-double-right"></i>
@@ -178,7 +187,8 @@
 			</div>
 			{% endfor %}<br />
 			<div class="my_specifics_picture">
-				<img src="/static/home_images/supplement 2.jpg" alt="Nutrient Picture" />
+				<img src="/static/home_images/supplement 2.jpg"
+					alt="Nutrient Picture"/>
 				<div class="overlay"></div>
 				<i class="fas fa-shopping-cart"></i>
 				<button class="view_info_btn"></button>
@@ -206,7 +216,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<div id="dr_pick_container" class="nutrient_gallery_container">
 
 			{% for product in dr_picks %}
@@ -241,7 +251,7 @@
 					<div class="tooltip">
 						<i class="fas fa-angle-double-right"></i>
 						<span class="tooltip-text">
-							<a href="{% url 'dashboard:product_info' product.id %}">more details
+							<a href="{% url 'dashboard:product_info' product.id %}" >more details
 							</a>
 						</span>
 					</div>
@@ -251,28 +261,28 @@
 			{% if dr_picks.has_other_pages %}
 			<ul class="pagination">
 				{% if dr_picks.has_previous %}
-				<li>
-					<button class="page-link" data-page="{{ dr_picks.previous_page_number }}">Previous</button>
-				</li>
+				<li><a href="?page={{ dr_picks.previous_page_number }}">Previous</a></li>
 				{% endif %}
-
+			
 				{% for i in dr_picks.paginator.page_range %}
-				{% if i >= dr_picks.number|add:-2 and i <= dr_picks.number|add:2 %} <li
-					class="{% if dr_picks.number == i %}active{% endif %}">
-					<button class="page-link" data-page="{{ i }}">{{ i }}</button>
-					</li>
-					{% endif %}
+				{% if i >= dr_picks.number|add:-2 and i <= dr_picks.number|add:2 %} 
+				{% if dr_picks.number == i %} 
+				<li class="active">
+					{{ i }}
+				</li>
+				{% else %}
+					<li><a href="?page={{ i }}">{{ i }}</a></li>
+				{% endif %}
+				{% endif %}
 					{% endfor %}
-
-					{% if dr_picks.has_next %}
-					<li>
-						<button class="page-link" data-page="{{ dr_picks.next_page_number }}">Next</button>
-					</li>
-					{% endif %}
+			
+				{% if dr_picks.has_next %}
+				<li><a href="?page={{ dr_picks.next_page_number }}">Next</a></li>
+				{% endif %}
 			</ul>
 			{% endif %}
 		</div>
-
+		
 	</div>
 </div>
 <div class="selected_nutrient_screen">
@@ -580,4 +590,3 @@
 	</div>
 </div>
 {% endblock %}<br />
-
