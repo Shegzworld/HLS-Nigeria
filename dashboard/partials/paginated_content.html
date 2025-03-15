@@ -1,0 +1,57 @@
+<!-- dashboard/partials/paginated_content.html -->
+{% for product in dr_picks %}
+<div class="my_specifics_picture">
+    <img src="{{ product.main_image.url|safe }}" alt="Nutrient Picture" />
+    <i class="fas fa-shopping-cart"></i>
+    <a href="{% url 'dashboard:product_info' product.id %}" class="view_info_btn">Info</a>
+    <div class="info_menu">
+        <div class="tooltip">
+            <i class="fas fa-info-circle"></i>
+            <span class="tooltip-text">{{product.name}}<br />Price: {{product.price}}</span>
+        </div>
+        <div class="tooltip">
+            <i class="fas fa-headphones"></i>
+            <span class="tooltip-text">Podcast: {{product.podcast.count}}</span>
+        </div>
+        <div class="tooltip">
+            <i class="fas fa-book"></i>
+            <span class="tooltip-text">Journals: {{product.journals.count}}</span>
+        </div>
+        <div class="tooltip">
+            <i class="fas fa-comment-alt"></i>
+            <span class="tooltip-text">User Reviews: {{product.review.count}}</span>
+        </div>
+        <div class="tooltip">
+            <i class="fas fa-angle-double-right"></i>
+            <span class="tooltip-text">
+                <a href="{% url 'dashboard:product_info' product.id %}">more details</a>
+            </span>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<!-- Pagination links (repeated for AJAX updates) -->
+{% if dr_picks.has_other_pages %}
+<ul class="pagination">
+    {% if dr_picks.has_previous %}
+        <li>
+            <button class="page-link" data-page="{{ dr_picks.previous_page_number }}">Previous</button>
+        </li>
+    {% endif %}
+
+    {% for i in dr_picks.paginator.page_range %}
+        {% if i >= dr_picks.number|add:-2 and i <= dr_picks.number|add:2 %}
+            <li class="{% if dr_picks.number == i %}active{% endif %}">
+                <button class="page-link" data-page="{{ i }}">{{ i }}</button>
+            </li>
+        {% endif %}
+    {% endfor %}
+
+    {% if dr_picks.has_next %}
+        <li>
+            <button class="page-link" data-page="{{ dr_picks.next_page_number }}">Next</button>
+        </li>
+    {% endif %}
+</ul>
+{% endif %}

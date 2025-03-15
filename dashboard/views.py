@@ -10,6 +10,8 @@ from django.db.models import Count,Subquery,OuterRef,Q
 from django.core.paginator import Paginator
 from django.contrib.auth.models import User
 from NT_gallery.models import Product
+from django.http import JsonResponse
+from django.template.loader import render_to_string
 from django.contrib import messages
 from user.models import HealthCondition,Lifestyle,Basic
 # from user.models import Notification
@@ -105,7 +107,16 @@ class Dashboard(LoginRequiredMixin, TemplateView):
         #     context['notification_count'] = None
         
         return context
-
+    def get(self, request, *args, **kwargs):
+        if request.headers.get('X-Requested-With') == 'XMLHttpRequest':
+            # Handle AJAX request
+            context = self.get_context_data(**kwargs)
+            html = render_to_string('dashboard/partials/paginated_content.html', context)
+            return JsonResponse({'html': html})
+        else:
+            # Handle normal request
+            return super().get(request, *args, **kwargs)
+        
     def get_user_profile(self):
         user = self.request.user
         user_profile, created = UserProfile.objects.get_or_create(user=user)
