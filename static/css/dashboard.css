@@ -529,11 +529,10 @@ body {
     min-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
+    gap: 10px;
     height: 100%;
     position: absolute;
-    padding-bottom: 0px;
+    padding: 10px;
     transform: translateX(101%);
 }
 
