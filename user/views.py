@@ -35,10 +35,10 @@ def register_view(request):
                 lifestyle.user_profile = user.profile
                 lifestyle.save()
 
-            if health_condition:
-                health_condition = HealthConditionForm(health_condition).save(commit=False)
-                health_condition.user_profile = user.profile
-                health_condition.save()
+            # if health_condition:
+            #     health_condition = HealthConditionForm(health_condition).save(commit=False)
+            #     health_condition.user_profile = user.profile
+            #     health_condition.save()
 
             if preference:
                 preference = PreferenceForm(preference).save(commit=False)

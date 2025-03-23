@@ -1,7 +1,7 @@
 
 from pathlib import Path
 import os
-import django_heroku
+# import django_heroku
 from environ import Env
 
 from datetime import timedelta
@@ -238,7 +238,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR , 'static'),]
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 # MEDIA_URL = 'media/'
@@ -287,4 +287,4 @@ DEFAULT_FROM_EMAIL = 'folajimiopeyemisax13@gmail.com'  # Same email as EMAIL_HOS
 # dont forget admin honeypot
 # ACCOUNT_USERNAME_BLACKLIST = ['admin', 'sakamanje']
 
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
